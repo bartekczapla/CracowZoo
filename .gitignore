@@ -3,3 +3,9 @@
 ################################################################################
 
 /CracowZoo/CracowZoo/CracowZoo/obj
+/CracowZoo/CracowZoo/CracowZoo.Android/obj
+/CracowZoo/CracowZoo/CracowZoo.iOS/obj
+/CracowZoo/CracowZoo/CracowZoo/bin
+/CracowZoo/CracowZoo/CracowZoo.Android/bin
+/CracowZoo/CracowZoo/CracowZoo.iOS/bin
+/CracowZoo/.vs/CracowZoo/v15
