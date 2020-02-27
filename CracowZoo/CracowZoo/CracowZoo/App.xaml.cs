@@ -4,6 +4,8 @@ using CracowZoo.ViewModels;
 using CracowZoo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.DataAccess.Repository;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -30,6 +32,9 @@ namespace CracowZoo
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+
+            containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
+          
         }
     }
 }

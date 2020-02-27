@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CracowZoo.Core;
+using Foundation;
 using Prism;
 using Prism.Ioc;
 using UIKit;
@@ -21,6 +22,8 @@ namespace CracowZoo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            SQLitePCL.Batteries_V2.Init();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
 
@@ -32,7 +35,7 @@ namespace CracowZoo.iOS
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Register any platform specific implementations
+            containerRegistry.Register<IPlatformSettingsProvider, iOSSettingsProvider>();
         }
     }
 }
