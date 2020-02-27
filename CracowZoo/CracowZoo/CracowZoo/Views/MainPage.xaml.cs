@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CracowZoo.DataAccess.Entity;
+using CracowZoo.DataAccess.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +13,18 @@ namespace CracowZoo.Views
     {
         public MainPage()
         {
+
             InitializeComponent();
         }
+
+        private async void OnTestTapped(object sender, ItemTappedEventArgs e)
+        {
+
+            if (e.Item != null)
+            {
+                var test = (Test)e.Item;
+            }
+        }
+
     }
 }
