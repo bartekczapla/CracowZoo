@@ -9,8 +9,4 @@
 /CracowZoo/CracowZoo/CracowZoo.Android/bin
 /CracowZoo/CracowZoo/CracowZoo.iOS/bin
 /CracowZoo/.vs/CracowZoo/v15
-/CracowZoo/.vs/CracowZoo/DesignTimeBuild
-/CracowZoo/CracowZoo/CracowZoo.Core/bin/Debug/netstandard2.0
-/CracowZoo/CracowZoo/CracowZoo.Core/obj
-/CracowZoo/CracowZoo/CracowZoo.DataAccess/bin/Debug/netstandard2.0
-/CracowZoo/CracowZoo/CracowZoo.DataAccess/obj
+/CracowZoo
