@@ -16,23 +16,13 @@ namespace CracowZoo.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        private readonly IRepository<Test> _testRepository;
-        public ObservableCollection<Test> Tests { get; set; }        
 
-
-        public MainPageViewModel(INavigationService navigationService, IRepository<Test> testRepository)
+        public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            _testRepository = testRepository;
+  
             Title = "Main Page";
-
-            // Musi byc lepsze rozwiazanie na wywolanie asynchronicznych metod na starcie... 
-            Task.Run(async () =>
-            {
-                var tests = await _testRepository.Get();
-                Tests = new ObservableCollection<Test>(tests);
-
-            }).Wait();                             
+                           
         }
 
     }

@@ -5,8 +5,12 @@
 /CracowZoo/CracowZoo/CracowZoo/obj
 /CracowZoo/CracowZoo/CracowZoo.Android/obj
 /CracowZoo/CracowZoo/CracowZoo.iOS/obj
+/CracowZoo/CracowZoo/CracowZoo.Core/obj
 /CracowZoo/CracowZoo/CracowZoo/bin
 /CracowZoo/CracowZoo/CracowZoo.Android/bin
 /CracowZoo/CracowZoo/CracowZoo.iOS/bin
+/CracowZoo/CracowZoo/CracowZoo.Core/bin
 /CracowZoo/.vs/CracowZoo/v15
-/CracowZoo
+/CracowZoo/.vs/CracowZoo/DesignTimeBuild/.dtbcache
+/CracowZoo/CracowZoo/CracowZoo.DataAccess/obj
+/CracowZoo/CracowZoo/CracowZoo.DataAccess/bin

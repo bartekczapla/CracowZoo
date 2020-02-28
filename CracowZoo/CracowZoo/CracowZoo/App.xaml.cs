@@ -1,4 +1,4 @@
-﻿using Prism;
+﻿ using Prism;
 using Prism.Ioc;
 using CracowZoo.ViewModels;
 using CracowZoo.Views;
@@ -25,13 +25,15 @@ namespace CracowZoo
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(TasksPage)}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
+            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();
 
             containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
           

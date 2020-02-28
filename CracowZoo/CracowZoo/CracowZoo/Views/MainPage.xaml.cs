@@ -17,14 +17,7 @@ namespace CracowZoo.Views
             InitializeComponent();
         }
 
-        private async void OnTestTapped(object sender, ItemTappedEventArgs e)
-        {
 
-            if (e.Item != null)
-            {
-                var test = (Test)e.Item;
-            }
-        }
 
     }
 }
