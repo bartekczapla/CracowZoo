@@ -2,5 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.appname">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="CracowZoo.Android" android:icon="@mipmap/ic_launcher"></application>
+	<application android:label="CracowZoo.Android" android:icon="@mipmap/ic_launcher">
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyB3bKP4EGT2p62TlkL0oV1WfDb_L3cuiyw"/>
+  </application>
 </manifest>
