@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using CracowZoo.Core;
+using CracowZoo.PlatformCore;
 using Foundation;
 using UIKit;
 

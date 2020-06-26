@@ -36,6 +36,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,9 +101,17 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CracowZoo.Core\CracowZoo.Core.csproj">
-      <Project>{FE528F51-2B36-4D1E-8697-5915A004C82B}</Project>
-      <Name>CracowZoo.Core</Name>
+    <ProjectReference Include="..\CracowZoo.Core\CracowZoo.PlatformCore.csproj">
+      <Project>{fe528f51-2b36-4d1e-8697-5915a004c82b}</Project>
+      <Name>CracowZoo.PlatformCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CracowZoo.DataAccess\CracowZoo.DataAccess.csproj">
+      <Project>{20984902-cdc0-4044-9708-1071df329a8d}</Project>
+      <Name>CracowZoo.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CracowZoo.Data\CracowZoo.Data.csproj">
+      <Project>{184026c4-219c-4fb9-9d05-7f36d3b61a6f}</Project>
+      <Name>CracowZoo.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\CracowZoo\CracowZoo.csproj">
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>

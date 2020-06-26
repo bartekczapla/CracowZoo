@@ -1,15 +1,7 @@
-﻿using CracowZoo.Core;
-using CracowZoo.DataAccess;
-using CracowZoo.DataAccess.Entity;
-using CracowZoo.DataAccess.Interfaces;
-using Prism.Commands;
-using Prism.Mvvm;
+﻿using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.Models;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CracowZoo.ViewModels
@@ -26,13 +18,13 @@ namespace CracowZoo.ViewModels
             _testRepository = testRepository;
             Title = "Tasks Page";
 
-            // Musi byc lepsze rozwiazanie na wywolanie asynchronicznych metod na starcie... 
-            Task.Run(async () =>
-            {
-                var tests = await _testRepository.Get();
-                Tests = new ObservableCollection<Test>(tests);
+            InitializeAsync();
+        }
 
-            }).Wait();
+        public async void InitializeAsync()
+        {
+            var tests = await _testRepository.Get();
+            Tests = new ObservableCollection<Test>(tests);
         }
     }
 }

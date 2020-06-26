@@ -1,14 +1,13 @@
-﻿using CracowZoo.Core;
-using CracowZoo.DataAccess.Interfaces;
+﻿using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.PlatformCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace CracowZoo.DataAccess.Repository
+namespace CracowZoo.Data.Repository
 {
     public class CracowZooRepository<TEntity> : IRepository<TEntity> where TEntity: class, IEntity
     {

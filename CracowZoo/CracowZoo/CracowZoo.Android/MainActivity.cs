@@ -1,7 +1,9 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using CracowZoo.Core;
+using CracowZoo.Data.Repository;
+using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.PlatformCore;
 using Prism;
 using Prism.Ioc;
 
@@ -28,6 +30,7 @@ namespace CracowZoo.Droid
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IPlatformSettingsProvider, AndroidSettingsProvider>();
+            containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
         }
     }
 }

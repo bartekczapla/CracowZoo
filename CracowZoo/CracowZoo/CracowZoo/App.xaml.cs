@@ -5,7 +5,6 @@ using CracowZoo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using CracowZoo.DataAccess.Interfaces;
-using CracowZoo.DataAccess.Repository;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -33,10 +32,7 @@ namespace CracowZoo
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
-            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();
-
-            containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
-          
+            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();       
         }
     }
 }

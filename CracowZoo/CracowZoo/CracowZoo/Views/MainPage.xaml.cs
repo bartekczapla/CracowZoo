@@ -1,11 +1,4 @@
-﻿using CracowZoo.DataAccess.Entity;
-using CracowZoo.DataAccess.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CracowZoo.Views
 {

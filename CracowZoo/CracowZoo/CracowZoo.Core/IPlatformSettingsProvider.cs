@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace CracowZoo.Core
+﻿
+namespace CracowZoo.PlatformCore
 {
     public interface IPlatformSettingsProvider
     {

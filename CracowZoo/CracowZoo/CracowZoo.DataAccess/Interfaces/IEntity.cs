@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CracowZoo.DataAccess.Interfaces
+﻿namespace CracowZoo.DataAccess.Interfaces
 {
     public interface IEntity
     {

@@ -1,14 +1,8 @@
-﻿using CracowZoo.Core;
-using CracowZoo.DataAccess.Entity;
-using CracowZoo.DataAccess.Seed;
+﻿using CracowZoo.Data.Seed;
+using CracowZoo.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using Xamarin.Forms;
 
-namespace CracowZoo.DataAccess
+namespace CracowZoo.Data
 {
     public class CracowZooDbContext : DbContext
     {
@@ -25,7 +19,6 @@ namespace CracowZoo.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           // var platformSettingsProvider = DependencyService.Get<IPlatformSettingsProvider>(); not working :<
             optionsBuilder.UseSqlite(_connectionString);
         }
 

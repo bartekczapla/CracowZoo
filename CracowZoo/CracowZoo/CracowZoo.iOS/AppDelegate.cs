@@ -1,4 +1,6 @@
-﻿using CracowZoo.Core;
+﻿using CracowZoo.Data.Repository;
+using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.PlatformCore;
 using Foundation;
 using Prism;
 using Prism.Ioc;
@@ -22,8 +24,6 @@ namespace CracowZoo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            SQLitePCL.Batteries_V2.Init();
-
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
 
@@ -36,6 +36,7 @@ namespace CracowZoo.iOS
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IPlatformSettingsProvider, iOSSettingsProvider>();
+            containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
         }
     }
 }

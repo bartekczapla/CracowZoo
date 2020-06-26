@@ -14,3 +14,8 @@
 /CracowZoo/.vs/CracowZoo/DesignTimeBuild/.dtbcache
 /CracowZoo/CracowZoo/CracowZoo.DataAccess/obj
 /CracowZoo/CracowZoo/CracowZoo.DataAccess/bin
+/CracowZoo/CracowZoo/CracowZoo.Android/Properties/AndroidManifest.xml
+/CracowZoo/CracowZoo/CracowZoo.Data/bin/Debug/netstandard2.0
+/CracowZoo/CracowZoo/CracowZoo.Data/obj
+/CracowZoo/CracowZoo/CracowZoo.PlatformCore/bin/Debug/netstandard2.0
+/CracowZoo/CracowZoo/CracowZoo.PlatformCore/obj

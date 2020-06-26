@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CracowZoo.PlatformCore</AssemblyName>
+    <RootNamespace>CracowZoo.PlatformCore</RootNamespace>
+  </PropertyGroup>
+
+</Project>

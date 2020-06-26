@@ -10,7 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using CracowZoo.Core;
+using CracowZoo.PlatformCore;
 
 namespace CracowZoo.Droid
 {
