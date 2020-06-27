@@ -10,7 +10,7 @@ namespace CracowZoo.Views.CustomControls
     public class ZooMap : Xamarin.Forms.GoogleMaps.Map
     {
         private readonly double _zooLatitude = 50.053453;
-        private readonly double _zooLongtitude = 19.850727;
+        private readonly double _zooLongitude = 19.850727;
 
         private readonly double _maxZoom = 19;
         private readonly double _minZoom = 16;
@@ -19,26 +19,24 @@ namespace CracowZoo.Views.CustomControls
         private readonly double _topRestriction = 50.0554976430348;
         private readonly double _bottomRestriction = 50.0506828412358;
 
-        public bool InZooBounds { get => CheckBounds().Result; }
-        public double CenterLatitude => (Region.NearRight.Latitude + Region.FarRight.Latitude) / 2.0;
-        public double CenterLongtitude => (Region.NearLeft.Longitude + Region.NearRight.Longitude) / 2.0;
+        public double CenterLatitude => CameraPosition.Target.Latitude;
+        public double CenterLongitude => CameraPosition.Target.Longitude;
 
         public ZooMap() : base()
         {
             MyLocationEnabled = true;
             UiSettings.MyLocationButtonEnabled = true;
 
+
             //Set map to zoo location by default
-            MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_zooLatitude, _zooLongtitude), Distance.FromMeters(500)));
+            MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_zooLatitude, _zooLongitude), Distance.FromMeters(500)));
             CameraIdled += CameraStopped;
         }
 
-        private async Task<bool> CheckBounds()
+        public bool CheckBounds(double latitude, double longitude)
         {
-            var location = await Geolocation.GetLastKnownLocationAsync();
-
-            if (location.Latitude >= _bottomRestriction && location.Latitude <= _topRestriction
-                && location.Longitude >= _leftRestriction && location.Longitude <= _rightRestriction)
+            if (latitude >= _bottomRestriction && latitude <= _topRestriction
+                && longitude >= _leftRestriction && longitude <= _rightRestriction)
                 return true;
 
             return false;
@@ -50,18 +48,18 @@ namespace CracowZoo.Views.CustomControls
                 return;
 
             if (CameraPosition.Zoom > _maxZoom)
-                await MoveCamera(CameraUpdateFactory.NewPositionZoom(new Position(CenterLatitude, CenterLongtitude), _maxZoom));
+                await MoveCamera(CameraUpdateFactory.NewPositionZoom(new Position(CenterLatitude, CenterLongitude), _maxZoom));
             if (CameraPosition.Zoom < _minZoom)
-                await MoveCamera(CameraUpdateFactory.NewPositionZoom(new Position(CenterLatitude, CenterLongtitude), _minZoom));
+                await MoveCamera(CameraUpdateFactory.NewPositionZoom(new Position(CenterLatitude, CenterLongitude), _minZoom));
 
-            if (CenterLongtitude > _rightRestriction)
+            if (CenterLongitude > _rightRestriction)
                 await MoveCamera(CameraUpdateFactory.NewPosition(new Position(CenterLatitude, _rightRestriction)));
-            if (CenterLongtitude < _leftRestriction)
+            if (CenterLongitude < _leftRestriction)
                 await MoveCamera(CameraUpdateFactory.NewPosition(new Position(CenterLatitude, _leftRestriction)));
             if (CenterLatitude > _topRestriction)
-                await MoveCamera(CameraUpdateFactory.NewPosition(new Position(_topRestriction, CenterLongtitude)));
+                await MoveCamera(CameraUpdateFactory.NewPosition(new Position(_topRestriction, CenterLongitude)));
             if (CenterLatitude < _bottomRestriction)
-                await MoveCamera(CameraUpdateFactory.NewPosition(new Position(_bottomRestriction, CenterLongtitude)));
+                await MoveCamera(CameraUpdateFactory.NewPosition(new Position(_bottomRestriction, CenterLongitude)));
         }
     }
 }

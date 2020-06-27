@@ -1,13 +1,25 @@
-﻿using Xamarin.Forms.Xaml;
+﻿using Prism.Events;
+using Xamarin.Forms.Xaml;
 
 namespace CracowZoo.Views
 {
+	public class MyEvent : PubSubEvent { }
+
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MenuPage : Xamarin.Forms.MasterDetailPage
 	{
-		public MenuPage ()
+		private readonly IEventAggregator _eventAggregator;
+		public MenuPage (IEventAggregator eventAggregator)
 		{
-			InitializeComponent ();
+			_eventAggregator = eventAggregator;
+
+			InitializeComponent();
+			_eventAggregator.GetEvent<MyEvent>().Subscribe(GetMessage);
 		}
+
+		private void GetMessage()
+        {
+			IsPresented = !IsPresented;
+        }
 	}
 }

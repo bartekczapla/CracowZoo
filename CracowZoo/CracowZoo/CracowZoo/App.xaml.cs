@@ -5,6 +5,7 @@ using CracowZoo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using CracowZoo.DataAccess.Interfaces;
+using Prism.Unity;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -30,9 +31,9 @@ namespace CracowZoo
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<MapPage, MapPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
-            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();       
+            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();   
         }
     }
 }

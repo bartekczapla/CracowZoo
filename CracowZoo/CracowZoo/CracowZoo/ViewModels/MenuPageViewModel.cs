@@ -23,7 +23,6 @@ namespace CracowZoo.ViewModels
             get => selectedMenuItem;
             set => SetProperty(ref selectedMenuItem, value);
         }
-
         public DelegateCommand NavigateCommand { get; private set; }
 
         public MenuPageViewModel(INavigationService navigationService)
@@ -35,8 +34,8 @@ namespace CracowZoo.ViewModels
             MenuItems.Add(new CustomMenuItem()
             {
                 Icon = "ic_viewa",
-                PageName = nameof(MainPage),
-                Title = "Main"
+                PageName = nameof(MapPage),
+                Title = "Map"
             });
             MenuItems.Add(new CustomMenuItem()
             {

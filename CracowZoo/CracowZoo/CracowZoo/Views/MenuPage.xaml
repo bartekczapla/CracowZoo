@@ -4,8 +4,8 @@
              x:Class="CracowZoo.Views.MenuPage"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True" >
-
+             prism:ViewModelLocator.AutowireViewModel="True"
+             IsPresented="{Binding}">
     <MasterDetailPage.Master>
 
         <NavigationPage Title="Menu" 
@@ -14,7 +14,7 @@
             <x:Arguments>
                 <ContentPage 
                     Icon="hamburger.png"
-                    Title="My App"
+                    Title="Menu"
                     >
 
                     <ListView ItemsSource="{Binding MenuItems}"
@@ -22,7 +22,7 @@
                               SeparatorColor="LightGray"
                               RowHeight="60"
                               SeparatorVisibility="Default"
-                              BackgroundColor="#e8e8e8">
+                              BackgroundColor="{StaticResource LightBrown}">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
