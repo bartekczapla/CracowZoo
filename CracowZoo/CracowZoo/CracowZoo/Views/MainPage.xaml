@@ -5,6 +5,6 @@
              x:Class="CracowZoo.Views.MainPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <controls:ZooMap x:Name="MapTest" MapType="Street"/>
+        <controls:ZooMap x:Name="ZooMapControl" MapType="Street"/>
     </ContentPage.Content>
 </ContentPage>
