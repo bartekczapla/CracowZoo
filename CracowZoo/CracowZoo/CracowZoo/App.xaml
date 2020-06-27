@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
              x:Class="CracowZoo.App">
-	<Application.Resources>
-
-		<!-- Application resource dictionary -->
-
-	</Application.Resources>
+    <Application.Resources>
+        <Color x:Key="DarkBrown">#6E492C</Color>
+        <Color x:Key="LightBrown">#E9CFB6</Color>
+        <Color x:Key="PaleBrown">#977660</Color>
+        <Color x:Key="Green">#98B835</Color>
+    </Application.Resources>
 </prism:PrismApplication>
