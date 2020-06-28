@@ -8,9 +8,9 @@
     <ContentPage.Content>
         <Grid>
             <controls:ZooMap x:Name="ZooMapControl" MapType="Street"/>
-            <Button HeightRequest="40" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Start"
-                    CornerRadius="20" Margin="10" BackgroundColor="White"
-                    Command="{Binding MenuButton}"/>
+            <Button HeightRequest="37" WidthRequest="37" HorizontalOptions="Start" VerticalOptions="Start"
+                    CornerRadius="2" Margin="12" BackgroundColor="White" Opacity="0.8"
+                    Command="{Binding MenuButton}" Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

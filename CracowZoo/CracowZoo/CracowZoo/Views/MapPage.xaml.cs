@@ -17,6 +17,8 @@ namespace CracowZoo.Views
 
         private async void ValidateUserLocation(object sender, MyLocationButtonClickedEventArgs e)
         {
+            //ZooMapControl.Pins.Add(new Pin() { Position = new Position(50.053453, 19.850727) });
+
             try
             {
                 var location = await Geolocation.GetLastKnownLocationAsync();
