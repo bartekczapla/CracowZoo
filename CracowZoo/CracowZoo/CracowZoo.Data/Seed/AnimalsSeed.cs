@@ -8,7 +8,7 @@ namespace CracowZoo.Data.Seed
     {
         public static void SeedAnimals(this ModelBuilder modelBuilder)
         {
-            // RYBY
+            // RYBY ID: 1-7
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 1,
@@ -21,7 +21,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Ryby, mięczaki, ptaki i ssaki. Żyje i żeruje w dużych stadach(ławicach) wykazując niezwykłą żarłoczność. W poszukiwaniu ofiary kieruje się przede wszystkim węchem",
                 Breeding = "Samica składa ikrę w zagłębieniu podłoża. Jest ona pilnowana przez rodziców",
                 AnimalDanger = AnimalDanger.High,
-                MapItemId = 1
+                MapItemId = 1,
+                ImagePath = "_piraniaczerwona.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -35,7 +36,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Zooplankton",
                 Breeding = "Ryby te rozpoczynają życie jako samice. Dorastając niektóre z nich zmieniają płeć. Samiec tworzy harem. Jeśli zginie – samica może zmienić płeć aby go zastąpić.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 2
+                MapItemId = 2,
+                ImagePath = "_antiaspomaranczowy.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -49,7 +51,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Małe ryby i skorupiaki",
                 Breeding = "Ryba jajorodna",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 3
+                MapItemId = 3,
+                ImagePath = "_pyszczak.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -63,7 +66,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Zooplankton",
                 Breeding = "Tarło odbywa w szczelinach skalnych. Samica składa do 200 sztuk ikry. W okresie rozrodu ryba ta bywa agresywna.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 4
+                MapItemId = 4,
+                ImagePath = "_szczelinowieczburundi.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -77,7 +81,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Wszystkożerna. Żywi się zooplanktonem i glonami.",
                 Breeding = "Gatunek jajorodny. W czasie tarła samce bywają bardzo agresywne wobec samic.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 5
+                MapItemId = 5,
+                ImagePath = "_pokoleckrolewski.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -91,7 +96,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Glony, drobny zooplankton.",
                 Breeding = "Samica składa do 25 000 ziaren ikry, którą opiekuje się samiec.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 6
+                MapItemId = 6,
+                ImagePath = "_amfiprionokoniowy.jpg"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -105,11 +111,12 @@ namespace CracowZoo.Data.Seed
                 Food = "Wszystkożerna.",
                 Breeding = "Ryba jajorodna.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 7
+                MapItemId = 7,
+                ImagePath = "_stadnikzoltoogonowy.jpg"
             });
 
 
-            // PŁAZY
+            // PŁAZY ID: 8-15
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -123,14 +130,15 @@ namespace CracowZoo.Data.Seed
                 Food = "Owadożerny.",
                 Breeding = "Samce w okresie godowym wydają charakterystyczne dźwięki, którymi wabią samice. Samica składa 4–12 jaj, z których po 10–15 dniach wykluwają się kijanki.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 8
+                MapItemId = 8,
+                ImagePath = "_drzewolazzloty.jpg"
             });
 
-            // GADY
+            // GADY ID: 16-30
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
-                Id = 9,
+                Id = 16,
                 Name = "Żółw żabuti",
                 Group = AnimalGroup.Reptiles,
                 ConservationStatus = ConservationStatus.Unknown, //?
@@ -140,14 +148,15 @@ namespace CracowZoo.Data.Seed
                 Food = "Wszystkożerny. Żywi się głównie zielonymi częściami roślin i owocami. Dietę uzupełnia rybami i innymi drobnymi kręgowcami.",
                 Breeding = "Samica składa od 5 do 15 jaj, z których młode wylęgają się po upływie około 5 miesięcy.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 9
+                MapItemId = 16,
+                ImagePath = "_zolwzabuti.jpg"
             });
 
-            // PTAKI
+            // PTAKI ID: 31-91
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
-                Id = 10,
+                Id = 31,
                 Name = "Struś afrykański",
                 Group = AnimalGroup.Birds,
                 ConservationStatus = ConservationStatus.LeastConcern, 
@@ -157,14 +166,17 @@ namespace CracowZoo.Data.Seed
                 Food = "Roślinożerne. Dietę uzupełniają owadami i niewielkimi kręgowcami.",
                 Breeding = "Samcowi towarzyszy harem samic. Gniazdo ma postać płytkiego dołu o średnicy 3 m, wygrzebanego w piasku lub ziemi.W gnieździe znajdują się jaja wszystkich 2 - 5 samic haremu.Wysiadywane są 42 - 46 dni przez dominującą samicę,którą zmienia samiec.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 10
+                MapItemId = 31,
+                ImagePath = "_strusafrykanski.jpg"
             });
 
-            // SSAKI
+            // SSAKI ID: 92-170
+
+            // ... jeszcze 3
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
-                Id = 11,
+                Id = 95,
                 Name = "Słoń indyjski",
                 Group = AnimalGroup.Mammals,
                 ConservationStatus = ConservationStatus.Endangered,
@@ -174,7 +186,7 @@ namespace CracowZoo.Data.Seed
                 Food = "Trawa, liście, miękkie pędy roślin, owoce.",
                 Breeding = "Ciąża trwa około 21 miesięcy. Rodzi się jedno młode ważące do 100 kg.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 11,
+                MapItemId = 95,
                 ImagePath = "_slonindyjski.jpg"
             });
         }

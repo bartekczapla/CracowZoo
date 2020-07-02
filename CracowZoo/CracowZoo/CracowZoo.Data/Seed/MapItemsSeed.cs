@@ -75,7 +75,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 9, // Żółw żabuti
+                Id = 16, // Żółw żabuti
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -85,16 +85,17 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 10, // Struś afrykański
+                Id = 31, // Struś afrykański
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
 
             //SSAKI
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 11, // Słoń indyjski
+                Id = 95, // Słoń indyjski
                 X = 0,
                 Y = 0,
                 Marked = false

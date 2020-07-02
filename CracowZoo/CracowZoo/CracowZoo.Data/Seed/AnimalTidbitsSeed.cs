@@ -105,7 +105,7 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 15,
                 Description = "Karapaks (grzbietowa część pancerza) prezentowanego w naszym Zoo osobnika mierzy 40 cm długości. Ma on ponad 50 lat.",
-                AnimalId = 9 //Żółw żabuti
+                AnimalId = 16 //Żółw żabuti
             });
 
             // PTAKI
@@ -114,25 +114,25 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 16,
                 Description = "Największy ptak żyjący obecnie na ziemi, najszybszy spośród nielotnych ptaków lądowych.",
-                AnimalId = 10 // Struś afrykański
+                AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
                 Id = 17,
                 Description = "Na dłuższych dystansach biega z prędkością 50 km/h, a na krótszych – nawet do 70 km/h.",
-                AnimalId = 10 // Struś afrykański
+                AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
                 Id = 18,
                 Description = "Jego stopy zakończone są tylko 2 palcami.",
-                AnimalId = 10 // Struś afrykański
+                AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
                 Id = 19,
                 Description = "Ma doskonały wzrok – widzi dobrze na odległość do około 5 km.",
-                AnimalId = 10 // Struś afrykański
+                AnimalId = 31 // Struś afrykański
             });
 
 
@@ -142,13 +142,13 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 20,
                 Description = "W Azji wykorzystywany jako zwierzę pociągowe, juczne i wierzchowe.",
-                AnimalId = 11 // Słoń indyjski
+                AnimalId = 95 // Słoń indyjski
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
                 Id = 21,
                 Description = "Słonie prowadzą stadny tryb życia. Przewodnikiem stada jest stara samica.",
-                AnimalId = 11 // Słoń indyjski
+                AnimalId = 95 // Słoń indyjski
             });
 
             //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
