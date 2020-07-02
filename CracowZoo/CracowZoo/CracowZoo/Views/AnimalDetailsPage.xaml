@@ -7,5 +7,11 @@
     <StackLayout>
         <Label Text="{Binding SelectedAnimal.Name}">
         </Label>
+        <Image 
+            Source="{Binding SelectedAnimal.ImagePath}"
+            Aspect="Fill"
+            HeightRequest="300"
+            >
+        </Image>
     </StackLayout>
 </ContentPage>

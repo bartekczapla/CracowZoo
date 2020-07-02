@@ -15,43 +15,50 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 1, // Pirania czerwona
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 2, // Antias pomarańczowy
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 3, // Pyszczak żołty
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 4, // Szczelinowiec z Burundi
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 5, // Pokolec królewski
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 6, // Amfiprion okoniowy
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 7, // Stadnik żółtoogonowy
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
 
             //PŁAZY
@@ -60,7 +67,8 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 8, // Drzewołaz złoty
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
 
             //GADY
@@ -69,7 +77,8 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 9, // Żółw żabuti
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
 
             //PTAKI
@@ -87,7 +96,8 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 11, // Słoń indyjski
                 X = 0,
-                Y = 0
+                Y = 0,
+                Marked = false
             });
         }
     }

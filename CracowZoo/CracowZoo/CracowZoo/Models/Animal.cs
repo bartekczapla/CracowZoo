@@ -34,5 +34,7 @@ namespace CracowZoo.Models
         [ForeignKey("MapItem")]
         public int? MapItemId { get; set; }
         public ICollection<AnimalTidbit> AnimalTidbits { get; set; }
+        [MaxLength(50)]
+        public string ImagePath { get; set; }
     }
 }

@@ -174,7 +174,8 @@ namespace CracowZoo.Data.Seed
                 Food = "Trawa, liście, miękkie pędy roślin, owoce.",
                 Breeding = "Ciąża trwa około 21 miesięcy. Rodzi się jedno młode ważące do 100 kg.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId = 11
+                MapItemId = 11,
+                ImagePath = "_slonindyjski.jpg"
             });
         }
     }
