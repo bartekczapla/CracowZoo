@@ -16,6 +16,6 @@ namespace CracowZoo.Models
         public string Description { get; set; }
         public virtual Animal Animal { get; set; }
         [ForeignKey("Animal")]
-        public int AnimalId { get; set; }
+        public int? AnimalId { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace CracowZoo.iOS
 {
     public class iOSSettingsProvider : IPlatformSettingsProvider
     {
-        public string ConnectionString => "Filename=" + Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), @"cracowZoo.sqlite");
+        public string ConnectionString => "Filename=" + Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "cracowZoo.db");
 
         public string Platform => "Android";
     }

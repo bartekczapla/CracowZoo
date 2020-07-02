@@ -6,7 +6,6 @@ namespace CracowZoo.Data
 {
     public class CracowZooDbContext : DbContext
     {
-        public DbSet<Test> Tests { get; set; }
         public DbSet<Animal> Animals { get; set; }
         public DbSet<AnimalTidbit> AnimalTidbits { get; set; }
         public DbSet<MapItem> MapItems { get; set; }
@@ -28,9 +27,9 @@ namespace CracowZoo.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.SeedAnimals();
             modelBuilder.SeedMapItems();
+            modelBuilder.SeedAnimals();   
             modelBuilder.SeedAnimalTidbits();
         }
-     }
+    }
 }

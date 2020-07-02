@@ -1,23 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CracowZoo.DataAccess.Interfaces
 {
-    public interface IRepository<T> where T: class, IEntity
+    public interface IRepository<TEntity> where TEntity: class, IEntity
     {
-        Task<IEnumerable<T>> Get(Expression<Func<T, bool>> whereExpression = null);
+        Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> whereExpression = null);
 
-        Task<T> GetById(int id);
+        Task<ObservableCollection<TEntity>> GetObservableCollectionAsync(Expression<Func<TEntity, bool>> whereExpression = null);
 
-        Task<T> Add(T entity);
+        Task<TEntity> GetByIdAsync(int id);
 
-        Task<T> Update(T entity);
+        Task<TEntity> AddAsync(TEntity entity);
 
-        Task<T> Delete(int id);
+        Task<TEntity> UpdateAsync(TEntity entity);
 
-        Task Save();
+        Task<TEntity> DeleteAsync(int id);
+
+        Task SaveAsync();
     }
 }

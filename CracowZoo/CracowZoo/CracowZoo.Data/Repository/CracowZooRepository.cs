@@ -3,6 +3,7 @@ using CracowZoo.PlatformCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace CracowZoo.Data.Repository
        }
 
 
-        public async Task<TEntity> Add(TEntity entity)
+        public async Task<TEntity> AddAsync(TEntity entity)
         {
             var ent = _dbContext.Set<TEntity>().Add(entity);
 
@@ -34,7 +35,7 @@ namespace CracowZoo.Data.Repository
             return entity;
         }
 
-        public async Task<TEntity> Delete(int id)
+        public async Task<TEntity> DeleteAsync(int id)
         {
             var entity = await _dbContext.Set<TEntity>().FindAsync(id);
             if (entity == null)
@@ -49,7 +50,7 @@ namespace CracowZoo.Data.Repository
         }
 
 
-        public async Task<IEnumerable<TEntity>> Get(Expression<Func<TEntity, bool>> whereExpression = null)
+        public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> whereExpression = null)
         {
             IQueryable<TEntity> result = _dbContext.Set<TEntity>();
 
@@ -61,17 +62,29 @@ namespace CracowZoo.Data.Repository
             return await result.ToListAsync();
         }
 
-        public async Task<TEntity> GetById(int id)
+        public async Task<ObservableCollection<TEntity>> GetObservableCollectionAsync(Expression<Func<TEntity, bool>> whereExpression = null)
+        {
+            IQueryable<TEntity> result = _dbContext.Set<TEntity>();
+
+            if (whereExpression != null)
+            {
+                result = result.Where(whereExpression);
+            }
+
+            return new ObservableCollection<TEntity>(await result.ToListAsync());
+        }
+
+        public async Task<TEntity> GetByIdAsync(int id)
         {
             return await _dbContext.Set<TEntity>().FindAsync(id);
         }
 
-        public Task Save()
+        public Task SaveAsync()
         {
             return _dbContext.SaveChangesAsync();
         }
 
-        public async Task<TEntity> Update(TEntity entity)
+        public async Task<TEntity> UpdateAsync(TEntity entity)
         {
             var entry = _dbContext.Entry(entity);
             entry.State = EntityState.Modified;

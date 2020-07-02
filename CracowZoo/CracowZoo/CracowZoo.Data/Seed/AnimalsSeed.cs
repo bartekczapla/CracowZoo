@@ -105,11 +105,11 @@ namespace CracowZoo.Data.Seed
                 Food = "Wszystkożerna.",
                 Breeding = "Ryba jajorodna.",
                 AnimalDanger = AnimalDanger.None,
-                MapItemId =7
+                MapItemId = 7
             });
 
 
-            // PŁAZY 
+            // PŁAZY
 
             //modelBuilder.Entity<Animal>().HasData(new Animal
             //{

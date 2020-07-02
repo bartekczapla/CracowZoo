@@ -14,6 +14,7 @@ namespace CracowZoo.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_e_sqlite3());
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

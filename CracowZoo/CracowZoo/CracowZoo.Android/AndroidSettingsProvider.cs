@@ -16,7 +16,7 @@ namespace CracowZoo.Droid
 {
     public class AndroidSettingsProvider : IPlatformSettingsProvider
     {
-        public string ConnectionString => "Filename=" + Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), @"cracowZoo.sqlite");
+        public string ConnectionString => "Filename=" + Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "cracowZoo.db");
 
         public string Platform => "Android";
     }

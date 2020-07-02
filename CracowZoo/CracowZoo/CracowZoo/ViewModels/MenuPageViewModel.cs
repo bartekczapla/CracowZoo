@@ -40,10 +40,9 @@ namespace CracowZoo.ViewModels
             MenuItems.Add(new CustomMenuItem()
             {
                 Icon = "ic_viewa",
-                PageName = nameof(TasksPage),
-                Title = "Tasks"
+                PageName = nameof(AnimalGroupsPage),
+                Title = "Animals"
             });
-
             NavigateCommand = new DelegateCommand(Navigate);
         }
 

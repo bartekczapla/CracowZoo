@@ -13,7 +13,7 @@ namespace CracowZoo.Data.Seed
             // RYBY
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 1, 
+                Id = 1,
                 Description = "Żyje w stadach liczących 20-30 osobników",
                 AnimalId = 1 // Pirania czerwona
             });

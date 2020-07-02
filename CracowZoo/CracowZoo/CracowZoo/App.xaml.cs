@@ -25,7 +25,7 @@ namespace CracowZoo
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(TasksPage)}");
+            await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(AnimalGroupsPage)}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -33,7 +33,9 @@ namespace CracowZoo
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MapPage, MapPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
-            containerRegistry.RegisterForNavigation<TasksPage, TasksPageViewModel>();   
+            containerRegistry.RegisterForNavigation<AnimalGroupsPage, AnimalGroupsPageViewModel>();
+            containerRegistry.RegisterForNavigation<AnimalsPage, AnimalsPageViewModel>();
+            containerRegistry.RegisterForNavigation<AnimalDetailsPage, AnimalDetailsPageViewModel>();
         }
     }
 }
