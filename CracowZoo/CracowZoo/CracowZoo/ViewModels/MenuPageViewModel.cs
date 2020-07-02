@@ -33,16 +33,29 @@ namespace CracowZoo.ViewModels
 
             MenuItems.Add(new CustomMenuItem()
             {
-                Icon = "ic_viewa",
+                Icon = ((char)0xf279).ToString(),
                 PageName = nameof(MapPage),
-                Title = "Map"
+                Title = "Mapa"
             });
             MenuItems.Add(new CustomMenuItem()
             {
-                Icon = "ic_viewa",
+                Icon = ((char)0xf6ed).ToString(),
                 PageName = nameof(AnimalGroupsPage),
-                Title = "Animals"
+                Title = "Zwierzęta"
             });
+            MenuItems.Add(new CustomMenuItem()
+            {
+                Icon = ((char)0xf3ff).ToString(),
+                PageName = nameof(AnimalGroupsPage),
+                Title = "Bilety"
+            });
+            MenuItems.Add(new CustomMenuItem()
+            {
+                Icon = ((char)0xf013).ToString(),
+                PageName = nameof(AnimalGroupsPage),
+                Title = "Ustawienia"
+            });
+
             NavigateCommand = new DelegateCommand(Navigate);
         }
 

@@ -7,53 +7,41 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              IsPresented="{Binding}">
     <MasterDetailPage.Master>
+        <ContentPage Icon="hamburger.png" Title="Menu">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-        <NavigationPage Title="Menu" 
-                        Icon="ic_hamburger.png">
+                <Image Grid.RowSpan="2" Source="menuGradient.png" Aspect="Fill"/>
+                <Image Grid.Row="0" Source="menuHeader.png"/>
+                <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}"
+                              SeparatorColor="#5d4f44" RowHeight="70">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
 
-            <x:Arguments>
-                <ContentPage 
-                    Icon="hamburger.png"
-                    Title="Menu"
-                    >
+                                    <Label Text="{Binding Icon}" FontSize="Large" TextColor="LightGray"
+                                               VerticalOptions="Center" Margin="40,0,0,0" Opacity="0.3"
+                                               FontFamily="{StaticResource FontAwesomeSolid}"/>
 
-                    <ListView ItemsSource="{Binding MenuItems}"
-                              SelectedItem="{Binding SelectedMenuItem}"
-                              SeparatorColor="LightGray"
-                              RowHeight="60"
-                              SeparatorVisibility="Default"
-                              BackgroundColor="{StaticResource LightBrown}">
+                                    <Label Text="{Binding Title}" TextColor="LightGray"
+                                                   FontSize="Medium" Margin="20,0,0,0"
+                                                   VerticalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout VerticalOptions="FillAndExpand"
-                                                 Orientation="Horizontal"
-                                                 Padding="20,10,0,10"
-                                                 Spacing="20">
-
-                                        <Image Source="{Binding Icon}"
-                                               WidthRequest="35"
-                                               HeightRequest="35"
-                                               VerticalOptions="Center" />
-
-                                        <Label Text="{Binding Title}"
-                                               FontSize="Medium"
-                                               VerticalOptions="Center"
-                                               TextColor="Black"/>
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-
-                        <ListView.Behaviors>
-                            <b:EventToCommandBehavior EventName="ItemTapped" 
+                    <ListView.Behaviors>
+                        <b:EventToCommandBehavior EventName="ItemTapped" 
                                                       Command="{Binding NavigateCommand}" />
-                        </ListView.Behaviors>
+                    </ListView.Behaviors>
 
-                    </ListView>
-                </ContentPage>
-            </x:Arguments>
-        </NavigationPage>
+                </ListView>
+            </Grid>
+        </ContentPage>
     </MasterDetailPage.Master>
 </MasterDetailPage>
