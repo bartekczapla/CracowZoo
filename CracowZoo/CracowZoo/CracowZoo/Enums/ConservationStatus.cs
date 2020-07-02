@@ -11,6 +11,7 @@ namespace CracowZoo.Enums
         Vulnerable,
         Endangered,
         CriticallyEndangered,
-        NearThreatened
+        NearThreatened,
+        Unknown
     }
 }

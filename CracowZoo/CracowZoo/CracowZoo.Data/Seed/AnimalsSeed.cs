@@ -111,21 +111,71 @@ namespace CracowZoo.Data.Seed
 
             // PŁAZY
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = ,
-            //    Name = "",
-            //    Group = AnimalGroup.Fish,
-            //    ConservationStatus = ConservationStatus.Normal,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId =
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 8,
+                Name = "Drzewołaz złoty",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dendrobates auratus",
+                Occurance = "Ameryka Środkowa i Południowa: od południowej Nikaragui przez Kostarykę i Panamę do północnej Kolumbii.",
+                LivingEnvritonment = "Wilgotne lasy równikowe, plantacje.",
+                Food = "Owadożerny.",
+                Breeding = "Samce w okresie godowym wydają charakterystyczne dźwięki, którymi wabią samice. Samica składa 4–12 jaj, z których po 10–15 dniach wykluwają się kijanki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 8
+            });
 
+            // GADY
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 9,
+                Name = "Żółw żabuti",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown, //?
+                LatinSpecie = "Chelonoidis carbonaria",
+                Occurance = "Ameryka Południowa od północnej Brazylii po północną Argentynę i Boliwię.",
+                LivingEnvritonment = "Tropikalne lasy deszczowe, płytkie sadzawki.",
+                Food = "Wszystkożerny. Żywi się głównie zielonymi częściami roślin i owocami. Dietę uzupełnia rybami i innymi drobnymi kręgowcami.",
+                Breeding = "Samica składa od 5 do 15 jaj, z których młode wylęgają się po upływie około 5 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 9
+            });
+
+            // PTAKI
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 10,
+                Name = "Struś afrykański",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern, 
+                LatinSpecie = "Struthio camelus",
+                Occurance = "Afryka na terenie południowej Sahary, Sudan, Etiopia, Somalia po Kenię, południowa Kenia po Tanzanię i Afryka Południowa.",
+                LivingEnvritonment = "Pustynie, półpustynie, sawanny",
+                Food = "Roślinożerne. Dietę uzupełniają owadami i niewielkimi kręgowcami.",
+                Breeding = "Samcowi towarzyszy harem samic. Gniazdo ma postać płytkiego dołu o średnicy 3 m, wygrzebanego w piasku lub ziemi.W gnieździe znajdują się jaja wszystkich 2 - 5 samic haremu.Wysiadywane są 42 - 46 dni przez dominującą samicę,którą zmienia samiec.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 10
+            });
+
+            // SSAKI
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 11,
+                Name = "Słoń indyjski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Elephas maximus",
+                Occurance = "Indie, Chiny, Cejlon, Sumatra, Borneo.",
+                LivingEnvritonment = "Słoń indyjski zamieszkuje zróżnicowane środowiska – od gęstej dżungli po otwarte tereny trawiaste.",
+                Food = "Trawa, liście, miękkie pędy roślin, owoce.",
+                Breeding = "Ciąża trwa około 21 miesięcy. Rodzi się jedno młode ważące do 100 kg.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 11
+            });
         }
     }
 }

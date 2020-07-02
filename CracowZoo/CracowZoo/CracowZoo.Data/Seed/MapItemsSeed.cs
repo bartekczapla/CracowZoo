@@ -56,13 +56,39 @@ namespace CracowZoo.Data.Seed
 
             //PŁAZY
 
-            //modelBuilder.Entity<MapItem>().HasData(new MapItem
-            //{
-            //    Id = , // 
-            //    X = 0,
-            //    Y = 0
-            //});
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 8, // Drzewołaz złoty
+                X = 0,
+                Y = 0
+            });
 
+            //GADY
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 9, // Żółw żabuti
+                X = 0,
+                Y = 0
+            });
+
+            //PTAKI
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 10, // Struś afrykański
+                X = 0,
+                Y = 0
+            });
+
+            //SSAKI
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 11, // Słoń indyjski
+                X = 0,
+                Y = 0
+            });
         }
     }
 }
