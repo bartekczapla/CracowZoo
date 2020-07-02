@@ -3,15 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="CracowZoo.Views.AnimalDetailsPage">
-    <StackLayout>
-        <Label Text="{Binding SelectedAnimal.Name}">
-        </Label>
+             x:Class="CracowZoo.Views.AnimalDetailsPage"
+             BackgroundColor="LightGray">
+    <AbsoluteLayout>
         <Image 
-            Source="{Binding SelectedAnimal.ImagePath}"
-            Aspect="Fill"
-            HeightRequest="300"
+            AbsoluteLayout.LayoutFlags="All" 
+            AbsoluteLayout.LayoutBounds="0,0,1,0.5" 
+            Aspect="AspectFill"
+            
+            Source="{Binding SelectedAnimal.ImagePath}" />
+        <Frame
+            AbsoluteLayout.LayoutFlags="All" 
+            AbsoluteLayout.LayoutBounds=".5,0.9,0.9,0.7"  
+            BackgroundColor="White"
+            HasShadow="True"
+            CornerRadius="20"
             >
-        </Image>
-    </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Label 
+                    Text="{Binding SelectedAnimal.Name}"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.LatinSpecie}"
+                    FontSize="Subtitle"
+                    FontAttributes="Italic"
+                  ></Label>
+                    <Label 
+                    Text="Występowanie"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="0,30,0,0"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.Occurance }"
+                    FontSize="Medium"
+                  ></Label>
+                    <Label 
+                    Text="Środowisko życia"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="0,8,0,0"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.LivingEnvritonment  }"
+                    FontSize="Medium"
+                  ></Label>
+                    <Label 
+                    Text="Pożywienie"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                        Margin="0,8,0,0"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.Food}"
+                    FontSize="Medium"
+                  ></Label>
+                    <Label 
+                    Text="Rozmnażanie"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                        Margin="0,8,0,0"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.Breeding }"
+                    FontSize="Medium"
+                  ></Label>
+                    <Label 
+                    Text="Zagrożenie"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                        Margin="0,8,0,0"
+                  ></Label>
+                    <Label 
+                    Text="{Binding SelectedAnimal.AnimalDanger }"
+                    FontSize="Medium"
+                  ></Label>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </AbsoluteLayout>
 </ContentPage>
