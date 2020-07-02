@@ -12,6 +12,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
+using static CracowZoo.Helpers.EnumHelper;
 
 namespace CracowZoo.ViewModels
 {
@@ -38,6 +39,7 @@ namespace CracowZoo.ViewModels
             :base(navigationService)
         {
             _animalRepository = animalRepository;
+            Title = "Zwierzęta";
             AnimalGroup = -1;
         }
 
@@ -50,18 +52,11 @@ namespace CracowZoo.ViewModels
 
         private async void GetAnimals()
         {
-            IEnumerable<Animal> animals;
             if (AnimalGroup > 0)
             {
-                animals = await _animalRepository.GetAsync((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup);
+                IEnumerable<Animal> animals = await _animalRepository.GetAsync((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup);
+                animals.ForEach((Animal animal) => Animals.Add(animal));
             }
-            else
-            {
-                animals = await _animalRepository.GetAsync();
-            }
-
-            animals.ForEach((Animal animal) => Animals.Add(animal));
-
         }
 
         async void NavigateToAnimalDetails()

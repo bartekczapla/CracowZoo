@@ -19,7 +19,7 @@ namespace CracowZoo.ViewModels
         public AnimalGroupsPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Animals Page";
+            Title = "Zwierzęta";
             ExecuteNavigate = new DelegateCommand<object>(ExecuteNavigateCommand);
         }
 
@@ -27,7 +27,6 @@ namespace CracowZoo.ViewModels
         {
             var parameters = new NavigationParameters();
             parameters.Add("animalGroup", animalGroupObject);
-            // await NavigationService.NavigateAsync(nameof(NavigationPage) + "/" + nameof(AnimalsPage), parameters);
             await NavigationService.NavigateAsync(nameof(AnimalsPage), parameters);
 
         }

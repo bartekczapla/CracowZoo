@@ -28,7 +28,7 @@ namespace CracowZoo.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            SelectedAnimal = parameters.GetValue<Animal>("selectedAnimal");   
+            SelectedAnimal = parameters.GetValue<Animal>("selectedAnimal");
             base.OnNavigatedTo(parameters);
         }
     }
