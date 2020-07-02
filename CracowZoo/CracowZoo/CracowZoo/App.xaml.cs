@@ -1,11 +1,10 @@
-﻿ using Prism;
+﻿using Prism;
 using Prism.Ioc;
 using CracowZoo.ViewModels;
 using CracowZoo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using CracowZoo.DataAccess.Interfaces;
-using Prism.Unity;
+using Xamarin.Essentials;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -24,8 +23,14 @@ namespace CracowZoo
         protected override async void OnInitialized()
         {
             InitializeComponent();
+            AskForPermissions();
 
             await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(AnimalGroupsPage)}");
+        }
+
+        private async void AskForPermissions()
+        {
+            await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

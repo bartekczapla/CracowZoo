@@ -21,7 +21,8 @@ namespace CracowZoo.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            global: Xamarin.FormsGoogleMaps.Init(this, bundle);
+            global::Xamarin.FormsGoogleMaps.Init(this, bundle);
+            global::Xamarin.Essentials.Platform.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
