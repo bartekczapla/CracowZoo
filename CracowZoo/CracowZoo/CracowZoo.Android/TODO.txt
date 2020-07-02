@@ -1,5 +1,21 @@
-﻿* Zwierzęta charakterystyka
-
-* Szczegoly zwierzecia - zdjecie w tle
+﻿-----------------------------------------------
+--------------- MAPA --------------------------
+-----------------------------------------------
 
 * Rozne znaczniki dla roznych gatunkow
+
+
+-----------------------------------------------
+--------------- ANIMALS GROUP -----------------
+-----------------------------------------------
+
+* wyszarzyć zdjęcia i dodac napis
+
+
+-----------------------------------------------
+--------------- ANIMAL DETAILS ----------------
+-----------------------------------------------
+
+* Informacje o zwierzęciu (waga, dlugosc etc) - Zoo Barcelona
+
+* Zdjecie w tle
