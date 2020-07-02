@@ -27,8 +27,6 @@ namespace CracowZoo.Views.CustomControls
             MyLocationEnabled = true;
             UiSettings.MyLocationButtonEnabled = true;
 
-            Pins.Add(new Pin() { Label="TEST",  Position = new Position(_zooLatitude, _zooLongitude),
-            Icon = BitmapDescriptorFactory.FromBundle("pintest.png")});
             //Set map to zoo location by default
             MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_zooLatitude, _zooLongitude), Distance.FromMeters(500)));
             CameraIdled += CameraStopped;
