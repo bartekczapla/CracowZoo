@@ -3,42 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="CracowZoo.Views.AnimalsPage">
+             x:Class="CracowZoo.Views.AnimalsPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Animals}"
                   SelectedItem="{Binding SelectedAnimal, Mode=TwoWay}"
                   HasUnevenRows="True"
-                  BackgroundColor="#f5f5f5">
-
+                  SeparatorVisibility="None"
+                  BackgroundColor="WhiteSmoke">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-
-                        <Grid BackgroundColor="White"
-                              Margin="4">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-
-
-                            <Label Grid.Row="0"
-                                   Text="{Binding Name}"
-                                   FontSize="Medium"
-                                   Margin="4"
-                                   FontAttributes="Bold" />
-
-                            <StackLayout Orientation="Horizontal"
-                                         Grid.Row="1"
-                                         Margin="4"
-                                         Padding="2">
-
-                                <Label Text="{Binding Group}"
-                                       FontSize="Small" />
+                        <Frame
+                            CornerRadius="10"
+                            Margin="15,8,15,8"
+                            Padding="10,10,10,10"
+                            >
+                            <StackLayout Orientation="Horizontal">
+                                <Frame
+                                    CornerRadius="5"
+                                    Margin="0"
+                                    Padding="0"
+                                    IsClippedToBounds="True"
+                                    >
+                                    <Image 
+                                    HeightRequest="100"
+                                    WidthRequest="150"                                 
+                                    Aspect="AspectFill"
+                                    Source="{Binding ImagePath}"/>
+                                </Frame>
+    
+                                <Label
+                                       Text="{Binding Name}"
+                                       FontSize="Medium"
+                                       Margin="8,10,0,10"
+                                       FontAttributes="Bold" 
+                                       Style="{StaticResource labelStyle}"
+                                    />
                             </StackLayout>
-                        </Grid>
-
+                        </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

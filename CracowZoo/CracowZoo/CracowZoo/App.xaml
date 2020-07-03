@@ -39,5 +39,11 @@
             <On Platform="UWP" 
           Value="/Assets/FontAwesome5Regular.otf#Font Awesome 5 Free" />
         </OnPlatform>
+
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#333"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>
