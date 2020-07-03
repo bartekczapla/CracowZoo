@@ -11,8 +11,6 @@ namespace CracowZoo.DataAccess.Interfaces
     {
         Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> whereExpression = null);
 
-        Task<ObservableCollection<TEntity>> GetObservableCollectionAsync(Expression<Func<TEntity, bool>> whereExpression = null);
-
         Task<TEntity> GetByIdAsync(int id);
 
         Task<TEntity> AddAsync(TEntity entity);

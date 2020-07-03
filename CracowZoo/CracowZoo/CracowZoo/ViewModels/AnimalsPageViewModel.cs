@@ -32,7 +32,10 @@ namespace CracowZoo.ViewModels
             set
             {
                 SetProperty(ref _selectedAnimal, value);
-                NavigateToAnimalDetails();
+                if(value != null)
+                {
+                    NavigateToAnimalDetails();
+                }           
             }
         }
         public AnimalsPageViewModel(INavigationService navigationService, IRepository<Animal> animalRepository)
@@ -44,9 +47,13 @@ namespace CracowZoo.ViewModels
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
-        {          
-            AnimalGroup = parameters.GetValue<int>("animalGroup");
-            GetAnimals();
+        {    
+            if(parameters.ContainsKey("animalGroup"))
+            {
+                AnimalGroup = parameters.GetValue<int>("animalGroup");
+                GetAnimals();
+            }
+            SelectedAnimal = null;         
             base.OnNavigatedTo(parameters);
         }
 

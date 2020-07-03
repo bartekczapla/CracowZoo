@@ -58,20 +58,9 @@ namespace CracowZoo.Data.Repository
             {
                 result = result.Where(whereExpression);
             }
+            
 
             return await result.ToListAsync();
-        }
-
-        public async Task<ObservableCollection<TEntity>> GetObservableCollectionAsync(Expression<Func<TEntity, bool>> whereExpression = null)
-        {
-            IQueryable<TEntity> result = _dbContext.Set<TEntity>();
-
-            if (whereExpression != null)
-            {
-                result = result.Where(whereExpression);
-            }
-
-            return new ObservableCollection<TEntity>(await result.ToListAsync());
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
