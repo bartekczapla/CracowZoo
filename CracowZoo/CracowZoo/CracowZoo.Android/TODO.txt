@@ -27,7 +27,9 @@
 
 * Informacje o zwierzęciu (waga, dlugosc etc) - Zoo Barcelona
 
-* Zdjecie w tle
+* Zmiana koloru boxview w zaleznosci od grupy zwierzecia
+
+* Ikona powrotu w lewym gorym rogu (San DIego zoo)
 
 -----------------------------------------------
 --------------- ZOO INFO? ---------------------
