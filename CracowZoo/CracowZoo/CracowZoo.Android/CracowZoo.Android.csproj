@@ -319,6 +319,16 @@
     <AndroidResource Include="Resources\drawable\_zbik.jpg" />
     <AndroidResource Include="Resources\drawable\_zebrachapmana.jpg" />
     <AndroidResource Include="Resources\drawable\_zenetapolnocna.jpg" />
+    <AndroidResource Include="Resources\drawable\mammalsButtonClicked.png" />
+    <AndroidResource Include="Resources\drawable\mammalsButton.png" />
+    <AndroidResource Include="Resources\drawable\reptilesButtonClicked.png" />
+    <AndroidResource Include="Resources\drawable\reptilesButton.png" />
+    <AndroidResource Include="Resources\drawable\fishesButton.png" />
+    <AndroidResource Include="Resources\drawable\fishesButtonClicked.png" />
+    <AndroidResource Include="Resources\drawable\amphibiansButtonClicked.png" />
+    <AndroidResource Include="Resources\drawable\amphibiansButton.png" />
+    <AndroidResource Include="Resources\drawable\birdsButtonClicked.png" />
+    <AndroidResource Include="Resources\drawable\birdsButton.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

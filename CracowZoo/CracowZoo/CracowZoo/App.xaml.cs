@@ -25,7 +25,7 @@ namespace CracowZoo
             InitializeComponent();
             AskForPermissions();
 
-            await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(AnimalGroupsPage)}");
+            await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(MapPage)}");
         }
 
         private async void AskForPermissions()
