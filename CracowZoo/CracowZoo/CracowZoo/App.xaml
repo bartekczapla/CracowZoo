@@ -2,6 +2,7 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+             xmlns:converters="clr-namespace:CracowZoo.Converters"
              x:Class="CracowZoo.App">
     <Application.Resources>
         <Color x:Key="DarkBrown">#6E492C</Color>
@@ -44,6 +45,7 @@
             <Style x:Key="labelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="#333"/>
             </Style>
+            <converters:EnumConverter x:Key="EnumConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

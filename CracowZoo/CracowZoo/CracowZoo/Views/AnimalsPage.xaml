@@ -34,14 +34,19 @@
                                     Aspect="AspectFill"
                                     Source="{Binding ImagePath}"/>
                                 </Frame>
-    
-                                <Label
-                                       Text="{Binding Name}"
-                                       FontSize="Medium"
-                                       Margin="8,10,0,10"
-                                       FontAttributes="Bold" 
-                                       Style="{StaticResource labelStyle}"
-                                    />
+                                <StackLayout Margin="8,0,5,5">
+                                    <Label
+                                           Text="{Binding Name}"
+                                           FontSize="Medium"
+                                           Style="{StaticResource labelStyle}"
+                                        />
+                                    <Label
+                                           Text="{Binding LatinSpecie}"
+                                           FontSize="Small"
+                                           FontAttributes="Italic"
+                                        />                                    
+                                </StackLayout>
+
                             </StackLayout>
                         </Frame>
                     </ViewCell>
