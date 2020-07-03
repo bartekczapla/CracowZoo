@@ -1,6 +1,4 @@
-﻿using CracowZoo.DataAccess.Interfaces;
-using CracowZoo.Models;
-using CracowZoo.Views;
+﻿using CracowZoo.Views;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;

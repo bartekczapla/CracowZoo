@@ -1,5 +1,5 @@
 ﻿using CracowZoo.Data.Repository;
-using CracowZoo.DataAccess.Interfaces;
+using CracowZoo.Interfaces;
 using CracowZoo.PlatformCore;
 using Foundation;
 using Prism;
@@ -36,7 +36,7 @@ namespace CracowZoo.iOS
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IPlatformSettingsProvider, iOSSettingsProvider>();
-            containerRegistry.Register(typeof(IRepository<>), typeof(CracowZooRepository<>));
+            containerRegistry.Register(typeof(IRepository), typeof(CracowZooRepository));
         }
     }
 }

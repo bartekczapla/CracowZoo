@@ -1,5 +1,5 @@
-﻿using CracowZoo.DataAccess.Interfaces;
-using CracowZoo.Enums;
+﻿using CracowZoo.Enums;
+using CracowZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CracowZoo.Core\CracowZoo.PlatformCore.csproj" />
-    <ProjectReference Include="..\CracowZoo.DataAccess\CracowZoo.DataAccess.csproj" />
     <ProjectReference Include="..\CracowZoo\CracowZoo.csproj" />
   </ItemGroup>
 

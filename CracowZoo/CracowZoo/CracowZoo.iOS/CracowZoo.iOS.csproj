@@ -204,10 +204,6 @@
       <Project>{FE528F51-2B36-4D1E-8697-5915A004C82B}</Project>
       <Name>CracowZoo.PlatformCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CracowZoo.DataAccess\CracowZoo.DataAccess.csproj">
-      <Project>{20984902-cdc0-4044-9708-1071df329a8d}</Project>
-      <Name>CracowZoo.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CracowZoo.Data\CracowZoo.Data.csproj">
       <Project>{184026c4-219c-4fb9-9d05-7f36d3b61a6f}</Project>
       <Name>CracowZoo.Data</Name>

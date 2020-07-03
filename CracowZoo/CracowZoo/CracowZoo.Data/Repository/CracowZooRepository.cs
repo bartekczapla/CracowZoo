@@ -1,4 +1,5 @@
-﻿using CracowZoo.DataAccess.Interfaces;
+﻿using CracowZoo.Interfaces;
+using CracowZoo.Models.Aditionals;
 using CracowZoo.PlatformCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,10 +8,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using static CracowZoo.Helpers.LinqExtensions;
 
 namespace CracowZoo.Data.Repository
 {
-    public class CracowZooRepository<TEntity> : IRepository<TEntity> where TEntity: class, IEntity
+    public class CracowZooRepository: IRepository
     {
         private readonly CracowZooDbContext _dbContext;
         private readonly IPlatformSettingsProvider _platformSettingsProvider;
@@ -21,8 +23,12 @@ namespace CracowZoo.Data.Repository
             _dbContext = new CracowZooDbContext(_platformSettingsProvider.ConnectionString);
        }
 
+        protected virtual IQueryable<TEntity> Set<TEntity>() where TEntity : class
+        {
+            return _dbContext.Set<TEntity>();
+        }
 
-        public async Task<TEntity> AddAsync(TEntity entity)
+        public async Task<TEntity> AddAsync<TEntity>(TEntity entity) where TEntity : class
         {
             var ent = _dbContext.Set<TEntity>().Add(entity);
 
@@ -35,7 +41,7 @@ namespace CracowZoo.Data.Repository
             return entity;
         }
 
-        public async Task<TEntity> DeleteAsync(int id)
+        public async Task<TEntity> DeleteAsync<TEntity>(int id) where TEntity : class
         {
             var entity = await _dbContext.Set<TEntity>().FindAsync(id);
             if (entity == null)
@@ -49,36 +55,41 @@ namespace CracowZoo.Data.Repository
             return entity;
         }
 
-
-        public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> whereExpression = null)
+        public async Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression) where TEntity : class
         {
-            IQueryable<TEntity> result = _dbContext.Set<TEntity>();
+            var many = await GetManyAsync(whereExpression);
+
+            return many.SingleOrDefault();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetManyAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression = null, OrderElementDescription orderElementDescriptor = null) where TEntity : class
+        {
+            IQueryable<TEntity> result = _dbContext.Set<TEntity>().AsNoTracking();
 
             if (whereExpression != null)
             {
                 result = result.Where(whereExpression);
             }
-            
 
+            if (orderElementDescriptor != null)
+            {
+                result = result.OrderBy(orderElementDescriptor);
+            }
+      
             return await result.ToListAsync();
         }
 
-        public async Task<TEntity> GetByIdAsync(int id)
-        {
-            return await _dbContext.Set<TEntity>().FindAsync(id);
-        }
-
-        public Task SaveAsync()
-        {
-            return _dbContext.SaveChangesAsync();
-        }
-
-        public async Task<TEntity> UpdateAsync(TEntity entity)
+        public async Task<TEntity> UpdateAsync<TEntity>(TEntity entity) where TEntity : class
         {
             var entry = _dbContext.Entry(entity);
             entry.State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
             return entity;
+        }
+
+        public async Task SaveAsync()
+        {
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace CracowZoo.DataAccess.Interfaces
+﻿namespace CracowZoo.Interfaces
 {
     public interface IEntity
     {

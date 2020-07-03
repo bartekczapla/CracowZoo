@@ -1,6 +1,7 @@
-﻿using CracowZoo.DataAccess.Interfaces;
-using CracowZoo.Enums;
+﻿using CracowZoo.Enums;
+using CracowZoo.Interfaces;
 using CracowZoo.Models;
+using CracowZoo.Models.Aditionals;
 using CracowZoo.Views;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -18,7 +19,7 @@ namespace CracowZoo.ViewModels
 {
     public class AnimalsPageViewModel : ViewModelBase
     {
-        private readonly IRepository<Animal> _animalRepository;
+        private readonly IRepository _repository;
         public int AnimalGroup { get; set; }
         public ObservableCollection<Animal> Animals { get; } = new ObservableCollection<Animal>();
 
@@ -38,10 +39,10 @@ namespace CracowZoo.ViewModels
                 }           
             }
         }
-        public AnimalsPageViewModel(INavigationService navigationService, IRepository<Animal> animalRepository)
+        public AnimalsPageViewModel(INavigationService navigationService, IRepository repository)
             :base(navigationService)
         {
-            _animalRepository = animalRepository;
+            _repository = repository;
             Title = "Zwierzęta";
             AnimalGroup = -1;
         }
@@ -61,7 +62,7 @@ namespace CracowZoo.ViewModels
         {
             if (AnimalGroup > 0)
             {
-                IEnumerable<Animal> animals = await _animalRepository.GetAsync((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup);
+                IEnumerable<Animal> animals = await _repository.GetManyAsync<Animal>((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup, new OrderElementDescription("Name", true));
                 animals.ForEach((Animal animal) => Animals.Add(animal));
             }
         }
