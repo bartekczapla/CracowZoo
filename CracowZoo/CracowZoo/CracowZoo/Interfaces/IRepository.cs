@@ -12,7 +12,8 @@ namespace CracowZoo.Interfaces
     {
         Task<IEnumerable<TEntity>> GetManyAsync<TEntity>(
             Expression<Func<TEntity, bool>> whereExpression = null,
-            OrderElementDescription orderElementDescriptor = null
+            OrderElementDescription orderElementDescriptor = null,
+            IEnumerable<string> includes = null
             )
             where TEntity : class;
 

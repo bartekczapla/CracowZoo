@@ -62,7 +62,7 @@ namespace CracowZoo.Data.Repository
             return many.SingleOrDefault();
         }
 
-        public async Task<IEnumerable<TEntity>> GetManyAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression = null, OrderElementDescription orderElementDescriptor = null) where TEntity : class
+        public async Task<IEnumerable<TEntity>> GetManyAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression = null, OrderElementDescription orderElementDescriptor = null, IEnumerable<string> includes = null) where TEntity : class
         {
             IQueryable<TEntity> result = _dbContext.Set<TEntity>().AsNoTracking();
 
@@ -74,6 +74,15 @@ namespace CracowZoo.Data.Repository
             if (orderElementDescriptor != null)
             {
                 result = result.OrderBy(orderElementDescriptor);
+            }
+
+            if (includes != null)
+            {
+                foreach (string include in includes)
+                {
+                    result = result.Include(include);
+
+                }
             }
       
             return await result.ToListAsync();

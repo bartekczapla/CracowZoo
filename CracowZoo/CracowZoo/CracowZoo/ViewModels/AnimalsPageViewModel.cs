@@ -62,7 +62,7 @@ namespace CracowZoo.ViewModels
         {
             if (AnimalGroup > 0)
             {
-                IEnumerable<Animal> animals = await _repository.GetManyAsync<Animal>((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup, new OrderElementDescription("Name", true));
+                IEnumerable<Animal> animals = await _repository.GetManyAsync<Animal>((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup, new OrderElementDescription("Name", true), new string[] { "MapItem", "AnimalTidbits" });
                 animals.ForEach((Animal animal) => Animals.Add(animal));
             }
         }
