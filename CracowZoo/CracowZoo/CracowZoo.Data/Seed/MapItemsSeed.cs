@@ -71,6 +71,13 @@ namespace CracowZoo.Data.Seed
                 Marked = false
             });
 
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 9, // Drzewołaz żółtopasy
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
             //GADY
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
