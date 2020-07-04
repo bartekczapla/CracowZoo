@@ -193,6 +193,53 @@ namespace CracowZoo.Data.Seed
             // SSAKI ID: 92-170
 
             // ... jeszcze 3
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 92,
+                Name = "Kuskus ziemny",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Phalanger gymnotis",
+                Occurance = "Nowa Gwinea i wyspa Aru.",
+                LivingEnvritonment = "Lasy równikowe.",
+                Food = "Zwierzę wszystkożerne. Chętnie zjada liście, pąki i pędy roślin, a także pokarm zwierzęcy – ptasie jaja, pisklęta i owady.",
+                Breeding = "Ciąża trwa 2 tygodnie. Po tym czasie rodzi się młode, którego dalszy rozwój przebiega w matczynej torbie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 92,
+                ImagePath = "_kuskusziemny.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 93,
+                Name = "Lotopałanka mała",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Petaurus breviceps",
+                Occurance = "Australia, Nowa Gwinea.",
+                LivingEnvritonment = "Lasy deszczowe, plantacje orzechów kokosowych, zarośla.",
+                Food = "Małe bezkręgowce oraz soki roślinne i owoce.",
+                Breeding = "Ciąża trwa 21 dni. Samica rodzi 2 - 3 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 93,
+                ImagePath = "_lotopalankamala.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 94,
+                Name = "Walabia Benetta",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Macropus rufogriseus",
+                Occurance = "Wschodnia i południowo-wschodnia Australia oraz Tasmania.",
+                LivingEnvritonment = "Zamieszkuje otwarte tereny przybrzeżne.",
+                Food = "Typowy roślinożerca. Żywi się głównie liśćmi i trawą.",
+                Breeding = "Po krótkim, około 35 – dniowym okresie ciąży samica rodzi młode wielkości ziarna fasoli, nagie i ślepe. Wędruje ono wzdłuż wylizanej przez matkę trasy od jej dróg rodnych do wnętrza torby. Tam obejmuje pyszczkiem sutek matki i rozwija się dalej przez około 7 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 94,
+                ImagePath = "_walabiabenetta.jpg"
+            });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -208,6 +255,86 @@ namespace CracowZoo.Data.Seed
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 95,
                 ImagePath = "_slonindyjski.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 96,
+                Name = "Pancernik włochaty",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Chaetophractus villosus",
+                Occurance = "Argentyna, Boliwia, Chile i Urugwaj.",
+                LivingEnvritonment = "Zamieszkuje łąki, lasy, sawanny, tereny rolnicze, pampy - typowe dla Ameryki Południowej środowisko o charakterze stepowym.",
+                Food = "Głównie bezkręgowce, a także małe kręgowce, owoce, padlina.",
+                Breeding = "Po ciąży trwającej 2 miesiące rodzą się najczęściej 2 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 96,
+                ImagePath = "_pancernikwlochaty.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 97,
+                Name = "Leniwiec dwupalczasty",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Choloepus didactylus",
+                Occurance = "Wenezuela, Gujana i północna Brazylia.",
+                LivingEnvritonment = "Wilgotne lasy nizinne.",
+                Food = "Liście, pędy roślin i owoce.",
+                Breeding = "Ciąża trwa około 10 miesięcy. W miocie tylko jedno młode, które przyczepia się do włosów na piersi i brzuchu matki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 97,
+                ImagePath = "_leniwiecdwupalczasty.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 98,
+                Name = "Lemur czerwonobrzuchy",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Eulemur rubriventer",
+                Occurance = "Madagaskar.",
+                LivingEnvritonment = "Lasy deszczowe.",
+                Food = "Owoce, pędy, bezkręgowce, drobne kręgowce.",
+                Breeding = "Po ciąży trwającej 120 dni samica rodzi jedno młode, które jest noszone przez rodziców do około 35 dnia życia. Później opiekuje się nim głównie samiec. Matka karmi młode do piątego miesiąca życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 98,
+                ImagePath = "_lemurczerwonobrzuchy.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 99,
+                Name = "Lemur katta",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Lemur catta",
+                Occurance = "Południowo-zachodnia część Madagaskaru.",
+                LivingEnvritonment = "Suche, otwarte tereny, rzadziej lasy.",
+                Food = "Owoce, nasiona, liście, młode pędy roślin, kwiaty i drobne bezkręgowce.",
+                Breeding = "Ciąża trwa 134-138 dni. Samica rodzi zazwyczaj 1, czasem 2 młode o masie 50-80 g, które po urodzeniu przyczepiają się do futra matki. Matka opiekuje się młodymi przez 6 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 99,
+                ImagePath = "_lemurkatta.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 100,
+                Name = "Lemur wari",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.CriticallyEndangered,
+                LatinSpecie = "Varecia rubra",
+                Occurance = "Wschodni Madagaskar.",
+                LivingEnvritonment = "Tropikalne lasy deszczowe.",
+                Food = "Roślinożerny. Chętnie zjada owoce, a dietę uzupełnia nasionami, liśćmi i nektarem.",
+                Breeding = "Po ciąży trwającej około 100 dni samica rodzi zwykle 2-3 młode, które początkowo przebywają w gnieździe zbudowanym na drzewie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 100,
+                ImagePath = "_warirudy.jpg"
             });
         }
     }

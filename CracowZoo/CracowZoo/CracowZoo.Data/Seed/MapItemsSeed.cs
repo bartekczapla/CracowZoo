@@ -102,7 +102,71 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
+                Id = 92, // Kuskus ziemny
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 93, // Lotopałanka mała
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 94, // Walabia Benetta
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
                 Id = 95, // Słoń indyjski
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 96, // Pancernik włochaty
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 97, // Leniwiec dwupalczasty
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 98, // Lemur czerwonobrzuchy
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 99, // Lemur katta
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 100, // Lemur wari
                 X = 0,
                 Y = 0,
                 Marked = false
