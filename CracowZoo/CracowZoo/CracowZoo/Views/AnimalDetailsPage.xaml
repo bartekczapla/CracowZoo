@@ -17,6 +17,7 @@
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
          >
             <ScrollView>
+                <StackLayout>
                 <StackLayout 
                 Padding="20,180,20,100">
                     <Frame 
@@ -92,8 +93,39 @@
                         FontSize="Body"/>
                         </StackLayout>
                     </Frame>
+                    
+                    <!--Tidbits section-->
+                        <Frame CornerRadius="5" Margin="0,20,0,0">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal"  Margin="0,10,0,0" HorizontalOptions="Center">
+                                    <Label Grid.Column="0" Text="&#xf128;" FontSize="Large" TextColor="#ffba00"  VerticalTextAlignment="Center"
+                                            FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                    <Label Text="Czy wiesz, że..." FontSize="Title" VerticalTextAlignment="Center" TextColor="Black"
+                                            FontAttributes="Bold" Margin="10,0,0,0"/>
+                                </StackLayout>
+                               
+                                <BoxView Margin="0,10,0,0" HeightRequest="1" Color="Green"/>
+                                <StackLayout BindableLayout.ItemsSource="{Binding AnimalTidbits}" Margin="0,20,0,0"
+                                             Spacing="10">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="6*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label Grid.Column="0" Text="&#xf005;" FontSize="Medium" TextColor="#ffba00" Margin="-5,5,0,0" 
+                                                            FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
+                                                <Label Grid.Column="1" Text="{Binding Description}" HorizontalOptions="Start"
+                                                   FontSize="Body"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
                 </StackLayout>
-              
+                </StackLayout>
             </ScrollView>
         </Grid>
     </RelativeLayout>
