@@ -127,27 +127,6 @@
     <AndroidAsset Include="Assets\animalPin.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\menuHeader.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\menuGradient.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ssaki.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ryby.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\gady.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\plazy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ptaki.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\_zolwpapuaski.jpg" />
     <AndroidResource Include="Resources\drawable\_zolwstepowy.jpg" />
     <AndroidResource Include="Resources\drawable\_zolwzabuti.jpg" />
@@ -319,17 +298,13 @@
     <AndroidResource Include="Resources\drawable\_zbik.jpg" />
     <AndroidResource Include="Resources\drawable\_zebrachapmana.jpg" />
     <AndroidResource Include="Resources\drawable\_zenetapolnocna.jpg" />
-    <AndroidResource Include="Resources\drawable\mammalsButtonClicked.png" />
-    <AndroidResource Include="Resources\drawable\mammalsButton.png" />
-    <AndroidResource Include="Resources\drawable\reptilesButtonClicked.png" />
-    <AndroidResource Include="Resources\drawable\reptilesButton.png" />
-    <AndroidResource Include="Resources\drawable\fishesButton.png" />
-    <AndroidResource Include="Resources\drawable\fishesButtonClicked.png" />
-    <AndroidResource Include="Resources\drawable\amphibiansButtonClicked.png" />
-    <AndroidResource Include="Resources\drawable\amphibiansButton.png" />
-    <AndroidResource Include="Resources\drawable\birdsButtonClicked.png" />
-    <AndroidResource Include="Resources\drawable\birdsButton.png" />
-    <AndroidResource Include="Resources\drawable\menuBackground.png" />
+    <AndroidResource Include="Resources\drawable\amphibiansButton.jpg" />
+    <AndroidResource Include="Resources\drawable\birdsButton.jpg" />
+    <AndroidResource Include="Resources\drawable\fishesButton.jpg" />
+    <AndroidResource Include="Resources\drawable\mammalsButton.jpg" />
+    <AndroidResource Include="Resources\drawable\reptilesButton.jpg" />
+    <AndroidResource Include="Resources\drawable\menuGradient.jpg" />
+    <AndroidResource Include="Resources\drawable\menuHeader.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

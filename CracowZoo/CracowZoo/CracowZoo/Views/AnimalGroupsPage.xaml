@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CracowZoo.Views.AnimalGroupsPage"
              Title="Mieszkańcy Zoo">
-    <ScrollView Scrolled="ScrollView_Scrolled"
-                >
+    <ScrollView>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="180"/>
@@ -19,42 +18,35 @@
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}" 
                 CommandParameter="1"  
-                Grid.Row="0"
-                Pressed="FishesButton_Pressed" Released="FishesButton_Released"
-                         
-                >
+                Grid.Row="0">
             </ImageButton>
             <ImageButton x:Name="AmphibiansButton" Margin="0,1,0,1"
                 Source="amphibiansButton.jpg" 
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}" 
                 CommandParameter="2"  
-                Grid.Row="1" 
-                Pressed="AmphibiansButton_Pressed" Released="AmphibiansButton_Released">
+                Grid.Row="1">
             </ImageButton>
             <ImageButton x:Name="ReptilesButton"  Margin="0,1,0,1"
                 Source="reptilesButton.jpg" 
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}" 
                 CommandParameter="3"
-                Grid.Row="2"
-                Pressed="ReptilesButton_Pressed" Released="ReptilesButton_Released">
+                Grid.Row="2">
             </ImageButton>
             <ImageButton x:Name="BirdsButton"  Margin="0,1,0,1"
                 Source="birdsButton.jpeg" 
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}" 
                 CommandParameter="4"
-                Grid.Row="3"
-                Pressed="BirdsButton_Pressed" Released="BirdsButton_Released">
+                Grid.Row="3">
             </ImageButton>
             <ImageButton x:Name="MammalsButton"  Margin="0,1,0,0"
                 Source="mammalsButton.jpg" 
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}"      
                 Grid.Row="4" 
-                CommandParameter="5" 
-                Pressed="MammalsButton_Pressed" Released="MammalsButton_Released">
+                CommandParameter="5">
             </ImageButton>
         </Grid>
     </ScrollView>

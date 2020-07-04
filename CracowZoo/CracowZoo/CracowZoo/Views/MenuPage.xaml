@@ -14,7 +14,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.RowSpan="2" Source="menuGradient.png" Aspect="Fill"/>
+                <Image Grid.RowSpan="2" Source="menuGradient.jpg" Aspect="Fill"/>
                 <Image Grid.Row="0" Source="menuHeader.png"/>
                 <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}"
                               SeparatorColor="#569222" RowHeight="70">

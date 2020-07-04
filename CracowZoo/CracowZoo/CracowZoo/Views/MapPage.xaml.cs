@@ -11,7 +11,6 @@ namespace CracowZoo.Views
         public MapPage()
         {
             InitializeComponent();
-
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
         }
 
