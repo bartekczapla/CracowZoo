@@ -151,6 +151,20 @@ namespace CracowZoo.Data.Seed
                 AnimalId = 95 // Słoń indyjski
             });
 
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 22,
+                Description = "Samce są nieco mniejsze i smuklejsze od samic.",
+                AnimalId = 9 // PLAZY
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 23,
+                Description = "Samice bywają wobec siebie agresywne.",
+                AnimalId = 9 // PLAZY
+            });
+
             //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             //{
             //    Id = ,

@@ -8,6 +8,7 @@ namespace CracowZoo.Data.Seed
     {
         public static void SeedAnimals(this ModelBuilder modelBuilder)
         {
+            #region RYBY
             // RYBY ID: 1-7
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -114,8 +115,10 @@ namespace CracowZoo.Data.Seed
                 MapItemId = 7,
                 ImagePath = "_stadnikzoltoogonowy.jpg"
             });
+            #endregion
 
 
+            #region PłAZY
             // PŁAZY ID: 8-15
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -133,6 +136,23 @@ namespace CracowZoo.Data.Seed
                 MapItemId = 8,
                 ImagePath = "_drzewolazzloty.jpg"
             });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 9,
+                Name = "Drzewołaz żółtopasy",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dendrobates leucomelas",
+                Occurance = "Ameryka Południowa - Wenezuela na południe od Orinoko oraz przyległe obszary Gujany i Brazylii.",
+                LivingEnvritonment = "Dno wilgotnego lasu równikowego. Preferuje bardzo wilgotne środowisko. Spotykany między kamieniami korzeniami i liśćmi.",
+                Food = "Małe owady.",
+                Breeding = "Gody przypadają w porze deszczowej.Samce wabią samice wydając krótkie, trelujące głosy godowe. Samica składa do 13 jaj w małych zagłębieniach w ziemi z wodą lub w pochwach liści. Po 12 - 15 dniach wylęgają się kijanki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 9,
+                ImagePath = "_drzewolazzoltopasy.jpg"
+            });
+            #endregion
 
             // GADY ID: 16-30
 
