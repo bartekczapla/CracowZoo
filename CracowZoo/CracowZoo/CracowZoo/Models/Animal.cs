@@ -36,5 +36,17 @@ namespace CracowZoo.Models
         public ICollection<AnimalTidbit> AnimalTidbits { get; set; }
         [MaxLength(50)]
         public string ImagePath { get; set; }
+        [MaxLength(30)]
+        public string Length { get; set; }
+        [MaxLength(30)]
+        public string Weight { get; set; }
+        [MaxLength(30)]
+        public string SocialLife { get; set; }
+        [MaxLength(30)]
+        public string Longevity { get; set; }
+        [MaxLength(30)]
+        public string Incubation { get; set; }
+        [MaxLength(30)]
+        public string NumberOfCubs { get; set; }
     }
 }

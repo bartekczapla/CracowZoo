@@ -238,7 +238,18 @@ namespace CracowZoo.Data.Seed
                 Description = "Ma doskonały wzrok – widzi dobrze na odległość do około 5 km.",
                 AnimalId = 31 // Struś afrykański
             });
-
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 304,
+                Description = "Zagrożony, struś ucieka, ale może też zadać obrażenia, a nawet zabić swoimi silnymi nogami.",
+                AnimalId = 31 // Struś afrykański
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 305,
+                Description = "Wbrew powszechnemu przekonaniu strusie nie zakopują głowy w piasek, aby uniknąć niebezpieczeństwa",
+                AnimalId = 31 // Struś afrykański
+            });
             #endregion
 
             #region SSAKI 92-170
