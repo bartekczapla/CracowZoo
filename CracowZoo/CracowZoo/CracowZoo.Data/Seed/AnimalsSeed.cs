@@ -8,8 +8,7 @@ namespace CracowZoo.Data.Seed
     {
         public static void SeedAnimals(this ModelBuilder modelBuilder)
         {
-            #region RYBY
-            // RYBY ID: 1-7
+            #region RYBY 1-7
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 1,
@@ -117,9 +116,7 @@ namespace CracowZoo.Data.Seed
             });
             #endregion
 
-
-            #region PłAZY
-            // PŁAZY ID: 8-15
+            #region PłAZY 8-15
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -152,9 +149,105 @@ namespace CracowZoo.Data.Seed
                 MapItemId = 9,
                 ImagePath = "_drzewolazzoltopasy.jpg"
             });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 10,
+                Name = "Drzewołaz malarski",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dendrobates tinctorius",
+                Occurance = "Ameryka Południowa - od Gujany po Brazylię.",
+                LivingEnvritonment = "Dno wilgotnego lasu równikowego.",
+                Food = "Owady.",
+                Breeding = "Okres godowy przypada na porę deszczową. Samica składa 5–10 jaj, z których po 14–18 dniach wykluwają się kijanki. Samiec zwilża złożone jaja i przenosi kijanki do zbiornika z wodą.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 10,
+                ImagePath = "_drzewolazmalarski.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 11,
+                Name = "Drzewołaz skoczny",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Phyllobates vittatus",
+                Occurance = "Ameryka Środkowa - od Kostaryki do zachodniej Panamy.",
+                LivingEnvritonment = "Tropikalne lasy deszczowe. Bytuje głównie między kamieniami, korzeniami drzew i pod liśćmi.",
+                Food = "Owadożerny.",
+                Breeding = " Samiec w porze godowej wabi partnerkę wydając trelujący głos. Samica składa do 25 jaj. Samiec zapładnia je, strzeże i zwilża wodą. Po 9-17 dniach z jaj wylęgają się kijanki. Samiec przenosi je do zbiornika z wodą.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 11,
+                ImagePath = "_drzewolazskoczny.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 12,
+                Name = "Kumak dalekowschodni",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Bombina orientalis",
+                Occurance = "Wschodnia Syberia, północno - wschodnie Chiny, północna Korea oraz japońskie wyspy Tushima i Kiusiu.",
+                LivingEnvritonment = "Pola ryżowe, rowy melioracyjne, stawy, mniejsze zbiorniki wody stojącej, małe cieki wodne, wypełnione wodą koleiny.",
+                Food = "Owady, inne stawonogi, dżdżownice, małe ślimaki.",
+                Breeding = "Samica składa do 100 jaj. Samiec natychmiast je zapładnia. Samica przykleja jaja do powierzchni kamieni i roślin wodnych. Po 3-6 dniach wylęgają się z nich kijanki, które przeobrażają się po 4-6 tygodniach (zależnie od temperatury wody).",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 12,
+                ImagePath = "_kumakdalekowschodni.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 13,
+                Name = "Rzekotka czerwonooka",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Agalychnis callidryas",
+                Occurance = "Ameryka Środkowa - od Meksyku do Panamy.",
+                LivingEnvritonment = "Wilgotny las równikowy.",
+                Food = "Owadożerna.",
+                Breeding = "Okres godowy przypada na porę deszczową. Samica składa pakiety jaj liczące nawet do 70 sztuk. Są one przytwierdzone do roślin znajdujących się tuż nad zbiornikiem wodnym. Kijanki wykluwają się po około tygodniu i wpadają do wody, gdzie trwa ich dalszy rozwój.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 13,
+                ImagePath = "_rzekotkaczerwonooka.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 14,
+                Name = "Rzekotka szmaragdowa",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Pelodryas caerulea",
+                Occurance = "Australia.",
+                LivingEnvritonment = "Wilgotne lasy tropikalne, środowiska zurbanizowane.",
+                Food = "Owady, dżdżownice, małe płazy i gady, mysie noworodki.",
+                Breeding = "Gatunek ten rozmnaża się w porze deszczowej. Samica składa jaja w kłębach liczących do około 200 sztuk. Rozwój zarodkowy przebiega szybko, kijanki wylęgają się w ciągu 48 godzin. Przeobrażają się w młode rzekotki już po 4-8 tygodniach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 14,
+                ImagePath = "_rzekotkaszmaragdowa.jpg"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 15,
+                Name = "Żaba pomidorowa",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dyscophus guineti",
+                Occurance = "Wschodnie wybrzeże Madagaskaru.",
+                LivingEnvritonment = "Podmokłe lasy, pola uprawne, plantacje, ogrody.",
+                Food = "Owady, dżdżownice, małe gryzonie.",
+                Breeding = "Samica składa do 1500 jaj. Kijanki wylęgają się z nich po około 36 godzinach. Po 45 dniach opuszczają wodę, przekształcone w małe żabki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 15,
+                ImagePath = "_zabapomidorowa.jpg"
+            });
             #endregion
 
-            // GADY ID: 16-30
+            #region GADY 16-30
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -171,8 +264,9 @@ namespace CracowZoo.Data.Seed
                 MapItemId = 16,
                 ImagePath = "_zolwzabuti.jpg"
             });
+            #endregion
 
-            // PTAKI ID: 31-91
+            #region PTAKI 31-91
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -190,9 +284,9 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_strusafrykanski.jpg"
             });
 
-            // SSAKI ID: 92-170
+            #endregion
 
-            // ... jeszcze 3
+            #region SSAKI 92-170
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 92,
@@ -336,6 +430,23 @@ namespace CracowZoo.Data.Seed
                 MapItemId = 100,
                 ImagePath = "_warirudy.jpg"
             });
+
+            #endregion
         }
     }
 }
+//modelBuilder.Entity<Animal>().HasData(new Animal
+//            {
+//                Id = ,
+//                Name = "",
+//                Group = AnimalGroup.Amphibians,
+//                ConservationStatus = ConservationStatus.LeastConcern,
+//                LatinSpecie = "",
+//                Occurance = "",
+//                LivingEnvritonment = "",
+//                Food = "",
+//                Breeding = "",
+//                AnimalDanger = AnimalDanger.None,
+//                MapItemId = ,
+//                ImagePath = ".jpg"
+//            });
