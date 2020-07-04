@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CracowZoo.Views.AnimalGroupsPage"
-             Title="{Binding Title}">
-    <ScrollView Scrolled="ScrollView_Scrolled" Margin="0,5,0,0">
+             Title="Mieszkańcy Zoo">
+    <ScrollView Scrolled="ScrollView_Scrolled"
+                >
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="180"/>
@@ -47,7 +48,7 @@
                 Grid.Row="3"
                 Pressed="BirdsButton_Pressed" Released="BirdsButton_Released">
             </ImageButton>
-            <ImageButton x:Name="MammalsButton"  Margin="0,1,0,5"
+            <ImageButton x:Name="MammalsButton"  Margin="0,1,0,0"
                 Source="mammalsButton.jpg" 
                 Aspect="AspectFill"
                 Command="{Binding ExecuteNavigate}"      

@@ -18,7 +18,6 @@ namespace CracowZoo.ViewModels
         public AnimalGroupsPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Zwierzęta";
             ExecuteNavigate = new DelegateCommand<object>(ExecuteNavigateCommand);
             isNavigating = false;
         }

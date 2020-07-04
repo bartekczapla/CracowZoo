@@ -17,17 +17,17 @@
                 <Image Grid.RowSpan="2" Source="menuGradient.png" Aspect="Fill"/>
                 <Image Grid.Row="0" Source="menuHeader.png"/>
                 <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}"
-                              SeparatorColor="#5d4f44" RowHeight="70">
+                              SeparatorColor="#569222" RowHeight="70">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
 
-                                    <Label Text="{Binding Icon}" FontSize="Large" TextColor="LightGray"
-                                               VerticalOptions="Center" Margin="40,0,0,0" Opacity="0.3"
+                                    <Label Text="{Binding Icon}" FontSize="Large" TextColor="White"
+                                               VerticalOptions="Center" Margin="40,0,0,0" Opacity="0.4"
                                                FontFamily="{StaticResource FontAwesomeSolid}"/>
 
-                                    <Label Text="{Binding Title}" TextColor="LightGray"
+                                    <Label Text="{Binding Title}" TextColor="White"
                                                    FontSize="Medium" Margin="20,0,0,0"
                                                    VerticalOptions="Center"/>
                                 </StackLayout>

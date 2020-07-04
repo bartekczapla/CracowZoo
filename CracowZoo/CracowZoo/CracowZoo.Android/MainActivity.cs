@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Views;
 using Android.Widget;
 using CracowZoo.Data.Repository;
 using CracowZoo.Interfaces;
@@ -17,15 +18,18 @@ namespace CracowZoo.Droid
     [Activity(Label = "CracowZoo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        private Toast _currentToast;
         private long lastPress;
         protected override void OnCreate(Bundle bundle)
         {
             SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_e_sqlite3());
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
+ 
             base.OnCreate(bundle);
+
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+            this.Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
+
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             global::Xamarin.FormsGoogleMaps.Init(this, bundle);

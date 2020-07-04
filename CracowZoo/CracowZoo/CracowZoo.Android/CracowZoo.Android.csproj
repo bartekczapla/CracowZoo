@@ -329,6 +329,7 @@
     <AndroidResource Include="Resources\drawable\amphibiansButton.png" />
     <AndroidResource Include="Resources\drawable\birdsButtonClicked.png" />
     <AndroidResource Include="Resources\drawable\birdsButton.png" />
+    <AndroidResource Include="Resources\drawable\menuBackground.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
