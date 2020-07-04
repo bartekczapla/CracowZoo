@@ -5,6 +5,7 @@ using CracowZoo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using CracowZoo.Interfaces;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -18,13 +19,15 @@ namespace CracowZoo
          */
         public App() : this(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer) { }
+        public App(IPlatformInitializer initializer) : base(initializer) 
+        {
+
+        }
 
         protected override async void OnInitialized()
         {
             InitializeComponent();
             AskForPermissions();
-
             await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(MapPage)}");
         }
 

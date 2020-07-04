@@ -55,11 +55,43 @@ namespace CracowZoo.Data.Repository
             return entity;
         }
 
-        public async Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression) where TEntity : class
+        public async Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression, IEnumerable<string> includes = null) where TEntity : class
         {
-            var many = await GetManyAsync(whereExpression);
+            IQueryable<TEntity> result = _dbContext.Set<TEntity>().AsNoTracking();
 
-            return many.SingleOrDefault();
+            if (whereExpression != null)
+            {
+                result = result.Where(whereExpression);
+            }
+
+            if (includes != null)
+            {
+                foreach (string include in includes)
+                {
+                    result = result.Include(include);
+
+                }
+            }
+
+            return  await result.FirstOrDefaultAsync();
+        }
+
+        public async Task<TEntity> GetRandomAsync<TEntity>(IEnumerable<string> includes = null) where TEntity : class
+        {
+            var random = new Random();
+            var skip = random.Next(0, _dbContext.Set<TEntity>().Count());
+            IQueryable <TEntity> result = _dbContext.Set<TEntity>().AsNoTracking();
+
+            if (includes != null)
+            {
+                foreach (string include in includes)
+                {
+                    result = result.Include(include);
+
+                }
+            }
+
+            return await result.Skip(skip).Take(1).FirstAsync();
         }
 
         public async Task<IEnumerable<TEntity>> GetManyAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression = null, OrderElementDescription orderElementDescriptor = null, IEnumerable<string> includes = null) where TEntity : class
