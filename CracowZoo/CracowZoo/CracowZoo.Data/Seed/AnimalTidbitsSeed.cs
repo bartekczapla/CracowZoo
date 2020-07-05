@@ -10,7 +10,7 @@ namespace CracowZoo.Data.Seed
     {
         public static void SeedAnimalTidbits(this ModelBuilder modelBuilder)
         {
-            // RYBY
+            #region RYBY 1-7
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
                 Id = 1,
@@ -90,79 +90,195 @@ namespace CracowZoo.Data.Seed
                 AnimalId = 7 // Stadnik żółtoogonowy
             });
 
-            // PŁAZY
+            #endregion
+
+            #region PłAZY 8-15
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 14,
+                Id = 100,
                 Description = "W skórze tego płaza znajdują się gruczoły produkujące silną neurotoksynę.",
                 AnimalId = 8
             });
 
-            // GADY
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 101,
+                Description = "Samce są nieco mniejsze i smuklejsze od samic.",
+                AnimalId = 9
+            });
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 15,
+                Id = 102,
+                Description = "Samice bywają wobec siebie agresywne.",
+                AnimalId = 9
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 103,
+                Description = "Drzewołaz malarski jest gatunkiem o bardzo dużej zmienności osobniczej.",
+                AnimalId = 10
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 104,
+                Description = "Osobniki obydwu płci łatwo odróżnić: zgrubienia na końcach palców przednich kończyn samców są większe niż na palcach samic i mają kształt sercowaty.",
+                AnimalId = 10
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 105,
+                Description = "Jest to jeden z najczęściej hodowanych przedstawicieli rodziny drzewołazowatych.",
+                AnimalId = 11
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 106,
+                Description = "Jaskrawe ubarwienie strony brzusznej wskazuje na toksyczność i przykry smak tego płaza. Odstrasza to potencjalne drapieżniki.",
+                AnimalId = 12
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 107,
+                Description = "Palce tego płaza zakończone są przylgami.",
+                AnimalId = 13
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 108,
+                Description = "Są aktywne nocą.",
+                AnimalId = 13
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 109,
+                Description = "Samce są nieco mniejsze od samic.",
+                AnimalId = 13
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 110,
+                Description = "Jest jednym z największych przedstawicieli australijskich płazów bezogonowych – osiąga 10 cm długości. ",
+                AnimalId = 14
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 111,
+                Description = "W niewoli dożywa nawet do 16 lat.",
+                AnimalId = 14
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 112,
+                Description = "Gatunek ten bywa hodowany w domowych terrariach.",
+                AnimalId = 15
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 113,
+                Description = "Samce dorastają do 6 cm, samice mogą osiągnąć długość nawet ponad 10 cm.",
+                AnimalId = 15
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 114,
+                Description = "Młode żabki są jaśniejsze od dorosłych osobników.",
+                AnimalId = 15
+            });
+
+            #endregion
+
+            #region GADY 16-30
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 200,
                 Description = "Karapaks (grzbietowa część pancerza) prezentowanego w naszym Zoo osobnika mierzy 40 cm długości. Ma on ponad 50 lat.",
                 AnimalId = 16 //Żółw żabuti
             });
 
-            // PTAKI
+            #endregion
+
+            #region PTAKI 31-91
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 16,
+                Id = 300,
                 Description = "Największy ptak żyjący obecnie na ziemi, najszybszy spośród nielotnych ptaków lądowych.",
                 AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 17,
+                Id = 301,
                 Description = "Na dłuższych dystansach biega z prędkością 50 km/h, a na krótszych – nawet do 70 km/h.",
                 AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 18,
+                Id = 302,
                 Description = "Jego stopy zakończone są tylko 2 palcami.",
                 AnimalId = 31 // Struś afrykański
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 19,
+                Id = 303,
                 Description = "Ma doskonały wzrok – widzi dobrze na odległość do około 5 km.",
                 AnimalId = 31 // Struś afrykański
             });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 304,
+                Description = "Zagrożony, struś ucieka, ale może też zadać obrażenia, a nawet zabić swoimi silnymi nogami.",
+                AnimalId = 31 // Struś afrykański
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 305,
+                Description = "Wbrew powszechnemu przekonaniu strusie nie zakopują głowy w piasek, aby uniknąć niebezpieczeństwa",
+                AnimalId = 31 // Struś afrykański
+            });
+            #endregion
 
-
-            // SSAKI
+            #region SSAKI 92-170
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 20,
+                Id = 400,
                 Description = "W Azji wykorzystywany jako zwierzę pociągowe, juczne i wierzchowe.",
                 AnimalId = 95 // Słoń indyjski
             });
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 21,
+                Id = 401,
                 Description = "Słonie prowadzą stadny tryb życia. Przewodnikiem stada jest stara samica.",
                 AnimalId = 95 // Słoń indyjski
             });
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 22,
+                Id = 402,
                 Description = "Samce są nieco mniejsze i smuklejsze od samic.",
-                AnimalId = 9 // PLAZY
+                AnimalId = 9 
             });
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
-                Id = 23,
+                Id = 403,
                 Description = "Samice bywają wobec siebie agresywne.",
-                AnimalId = 9 // PLAZY
+                AnimalId = 9 
             });
 
             //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
@@ -171,6 +287,14 @@ namespace CracowZoo.Data.Seed
             //    Description = "",
             //    AnimalId = 
             //});
+
+            #endregion
         }
     }
 }
+
+//modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+//            {
+//                Description = "",
+//                AnimalId = 
+//            });

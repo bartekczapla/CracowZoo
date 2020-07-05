@@ -17,7 +17,13 @@ namespace CracowZoo.Interfaces
             )
             where TEntity : class;
 
-        Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> whereExpression = null)
+        Task<TEntity> GetAsync<TEntity>(
+            Expression<Func<TEntity, bool>> whereExpression = null,
+            IEnumerable<string> includes = null)
+            where TEntity : class;
+
+        Task<TEntity> GetRandomAsync<TEntity>(
+            IEnumerable<string> includes = null)
             where TEntity : class;
 
         Task<TEntity> AddAsync<TEntity>(TEntity entity)

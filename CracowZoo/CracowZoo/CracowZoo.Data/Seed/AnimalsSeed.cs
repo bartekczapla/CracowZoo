@@ -8,8 +8,7 @@ namespace CracowZoo.Data.Seed
     {
         public static void SeedAnimals(this ModelBuilder modelBuilder)
         {
-            #region RYBY
-            // RYBY ID: 1-7
+            #region RYBY 1-7
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 1,
@@ -23,7 +22,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Samica składa ikrę w zagłębieniu podłoża. Jest ona pilnowana przez rodziców",
                 AnimalDanger = AnimalDanger.High,
                 MapItemId = 1,
-                ImagePath = "_piraniaczerwona.jpg"
+                ImagePath = "_piraniaczerwona.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -38,7 +43,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ryby te rozpoczynają życie jako samice. Dorastając niektóre z nich zmieniają płeć. Samiec tworzy harem. Jeśli zginie – samica może zmienić płeć aby go zastąpić.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 2,
-                ImagePath = "_antiaspomaranczowy.jpg"
+                ImagePath = "_antiaspomaranczowy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -53,7 +64,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ryba jajorodna",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 3,
-                ImagePath = "_pyszczak.jpg"
+                ImagePath = "_pyszczak.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -68,7 +85,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Tarło odbywa w szczelinach skalnych. Samica składa do 200 sztuk ikry. W okresie rozrodu ryba ta bywa agresywna.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 4,
-                ImagePath = "_szczelinowieczburundi.jpg"
+                ImagePath = "_szczelinowieczburundi.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -83,7 +106,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Gatunek jajorodny. W czasie tarła samce bywają bardzo agresywne wobec samic.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 5,
-                ImagePath = "_pokoleckrolewski.jpg"
+                ImagePath = "_pokoleckrolewski.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -98,7 +127,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Samica składa do 25 000 ziaren ikry, którą opiekuje się samiec.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 6,
-                ImagePath = "_amfiprionokoniowy.jpg"
+                ImagePath = "_amfiprionokoniowy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -113,13 +148,17 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ryba jajorodna.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 7,
-                ImagePath = "_stadnikzoltoogonowy.jpg"
+                ImagePath = "_stadnikzoltoogonowy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             #endregion
 
-
-            #region PłAZY
-            // PŁAZY ID: 8-15
+            #region PłAZY 8-15
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -134,7 +173,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Samce w okresie godowym wydają charakterystyczne dźwięki, którymi wabią samice. Samica składa 4–12 jaj, z których po 10–15 dniach wykluwają się kijanki.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 8,
-                ImagePath = "_drzewolazzloty.jpg"
+                ImagePath = "_drzewolazzloty.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -150,11 +195,149 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Gody przypadają w porze deszczowej.Samce wabią samice wydając krótkie, trelujące głosy godowe. Samica składa do 13 jaj w małych zagłębieniach w ziemi z wodą lub w pochwach liści. Po 12 - 15 dniach wylęgają się kijanki.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 9,
-                ImagePath = "_drzewolazzoltopasy.jpg"
+                ImagePath = "_drzewolazzoltopasy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 10,
+                Name = "Drzewołaz malarski",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dendrobates tinctorius",
+                Occurance = "Ameryka Południowa - od Gujany po Brazylię.",
+                LivingEnvritonment = "Dno wilgotnego lasu równikowego.",
+                Food = "Owady.",
+                Breeding = "Okres godowy przypada na porę deszczową. Samica składa 5–10 jaj, z których po 14–18 dniach wykluwają się kijanki. Samiec zwilża złożone jaja i przenosi kijanki do zbiornika z wodą.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 10,
+                ImagePath = "_drzewolazmalarski.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 11,
+                Name = "Drzewołaz skoczny",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Phyllobates vittatus",
+                Occurance = "Ameryka Środkowa - od Kostaryki do zachodniej Panamy.",
+                LivingEnvritonment = "Tropikalne lasy deszczowe. Bytuje głównie między kamieniami, korzeniami drzew i pod liśćmi.",
+                Food = "Owadożerny.",
+                Breeding = " Samiec w porze godowej wabi partnerkę wydając trelujący głos. Samica składa do 25 jaj. Samiec zapładnia je, strzeże i zwilża wodą. Po 9-17 dniach z jaj wylęgają się kijanki. Samiec przenosi je do zbiornika z wodą.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 11,
+                ImagePath = "_drzewolazskoczny.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 12,
+                Name = "Kumak dalekowschodni",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Bombina orientalis",
+                Occurance = "Wschodnia Syberia, północno - wschodnie Chiny, północna Korea oraz japońskie wyspy Tushima i Kiusiu.",
+                LivingEnvritonment = "Pola ryżowe, rowy melioracyjne, stawy, mniejsze zbiorniki wody stojącej, małe cieki wodne, wypełnione wodą koleiny.",
+                Food = "Owady, inne stawonogi, dżdżownice, małe ślimaki.",
+                Breeding = "Samica składa do 100 jaj. Samiec natychmiast je zapładnia. Samica przykleja jaja do powierzchni kamieni i roślin wodnych. Po 3-6 dniach wylęgają się z nich kijanki, które przeobrażają się po 4-6 tygodniach (zależnie od temperatury wody).",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 12,
+                ImagePath = "_kumakdalekowschodni.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 13,
+                Name = "Rzekotka czerwonooka",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Agalychnis callidryas",
+                Occurance = "Ameryka Środkowa - od Meksyku do Panamy.",
+                LivingEnvritonment = "Wilgotny las równikowy.",
+                Food = "Owadożerna.",
+                Breeding = "Okres godowy przypada na porę deszczową. Samica składa pakiety jaj liczące nawet do 70 sztuk. Są one przytwierdzone do roślin znajdujących się tuż nad zbiornikiem wodnym. Kijanki wykluwają się po około tygodniu i wpadają do wody, gdzie trwa ich dalszy rozwój.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 13,
+                ImagePath = "_rzekotkaczerwonooka.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 14,
+                Name = "Rzekotka szmaragdowa",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Pelodryas caerulea",
+                Occurance = "Australia.",
+                LivingEnvritonment = "Wilgotne lasy tropikalne, środowiska zurbanizowane.",
+                Food = "Owady, dżdżownice, małe płazy i gady, mysie noworodki.",
+                Breeding = "Gatunek ten rozmnaża się w porze deszczowej. Samica składa jaja w kłębach liczących do około 200 sztuk. Rozwój zarodkowy przebiega szybko, kijanki wylęgają się w ciągu 48 godzin. Przeobrażają się w młode rzekotki już po 4-8 tygodniach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 14,
+                ImagePath = "_rzekotkaszmaragdowa.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 15,
+                Name = "Żaba pomidorowa",
+                Group = AnimalGroup.Amphibians,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dyscophus guineti",
+                Occurance = "Wschodnie wybrzeże Madagaskaru.",
+                LivingEnvritonment = "Podmokłe lasy, pola uprawne, plantacje, ogrody.",
+                Food = "Owady, dżdżownice, małe gryzonie.",
+                Breeding = "Samica składa do 1500 jaj. Kijanki wylęgają się z nich po około 36 godzinach. Po 45 dniach opuszczają wodę, przekształcone w małe żabki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 15,
+                ImagePath = "_zabapomidorowa.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
             #endregion
 
-            // GADY ID: 16-30
+            #region GADY 16-30
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -169,10 +352,17 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Samica składa od 5 do 15 jaj, z których młode wylęgają się po upływie około 5 miesięcy.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 16,
-                ImagePath = "_zolwzabuti.jpg"
+                ImagePath = "_zolwzabuti.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
+            #endregion
 
-            // PTAKI ID: 31-91
+            #region PTAKI 31-91
 
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -184,15 +374,21 @@ namespace CracowZoo.Data.Seed
                 Occurance = "Afryka na terenie południowej Sahary, Sudan, Etiopia, Somalia po Kenię, południowa Kenia po Tanzanię i Afryka Południowa.",
                 LivingEnvritonment = "Pustynie, półpustynie, sawanny",
                 Food = "Roślinożerne. Dietę uzupełniają owadami i niewielkimi kręgowcami.",
-                Breeding = "Samcowi towarzyszy harem samic. Gniazdo ma postać płytkiego dołu o średnicy 3 m, wygrzebanego w piasku lub ziemi.W gnieździe znajdują się jaja wszystkich 2 - 5 samic haremu.Wysiadywane są 42 - 46 dni przez dominującą samicę,którą zmienia samiec.",
+                Breeding = "Samcowi towarzyszy harem samic. Gniazdo ma postać płytkiego dołu o średnicy 3 m, wygrzebanego w piasku lub ziemi.W gnieździe znajdują się jaja wszystkich 2 - 5 samic haremu. Wysiadywane są 42 - 46 dni przez dominującą samicę,którą zmienia samiec.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 31,
-                ImagePath = "_strusafrykanski.jpg"
+                ImagePath = "_strusafrykanski.jpg",
+                Length = "210-275 cm",
+                Weight = "100-156 kg",
+                SocialLife = "Stadne",
+                Longevity = "do 75 lat",
+                Incubation = "42-46 dni",
+                NumberOfCubs = "5-11 jaj"
             });
 
-            // SSAKI ID: 92-170
+            #endregion
 
-            // ... jeszcze 3
+            #region SSAKI 92-170
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 92,
@@ -206,7 +402,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ciąża trwa 2 tygodnie. Po tym czasie rodzi się młode, którego dalszy rozwój przebiega w matczynej torbie.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 92,
-                ImagePath = "_kuskusziemny.jpg"
+                ImagePath = "_kuskusziemny.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -222,7 +424,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ciąża trwa 21 dni. Samica rodzi 2 - 3 młode.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 93,
-                ImagePath = "_lotopalankamala.jpg"
+                ImagePath = "_lotopalankamala.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -238,7 +446,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Po krótkim, około 35 – dniowym okresie ciąży samica rodzi młode wielkości ziarna fasoli, nagie i ślepe. Wędruje ono wzdłuż wylizanej przez matkę trasy od jej dróg rodnych do wnętrza torby. Tam obejmuje pyszczkiem sutek matki i rozwija się dalej przez około 7 miesięcy.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 94,
-                ImagePath = "_walabiabenetta.jpg"
+                ImagePath = "_walabiabenetta.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -254,7 +468,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ciąża trwa około 21 miesięcy. Rodzi się jedno młode ważące do 100 kg.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 95,
-                ImagePath = "_slonindyjski.jpg"
+                ImagePath = "_slonindyjski.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -286,7 +506,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ciąża trwa około 10 miesięcy. W miocie tylko jedno młode, które przyczepia się do włosów na piersi i brzuchu matki.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 97,
-                ImagePath = "_leniwiecdwupalczasty.jpg"
+                ImagePath = "_leniwiecdwupalczasty.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -302,7 +528,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Po ciąży trwającej 120 dni samica rodzi jedno młode, które jest noszone przez rodziców do około 35 dnia życia. Później opiekuje się nim głównie samiec. Matka karmi młode do piątego miesiąca życia.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 98,
-                ImagePath = "_lemurczerwonobrzuchy.jpg"
+                ImagePath = "_lemurczerwonobrzuchy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -318,7 +550,13 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Ciąża trwa 134-138 dni. Samica rodzi zazwyczaj 1, czasem 2 młode o masie 50-80 g, które po urodzeniu przyczepiają się do futra matki. Matka opiekuje się młodymi przez 6 miesięcy.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 99,
-                ImagePath = "_lemurkatta.jpg"
+                ImagePath = "_lemurkatta.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -334,8 +572,39 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Po ciąży trwającej około 100 dni samica rodzi zwykle 2-3 młode, które początkowo przebywają w gnieździe zbudowanym na drzewie.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 100,
-                ImagePath = "_warirudy.jpg"
+                ImagePath = "_warirudy.jpg",
+                Length = "",
+                Weight = "",
+                SocialLife = "",
+                Longevity = "",
+                Incubation = "",
+                NumberOfCubs = ""
             });
+
+            #endregion
         }
     }
 }
+
+
+//modelBuilder.Entity<Animal>().HasData(new Animal
+//            {
+//                Id = ,
+//                Name = "",
+//                Group = AnimalGroup.Amphibians,
+//                ConservationStatus = ConservationStatus.LeastConcern,
+//                LatinSpecie = "",
+//                Occurance = "",
+//                LivingEnvritonment = "",
+//                Food = "",
+//                Breeding = "",
+//                AnimalDanger = AnimalDanger.None,
+//                MapItemId = ,
+//                ImagePath = ".jpg",
+//                Length = "",
+//                Weight = "",
+//                SocialLife = "",
+//                Longevity = "",
+//                Incubation = "",
+//                NumberOfCubs = ""
+//            });

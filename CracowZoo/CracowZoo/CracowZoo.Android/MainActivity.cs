@@ -84,6 +84,7 @@ namespace CracowZoo.Droid
         {
             containerRegistry.RegisterSingleton<IPlatformSettingsProvider, AndroidSettingsProvider>();
             containerRegistry.Register(typeof(IRepository), typeof(CracowZooRepository));
+            containerRegistry.Register(typeof(IAnimalTidbitsRepository), typeof(AnimalTidbitsRepository));
         }
     }
 }
