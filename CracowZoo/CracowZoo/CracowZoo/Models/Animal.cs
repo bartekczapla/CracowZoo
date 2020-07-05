@@ -41,12 +41,6 @@ namespace CracowZoo.Models
         [MaxLength(30)]
         public string Weight { get; set; }
         [MaxLength(30)]
-        public string SocialLife { get; set; }
-        [MaxLength(30)]
         public string Longevity { get; set; }
-        [MaxLength(30)]
-        public string Incubation { get; set; }
-        [MaxLength(30)]
-        public string NumberOfCubs { get; set; }
     }
 }
