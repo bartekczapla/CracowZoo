@@ -9,6 +9,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -26,10 +27,7 @@ namespace CracowZoo.ViewModels
         private Animal _selectedAnimal;
         public Animal SelectedAnimal
         {
-            get
-            {
-                return _selectedAnimal;
-            }
+            get => _selectedAnimal;
             set
             {
                 SetProperty(ref _selectedAnimal, value);
@@ -39,6 +37,14 @@ namespace CracowZoo.ViewModels
                 }           
             }
         }
+
+        private bool _pageLoading = true;
+        public bool PageLoading
+        {
+            get => _pageLoading;
+            set => SetProperty(ref _pageLoading, value);
+        }
+ 
         public AnimalsPageViewModel(INavigationService navigationService, IRepository repository)
             :base(navigationService)
         {
@@ -60,11 +66,15 @@ namespace CracowZoo.ViewModels
 
         private async void GetAnimals()
         {
+            PageLoading = true;
+
             if (AnimalGroup > 0)
             {
                 IEnumerable<Animal> animals = await _repository.GetManyAsync<Animal>((Animal entity) => entity.Group == (AnimalGroup)AnimalGroup, new OrderElementDescription("Name", true), new string[] { "MapItem", "AnimalTidbits" });
                 animals.ForEach((Animal animal) => Animals.Add(animal));
             }
+
+            PageLoading = false;
         }
 
         async void NavigateToAnimalDetails()

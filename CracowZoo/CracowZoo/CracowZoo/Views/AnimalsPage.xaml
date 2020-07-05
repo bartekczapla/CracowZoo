@@ -8,50 +8,57 @@
              NavigationPage.HasBackButton="False"
              BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding Animals}"
+        <Grid>
+            <ListView ItemsSource="{Binding Animals}"
                   SelectedItem="{Binding SelectedAnimal, Mode=TwoWay}"
                   HasUnevenRows="True"
-                  SeparatorVisibility="None"
-                  BackgroundColor="WhiteSmoke">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame
+                  SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
                             CornerRadius="10"
                             Margin="15,8,15,8"
                             Padding="10,10,10,10"
                             >
-                            <StackLayout Orientation="Horizontal">
-                                <Frame
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame
                                     CornerRadius="5"
                                     Margin="0"
                                     Padding="0"
                                     IsClippedToBounds="True"
                                     >
-                                    <Image 
+                                        <Image 
                                     HeightRequest="100"
                                     WidthRequest="150"                                 
                                     Aspect="AspectFill"
                                     Source="{Binding ImagePath}"/>
-                                </Frame>
-                                <StackLayout Margin="8,0,5,5">
-                                    <Label
+                                    </Frame>
+                                    <StackLayout Margin="8,0,5,5">
+                                        <Label
                                            Text="{Binding Name}"
                                            FontSize="Medium"
                                            Style="{StaticResource labelStyle}"
                                         />
-                                    <Label
+                                        <Label
                                            Text="{Binding LatinSpecie}"
                                            FontSize="Small"
                                            FontAttributes="Italic"
-                                        />                                    
-                                </StackLayout>
+                                        />
+                                    </StackLayout>
 
-                            </StackLayout>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="Center" IsVisible="{Binding PageLoading}">
+                <ActivityIndicator IsRunning="True" Color="Green"/>
+                <Label Text="Ładowanie..." HorizontalOptions="Center"/>
+            </StackLayout>
+            
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

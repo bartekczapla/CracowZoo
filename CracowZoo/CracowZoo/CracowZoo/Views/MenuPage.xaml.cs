@@ -21,5 +21,10 @@ namespace CracowZoo.Views
         {
 			IsPresented = !IsPresented;
         }
-	}
+
+        private void HideMenuButton_Clicked(object sender, System.EventArgs e)
+        {
+			IsPresented = false;
+        }
+    }
 }

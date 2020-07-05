@@ -1,53 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="CracowZoo.Views.AnimalGroupsPage"
-             Title="Mieszkańcy Zoo">
-    <ScrollView>
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="180"/>
-                <RowDefinition Height="180"/>
-                <RowDefinition Height="180"/>
-                <RowDefinition Height="180"/>
-                <RowDefinition Height="180"/>
-            </Grid.RowDefinitions>
+             Title="Mieszkańcy Zoo"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="WhiteSmoke">
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="0">
+            <StackLayout Orientation="Horizontal" Padding="0">
+                <Button Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="Transparent"
+                        HeightRequest="40" WidthRequest="40" Padding="0" FontSize="Large" Margin="10,0,0,0"
+                        Command="{Binding MenuButton}"/>
 
-            <ImageButton x:Name="FishesButton" Margin="0,0,0,1"
-                Source="fishesButton.jpg" 
-                Aspect="AspectFill"
-                Command="{Binding ExecuteNavigate}" 
-                CommandParameter="1"  
-                Grid.Row="0">
-            </ImageButton>
-            <ImageButton x:Name="AmphibiansButton" Margin="0,1,0,1"
-                Source="amphibiansButton.jpg" 
-                Aspect="AspectFill"
-                Command="{Binding ExecuteNavigate}" 
-                CommandParameter="2"  
-                Grid.Row="1">
-            </ImageButton>
-            <ImageButton x:Name="ReptilesButton"  Margin="0,1,0,1"
-                Source="reptilesButton.jpg" 
-                Aspect="AspectFill"
-                Command="{Binding ExecuteNavigate}" 
-                CommandParameter="3"
-                Grid.Row="2">
-            </ImageButton>
-            <ImageButton x:Name="BirdsButton"  Margin="0,1,0,1"
-                Source="birdsButton.jpeg" 
-                Aspect="AspectFill"
-                Command="{Binding ExecuteNavigate}" 
-                CommandParameter="4"
-                Grid.Row="3">
-            </ImageButton>
-            <ImageButton x:Name="MammalsButton"  Margin="0,1,0,0"
-                Source="mammalsButton.jpg" 
-                Aspect="AspectFill"
-                Command="{Binding ExecuteNavigate}"      
-                Grid.Row="4" 
-                CommandParameter="5">
-            </ImageButton>
-        </Grid>
-    </ScrollView>
+                <Frame Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" Margin="0,20,10,20">
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" Margin="10,0,0,0"
+                       ClearButtonVisibility="WhileEditing" Placeholder="Wyszukaj zwierzę"/>
+                        <Label Text="&#xf002;" FontSize="Large" VerticalOptions="Center" Margin="10,0,20,0"
+                       FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+            
+        </Frame>
+        <!--<Grid VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="&#xf005;" FontSize="Medium" TextColor="#ffba00" Margin="-5,5,0,0" 
+                                                            FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
+            <Entry Grid.Column="1" BackgroundColor="White"/>
+        </Grid>-->
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" Padding="0">
+                            <Image Source="mammalsButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Ssaki" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="#ba9458" Margin="10,0,10,5"/>
+                        <Label Text="Największy ssak na świecie to płetwal błękitny." FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="5"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" HasShadow="True" Padding="0">
+                            <Image Source="amphibiansButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Płazy" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="Green" Margin="10,0,10,5"/>
+                        <Label Text="Słowo 'płaz' oznacza dwa życia, jedno w wodzie i jedno na lądzie" FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="2"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" HasShadow="True" Padding="0">
+                            <Image Source="reptilesButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Gady" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="Green" Margin="10,0,10,5"/>
+                        <Label Text="Gady są zmiennocieplne. Temperatura ich ciała zmienia się wraz z temperaturą otoczenia." FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="3"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" HasShadow="True" Padding="0">
+                            <Image Source="birdsButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Ptaki" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="Gray" Margin="10,0,10,5"/>
+                        <Label Text="Ptasie pióra są zrobione z keratyny." FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="4"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" HasShadow="True" Padding="0">
+                            <Image Source="fishesButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Ryby" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="#2c80ff" Margin="10,0,10,5"/>
+                        <Label Text="Ryby występują we wszystkich strefach oceanów." FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame CornerRadius="5" Padding="10">
+                    <StackLayout>
+                        <Frame CornerRadius="5" HasShadow="True" Padding="0">
+                            <Image Source="allAnimalsButton.jpg" Aspect="AspectFill"/>
+                        </Frame>
+                        <Label Text="Wszystkie zwierzęta" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="1" Color="#e72222" Margin="10,0,10,5"/>
+                        <Label Text="Poznaj wszystkich mieszkańców krakowskiego zoo." FontSize="Medium" Margin="10,0,10,10"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>
