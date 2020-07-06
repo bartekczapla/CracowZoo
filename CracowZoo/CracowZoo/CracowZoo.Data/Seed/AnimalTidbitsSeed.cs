@@ -210,6 +210,159 @@ namespace CracowZoo.Data.Seed
                 AnimalId = 16 //Żółw żabuti
             });
 
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 201,
+                Description = "Cechą odróżniającą ten gatunek od żółwia greckiego jest podzielona na pół tarczka nadogonowa.",
+                AnimalId = 17
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 202,
+                Description = "Żółwie bardzo często kopią nory, co pomaga ścierać nieustannie rosnące pazury.",
+                AnimalId = 17
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 203,
+                Description = "Gady te są przedstawicielami rodziny żółwi wężoszyjnych. Ich charakterystyczną cechą jest nieproporcjonalnie długa szyja, którą zwierzęta potrafią zginać w bok.",
+                AnimalId = 18
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 204,
+                Description = "Jeden z najmniejszych krokodyli. Jest najbardziej opancerzonym przedstawicielem rzędu. Dorasta do około 140 cm długości.",
+                AnimalId = 19
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 205,
+                Description = "Cechą charakterystyczną gatunku jest charakterystyczny „żagiel” u nasady ogona, dobrze widoczny zwłaszcza u samca.",
+                AnimalId = 20
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 206,
+                Description = "Doskonale pływa, nurkuje oraz sprawnie wspina się na konary drzew.",
+                AnimalId = 20
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 207,
+                Description = "Od roku 2007 w naszym Zoo agamy filipińskie regularnie składają jaja, czego rezultatem są liczne przychówki.",
+                AnimalId = 20
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 208,
+                Description = "Jest aktywny głównie w nocy.",
+                AnimalId = 21
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 209,
+                Description = "Nazywana jest dniówką ze względu na dzienny tryb życia.",
+                AnimalId = 22
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 210,
+                Description = "Bardzo szybko przemieszcza się po pionowych powierzchniach.",
+                AnimalId = 22
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 211,
+                Description = "Heloderma jest jadowitą jaszczurką. W przeciwieństwie do jadowitych węży podczas ukąszenia toksyna nie jest uwalniana od razu. Wydziela się dopiero w chwili mocnego nacisku mięśni szczęk.",
+                AnimalId = 23
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 212,
+                Description = "Nazywana jest jaszczurką Jezusa ze względu na umiejętność biegania po wodzie.",
+                AnimalId = 24
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 213,
+                Description = "Posiada duży, mięsisty język w kolorze niebieskim.",
+                AnimalId = 25
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 214,
+                Description = "Doskonale pływa i nurkuje. Bardzo sprawnie wspina się na drzewa.",
+                AnimalId = 26
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 215,
+                Description = "Jego bronią poza ostrymi pazurami oraz zębami jest mocno umięśniony ogon, którym potrafi zadawać potężne ciosy.",
+                AnimalId = 26
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 216,
+                Description = "Jest drugim co do wielkości waranem. Pod tym względem ustępuje tylko waranowi z Komodo. Osiąga do 3 m długości.",
+                AnimalId = 26
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 217,
+                Description = "Samca można odróżnić od samicy dzięki obecności parzystych pazurków odbytowych występujących po obu stronach kloaki.",
+                AnimalId = 27
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 218,
+                Description = "Aktywny o zmierzchu i nocą.",
+                AnimalId = 28
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 219,
+                Description = "Jest aktywny nocą – w ciągu dnia odpoczywa w ukryciu.",
+                AnimalId = 29
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 220,
+                Description = "Potrafi godzinami leżeć w wodzie bez ruchu wystawiając jedynie nozdrza i oczy ponad powierzchnię.",
+                AnimalId = 30
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 221,
+                Description = "Może przebywać pod wodą ponad 10 minut.",
+                AnimalId = 30
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 222,
+                Description = "Bywa bardzo agresywny.",
+                AnimalId = 30
+            });
             #endregion
 
             #region PTAKI 31-91

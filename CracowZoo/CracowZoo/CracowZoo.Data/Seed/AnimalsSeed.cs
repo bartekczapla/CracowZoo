@@ -25,10 +25,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_piraniaczerwona.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -46,10 +43,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_antiaspomaranczowy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -67,10 +61,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_pyszczak.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -88,10 +79,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_szczelinowieczburundi.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -109,10 +97,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_pokoleckrolewski.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -130,10 +115,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_amfiprionokoniowy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -151,10 +133,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_stadnikzoltoogonowy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             #endregion
 
@@ -176,10 +155,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_drzewolazzloty.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -198,10 +174,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_drzewolazzoltopasy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -220,10 +193,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_drzewolazmalarski.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -242,10 +212,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_drzewolazskoczny.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -264,10 +231,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_kumakdalekowschodni.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -286,10 +250,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_rzekotkaczerwonooka.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -308,10 +269,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_rzekotkaszmaragdowa.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -330,10 +288,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_zabapomidorowa.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
             #endregion
 
@@ -355,10 +310,274 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_zolwzabuti.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
+            });
+
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 17,
+                Name = "Żółw stepowy",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown, 
+                LatinSpecie = "Testudo horsfieldii",
+                Occurance = "Południowo-wschodnia Rosja, Kazachstan, Uzbekistan, Azerbejdżan, Kirgistan, Pakistan, Turkmenistan, Iran, Mongolia, Chiny.",
+                LivingEnvritonment = "Suche, trawiaste obszary o skalnym podłożu.",
+                Food = "Świeże pędy roślin stepowych, zioła, trawy, kwiaty i owoce.",
+                Breeding = "Samica składa jaja po okresie 6-8 tygodni od zakończenia okresu hibernacji (spoczynku zimowego). Inkubacja trwa od 60 do nawet 85 dni (zależnie od temperatury).",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 17,
+                ImagePath = "_zolwstepowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 18,
+                Name = "Żółw papuaski",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Elseya novaeguineae",
+                Occurance = "Australia, Nowa Gwinea.",
+                LivingEnvritonment = "Ciepłe laguny.",
+                Food = "Roślinność wodna, owady, skorupiaki, ryby.",
+                Breeding = "",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 18,
+                ImagePath = "_zolwpapuaski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 19,
+                Name = "Kajman karzełkowaty",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Paleosuchus palpebrosus",
+                Occurance = "Ameryka Południowa.",
+                LivingEnvritonment = "Śródleśne strumienie oraz rzeki o kamienistym dnie.",
+                Food = "Ryby, ptaki, drobne ssaki, płazy.",
+                Breeding = "Samica kopie bardzo obszerne gniazdo, do którego składa kilkanaście jaj. Temperatura panująca w gnieździe wynosi około 30 C i wpływa na determinację płci. Po około 90 dniach z jaj wylęgają się młode osobniki. Matka wraca do miejsca złożenia jaj, nawoływana przez młode kajmany charakterystycznymi odgłosami i pomaga im wydostać się z gniazda.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 19,
+                ImagePath = "_kajman.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 20,
+                Name = "Agama żaglowa filipińska",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Hydrosaurus pustulatus",
+                Occurance = "Północna część Filipin. Gatunek endemiczny.",
+                LivingEnvritonment = "Brzegi rzek oraz płytkich zbiorników wodnych, lasy.",
+                Food = "Małe ptaki, jaja, ryby, duże owady, owoce oraz zielone części roślin.",
+                Breeding = "Samica składa jaja, z których po około 110 dniach wykluwają się młode osobniki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 20,
+                ImagePath = "_agamazaglowafilipinska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 21,
+                Name = "Gekon lamparci",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Eublepharis macularius",
+                Occurance = "Azja środkowo-wschodnia, Iran, Pakistan.",
+                LivingEnvritonment = "Tereny pustynne i półpustynne.",
+                Food = "Owady, oseski gryzoni.",
+                Breeding = "Samica składa 2 jaja, z których po około 80 dniach wykluwają się młode osobniki. Płeć młodych zależy od temperatury inkubacji.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 21,
+                ImagePath = "_gekonlamparci.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = "12 lat"
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 22,
+                Name = "Gekon madagaskarski",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown,
+                LatinSpecie = "Phelsuma madagascariensis grandis",
+                Occurance = "Madagaskar",
+                LivingEnvritonment = "Lasy w północnej i wschodniej części wyspy.",
+                Food = "Owady, dojrzałe owoce, nektar.",
+                Breeding = "Samica kilka razy w roku składa 2 jaja.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 22,
+                ImagePath = "_gekonmadagaskarski.jpg",
+                Length = "30 cm",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 23,
+                Name = "Heloderma meksykańska",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Heloderma horridum exasperatum",
+                Occurance = "Ameryka Północna - głównie Meksyk i Gwatemala.",
+                LivingEnvritonment = "Półsuche, trawiasto-kamieniste tereny wzdłuż wybrzeża Pacyfiku.",
+                Food = "Jaja ptaków, gryzonie, duże owady.",
+                Breeding = "Samica składa kilkanaście jaj. Po około półrocznej inkubacji wylęgają się młode osobniki.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 23,
+                ImagePath = "_helodermameksykanska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 24,
+                Name = "Bazyliszek płatkogłowy",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Basiliscus plumifrons",
+                Occurance = "Kostaryka.",
+                LivingEnvritonment = "Lasy w pobliżu rzek.",
+                Food = "Owady i inne bezkręgowce, drobne kręgowce, owoce.",
+                Breeding = "Samica składa kilkanaście jaj. Inkubacja trwa około 2 miesiące.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 24,
+                ImagePath = "_bazyliszekplatkoglowy.jpg",
+                Length = "75 cm",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 25,
+                Name = "Scynk wielki",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Tiliqua gigas",
+                Occurance = "Nowa Gwinea i okoliczne wyspy.",
+                LivingEnvritonment = "Preferuje suche, ciepłe, urozmaicone środowiska.",
+                Food = "Wszystkożerna. Żywi się ślimakami, stawonogami, mniejszymi jaszczurkami, padliną.",
+                Breeding = "Żyworodna. Samica rodzi do 10 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 25,
+                ImagePath = "_scynkwielki.jpg",
+                Length = "50 cm",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 26,
+                Name = "Waran leśny",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Varanus salvator",
+                Occurance = "Azja południowo-wschodnia. Od Cejlonu po Filipiny oraz Chiny.",
+                LivingEnvritonment = "Podmokłe lasy, sąsiedztwo dużych zbiorników wodnych.",
+                Food = "Kręgowce: głównie ryby i ptaki, ptasie jaja i pisklęta.",
+                Breeding = "Gatunek jajorodny. Samica składa kilkadziesiąt (do 30) jaj w wykopanych przez siebie głębokich norach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 26,
+                ImagePath = "_waranlesny.jpg",
+                Length = "do 3 m",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 27,
+                Name = "Boa dusiciel",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown,
+                LatinSpecie = "Boa constrictor",
+                Occurance = "Ameryka Środkowa i Południowa.",
+                LivingEnvritonment = "Lasy tropikalne.",
+                Food = "Małe i średniej wielkości ssaki, ptaki, gady, płazy oraz ryby.",
+                Breeding = "Żyworodny. Po ciąży trwającej 110-200 dni samica rodzi nawet do 50 młodych.",
+                AnimalDanger = AnimalDanger.High,
+                MapItemId = 27,
+                ImagePath = "_boadusiciel.jpg",
+                Length = "do 3,5 m",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 28,
+                Name = "Boa psiogłowy",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown,
+                LatinSpecie = "Corallus caninus",
+                Occurance = "Ameryka Południowa - Brazylia, Gujana, Peru.",
+                LivingEnvritonment = "Lasy deszczowe. Najchętniej przebywa w koronach drzew większość czasu spędzając w charakterystycznej pozycji zwinięty na poziomej gałęzi.",
+                Food = "Głównie małe ssaki i ptaki.",
+                Breeding = "Gatunek żyworodny. Młode węże od chwili urodzenia aż do pierwszego roku życia mają jaskrawy pomarańczowy lub czerwony kolor. Po upływie roku przyjmują zielone ubarwienie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 28,
+                ImagePath = "_boapsioglowy.jpg",
+                Length = "2 m",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 29,
+                Name = "Lancetogłów mleczny",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Lampropeltis triangulum sinaloae",
+                Occurance = "Zachodnia część Meksyku.",
+                LivingEnvritonment = "Lasy, obszary trawiaste, półpustynie.",
+                Food = "Gryzonie, płazy, małe ptaki, inne węże, jaszczurki, bezkręgowce.",
+                Breeding = "Samica składa 5-16 jaj. Inkubacja trwa 35-66 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 29,
+                ImagePath = "_lancetoglowmleczny.jpg",
+                Length = "do 120 cm",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 30,
+                Name = "Anakonda żółta",
+                Group = AnimalGroup.Reptiles,
+                ConservationStatus = ConservationStatus.Unknown,
+                LatinSpecie = "Eunectes notaeus",
+                Occurance = "Ameryka Południowa: Paragwaj, Argentyna, Brazylia.",
+                LivingEnvritonment = "Różnego rodzaju zbiorniki wodne, strumienie, podmokłe siedliska w lasach tropikalnych, mokradła, tereny bagienne.",
+                Food = "Ssaki, ptaki, ryby.",
+                Breeding = "Wąż żyworodny. Samica po 6 miesięcznej ciąży rodzi do 40 młodych.",
+                AnimalDanger = AnimalDanger.High,
+                MapItemId = 30,
+                ImagePath = "_anakondazolta.jpg",
+                Length = "3-3,5 m",
+                Weight = "30-40 kg",
+                Longevity = "15-20 lat"
             });
             #endregion
 
@@ -380,10 +599,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_strusafrykanski.jpg",
                 Length = "210-275 cm",
                 Weight = "100-156 kg",
-                SocialLife = "Stadne",
-                Longevity = "do 75 lat",
-                Incubation = "42-46 dni",
-                NumberOfCubs = "5-11 jaj"
+                Longevity = "do 75 lat"
             });
 
             #endregion
@@ -405,10 +621,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_kuskusziemny.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -427,10 +640,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_lotopalankamala.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -449,10 +659,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_walabiabenetta.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -471,10 +678,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_slonindyjski.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -490,7 +694,10 @@ namespace CracowZoo.Data.Seed
                 Breeding = "Po ciąży trwającej 2 miesiące rodzą się najczęściej 2 młode.",
                 AnimalDanger = AnimalDanger.None,
                 MapItemId = 96,
-                ImagePath = "_pancernikwlochaty.jpg"
+                ImagePath = "_pancernikwlochaty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -509,10 +716,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_leniwiecdwupalczasty.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -531,10 +735,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_lemurczerwonobrzuchy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -553,10 +754,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_lemurkatta.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             modelBuilder.Entity<Animal>().HasData(new Animal
@@ -575,10 +773,7 @@ namespace CracowZoo.Data.Seed
                 ImagePath = "_warirudy.jpg",
                 Length = "",
                 Weight = "",
-                SocialLife = "",
-                Longevity = "",
-                Incubation = "",
-                NumberOfCubs = ""
+                Longevity = ""
             });
 
             #endregion
