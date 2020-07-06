@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CracowZoo.Views.MenuPage"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:viewmodels="clr-namespace:CracowZoo.ViewModels"
+             xmlns:models="clr-namespace:CracowZoo.Models"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             IsPresented="{Binding}">
+             x:DataType="viewmodels:MenuPageViewModel"
+             IsPresented="{Binding ShowMenu, Mode=TwoWay}">
     <MasterDetailPage.Master>
         <ContentPage Icon="hamburger.png" Title="Menu">
             <Grid>
@@ -13,7 +16,7 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image Grid.RowSpan="2" Source="menuGradient.jpg" Aspect="Fill"/>
+                <Image Grid.RowSpan="2" Source="menuGradient.jpg" Aspect="AspectFill"/>
                 <Image Grid.Row="0" Source="menuHeader.png"/>
                 <Button Text="&#xf104;" TextColor="White" FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="Transparent"
                         Padding="0" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="40"
@@ -21,7 +24,7 @@
                 <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}"
                               SeparatorColor="#569222" RowHeight="70">
                     <ListView.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate x:DataType="models:CustomMenuItem">
                             <ViewCell>
                                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
 

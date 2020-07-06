@@ -8,5 +8,10 @@ namespace CracowZoo.Views
         {
             InitializeComponent();
         }
+
+        private void SearchEntry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            FoundAnimalsListView.IsVisible = e.NewTextValue.Length > 0;
+        }
     }
 }

@@ -1,12 +1,14 @@
 ﻿using CracowZoo.Models;
 using CracowZoo.Views;
 using Prism.Commands;
+using Prism.Events;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace CracowZoo.ViewModels
@@ -14,6 +16,7 @@ namespace CracowZoo.ViewModels
     public class MenuPageViewModel: BindableBase
     {
         private INavigationService _navigationService;
+        private readonly IEventAggregator _eventAggregator;
 
         public ObservableCollection<CustomMenuItem> MenuItems { get; set; }
 
@@ -23,11 +26,20 @@ namespace CracowZoo.ViewModels
             get => selectedMenuItem;
             set => SetProperty(ref selectedMenuItem, value);
         }
+
+        private bool _showMenu;
+        public bool ShowMenu
+        {
+            get => _showMenu;
+            set => SetProperty(ref _showMenu, value);
+        }
+
         public DelegateCommand NavigateCommand { get; private set; }
 
-        public MenuPageViewModel(INavigationService navigationService)
+        public MenuPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
         {
             _navigationService = navigationService;
+            _eventAggregator = eventAggregator;
 
             MenuItems = new ObservableCollection<CustomMenuItem>();
 
@@ -57,11 +69,16 @@ namespace CracowZoo.ViewModels
             });
 
             NavigateCommand = new DelegateCommand(Navigate);
+
+            _eventAggregator.GetEvent<MyEvent>().Publish();
         }
 
         async void Navigate()
         {
-            await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);
+            _eventAggregator.GetEvent<MyEvent>().Publish();
+
+            await Task.Delay(250);
+            await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);      
         }
     }
 }

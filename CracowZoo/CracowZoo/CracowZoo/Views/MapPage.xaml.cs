@@ -1,4 +1,5 @@
 ﻿using CracowZoo.Views.CustomControls;
+using Prism.Events;
 using System;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -8,8 +9,12 @@ namespace CracowZoo.Views
 {
     public partial class MapPage : ContentPage
     {
-        public MapPage()
+        private readonly IEventAggregator _eventAggregator;
+
+        public MapPage(IEventAggregator eventAggregator)
         {
+            _eventAggregator = eventAggregator;
+
             InitializeComponent();
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
         }
@@ -44,6 +49,11 @@ namespace CracowZoo.Views
             {
                 // Unable to get location
             }
+        }
+
+        private void MenuButton_Clicked(object sender, EventArgs e)
+        {
+            _eventAggregator.GetEvent<MyEvent>().Publish();
         }
     }
 }

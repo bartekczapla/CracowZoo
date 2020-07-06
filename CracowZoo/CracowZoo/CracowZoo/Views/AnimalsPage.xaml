@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:viewmodels="clr-namespace:CracowZoo.ViewModels"
+             xmlns:models="clr-namespace:CracowZoo.Models"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="CracowZoo.Views.AnimalsPage"
+             x:DataType="viewmodels:AnimalsPageViewModel"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.HasBackButton="False"
              BackgroundColor="WhiteSmoke">
@@ -14,7 +17,7 @@
                   HasUnevenRows="True"
                   SeparatorVisibility="None">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:Animal">
                         <ViewCell>
                             <Frame
                             CornerRadius="10"

@@ -82,7 +82,6 @@ namespace CracowZoo.ViewModels
             var parameters = new NavigationParameters();
             parameters.Add("selectedAnimal", SelectedAnimal);
             await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
-
         }
     }
 }

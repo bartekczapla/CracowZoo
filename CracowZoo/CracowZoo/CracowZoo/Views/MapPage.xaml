@@ -10,7 +10,8 @@
             <controls:ZooMap x:Name="ZooMapControl" MapType="Street"/>
             <Button HeightRequest="37" WidthRequest="37" HorizontalOptions="Start" VerticalOptions="Start"
                     CornerRadius="2" Margin="12" BackgroundColor="White" Opacity="0.8"
-                    Command="{Binding MenuButton}" Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}"/>
+                    Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}"
+                    Clicked="MenuButton_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

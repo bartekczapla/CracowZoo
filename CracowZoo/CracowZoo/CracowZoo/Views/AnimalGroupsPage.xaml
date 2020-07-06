@@ -6,8 +6,12 @@
              Title="Mieszkańcy Zoo"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="WhiteSmoke">
-    <StackLayout>
-        <Frame BackgroundColor="White" Padding="0">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" BackgroundColor="White" Padding="0">
             <StackLayout Orientation="Horizontal" Padding="0">
                 <Button Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="Transparent"
                         HeightRequest="40" WidthRequest="40" Padding="0" FontSize="Large" Margin="10,0,0,0"
@@ -15,26 +19,22 @@
 
                 <Frame Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" Margin="0,20,10,20">
                     <StackLayout Orientation="Horizontal">
-                        <Entry Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" Margin="10,0,0,0"
-                       ClearButtonVisibility="WhileEditing" Placeholder="Wyszukaj zwierzę"/>
+                        <Entry x:Name="SearchEntry" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" Margin="10,0,0,0"
+                       ClearButtonVisibility="WhileEditing" Placeholder="Wyszukaj zwierzę" TextChanged="SearchEntry_TextChanged"
+                               Text="{Binding EntryText}">
+                            <Entry.Behaviors>
+                                <b:EventToCommandBehavior EventName="TextChanged" 
+                                                      Command="{Binding EntryChanged}" />
+                            </Entry.Behaviors>
+                        </Entry>
                         <Label Text="&#xf002;" FontSize="Large" VerticalOptions="Center" Margin="10,0,20,0"
                        FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
-            
-            
         </Frame>
-        <!--<Grid VerticalOptions="StartAndExpand">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="&#xf005;" FontSize="Medium" TextColor="#ffba00" Margin="-5,5,0,0" 
-                                                            FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
-            <Entry Grid.Column="1" BackgroundColor="White"/>
-        </Grid>-->
-        <ScrollView>
+
+        <ScrollView Grid.Row="1" Margin="0">
             <StackLayout Padding="10" Spacing="10">
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
@@ -113,5 +113,21 @@
                 </Frame>
             </StackLayout>
         </ScrollView>
-    </StackLayout>
+
+        <ListView x:Name="FoundAnimalsListView" Grid.Row="1" BackgroundColor="White" VerticalOptions="Start" HeightRequest="150"
+                  Opacity="0.9" ItemsSource="{Binding FoundAnimals}" IsVisible="false"
+                  SelectedItem="{Binding SelectedFoundAnimal}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Name}" FontSize="Medium" VerticalOptions="Center" Margin="20,10,20,10"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Behaviors>
+                <b:EventToCommandBehavior EventName="ItemTapped" 
+                                                      Command="{Binding FoundAnimalTapped}" />
+            </ListView.Behaviors>
+        </ListView>
+    </Grid>
 </ContentPage>

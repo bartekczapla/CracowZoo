@@ -12,7 +12,6 @@ namespace CracowZoo.ViewModels
     public class MapPageViewModel : ViewModelBase
     {
         private readonly IEventAggregator _eventAggregator;
-        public ICommand MenuButton { get; }
 
         private readonly IAnimalTidbitsRepository _animalTidbitsRepository;
 
@@ -20,21 +19,13 @@ namespace CracowZoo.ViewModels
             : base(navigationService)
         {
             _eventAggregator = eventAggregator;
-
-            _animalTidbitsRepository = animalTidbitsRepository;
-
-            MenuButton = new DelegateCommand(ShowMenu);
+            _animalTidbitsRepository = animalTidbitsRepository;   
         }
 
         public override void Initialize(INavigationParameters parameters)
         {
             GetRandomAnimalTidbit();
             base.Initialize(parameters);
-        }
-
-        private void ShowMenu()
-        {
-            _eventAggregator.GetEvent<MyEvent>().Publish();
         }
 
         private async void GetRandomAnimalTidbit()

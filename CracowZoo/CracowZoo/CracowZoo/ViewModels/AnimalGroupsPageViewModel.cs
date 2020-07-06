@@ -1,4 +1,7 @@
-﻿using CracowZoo.Views;
+﻿using CracowZoo.Interfaces;
+using CracowZoo.Models;
+using CracowZoo.Models.Aditionals;
+using CracowZoo.Views;
 using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
@@ -9,24 +12,64 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace CracowZoo.ViewModels
 {
     public class AnimalGroupsPageViewModel : ViewModelBase
     {
         private readonly IEventAggregator _eventAggregator;
+        private readonly IRepository _zooRepo;
         public ICommand ExecuteNavigate { get; }
         public ICommand MenuButton { get; }
+        public ICommand EntryChanged { get; }
+        public ICommand FoundAnimalTapped { get; }
+
         private bool isNavigating { get; set; }
 
-        public AnimalGroupsPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
+        private ObservableCollection<Animal> _foundAnimals;
+        public ObservableCollection<Animal> FoundAnimals
+        {
+            get => _foundAnimals;
+            set => SetProperty(ref _foundAnimals, value);
+        }
+
+        private Animal _selectedFoundAnimal;
+        public Animal SelectedFoundAnimal
+        {
+            get => _selectedFoundAnimal;
+            set => SetProperty(ref _selectedFoundAnimal, value);
+        }
+
+        public string EntryText { get; set; }
+
+        public AnimalGroupsPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator,
+            IRepository zooRepo)
             : base(navigationService)
         {
+            _zooRepo = zooRepo;
             _eventAggregator = eventAggregator;
 
             ExecuteNavigate = new DelegateCommand<object>(ExecuteNavigateCommand);
+            FoundAnimalTapped = new DelegateCommand(NavigateToSpecificAnimal);
             MenuButton = new DelegateCommand(ShowMenu);
+            EntryChanged = new DelegateCommand(SearchForAnimals);
             isNavigating = false;
+        }
+
+        private async void SearchForAnimals()
+        {
+            FoundAnimals = new ObservableCollection<Animal>();
+            IEnumerable<Animal> animals = await _zooRepo.GetManyAsync<Animal>((Animal entity) => 
+                entity.Name.ToLower().Contains(EntryText.ToLower()), new OrderElementDescription("Name", true));
+            animals.ForEach((Animal animal) => FoundAnimals.Add(animal));
+        }
+
+        private async void NavigateToSpecificAnimal()
+        {
+            var parameters = new NavigationParameters();
+            parameters.Add("selectedAnimal", SelectedFoundAnimal);
+            await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
