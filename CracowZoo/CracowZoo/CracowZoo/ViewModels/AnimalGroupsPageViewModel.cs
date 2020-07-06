@@ -41,7 +41,12 @@ namespace CracowZoo.ViewModels
             set => SetProperty(ref _selectedFoundAnimal, value);
         }
 
-        public string EntryText { get; set; }
+        private string _entryText;
+        public string EntryText 
+        {
+            get => _entryText;
+            set => SetProperty(ref _entryText, value);
+        }
 
         public AnimalGroupsPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator,
             IRepository zooRepo)
@@ -70,6 +75,7 @@ namespace CracowZoo.ViewModels
             var parameters = new NavigationParameters();
             parameters.Add("selectedAnimal", SelectedFoundAnimal);
             await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
+            EntryText = string.Empty;
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
