@@ -110,6 +110,9 @@
                         <BoxView HeightRequest="1" Color="#e72222" Margin="10,0,10,5"/>
                         <Label Text="Poznaj wszystkich mieszkańców krakowskiego zoo." FontSize="Medium" Margin="10,0,10,10"/>
                     </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExecuteNavigate}" CommandParameter="-1"/>
+                    </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
         </ScrollView>
