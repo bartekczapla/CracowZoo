@@ -14,7 +14,7 @@
         <Grid>
             <ListView ItemsSource="{Binding Animals}"
                   SelectedItem="{Binding SelectedAnimal, Mode=TwoWay}"
-                  HasUnevenRows="True"
+                  HasUnevenRows="True" CachingStrategy="RecycleElement"
                   SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:Animal">
@@ -31,7 +31,7 @@
                                     Padding="0"
                                     IsClippedToBounds="True"
                                     >
-                                        <Image 
+                                        <Image IsOpaque="True"
                                     HeightRequest="100"
                                     WidthRequest="150"                                 
                                     Aspect="AspectFill"

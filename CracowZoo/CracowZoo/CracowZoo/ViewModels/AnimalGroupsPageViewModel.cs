@@ -66,7 +66,8 @@ namespace CracowZoo.ViewModels
         {
             FoundAnimals = new ObservableCollection<Animal>();
             IEnumerable<Animal> animals = await _zooRepo.GetManyAsync<Animal>((Animal entity) => 
-                entity.Name.ToLower().Contains(EntryText.ToLower()), new OrderElementDescription("Name", true));
+                entity.Name.ToLower().Contains(EntryText.ToLower()), new OrderElementDescription("Name", true),
+                 new string[] { "MapItem", "AnimalTidbits" });
             animals.ForEach((Animal animal) => FoundAnimals.Add(animal));
         }
 
