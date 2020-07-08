@@ -9,6 +9,15 @@
              NavigationPage.HasBackButton="False"
              BackgroundColor="WhiteSmoke">
     <RelativeLayout>
+        <StackLayout
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+            VerticalOptions="Center"
+            IsVisible="{Binding PageLoading}"
+            >
+            <ActivityIndicator IsRunning="True" Color="Green"/>
+            <Label Text="Ładowanie..." HorizontalOptions="Center"/>
+        </StackLayout>
         <ffimageloading:CachedImage 
             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
             Aspect="AspectFill"     
@@ -89,7 +98,7 @@
                                 <ColumnDefinition Width="22" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                                    <!-- 1 row -->
+                                     <!--1 row--> 
                                     <Label 
                                         Grid.Row="0" Grid.Column="0"  
                                         Text="&#xf062;" 
@@ -123,7 +132,7 @@
                                         FontSize="Body"/>
                                     </StackLayout>
 
-                                    <!-- 2 row -->
+                                     <!--2 row--> 
                                     <Label 
                                         Grid.Row="1" Grid.Column="0"  
                                         Text="&#xf073;" 

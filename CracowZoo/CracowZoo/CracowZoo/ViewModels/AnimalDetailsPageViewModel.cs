@@ -25,6 +25,13 @@ namespace CracowZoo.ViewModels
             set => SetProperty(ref _animalTidbits, value);
         }
 
+        private bool _pageLoading = true;
+        public bool PageLoading
+        {
+            get => _pageLoading;
+            set => SetProperty(ref _pageLoading, value);
+        }
+
         public AnimalDetailsPageViewModel(INavigationService navigationService)
         : base(navigationService)
         {
@@ -34,6 +41,7 @@ namespace CracowZoo.ViewModels
         {
             SelectedAnimal = parameters.GetValue<Animal>("selectedAnimal");
             AnimalTidbits = SelectedAnimal.AnimalTidbits;
+            PageLoading = false;
             base.OnNavigatedTo(parameters);
         }
     }
