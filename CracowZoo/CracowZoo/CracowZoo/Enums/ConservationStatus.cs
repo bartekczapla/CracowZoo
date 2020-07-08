@@ -7,23 +7,23 @@ namespace CracowZoo.Enums
 {
     public enum ConservationStatus
     {
-        [Description("Gatunki zanikłe")]
+        [Description("Zanikły")]
         NotEvaluated,
-        [Description("Gatunek niezagrożony")]
+        [Description("Niezagrożony")]
         Normal,
-        [Description("Gatunek na razie niezagrożony")]
+        [Description("Na razie niezagrożony")]
         LeastConcern,
-        [Description("Gatunek bliski zagrożenia")]
+        [Description("Bliski zagrożenia")]
         NearThreatened,
-        [Description("Gatunek narażony na wyginięcie")]
+        [Description("Narażony na wyginięcie")]
         Vulnerable,
-        [Description("Gatunkek silnie zagrożony")]
+        [Description("Silnie zagrożony")]
         Endangered,
-        [Description("Gatunek skrajnie zagrożony")]
+        [Description("Skrajnie zagrożony")]
         CriticallyEndangered,
-        [Description("Gatunek zanikły")]
+        [Description("Zanikły")]
         ExtinctInWild,
-        [Description("Gatunek wymarły")]
+        [Description("Wymarły")]
         Extinct,
         [Description("Brak danych")]
         Unknown

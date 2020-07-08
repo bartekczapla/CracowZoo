@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:local="clr-namespace:CracowZoo.Views.CustomControls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="CracowZoo.Views.AnimalDetailsPage"
               NavigationPage.HasNavigationBar="False"
@@ -51,7 +52,7 @@
                         Margin="0,10,0,0"
                         HeightRequest="1" 
                         Color="Green"/>
-                        <ffimageloading:CachedImage
+                                <ffimageloading:CachedImage
                         Source="map.jpg"
                         Aspect="AspectFit"
                         HeightRequest="200" 
@@ -59,27 +60,27 @@
                         IsOpaque="True"
                         BackgroundColor="White"
                         />
-                            
                                 <Label 
                         Text="Występowanie"
                         FontSize="Medium"
                         FontAttributes="Bold"
                         Style="{StaticResource labelStyle}"
                         />
-                            <Label 
+                                <local:ExtendedLabel 
                         Text="{Binding SelectedAnimal.Occurance }"
                         Style="{StaticResource labelStyle}"
-                        FontSize="Body"
-                        />
-                            <Label 
+                        JustifyText="True"
+                        FontSize="Body"/>
+                                <Label 
                         Text="Środowisko życia"
                         FontSize="Medium"
                         FontAttributes="Bold"
                         Style="{StaticResource labelStyle}"
                         Margin="0,15,0,0"/>
-                            <Label 
-                        Text="{Binding SelectedAnimal.LivingEnvritonment  }"
+                                <local:ExtendedLabel 
+                        Text="{Binding SelectedAnimal.LivingEnvritonment }"
                         Style="{StaticResource labelStyle}"
+                        JustifyText="True"
                         FontSize="Body"/>
                                 <Label 
                         Text="Charakterystyka"
@@ -166,28 +167,28 @@
                                         FontSize="Body"/>
                                     </StackLayout>
                                 </Grid>
-                            <Label 
+                                <Label 
                         Text="Pożywienie"
                         FontSize="Medium"
                         FontAttributes="Bold"
                         Style="{StaticResource labelStyle}"
                         />
-                            <Label 
-                        Text="{Binding SelectedAnimal.Food}"
+                                <local:ExtendedLabel 
+                        Text="{Binding SelectedAnimal.Food }"
                         Style="{StaticResource labelStyle}"
+                        JustifyText="True"
                         FontSize="Body"/>
-                            <Label 
+                                <Label 
                         Text="Rozmnażanie"
                         FontSize="Medium"
                         FontAttributes="Bold"
                         Style="{StaticResource labelStyle}"
                         Margin="0,15,0,0"/>
-                            <Label 
+                                <local:ExtendedLabel 
                         Text="{Binding SelectedAnimal.Breeding }"
                         Style="{StaticResource labelStyle}"
+                        JustifyText="True"
                         FontSize="Body"/>
-     
- 
                         </StackLayout>
                     </Frame>
                     
@@ -213,8 +214,12 @@
                                                 </Grid.ColumnDefinitions>
                                                 <Label Grid.Column="0" Text="&#xf005;" FontSize="Medium" TextColor="#ffba00" Margin="-5,5,0,0" 
                                                             FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
-                                                <Label Grid.Column="1" Text="{Binding Description}" HorizontalOptions="Start"
-                                                   FontSize="Body"/>
+                                                <local:ExtendedLabel 
+                                                    Grid.Column="1" 
+                                                    HorizontalOptions="Start"
+                                                    Text="{Binding Description}"
+                                                    JustifyText="True"
+                                                    FontSize="Body"/>
                                             </Grid>
                                         </DataTemplate>
                                     </BindableLayout.ItemTemplate>
