@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="CracowZoo.Views.AnimalGroupsPage"
              Title="Mieszkańcy Zoo"
              NavigationPage.HasNavigationBar="False"
@@ -39,7 +40,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" Padding="0">
-                            <Image Source="mammalsButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage  Source="mammalsButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                CacheDuration="30"/>
                         </Frame>
                         <Label Text="Ssaki" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="#ba9458" Margin="10,0,10,5"/>
@@ -52,7 +54,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" HasShadow="True" Padding="0">
-                            <Image Source="amphibiansButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage Source="amphibiansButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                                        CacheDuration="30"/>
                         </Frame>
                         <Label Text="Płazy" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="Green" Margin="10,0,10,5"/>
@@ -65,7 +68,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" HasShadow="True" Padding="0">
-                            <Image Source="reptilesButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage Source="reptilesButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                                        CacheDuration="30"/>
                         </Frame>
                         <Label Text="Gady" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="Green" Margin="10,0,10,5"/>
@@ -78,7 +82,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" HasShadow="True" Padding="0">
-                            <Image Source="birdsButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage Source="birdsButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                                        CacheDuration="30"/>
                         </Frame>
                         <Label Text="Ptaki" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="Gray" Margin="10,0,10,5"/>
@@ -91,7 +96,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" HasShadow="True" Padding="0">
-                            <Image Source="fishesButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage Source="fishesButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                                        CacheDuration="30"/>
                         </Frame>
                         <Label Text="Ryby" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="#2c80ff" Margin="10,0,10,5"/>
@@ -104,7 +110,8 @@
                 <Frame CornerRadius="5" Padding="10">
                     <StackLayout>
                         <Frame CornerRadius="5" HasShadow="True" Padding="0">
-                            <Image Source="allAnimalsButton.jpg" Aspect="AspectFill" IsOpaque="True"/>
+                            <ffimageloading:CachedImage Source="allAnimalsButton.jpg" Aspect="AspectFill" IsOpaque="True"
+                                                        CacheDuration="30"/>
                         </Frame>
                         <Label Text="Wszystkie zwierzęta" FontSize="Large" Margin="10,5,0,0" FontAttributes="Bold"/>
                         <BoxView HeightRequest="1" Color="#e72222" Margin="10,0,10,5"/>

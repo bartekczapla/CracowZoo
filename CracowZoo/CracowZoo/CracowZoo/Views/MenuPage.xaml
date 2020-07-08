@@ -6,6 +6,7 @@
              xmlns:viewmodels="clr-namespace:CracowZoo.ViewModels"
              xmlns:models="clr-namespace:CracowZoo.Models"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:DataType="viewmodels:MenuPageViewModel"
              IsPresented="{Binding ShowMenu, Mode=TwoWay}">
@@ -16,8 +17,8 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image Grid.RowSpan="2" Source="menuGradient.jpg" Aspect="AspectFill" IsOpaque="True"/>
-                <Image Grid.Row="0" Source="menuHeader.png" IsOpaque="True"/>
+                <ffimageloading:CachedImage Grid.RowSpan="2" Source="menuGradient.jpg" Aspect="AspectFill" DownsampleToViewSize="True" IsOpaque="True"/>
+                <Image Grid.Row="0" Source="menuHeader.png" Aspect="AspectFit"/>
                 <Button Text="&#xf104;" TextColor="White" FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="Transparent"
                         Padding="0" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="40"
                         Clicked="HideMenuButton_Clicked"/>

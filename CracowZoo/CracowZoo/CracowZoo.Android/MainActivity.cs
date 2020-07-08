@@ -7,6 +7,7 @@ using CracowZoo.Data.Repository;
 using CracowZoo.Interfaces;
 using CracowZoo.PlatformCore;
 using CracowZoo.Views;
+using FFImageLoading.Forms.Platform;
 using Prism;
 using Prism.Common;
 using Prism.Ioc;
@@ -34,6 +35,7 @@ namespace CracowZoo.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             global::Xamarin.FormsGoogleMaps.Init(this, bundle);
             global::Xamarin.Essentials.Platform.Init(this, bundle);
+            CachedImageRenderer.Init(true);
             LoadApplication(new App(new AndroidInitializer()));
         }
 
