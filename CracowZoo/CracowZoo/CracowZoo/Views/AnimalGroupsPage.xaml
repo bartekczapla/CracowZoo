@@ -12,7 +12,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Frame Grid.Row="0" BackgroundColor="#20a616" Padding="0">
+        <Frame Grid.Row="0" BackgroundColor="#31a24c" Padding="0">
             <StackLayout Orientation="Horizontal" Padding="0">
                 <Button Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="Transparent"
                         HeightRequest="40" WidthRequest="40" Padding="0" FontSize="Large" Margin="10,0,0,0" TextColor="White"
