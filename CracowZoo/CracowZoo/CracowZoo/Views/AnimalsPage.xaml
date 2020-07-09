@@ -62,7 +62,9 @@
                 <ActivityIndicator IsRunning="True" Color="Green"/>
                 <Label Text="Ładowanie..." HorizontalOptions="Center"/>
             </StackLayout>
-            
+
+            <ImageButton Source="backButton.png" BackgroundColor="Transparent" WidthRequest="20" Margin="10"
+                     Command="{prism:GoBack}" HorizontalOptions="Start" VerticalOptions="Start"/>
         </Grid>
         
     </ContentPage.Content>
