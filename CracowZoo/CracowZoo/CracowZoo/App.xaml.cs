@@ -44,6 +44,7 @@ namespace CracowZoo
             containerRegistry.RegisterForNavigation<AnimalGroupsPage, AnimalGroupsPageViewModel>();
             containerRegistry.RegisterForNavigation<AnimalsPage, AnimalsPageViewModel>();
             containerRegistry.RegisterForNavigation<AnimalDetailsPage, AnimalDetailsPageViewModel>();
+            containerRegistry.RegisterForNavigation<InformationPage, InformationPageViewModel>();
         }
     }
 }
