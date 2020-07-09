@@ -10,6 +10,7 @@
              NavigationPage.HasBackButton="False"
              BackgroundColor="WhiteSmoke">
     <RelativeLayout>
+        
         <StackLayout
             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
@@ -230,5 +231,7 @@
                 </StackLayout>
             </ScrollView>
         </Grid>
+        <ImageButton Source="backButton.png" BackgroundColor="Transparent" WidthRequest="20" Margin="10"
+                     Command="{prism:GoBack}"/>
     </RelativeLayout>
 </ContentPage>
