@@ -16,7 +16,8 @@ using Xamarin.Forms;
 
 namespace CracowZoo.Droid
 {
-    [Activity(Label = "Kraków Zoo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Kraków Zoo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, 
+        LaunchMode = LaunchMode.SingleTop ,ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         private long lastPress;

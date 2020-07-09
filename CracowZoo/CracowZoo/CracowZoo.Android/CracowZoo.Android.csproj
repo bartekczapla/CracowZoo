@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="AndroidSettingsProvider.cs" />
     <Compile Include="CustomRenderers\ExtendedLabelRenderer.cs" />
+    <Compile Include="DependencyServices\AndroidNotificationManager.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

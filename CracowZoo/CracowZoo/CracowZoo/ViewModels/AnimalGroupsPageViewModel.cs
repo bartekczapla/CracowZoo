@@ -1,4 +1,5 @@
 ﻿using CracowZoo.Interfaces;
+using CracowZoo.Interfaces.CrossServices;
 using CracowZoo.Models;
 using CracowZoo.Models.Aditionals;
 using CracowZoo.Views;
@@ -60,6 +61,9 @@ namespace CracowZoo.ViewModels
             MenuButton = new DelegateCommand(ShowMenu);
             EntryChanged = new DelegateCommand(SearchForAnimals);
             isNavigating = false;
+
+            var notificationManager = DependencyService.Get<INotificationManager>();
+            notificationManager.ScheduleNotification("Pokaz karmienia", "Zapraszamy na pokaz karmienia słoni o godzinie 13:00");
         }
 
         private async void SearchForAnimals()
