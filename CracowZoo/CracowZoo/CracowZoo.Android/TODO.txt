@@ -42,3 +42,10 @@ https://www.iucnredlist.org/species/22689809/93248623
 -----------------------------------------------
 
 Periodic background task
+
+-----------------------------------------------
+---------------OBRACANIE---------------------
+-----------------------------------------------
+
+*wlaczyc obracanie mapy
+*zmienic pozycje przycisku menu na mapie

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:CracowZoo.Views.CustomControls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="CracowZoo.Views.AnimalDetailsPage"
-              NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasNavigationBar="False"
              NavigationPage.HasBackButton="False"
              BackgroundColor="WhiteSmoke">
     <RelativeLayout>
