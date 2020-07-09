@@ -61,8 +61,8 @@ namespace CracowZoo.Droid.DependencyServices
                 .SetContentTitle(title)
                 .SetContentText(message)
                 .SetAutoCancel(true)
-                .SetSmallIcon(Resource.Drawable._borsuk)
-                .SetLargeIcon(BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, Resource.Drawable._borsuk));
+                .SetSmallIcon(Resource.Drawable.eventNotification)
+                .SetLargeIcon(BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, Resource.Drawable.eventNotification));
 
             builder.SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate);
             var notification = builder.Build();

@@ -23,7 +23,7 @@
                         Padding="0" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="40"
                         Clicked="HideMenuButton_Clicked"/>
                 <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}"
-                              SeparatorColor="#569222" RowHeight="70" CachingStrategy="RecycleElement">
+                              SeparatorColor="#2d9647" RowHeight="70" CachingStrategy="RecycleElement">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:CustomMenuItem">
                             <ViewCell>
@@ -35,7 +35,7 @@
 
                                     <Label Text="{Binding Title}" TextColor="White"
                                                    FontSize="Medium" Margin="20,0,0,0"
-                                                   VerticalOptions="Center"/>
+                                                   VerticalOptions="Center" Opacity="0.8"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

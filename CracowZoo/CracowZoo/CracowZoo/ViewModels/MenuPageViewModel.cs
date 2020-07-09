@@ -57,6 +57,12 @@ namespace CracowZoo.ViewModels
             });
             MenuItems.Add(new CustomMenuItem()
             {
+                Icon = ((char)0xf017).ToString(),
+                PageName = nameof(AnimalGroupsPage),
+                Title = "Wydarzenia / pokazy"
+            });
+            MenuItems.Add(new CustomMenuItem()
+            {
                 Icon = ((char)0xf3ff).ToString(),
                 PageName = nameof(AnimalGroupsPage),
                 Title = "Bilety"

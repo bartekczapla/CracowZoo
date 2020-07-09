@@ -63,7 +63,7 @@ namespace CracowZoo.ViewModels
             isNavigating = false;
 
             var notificationManager = DependencyService.Get<INotificationManager>();
-            notificationManager.ScheduleNotification("Pokaz karmienia", "Zapraszamy na pokaz karmienia słoni o godzinie 13:00");
+            notificationManager.ScheduleNotification("Pokaz karmienia słoni", "Pokaz karmienia słoni o godzinie 13:00");
         }
 
         private async void SearchForAnimals()
