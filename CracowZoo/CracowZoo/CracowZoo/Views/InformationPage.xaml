@@ -7,7 +7,8 @@
              xmlns:local="clr-namespace:CracowZoo.Views.CustomControls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="CracowZoo.Views.InformationPage"
-             BackgroundColor="WhiteSmoke">
+             BackgroundColor="WhiteSmoke"
+             Title="Informacje">
     <ScrollView>
     <StackLayout
         Padding="15,20,15,10">

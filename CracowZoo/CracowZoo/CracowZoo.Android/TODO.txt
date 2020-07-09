@@ -5,11 +5,6 @@
 * Zrobic
 * Randomowe ciekawostki o zwierzetach podczas ładowania
 
------------------------------------------------
---------------- MENU --------------------------
------------------------------------------------
-
-* Dodać pole "Wydarzenia" z godzinami pokazów i karmień
 
 -----------------------------------------------
 --------------- MAPA --------------------------
@@ -21,27 +16,16 @@
 
 
 -----------------------------------------------
---------------- ANIMALS GROUP -----------------
------------------------------------------------
-
-* wyszarzyć zdjęcia i dodac napis
-
-
------------------------------------------------
 --------------- ANIMAL DETAILS ----------------
 -----------------------------------------------
 
-* Informacje o zwierzęciu (waga, dlugosc etc) - Zoo Barcelona
-
 * Zmiana koloru boxview w zaleznosci od grupy zwierzecia
-
-* Ikona powrotu w lewym gorym rogu (San DIego zoo)
 
 -----------------------------------------------
 --------------- ZOO INFO? ---------------------
 -----------------------------------------------
 
-Godziny otwarcia
+Zmienic kolor navabar
 
 Ceny
 
@@ -52,3 +36,9 @@ Ceny
 Wykresy? 
 
 https://www.iucnredlist.org/species/22689809/93248623
+
+-----------------------------------------------
+--------------- POWIADOMIENIA ?---------------------
+-----------------------------------------------
+
+Periodic background task
