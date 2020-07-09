@@ -30,12 +30,12 @@
                                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
 
                                     <Label Text="{Binding Icon}" FontSize="Large" TextColor="White"
-                                               VerticalOptions="Center" Margin="40,0,0,0" Opacity="0.4"
+                                               VerticalOptions="Center" Margin="40,0,0,0" Opacity="0.35"
                                                FontFamily="{StaticResource FontAwesomeSolid}"/>
 
                                     <Label Text="{Binding Title}" TextColor="White"
                                                    FontSize="Medium" Margin="20,0,0,0"
-                                                   VerticalOptions="Center" Opacity="0.8"/>
+                                                   VerticalOptions="Center" Opacity="0.9"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
