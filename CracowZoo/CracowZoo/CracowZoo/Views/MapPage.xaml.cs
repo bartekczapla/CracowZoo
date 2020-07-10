@@ -18,6 +18,7 @@ namespace CracowZoo.Views
 
             InitializeComponent();
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
+            ZooMapControl.UiSettings.CompassEnabled = false;
             //ZooMapControl.TileLayers.Add(TileLayer.FromSyncImage(GetTiles));
         }
 
@@ -30,8 +31,6 @@ namespace CracowZoo.Views
 
         private async void ValidateUserLocation(object sender, MyLocationButtonClickedEventArgs e)
         {
-            //ZooMapControl.Pins.Add(new Pin() { Position = new Position(50.053453, 19.850727) });
-
             try
             {
                 var location = await Geolocation.GetLastKnownLocationAsync();
@@ -63,6 +62,12 @@ namespace CracowZoo.Views
         private void MenuButton_Clicked(object sender, EventArgs e)
         {
             _eventAggregator.GetEvent<MyEvent>().Publish();
+        }
+
+        private async void CameraButton_Clicked(object sender, EventArgs e)
+        {
+            await Plugin.Media.CrossMedia.Current.TakePhotoAsync(
+                new Plugin.Media.Abstractions.StoreCameraMediaOptions() {  Directory="Kraków ZOO", SaveToAlbum = true });
         }
     }
 }

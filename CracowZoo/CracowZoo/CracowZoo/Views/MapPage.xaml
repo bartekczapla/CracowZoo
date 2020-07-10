@@ -8,10 +8,15 @@
     <ContentPage.Content>
         <Grid>
             <controls:ZooMap x:Name="ZooMapControl" MapType="Street"/>
-            <Button HeightRequest="37" WidthRequest="37" HorizontalOptions="Start" VerticalOptions="Start"
+            <Button HeightRequest="38" WidthRequest="38" HorizontalOptions="Start" VerticalOptions="Start"
                     CornerRadius="2" Margin="12" BackgroundColor="White" Opacity="0.8"
                     Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}"
-                    Clicked="MenuButton_Clicked"/>
+                    Clicked="MenuButton_Clicked" TextColor="#4b4b4b"/>
+
+            <Button HeightRequest="38" WidthRequest="38" HorizontalOptions="End" VerticalOptions="Start"
+                    CornerRadius="2" Margin="0,65,12,0" BackgroundColor="White" Opacity="0.8" Padding="0"
+                    Text="&#xf030;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium"
+                    TextColor="#4b4b4b" Clicked="CameraButton_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

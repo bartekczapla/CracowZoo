@@ -34,6 +34,7 @@ namespace CracowZoo
         private async void AskForPermissions()
         {
             await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+            await Permissions.RequestAsync<Permissions.Camera>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

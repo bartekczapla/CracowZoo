@@ -15,7 +15,7 @@ namespace CracowZoo.ViewModels
 {
     public class MenuPageViewModel: BindableBase
     {
-        private INavigationService _navigationService;
+        private readonly INavigationService _navigationService;
         private readonly IEventAggregator _eventAggregator;
 
         public ObservableCollection<CustomMenuItem> MenuItems { get; set; }

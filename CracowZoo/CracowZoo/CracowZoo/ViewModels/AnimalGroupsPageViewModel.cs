@@ -23,7 +23,7 @@ namespace CracowZoo.ViewModels
         public ICommand EntryChanged { get; }
         public ICommand FoundAnimalTapped { get; }
 
-        private bool isNavigating { get; set; }
+        private bool _isNavigating;
 
         private ObservableCollection<Animal> _foundAnimals;
         public ObservableCollection<Animal> FoundAnimals
@@ -57,7 +57,7 @@ namespace CracowZoo.ViewModels
             FoundAnimalTapped = new DelegateCommand(NavigateToSpecificAnimal);
             MenuButton = new DelegateCommand(ShowMenu);
             EntryChanged = new DelegateCommand(SearchForAnimals);
-            isNavigating = false;
+            _isNavigating = false;
         }
 
         private async void SearchForAnimals()
@@ -79,23 +79,23 @@ namespace CracowZoo.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            isNavigating = false;
+            _isNavigating = false;
             base.OnNavigatedTo(parameters);
         }
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
-            isNavigating = false;
+            _isNavigating = false;
             base.OnNavigatedFrom(parameters);
         }
 
         async void ExecuteNavigateCommand(object animalGroupObject)
         {
-            if(isNavigating)
+            if(_isNavigating)
             {
                 return;
             }
-            isNavigating = true;
+            _isNavigating = true;
             var parameters = new NavigationParameters();
             parameters.Add("animalGroup", animalGroupObject);
             await NavigationService.NavigateAsync(nameof(AnimalsPage), parameters);
