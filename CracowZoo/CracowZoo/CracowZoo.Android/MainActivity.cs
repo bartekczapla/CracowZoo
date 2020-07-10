@@ -40,11 +40,6 @@ namespace CracowZoo.Droid
             global::Xamarin.Essentials.Platform.Init(this, bundle);
             CachedImageRenderer.Init(true);
             LoadApplication(new App(new AndroidInitializer()));
-
-            var icon = BitmapFactory.DecodeResource(Resources, Resource.Drawable.testTile);
-            var ms = new MemoryStream();
-            icon.Compress(Bitmap.CompressFormat.Png, 0, ms);
-            byte[] iconBytes = ms.ToArray();
         }
 
         public override void OnBackPressed()
