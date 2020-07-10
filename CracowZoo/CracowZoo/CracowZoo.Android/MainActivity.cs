@@ -47,7 +47,9 @@ namespace CracowZoo.Droid
             Page currentPage = PageUtilities.GetCurrentPage(App.Current.MainPage);
 
             if (App.Current.MainPage is MasterDetailPage mdp && !mdp.IsPresented
-                && (currentPage is MapPage || currentPage is AnimalGroupsPage))
+                && (currentPage is MapPage || currentPage is AnimalGroupsPage
+                    || currentPage is EventsPage || currentPage is InformationPage
+                    || currentPage is TicketsPage))
             {
                 long currentTime = DateTime.UtcNow.Ticks / TimeSpan.TicksPerMillisecond;
 
