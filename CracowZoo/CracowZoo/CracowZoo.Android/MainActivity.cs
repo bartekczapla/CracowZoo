@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Content.PM;
+using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -12,6 +13,7 @@ using Prism;
 using Prism.Common;
 using Prism.Ioc;
 using System;
+using System.IO;
 using Xamarin.Forms;
 
 namespace CracowZoo.Droid
@@ -38,6 +40,11 @@ namespace CracowZoo.Droid
             global::Xamarin.Essentials.Platform.Init(this, bundle);
             CachedImageRenderer.Init(true);
             LoadApplication(new App(new AndroidInitializer()));
+
+            var icon = BitmapFactory.DecodeResource(Resources, Resource.Drawable.testTile);
+            var ms = new MemoryStream();
+            icon.Compress(Bitmap.CompressFormat.Png, 0, ms);
+            byte[] iconBytes = ms.ToArray();
         }
 
         public override void OnBackPressed()

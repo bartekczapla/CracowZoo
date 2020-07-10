@@ -11473,10 +11473,13 @@ namespace CracowZoo.Droid
 			public const int reptilesButton = 2131165699;
 			
 			// aapt resource value: 0x7F070204
-			public const int tooltip_frame_dark = 2131165700;
+			public const int testTile = 2131165700;
 			
 			// aapt resource value: 0x7F070205
-			public const int tooltip_frame_light = 2131165701;
+			public const int tooltip_frame_dark = 2131165701;
+			
+			// aapt resource value: 0x7F070206
+			public const int tooltip_frame_light = 2131165702;
 			
 			// aapt resource value: 0x7F070006
 			public const int _addaks = 2131165190;

@@ -1,4 +1,5 @@
-﻿using CracowZoo.Views.CustomControls;
+﻿using CracowZoo.Interfaces.CrossServices;
+using CracowZoo.Views.CustomControls;
 using Prism.Events;
 using System;
 using Xamarin.Essentials;
@@ -17,6 +18,14 @@ namespace CracowZoo.Views
 
             InitializeComponent();
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
+            //ZooMapControl.TileLayers.Add(TileLayer.FromSyncImage(GetTiles));
+        }
+
+        private byte[] GetTiles(int x, int y, int z)
+        {
+            var tileConverter = DependencyService.Get<ITileConverter>();
+            //TODO Poprawnie sformatować string do resources, np. mapTile_x_y_z
+            return tileConverter.ToByteArray("testTile");
         }
 
         private async void ValidateUserLocation(object sender, MyLocationButtonClickedEventArgs e)

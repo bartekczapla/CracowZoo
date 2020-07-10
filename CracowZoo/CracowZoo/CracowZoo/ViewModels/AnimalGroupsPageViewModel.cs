@@ -5,12 +5,9 @@ using CracowZoo.Models.Aditionals;
 using CracowZoo.Views;
 using Prism.Commands;
 using Prism.Events;
-using Prism.Mvvm;
 using Prism.Navigation;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -61,9 +58,6 @@ namespace CracowZoo.ViewModels
             MenuButton = new DelegateCommand(ShowMenu);
             EntryChanged = new DelegateCommand(SearchForAnimals);
             isNavigating = false;
-
-            var notificationManager = DependencyService.Get<INotificationManager>();
-            notificationManager.ScheduleNotification("Pokaz karmienia słoni", "Pokaz karmienia słoni o godzinie 13:00");
         }
 
         private async void SearchForAnimals()
