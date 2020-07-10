@@ -90,7 +90,6 @@
     <Compile Include="AndroidSettingsProvider.cs" />
     <Compile Include="CustomRenderers\ExtendedLabelRenderer.cs" />
     <Compile Include="DependencyServices\AndroidNotificationManager.cs" />
-    <Compile Include="DependencyServices\AndroidTileConverter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -319,7 +318,7 @@
     <AndroidResource Include="Resources\drawable\allAnimalsButton.jpg" />
     <AndroidResource Include="Resources\drawable\eventNotification.png" />
     <AndroidResource Include="Resources\drawable\backButton.png" />
-    <AndroidResource Include="Resources\drawable\testTile.png" />
+    <AndroidResource Include="Resources\drawable\plan_dojazdu.jpg" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

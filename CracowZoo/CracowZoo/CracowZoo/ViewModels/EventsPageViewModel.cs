@@ -7,9 +7,9 @@ using System.Linq;
 
 namespace CracowZoo.ViewModels
 {
-    public class InformationPageViewModel : ViewModelBase
+    public class EventsPageViewModel : ViewModelBase
     {
-        public InformationPageViewModel(INavigationService navigationService) : base(navigationService)
+        public EventsPageViewModel(INavigationService navigationService) : base(navigationService)
         {
         }
     }

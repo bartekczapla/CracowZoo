@@ -11470,10 +11470,10 @@ namespace CracowZoo.Droid
 			public const int notify_panel_notification_icon_bg = 2131165698;
 			
 			// aapt resource value: 0x7F070203
-			public const int reptilesButton = 2131165699;
+			public const int plan_dojazdu = 2131165699;
 			
 			// aapt resource value: 0x7F070204
-			public const int testTile = 2131165700;
+			public const int reptilesButton = 2131165700;
 			
 			// aapt resource value: 0x7F070205
 			public const int tooltip_frame_dark = 2131165701;

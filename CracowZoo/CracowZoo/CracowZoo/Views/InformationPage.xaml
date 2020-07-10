@@ -85,11 +85,11 @@
           HasShadow="True"
           CornerRadius="5"
           Margin="0,10,0,0">
-            <StackLayout
+                <StackLayout
               Padding="5,5,5,5
               ">
                     <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="0">
-                                <Label 
+                        <Label 
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center"
                         Margin="0,0,8,0"
@@ -97,7 +97,7 @@
                         FontSize="Medium" 
                         TextColor="Green"
                         FontFamily="{StaticResource FontAwesomeSolid}"/>
-                                <Label 
+                        <Label 
                         Text="Dojazd"
                         FontSize="Title"      
                         HorizontalTextAlignment="Center"
@@ -108,9 +108,30 @@
             Margin="0,10,0,10"
             HeightRequest="1" 
             Color="Green"/>
+                    <local:ExtendedLabel 
+            Text="Nasz Ogród Zoologiczny mieści się na terenie Lasu Wolskiego, na wzgórzu Pustelnik"
+            Style="{StaticResource labelStyle}"
+            JustifyText="True"
+            FontAttributes="Bold"
+            FontSize="Body"/>
+            <local:ExtendedLabel 
+                Margin="0,10,0,0"
+                Text="Podróżując komunikacją miejską sugerujemy Państwu skorzystanie z autobusu o numerze 134, który odjeżdża z przystanku Cracovia Stadion i kończy trasę pod bramą naszego ZOO."
+                Style="{StaticResource labelStyle}"
+                JustifyText="True"
+                FontSize="Body"/>
+            <local:ExtendedLabel Margin="0,10,0,0"
+                Text="W przypadku podróży własnym samochodem prosimy o zapoznanie się z poniższą mapką:"
+                Style="{StaticResource labelStyle}"
+                JustifyText="True"
+                FontSize="Body" />
+            <ffimageloading:CachedImage 
+                    HeightRequest="150"
+                    Aspect="AspectFill"
+                    Source="plan_dojazdu.jpg"
+                    IsOpaque="True" />
                 </StackLayout>
-
-        </Frame>
+            </Frame>
         <Frame
           BackgroundColor="White"
           HasShadow="True"
@@ -139,6 +160,20 @@
             Margin="0,10,0,10"
             HeightRequest="1" 
             Color="Green"/>
+                    <local:ExtendedLabel Text="Na terenie Lasu Wolskiego znajdują się dwa parkingi:"
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         FontSize="Body" 
+                                         Margin="0,0,0,10"/>
+                    <Label Text="• PARKING I (PRZY BRAMIE ZOO)"
+                           Style="{StaticResource labelStyle}"
+                           FontAttributes="Bold"
+                           FontSize="Body" />
+                    <Label Text="• PARKING II (1KM OD ZOO)"
+                           Style="{StaticResource labelStyle}"
+                           FontAttributes="Bold"
+                           FontSize="Body"
+                           Margin="0,10,0,0"/>
                 </StackLayout>
         </Frame>
         <Frame
@@ -146,32 +181,32 @@
           HasShadow="True"
           CornerRadius="5"
           Margin="0,10,0,0">
-            <StackLayout
-              Padding="5,5,5,5
-              ">
-                    <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="0">
-                        <Label 
-                        HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="Center"
-                        Margin="0,0,8,0"
-                        Text="&#xf1ae;" 
-                        FontSize="Medium" 
-                        TextColor="Green"
-                        FontFamily="{StaticResource FontAwesomeSolid}"/>
-                        <Label 
-                        Text="Gastronomia"
-                        FontSize="Title"      
-                        HorizontalTextAlignment="Center"
-                        Style="{StaticResource labelStyle}"
-                        FontAttributes="Bold"/>
+                <StackLayout Padding="5,5,5,5">
+                    <StackLayout HorizontalOptions="Center"
+                                 Orientation="Horizontal"
+                                 Spacing="0">
+                        <Label HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               Margin="0,0,8,0"
+                               Text="&#xf1ae;"
+                               FontSize="Medium"
+                               TextColor="Green"
+                               FontFamily="{StaticResource FontAwesomeSolid}" />
+                        <Label Text="Gastronomia"
+                               FontSize="Title"
+                               HorizontalTextAlignment="Center"
+                               Style="{StaticResource labelStyle}"
+                               FontAttributes="Bold" />
                     </StackLayout>
-                    <BoxView 
-            Margin="0,10,0,10"
-            HeightRequest="1" 
-            Color="Green"/>
-            </StackLayout>
-
-        </Frame>
+                    <BoxView Margin="0,10,0,10"
+                             HeightRequest="1"
+                             Color="Green" />
+                    <local:ExtendedLabel Text="Przed wejściem do ZOO, a także na terenie mini–ZOO znajdują się kioski gastronomiczne, w których można zjeść ciepły posiłek."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         FontSize="Body" />
+                </StackLayout>
+            </Frame>
     </StackLayout>
 
                      
