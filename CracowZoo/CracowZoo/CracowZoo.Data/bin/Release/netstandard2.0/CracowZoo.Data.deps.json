@@ -470,6 +470,17 @@
           }
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.3.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -536,6 +547,7 @@
         "dependencies": {
           "Prism.Unity.Forms": "7.2.0.1422",
           "System.ComponentModel.Annotations": "4.7.0",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "4.7.0.968",
@@ -868,6 +880,13 @@
       "sha512": "sha512-pxeataMa9MB/ilLNcmy5OUrcvA2OnPMuMCTsw+zGgRPWx1oxkq6ap5bI+59htjAPe9awPDIU3YVk+yH0sfcOWQ==",
       "path": "unity.container/5.11.1",
       "hashPath": "unity.container.5.11.1.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "path": "xam.plugin.media/5.0.1",
+      "hashPath": "xam.plugin.media.5.0.1.nupkg.sha512"
     },
     "Xamarin.Essentials/1.5.3.2": {
       "type": "package",

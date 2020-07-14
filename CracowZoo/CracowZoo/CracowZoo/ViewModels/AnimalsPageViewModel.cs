@@ -22,6 +22,7 @@ namespace CracowZoo.ViewModels
     {
         private readonly IRepository _repository;
         public int AnimalGroup { get; set; }
+        private bool _isNavigating;
         public ObservableCollection<Animal> Animals { get; } = new ObservableCollection<Animal>();
 
         private Animal _selectedAnimal;
@@ -54,7 +55,9 @@ namespace CracowZoo.ViewModels
         }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
-        {    
+        {
+            _isNavigating = false;
+
             if(parameters.ContainsKey("animalGroup"))
             {
                 AnimalGroup = parameters.GetValue<int>("animalGroup");
@@ -90,6 +93,11 @@ namespace CracowZoo.ViewModels
 
         async void NavigateToAnimalDetails()
         {
+            if (_isNavigating)
+                return;
+
+            _isNavigating = true;
+
             var parameters = new NavigationParameters();
             parameters.Add("selectedAnimal", SelectedAnimal);
             await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);

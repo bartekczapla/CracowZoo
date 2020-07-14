@@ -71,6 +71,11 @@ namespace CracowZoo.ViewModels
 
         private async void NavigateToSpecificAnimal()
         {
+            if (_isNavigating)
+                return;
+
+            _isNavigating = true;
+
             var parameters = new NavigationParameters();
             parameters.Add("selectedAnimal", SelectedFoundAnimal);
             await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
