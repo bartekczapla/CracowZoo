@@ -5,7 +5,6 @@ using Prism.Events;
 using Prism.Navigation;
 using System;
 using System.Windows.Input;
-using Unity;
 
 namespace CracowZoo.ViewModels
 {

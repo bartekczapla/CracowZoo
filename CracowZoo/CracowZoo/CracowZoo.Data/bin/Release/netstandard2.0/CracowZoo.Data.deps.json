@@ -15,8 +15,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "3.1.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5",
           "NETStandard.Library": "2.0.3",
-          "Prism.Unity.Forms": "7.2.0.1422",
-          "Xamarin.FFImageLoading.Forms": "2.4.11.982"
+          "Prism.Unity.Forms": "7.2.0.1422"
         },
         "runtime": {
           "CracowZoo.Data.dll": {}
@@ -558,9 +557,6 @@
         }
       },
       "CracowZoo.PlatformCore/1.0.0": {
-        "dependencies": {
-          "Xamarin.FFImageLoading.Forms": "2.4.11.982"
-        },
         "runtime": {
           "CracowZoo.PlatformCore.dll": {}
         }
