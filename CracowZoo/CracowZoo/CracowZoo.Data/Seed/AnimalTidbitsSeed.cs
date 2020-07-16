@@ -403,6 +403,60 @@ namespace CracowZoo.Data.Seed
                 Description = "Wbrew powszechnemu przekonaniu strusie nie zakopują głowy w piasek, aby uniknąć niebezpieczeństwa",
                 AnimalId = 31 // Struś afrykański
             });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 306,
+                Description = "Nandu posiadają doskonały wzrok, dobrze pływają i szybko biegają (mogą przekraczać prędkość 40 km/godz).",
+                AnimalId = 32
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 307,
+                Description = "Długie skrzydła wykorzystują do gwałtownej zmiany kierunku.",
+                AnimalId = 32
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 308,
+                Description = "Jest drugim po strusiu afrykańskim największym żyjącym ptakiem.",
+                AnimalId = 33
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 309,
+                Description = "Biega bardzo szybko, osiągając prędkość do 50 km/h. W razie zagrożenia broni się uderzając napastnika nogami. Potrafi pływać. Jest hodowany dla mięsa, oleju i skór.",
+                AnimalId = 33
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 310,
+                Description = "Prowadzi naziemny tryb życia, w sytuacji zagrożenia częściej ucieka pieszo niż fruwa.",
+                AnimalId = 34
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 311,
+                Description = "Jest wytrwałym biegaczem. Poza sezonem lęgowym tworzy stada liczące około 25 osobników. W wielu krajach jest hodowana jako ptak udomowiony dla smacznego mięsa i jaj.",
+                AnimalId = 34
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 312,
+                Description = "Największa perlica.",
+                AnimalId = 35
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 313,
+                Description = "Ze względu na to, że głowa i szyja tego ptaka pozbawione są piór perlica ta została nazwana sępią.",
+                AnimalId = 35
+            });
+            //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            //{
+            //    Id = 308,
+            //    Description = "",
+            //    AnimalId =
+            //});
             #endregion
 
             #region SSAKI 92-170

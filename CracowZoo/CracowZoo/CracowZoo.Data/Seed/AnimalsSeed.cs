@@ -602,6 +602,1146 @@ namespace CracowZoo.Data.Seed
                 Longevity = "do 75 lat"
             });
 
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 32,
+                Name = "Nandu szare",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Rhea americana",
+                Occurance = "Wschodnia część Ameryki Południowej. Brazylia, Paragwaj, Urugwaj, Argentyna.",
+                LivingEnvritonment = "Stepy i sawanny.",
+                Food = "Liście, nasiona, korzenie i owoce. Dieta jest uzupełniana owadami, a także jaszczurkami, żabami, małymi ptakami i wężami.",
+                Breeding = "Jeden samiec łączy się z 6-15 samicami. Broni swego haremu i terytorium przed innymi dorosłymi samcami. Samice składają do wspólnego gniazda 15-30 jaj. Wysiaduje je tylko samiec przez 35-40 dni. Samiec również opiekuje się pisklętami, które zaraz po wykluciu są samodzielne.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 32,
+                ImagePath = "_nanduszare.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 33,
+                Name = "Emu",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Dromaius novaehollandiae",
+                Occurance = "Australia",
+                LivingEnvritonment = "Krzaczaste stepy, otwarte równiny, mało zwarte lasy w suchych okolicach.",
+                Food = "Głównie nasiona, owady i owoce.",
+                Breeding = "Gniazdo umieszczone jest na ziemi. W zniesieniu 5-15 jaj, wysiadywanych przez samca 56 dni. Samiec również sprawuje opiekę nad pisklętami.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 33,
+                ImagePath = "_emu.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 34,
+                Name = "Perliczka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Afryka na południe od Sahary.",
+                Occurance = "Afryka na południe od Sahary.",
+                LivingEnvritonment = "Zamieszkuje zróżnicowane środowiska oprócz lasu równikowego i pustyń.",
+                Food = "Nasiona, bulwy, jagody, bezkręgowce.",
+                Breeding = "Gniazdo znajduje się na ziemi. Samica składa do 12 jaj i wysiaduje je przez 24 do 27 dni. Samiec pomaga wychowywać młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 34,
+                ImagePath = "_perliczka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 35,
+                Name = "Perlica sępia",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Acryllium vulturinum",
+                Occurance = "Wschodnia Afryka – Etiopia, Somalia, Kenia, Uganda, Tanzania.",
+                LivingEnvritonment = "Zamieszkuje sawanny, półsuche tereny trawiaste z krzewami i nadrzeczne zarośla.",
+                Food = "Nasiona, liście traw i ziół, owoce, pączki, bulwy, owady, pająki, ślimaki.",
+                Breeding = "W sezonie lęgowym ptaki łączą się w pary. Gniazdo ma postać zagłębienia w ziemi, często znajduje się pod osłoną roślinności. W zniesieniu nawet do 15 jaj. Inkubacja trwa 23-25 dni, wysiaduje samica.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 35,
+                ImagePath = "_perlicasepia.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 36,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 36,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 37,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 37,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 38,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 38,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 39,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 39,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 40,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 40,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 41,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 41,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 42,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 42,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 43,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 43,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 44,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 44,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 45,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 45,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 46,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 46,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 47,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 47,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 48,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 48,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 49,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 49,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 50,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 50,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 51,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 51,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 52,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 52,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 53,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 53,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 54,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 54,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 55,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 55,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 56,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 56,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 57,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 57,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 58,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 58,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 59,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 59,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 60,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 60,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 61,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 61,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 62,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 62,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 63,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 63,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 64,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 64,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 65,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 65,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 66,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 66,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 67,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 67,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 68,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 68,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 69,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 69,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 70,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 70,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 71,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 71,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 72,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 72,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 73,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 73,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 74,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 74,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 75,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 75,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 76,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 76,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 77,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 77,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 78,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 78,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 79,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 79,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 80,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 80,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 81,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 81,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 82,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 82,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 83,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 83,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 84,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 84,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 85,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 85,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 86,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 86,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 87,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 87,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 88,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 88,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 89,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 89,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 90,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 90,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 91,
+            //    Name = "",
+            //    Group = AnimalGroup.Birds,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 91,
+            //    ImagePath = ".jpg",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+
             #endregion
 
             #region SSAKI 92-170
