@@ -6,8 +6,4 @@
     <RootNamespace>CracowZoo.PlatformCore</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
-  </ItemGroup>
-
 </Project>

@@ -22,12 +22,19 @@ namespace CracowZoo.Droid.DependencyServices
     {
         public byte[] ToByteArray(string resource)
         {
-            var mydrw = (int)typeof(Resource.Drawable).GetField(resource).GetValue(null);
-            var icon = BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, mydrw);
-            var ms = new MemoryStream();
-            icon.Compress(Bitmap.CompressFormat.Png, 0, ms);
-            byte[] iconBytes = ms.ToArray();
-            return iconBytes;
+            try
+            {
+                var mydrw = (int)typeof(Resource.Drawable).GetField(resource).GetValue(null);
+                var icon = BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, mydrw);
+                var ms = new MemoryStream();
+                icon.Compress(Bitmap.CompressFormat.Png, 0, ms);
+                byte[] iconBytes = ms.ToArray();
+                return iconBytes;
+            }
+            catch
+            {
+                return new byte[1];
+            } 
         }
     }
 }
