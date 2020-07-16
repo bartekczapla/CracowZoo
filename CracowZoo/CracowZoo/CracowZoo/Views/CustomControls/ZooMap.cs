@@ -12,7 +12,7 @@ namespace CracowZoo.Views.CustomControls
         private readonly double _zooLatitude = 50.053453;
         private readonly double _zooLongitude = 19.850727;
 
-        private readonly double _maxZoom = 19;
+        private readonly double _maxZoom = 18;
         private readonly double _minZoom = 16;
         private readonly double _leftRestriction = 19.846560023725;
         private readonly double _rightRestriction = 19.856195859611;

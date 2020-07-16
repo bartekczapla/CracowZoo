@@ -19,14 +19,14 @@ namespace CracowZoo.Views
             InitializeComponent();
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
             ZooMapControl.UiSettings.CompassEnabled = false;
-            //ZooMapControl.TileLayers.Add(TileLayer.FromSyncImage(GetTiles));
+            ZooMapControl.TileLayers.Add(TileLayer.FromSyncImage(GetTiles));
         }
 
         private byte[] GetTiles(int x, int y, int z)
         {
             var tileConverter = DependencyService.Get<ITileConverter>();
             //TODO Poprawnie sformatować string do resources, np. mapTile_x_y_z
-            return tileConverter.ToByteArray("testTile");
+            return tileConverter.ToByteArray($"tile_{z}_{x}_{y}");
         }
 
         private async void ValidateUserLocation(object sender, MyLocationButtonClickedEventArgs e)

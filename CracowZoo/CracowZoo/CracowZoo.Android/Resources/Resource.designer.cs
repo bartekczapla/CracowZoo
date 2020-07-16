@@ -10716,10 +10716,226 @@ namespace CracowZoo.Droid
 			public const int reptilesButton = 2131165503;
 			
 			// aapt resource value: 0x7F070140
-			public const int tooltip_frame_dark = 2131165504;
+			public const int testTile = 2131165504;
 			
 			// aapt resource value: 0x7F070141
-			public const int tooltip_frame_light = 2131165505;
+			public const int tile_16_36380_22210 = 2131165505;
+			
+			// aapt resource value: 0x7F070142
+			public const int tile_16_36380_22211 = 2131165506;
+			
+			// aapt resource value: 0x7F070143
+			public const int tile_16_36381_22210 = 2131165507;
+			
+			// aapt resource value: 0x7F070144
+			public const int tile_16_36381_22211 = 2131165508;
+			
+			// aapt resource value: 0x7F070145
+			public const int tile_16_36382_22210 = 2131165509;
+			
+			// aapt resource value: 0x7F070146
+			public const int tile_16_36382_22211 = 2131165510;
+			
+			// aapt resource value: 0x7F070147
+			public const int tile_17_72761_44420 = 2131165511;
+			
+			// aapt resource value: 0x7F070148
+			public const int tile_17_72761_44421 = 2131165512;
+			
+			// aapt resource value: 0x7F070149
+			public const int tile_17_72761_44422 = 2131165513;
+			
+			// aapt resource value: 0x7F07014A
+			public const int tile_17_72761_44423 = 2131165514;
+			
+			// aapt resource value: 0x7F07014B
+			public const int tile_17_72762_44420 = 2131165515;
+			
+			// aapt resource value: 0x7F07014C
+			public const int tile_17_72762_44421 = 2131165516;
+			
+			// aapt resource value: 0x7F07014D
+			public const int tile_17_72762_44422 = 2131165517;
+			
+			// aapt resource value: 0x7F07014E
+			public const int tile_17_72762_44423 = 2131165518;
+			
+			// aapt resource value: 0x7F07014F
+			public const int tile_17_72763_44420 = 2131165519;
+			
+			// aapt resource value: 0x7F070150
+			public const int tile_17_72763_44421 = 2131165520;
+			
+			// aapt resource value: 0x7F070151
+			public const int tile_17_72763_44422 = 2131165521;
+			
+			// aapt resource value: 0x7F070152
+			public const int tile_17_72763_44423 = 2131165522;
+			
+			// aapt resource value: 0x7F070153
+			public const int tile_17_72764_44420 = 2131165523;
+			
+			// aapt resource value: 0x7F070154
+			public const int tile_17_72764_44421 = 2131165524;
+			
+			// aapt resource value: 0x7F070155
+			public const int tile_17_72764_44422 = 2131165525;
+			
+			// aapt resource value: 0x7F070156
+			public const int tile_17_72764_44423 = 2131165526;
+			
+			// aapt resource value: 0x7F070157
+			public const int tile_18_145523_88841 = 2131165527;
+			
+			// aapt resource value: 0x7F070158
+			public const int tile_18_145523_88842 = 2131165528;
+			
+			// aapt resource value: 0x7F070159
+			public const int tile_18_145523_88843 = 2131165529;
+			
+			// aapt resource value: 0x7F07015A
+			public const int tile_18_145523_88844 = 2131165530;
+			
+			// aapt resource value: 0x7F07015B
+			public const int tile_18_145523_88845 = 2131165531;
+			
+			// aapt resource value: 0x7F07015C
+			public const int tile_18_145523_88846 = 2131165532;
+			
+			// aapt resource value: 0x7F07015D
+			public const int tile_18_145523_88847 = 2131165533;
+			
+			// aapt resource value: 0x7F07015E
+			public const int tile_18_145524_88841 = 2131165534;
+			
+			// aapt resource value: 0x7F07015F
+			public const int tile_18_145524_88842 = 2131165535;
+			
+			// aapt resource value: 0x7F070160
+			public const int tile_18_145524_88843 = 2131165536;
+			
+			// aapt resource value: 0x7F070161
+			public const int tile_18_145524_88844 = 2131165537;
+			
+			// aapt resource value: 0x7F070162
+			public const int tile_18_145524_88845 = 2131165538;
+			
+			// aapt resource value: 0x7F070163
+			public const int tile_18_145524_88846 = 2131165539;
+			
+			// aapt resource value: 0x7F070164
+			public const int tile_18_145524_88847 = 2131165540;
+			
+			// aapt resource value: 0x7F070165
+			public const int tile_18_145525_88841 = 2131165541;
+			
+			// aapt resource value: 0x7F070166
+			public const int tile_18_145525_88842 = 2131165542;
+			
+			// aapt resource value: 0x7F070167
+			public const int tile_18_145525_88843 = 2131165543;
+			
+			// aapt resource value: 0x7F070168
+			public const int tile_18_145525_88844 = 2131165544;
+			
+			// aapt resource value: 0x7F070169
+			public const int tile_18_145525_88845 = 2131165545;
+			
+			// aapt resource value: 0x7F07016A
+			public const int tile_18_145525_88846 = 2131165546;
+			
+			// aapt resource value: 0x7F07016B
+			public const int tile_18_145525_88847 = 2131165547;
+			
+			// aapt resource value: 0x7F07016C
+			public const int tile_18_145526_88841 = 2131165548;
+			
+			// aapt resource value: 0x7F07016D
+			public const int tile_18_145526_88842 = 2131165549;
+			
+			// aapt resource value: 0x7F07016E
+			public const int tile_18_145526_88843 = 2131165550;
+			
+			// aapt resource value: 0x7F07016F
+			public const int tile_18_145526_88844 = 2131165551;
+			
+			// aapt resource value: 0x7F070170
+			public const int tile_18_145526_88845 = 2131165552;
+			
+			// aapt resource value: 0x7F070171
+			public const int tile_18_145526_88846 = 2131165553;
+			
+			// aapt resource value: 0x7F070172
+			public const int tile_18_145526_88847 = 2131165554;
+			
+			// aapt resource value: 0x7F070173
+			public const int tile_18_145527_88841 = 2131165555;
+			
+			// aapt resource value: 0x7F070174
+			public const int tile_18_145527_88842 = 2131165556;
+			
+			// aapt resource value: 0x7F070175
+			public const int tile_18_145527_88843 = 2131165557;
+			
+			// aapt resource value: 0x7F070176
+			public const int tile_18_145527_88844 = 2131165558;
+			
+			// aapt resource value: 0x7F070177
+			public const int tile_18_145527_88845 = 2131165559;
+			
+			// aapt resource value: 0x7F070178
+			public const int tile_18_145527_88846 = 2131165560;
+			
+			// aapt resource value: 0x7F070179
+			public const int tile_18_145527_88847 = 2131165561;
+			
+			// aapt resource value: 0x7F07017A
+			public const int tile_18_145528_88841 = 2131165562;
+			
+			// aapt resource value: 0x7F07017B
+			public const int tile_18_145528_88842 = 2131165563;
+			
+			// aapt resource value: 0x7F07017C
+			public const int tile_18_145528_88843 = 2131165564;
+			
+			// aapt resource value: 0x7F07017D
+			public const int tile_18_145528_88844 = 2131165565;
+			
+			// aapt resource value: 0x7F07017E
+			public const int tile_18_145528_88845 = 2131165566;
+			
+			// aapt resource value: 0x7F07017F
+			public const int tile_18_145528_88846 = 2131165567;
+			
+			// aapt resource value: 0x7F070180
+			public const int tile_18_145528_88847 = 2131165568;
+			
+			// aapt resource value: 0x7F070181
+			public const int tile_18_145529_88841 = 2131165569;
+			
+			// aapt resource value: 0x7F070182
+			public const int tile_18_145529_88842 = 2131165570;
+			
+			// aapt resource value: 0x7F070183
+			public const int tile_18_145529_88843 = 2131165571;
+			
+			// aapt resource value: 0x7F070184
+			public const int tile_18_145529_88844 = 2131165572;
+			
+			// aapt resource value: 0x7F070185
+			public const int tile_18_145529_88845 = 2131165573;
+			
+			// aapt resource value: 0x7F070186
+			public const int tile_18_145529_88846 = 2131165574;
+			
+			// aapt resource value: 0x7F070187
+			public const int tile_18_145529_88847 = 2131165575;
+			
+			// aapt resource value: 0x7F070188
+			public const int tooltip_frame_dark = 2131165576;
+			
+			// aapt resource value: 0x7F070189
+			public const int tooltip_frame_light = 2131165577;
 			
 			// aapt resource value: 0x7F070006
 			public const int _addaks = 2131165190;
