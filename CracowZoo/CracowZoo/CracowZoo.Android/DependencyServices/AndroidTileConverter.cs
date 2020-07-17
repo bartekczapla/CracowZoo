@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.Res;
@@ -13,6 +13,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using CracowZoo.Interfaces.CrossServices;
+using Java.Nio;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(CracowZoo.Droid.DependencyServices.AndroidTileConverter))]
@@ -20,20 +21,22 @@ namespace CracowZoo.Droid.DependencyServices
 {
     public class AndroidTileConverter : ITileConverter
     {
-        public byte[] ToByteArray(string resource)
+        public async Task<byte[]> ToByteArray(string resource)
         {
             try
             {
-                var mydrw = (int)typeof(Resource.Drawable).GetField(resource).GetValue(null);
-                var icon = BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, mydrw);
-                var ms = new MemoryStream();
-                icon.Compress(Bitmap.CompressFormat.Png, 0, ms);
-                byte[] iconBytes = ms.ToArray();
-                return iconBytes;
+                int resourceId = (int)typeof(Resource.Drawable).GetField(resource).GetValue(null);
+                var tile = BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, resourceId);
+
+                using(var ms = new MemoryStream())
+                {
+                    await tile.CompressAsync(Bitmap.CompressFormat.Jpeg, 70, ms);
+                    return ms.ToArray();
+                }
             }
             catch
             {
-                return new byte[1];
+                return Array.Empty<byte>();
             } 
         }
     }

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CracowZoo.Interfaces.CrossServices
 {
     public interface ITileConverter
     {
-        byte[] ToByteArray(string resource);
+        Task<byte[]> ToByteArray(string resource);
     }
 }
