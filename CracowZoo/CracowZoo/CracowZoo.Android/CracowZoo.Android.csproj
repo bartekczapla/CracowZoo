@@ -380,6 +380,10 @@
     <AndroidResource Include="Resources\drawable\tile_16_36382_22212.png" />
     <AndroidResource Include="Resources\drawable\tile_16_36380_22210.png" />
     <AndroidResource Include="Resources\drawable\tile_16_36380_22211.png" />
+    <AndroidAsset Include="Assets\mammalsPin.png" />
+    <AndroidAsset Include="Assets\reptilesPin.png" />
+    <AndroidAsset Include="Assets\amphibiansPin.png" />
+    <AndroidAsset Include="Assets\fishPin.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
