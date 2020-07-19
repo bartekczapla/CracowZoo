@@ -21,13 +21,13 @@ namespace CracowZoo.Models
         public ConservationStatus ConservationStatus { get; set; }
         [MaxLength(200)]
         public string Description { get; set; }
-        [MaxLength(50)]
+        [MaxLength(200)]
         public string Occurance { get; set; }
-        [MaxLength(100)]
+        [MaxLength(200)]
         public string LivingEnvritonment { get; set; }
         [MaxLength(200)]
         public string Food { get; set; }
-        [MaxLength(200)]
+        [MaxLength(300)]
         public string Breeding { get; set; }
         public AnimalDanger AnimalDanger { get; set; }
         public virtual MapItem MapItem { get; set; }

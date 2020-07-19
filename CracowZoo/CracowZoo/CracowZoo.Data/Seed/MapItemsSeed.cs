@@ -74,7 +74,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 9, 
+                Id = 9,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -82,7 +82,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 10, 
+                Id = 10,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -90,7 +90,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 11, 
+                Id = 11,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -98,7 +98,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 12, 
+                Id = 12,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -106,7 +106,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 13, 
+                Id = 13,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -114,7 +114,7 @@ namespace CracowZoo.Data.Seed
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
-                Id = 14, 
+                Id = 14,
                 X = 0,
                 Y = 0,
                 Marked = false
@@ -818,7 +818,6 @@ namespace CracowZoo.Data.Seed
                 Y = 0,
                 Marked = false
             });
-
             #endregion
         }
     }

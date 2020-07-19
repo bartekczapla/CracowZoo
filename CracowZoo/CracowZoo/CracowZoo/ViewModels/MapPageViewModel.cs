@@ -23,13 +23,12 @@ namespace CracowZoo.ViewModels
 
         public override void Initialize(INavigationParameters parameters)
         {
-            GetRandomAnimalTidbit();
             base.Initialize(parameters);
         }
 
         private async void GetRandomAnimalTidbit()
         {
-            var randomAnimalTidbit = await _animalTidbitsRepository.GetRandomAsync(); //tymczasowo tu, dla testu
+            var randomAnimalTidbit = await _animalTidbitsRepository.GetRandomAsync();
         }
 
     }

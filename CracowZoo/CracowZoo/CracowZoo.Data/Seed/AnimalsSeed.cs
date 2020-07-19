@@ -319,7 +319,7 @@ namespace CracowZoo.Data.Seed
                 Id = 17,
                 Name = "Żółw stepowy",
                 Group = AnimalGroup.Reptiles,
-                ConservationStatus = ConservationStatus.Unknown, 
+                ConservationStatus = ConservationStatus.Unknown,
                 LatinSpecie = "Testudo horsfieldii",
                 Occurance = "Południowo-wschodnia Rosja, Kazachstan, Uzbekistan, Azerbejdżan, Kirgistan, Pakistan, Turkmenistan, Iran, Mongolia, Chiny.",
                 LivingEnvritonment = "Suche, trawiaste obszary o skalnym podłożu.",
@@ -588,7 +588,7 @@ namespace CracowZoo.Data.Seed
                 Id = 31,
                 Name = "Struś afrykański",
                 Group = AnimalGroup.Birds,
-                ConservationStatus = ConservationStatus.LeastConcern, 
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Struthio camelus",
                 Occurance = "Afryka na terenie południowej Sahary, Sudan, Etiopia, Somalia po Kenię, południowa Kenia po Tanzanię i Afryka Południowa.",
                 LivingEnvritonment = "Pustynie, półpustynie, sawanny",
@@ -678,1069 +678,1069 @@ namespace CracowZoo.Data.Seed
                 Longevity = ""
             });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 36,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 36,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 36,
+                Name = "Uszak siwy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Crossoptilon auritum",
+                Occurance = "Chiny.",
+                LivingEnvritonment = "Zamieszkuje lasy iglaste i mieszane, łąki powyżej granicy lasu (do wysokości 3 500 m n.p.m.).",
+                Food = "Głównie pokarm roślinny-pączki i liście, owoce, nasiona. Dietę uzupełnia owadami.",
+                Breeding = "Gatunek monogamiczny – kogut łączy się z jedną kurą. Gniazdo zakłada na ziemi, w zagłębieniu pod osłoną roślinności. W zniesieniu 6-12 jaj, wysiaduje tylko samica 24-28 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 36,
+                ImagePath = "_uszaksiwy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 37,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 37,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 37,
+                Name = "Olśniak himalajski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Lophophorus impejanus",
+                Occurance = "Azja od wschodniego Afganistanu przez Himalaje, Kaszmir, północne Indie, Nepal, południowy Tybet i Butan.",
+                LivingEnvritonment = "Zamieszkuje górskie lasy iglaste i mieszane na wysokości od 2100 do 4500 m.",
+                Food = "Nasiona, bulwy, korzonki, owoce, bezkręgowce.",
+                Breeding = "Gniazdo znajduje się na ziemi, w zagłębieniu, często pod osłoną roślinności. W zniesieniu 3-8 jaj, wysiaduje samica około 27 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 37,
+                ImagePath = "_olsniakhimalajski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 38,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 38,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 38,
+                Name = "Bażant annamski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.CriticallyEndangered,
+                LatinSpecie = "Lophura edwardsi",
+                Occurance = "Centralny Wietnam.",
+                LivingEnvritonment = "Zamieszkuje górskie lasy, gęste zarośla w pobliżu strumieni.",
+                Food = "Różne części roślin, owoce, nasiona i rożne drobne owady.",
+                Breeding = "Samica składa 4-7 jaj i wysiaduje je w gnieździe znajdującym się na ziemi przez 21-22 dni, a następnie opiekuje się pisklętami. Młode osiągają dojrzałość płciową w wieku 2 lat.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 38,
+                ImagePath = "_bazantannamski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 39,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 39,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 39,
+                Name = "Bernikla białolica",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Branta leucopsis",
+                Occurance = "Grenlandia, Archipelag Svalbard, północna część Norwegii. Zimuje na wybrzeżach Morza Północnego i Zatoki Biskajskiej, a nawet na Półwyspie Iberyjskim.",
+                LivingEnvritonment = "Skaliste wybrzeża północnych mórz, tundra w sąsiedztwie bagien i jezior. Zimuje na łąkach i pastwiskach położonych w pobliżu morza.",
+                Food = "Przeważnie pokarm roślinny zbierany na lądzie. Na zimowisku dieta uzupełniana jest mięczakami i skorupiakami morskimi.",
+                Breeding = "Gnieździ się kolonijnie na skałach w pobliżu morza. Wyprowadza 1 lęg w roku, w zniesieniu znajduje się 4-5 jaj. Wysiaduje samica przez 24-25 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 39,
+                ImagePath = "_berniklabialolica.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 40,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 40,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 40,
+                Name = "Bernikla rdzawoszyja",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Branta ruficollis",
+                Occurance = "Zachodnia Syberia. Zimuje na wybrzeżu Morza Kaspijskiego i Zatoki Perskiej.",
+                LivingEnvritonment = "Tundra, lasotundra, step, mokradła i bagna, starorzecza, stawy hodowlane.",
+                Food = "Przeważnie pokarm roślinny zbierany na lądzie: trawy, zboża, liście, zielone części roślin wodnych.",
+                Breeding = "Gniazduje w luźnych koloniach, często w sąsiedztwie miejsc lęgowych ptaków drapieżnych i sów, które zwiększają bezpieczeństwo bernikli i ich lęgu. W zniesieniu zwykle 6-7 jaj. Samica wysiaduje przez około 25 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 40,
+                ImagePath = "_berniklardzawoszyja.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 41,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 41,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 41,
+                Name = "Gęś hawajska",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Branta sandvicensis",
+                Occurance = "Hawaje",
+                LivingEnvritonment = "Stoki gór wulkanicznych do wysokości 2500 m n.p.m, łąki.",
+                Food = "Głównie pokarm roślinny: trawy, zioła, jagody, zielone części roślin, liście.",
+                Breeding = "Gniazdo znajduje się na ziemi, w zagłębieniach terenu, często pomiędzy blokami lawy. W zniesieniu 3-5 jaj, okres inkubacji trwa około 29 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 41,
+                ImagePath = "_geshawajska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 42,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 42,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 42,
+                Name = "Łabędź czarny",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Cygnus atratus",
+                Occurance = "Australia, Tasmania, Nowa Zelandia",
+                LivingEnvritonment = "Różnego rodzaju stojące i wolno płynące wody śródlądowe, zatoki morskie i laguny, zbiorniki wodne w parkach.",
+                Food = "Różne części roślin wodnych, wodorosty. Żerują również na pastwiskach i okresowo zalewanych polach.",
+                Breeding = "Gniazda zakładają na suchym lądzie lub wśród roślinności bagiennej. W zniesieniu zwykle 5-6 jaj, okres inkubacji wynosi 36-40 dni. Często gniazduje w koloniach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 42,
+                ImagePath = "_labedzczarny.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 43,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 43,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 43,
+                Name = "Drzewica dwubarwna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dendrocygna bicolor",
+                Occurance = "Indie, wschodnia Afryka, północne i wschodnie rejony Ameryki Południowej, Meksyk",
+                LivingEnvritonment = "Okolice zbiorników wodnych, bagna oraz rozlewiska rzek",
+                Food = "Różne części roślin, owoce, drobne bezkręgowce wodne.",
+                Breeding = "Gniazduje w pojedynczych parach lub luźnych koloniach. W zniesieniu średnio 10 jaj, inkubacja trwa 24-28 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 43,
+                ImagePath = "_drzewicadwubarwna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 44,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 44,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 44,
+                Name = "Kazarka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Tadorna ferruginea",
+                Occurance = "Wschodnia część basenu Morza Śródziemnego, Morza Czarnego, w pasie Azji Środkowej po Amur oraz w północno-zachodniej Afryce po Wyżynę Abisyńską",
+                LivingEnvritonment = "Jeziora w pobliżu stepów i półpustyń. W górach zamieszkuje tereny położone do wysokości 3000 m n.p.m.",
+                Food = "Pokarm mieszany z przewagą roślinnego.",
+                Breeding = "Gniazduje w szczelinach skalnych, rozpadlinach, opuszczonych norach ssaków. W zniesieniu 8-12 jaj. Wysiadywanie trwa 27-29 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 44,
+                ImagePath = "_kazarka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 45,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 45,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 45,
+                Name = "Ohar",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Tadorna tadorna",
+                Occurance = "Obszary położone w pobliżu wybrzeża Bałtyku, Morza Północnego i Atlantyku aż po Morze Śródziemne. W Polsce na Półwyspie Helskim",
+                LivingEnvritonment = "Bagna i rozlewiska",
+                Food = "Głównie pokarm zwierzęcy – skorupiaki, mięczaki, owady wodne. Dietę uzupełnia pokarmem roślinnym.",
+                Breeding = "Ptaki łączą się w pary na całe życie. Gniazda zakładają w dziuplach lub opuszczonych norach innych zwierząt. W zniesieniu 8-10 jaj, inkubacja trwa około 30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 45,
+                ImagePath = "_ohar.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 46,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 46,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 46,
+                Name = "Mandarynka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Aix galericulata",
+                Occurance = "Dorzecze rzeki Amur, Sachalin, Japonia, Mandżuria, południowo - wschodnie Chiny",
+                LivingEnvritonment = "Rzeki z zalesionymi wysepkami, jeziora śródleśne, laski łęgowe, parki",
+                Food = "Pokarm roślinny: nasiona, rośliny wodne. Dietę uzupełnia pokarmem zwierzęcym: zjada owady, małe gady i ryby.",
+                Breeding = "Toki samca są bardzo urozmaicone i widowiskowe. Gniazdo zakłada w dziupli drzewa w pobliżu wody. Po wylęgu kaczęta wyskakują z dziupli bezpośrednio do wody.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 46,
+                ImagePath = "_mandarynka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 47,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 47,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 47,
+                Name = "Karolinka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Aix sponsa",
+                Occurance = "Ameryka Północna (licznie w stanie Karolina), Kuba",
+                LivingEnvritonment = "Bagna, rozlewiska, jeziora, rzeki",
+                Food = "Skorupiaki, owady, rośliny wodne.",
+                Breeding = "W zniesieniu 8-12 jaj, wysiadywanych przez samicę w dziupli przez 28-30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 47,
+                ImagePath = "_karolinka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 48,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 48,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 48,
+                Name = "Dziwonos",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Sarkidiornis melanotos",
+                Occurance = "Środkowa i południowa Afryka, Madagaskar, południowa Azja.",
+                LivingEnvritonment = "Bagna, rzeki, jeziora i otwarte tereny podmokłe.",
+                Food = "Trawa, nasiona zbóż, rośliny wodne, bezkręgowce.",
+                Breeding = "Gniazduje w dziuplach drzew lub na ziemi. W zniesieniu 6-20 jaj. Inkubacja trwa 28-30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 48,
+                ImagePath = "_dziwonos.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 49,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 49,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 49,
+                Name = "Podgorzałka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Aythia nyroca",
+                Occurance = "Południowo – wschodnia Europa, Azja środkowa, północna Afryka.",
+                LivingEnvritonment = "Płytkie stawy i jeziora z pasem trzcinowisk, czasem bardzo małe zbiorniki wodne.",
+                Food = "Rośliny wodne, owady i ich larwy, ślimaki, kijanki i młode żabki. W poszukiwaniu pożywienia nurkuje.",
+                Breeding = "Do gniazda zbudowanego w gęstych szuwarach samica składa 7-11 jaj. Okres inkubacji wynosi około 25 dni. Lęgi poprzedzone są bardzo widowiskowymi tokami.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 49,
+                ImagePath = "_podgorzalka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 50,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 50,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 50,
+                Name = "Hełmiatka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Netta rufina",
+                Occurance = "Od Półwyspu Iberyjskiego po Azję Środkową. Zimuje w basenie Morza Śródziemnego.",
+                LivingEnvritonment = "Jeziora zarośnięte szuwarami, otwarte zbiorniki wodne nieporośnięte roślinnością, zimą również zatoki morskie.",
+                Food = "Głównie zielone części roślin wodnych, młode pędy, korzonki, nasiona, kłącza. Dietę uzupełnia pokarmem zwierzęcym – mięczakami, skorupiakami, owadami, małymi rybami, płazami. Żeruje na wodzie, czasem nurkuje na głębokość do 4 m.",
+                Breeding = "Gniazduje pojedynczo lub w małych koloniach w pobliżu zbiorników wodnych. W zniesieniu znajduje się 7-10 jaj, wysiadywanych przez 28 dni. Matka wodzi kaczęta przez okres około 2 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 50,
+                ImagePath = "_helmiatka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 51,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 51,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 51,
+                Name = "Pingwin Humboldta",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Spheniscus humboldti",
+                Occurance = "Wybrzeża Peru i Chile.",
+                LivingEnvritonment = "Wybrzeże morskie w rejonie oddziaływania zimnego prądu morskiego, zwanego Prądem Humboldta.",
+                Food = "Głównie ryby. Dietę uzupełnia głowonogami i skorupiakami.",
+                Breeding = "W naturze rozmnaża się w ciągu całego roku. Gniazda zakłada na klifach, w jaskiniach, rozpadlinach skalnych, rzadziej na otwartej przestrzeni. W zniesieniu 2 jaja, wysiadywanie trwa 40-42 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 51,
+                ImagePath = "_pingwinhumboldta.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 52,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 52,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 52,
+                Name = "Flaming różowy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Phoenicopterus ruber roseus",
+                Occurance = "Południowa Europa, zachodnie wybrzeże Atlantyku, Afryka, Indie. Jest najszerzej rozprzestrzenionym gatunkiem flaminga.",
+                LivingEnvritonment = "Słone laguny, brzegi jezior, rozlewiska rzek.",
+                Food = "Drobne mięczaki, skorupiaki, owady i pokarm roślinny.",
+                Breeding = "Do gniazda w kształcie kopca, zbudowanego z mułu samica składa zazwyczaj 1 jajo. Szaro upierzone młode wylęgają się po okresie inkubacji trwającym około 30 dni. Dojrzałość płciową uzyskują po 5-6 latach. Gatunek ten gniazduje w koloniach, liczących nawet do kilku tysięcy osobników.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 52,
+                ImagePath = "_flaming.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 53,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 53,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 53,
+                Name = "Bocian biały",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Ciconia ciconia",
+                Occurance = "Gniazduje w Europie (na północy po Finlandię), w północno-zachodniej Afryce i Azji południowo-zachodniej (na wschodzie po południowy Kazachstan). Zimuje w Afryce od tropikalnej Afryki Subsaharyjskiej po Republikę Południowej Afryki i w Indiach.",
+                LivingEnvritonment = "Tereny podmokłe z grupami drzew, krajobraz rolniczy w pobliżu siedzib ludzkich.",
+                Food = "Gryzonie, ssaki owadożerne, płazy, duże owady, ryby, dżdżownice, jaja i pisklęta ptaków.",
+                Breeding = "W zniesieniu 3-6 jaj, wysiadywanych przez 33-34 dni przez oboje rodziców. Pisklęta przebywają w gnieździe 2 miesiące, rodzice wspólnie się nimi opiekują. Gniazda budowane są na drzewach, wieżach, dachach domów, na słupach telegraficznych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 53,
+                ImagePath = "_bocianbialy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 54,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 54,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 54,
+                Name = "Bocian czarny",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Ciconia nigra",
+                Occurance = "Azja, środkowa i wschodnia Europa oraz Półwysep Iberyjski. Zimuje w Afryce i Azji południowej.",
+                LivingEnvritonment = "Rozległe, podmokłe lasy, obfitujące w zbiorniki wodne, śródleśne bagna i łąki, brzegi rzek w dolinach górskich.",
+                Food = "Ryby, płazy, inne drobne kręgowce i owady.",
+                Breeding = "W zniesieniu 3-5 jaj, okres inkubacji wynosi 30-40 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 54,
+                ImagePath = "_bocianczarny.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 55,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 55,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 55,
+                Name = "Marabut afrykański",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Leptoptilos crumeniferus",
+                Occurance = "Środkowa i wschodnia Afryka.",
+                LivingEnvritonment = "Sawanna, mokradła, brzegi zbiorników wodnych, spotykany również w pobliżu osad rybackich, rzeźni i na wysypiskach śmieci.",
+                Food = "Głównie padlina. Dietę uzupełnia rybami, gryzoniami, jaszczurkami, wężami, ptakami, owadami.",
+                Breeding = "Gniazda zakłada wysoko na drzewach. Tworzy kolonie liczące 20-60 par. W zniesieniu 2-3 jaja, po około 30 dniach wykluwają się pisklęta.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 55,
+                ImagePath = "_marabutafrykanski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 56,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 56,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 56,
+                Name = "Ibis purpurowy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Eudocimus ruber",
+                Occurance = "łnocna część Ameryki Południowej.",
+                LivingEnvritonment = "Mokradła, pola ryżowe, zarośla mangrowe, płytkie jeziora.",
+                Food = "Skorupiaki, owady, mięczaki, narybek.",
+                Breeding = "Gniazduje w koloniach, często wspólnie z innymi gatunkami ibisów i czaplami. Gniazdo budowane jest na drzewie. W zniesieniu znajdują się zwykle 2 jaja, okres inkubacji wynosi 21-23 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 56,
+                ImagePath = "_ibispurpurowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 57,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 57,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 57,
+                Name = "Ibis australijski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Threskiornis molucca",
+                Occurance = "Australia, Nowa Gwinea, południowe Molukki, Wyspy Sundajskie.",
+                LivingEnvritonment = "Przybrzeżne laguny strefy pływowej, płytkie śródlądowe rozlewiska, bagna.",
+                Food = "Owady, skorupiaki, mięczaki, drobne kręgowce.",
+                Breeding = "Gnieździ się w koloniach liczących nawet do 20 tysięcy par, często z innymi ptakami brodzącymi. W zniesieniu 1-4 jaja, okres inkubacji wynosi 20-23 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 57,
+                ImagePath = "_ibisaustralijski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 58,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 58,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 58,
+                Name = "Warzęcha czerwonolica",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Platalea alba",
+                Occurance = "Afryka od Senegalu, Etiopii do Afryki Południowej, Madagaskar.",
+                LivingEnvritonment = "Rozlewiska rzek oraz bagna porośnięte wysokimi krzewami i drzewami.",
+                Food = "Skorupiaki, mięczaki, małe ryby, płazy i gady. Żeruje stadnie na płyciznach, odcedzając pokarm z wody i mułu przy pomocy rozszerzonego na końcu dzioba.",
+                Breeding = "Gniazduje w koloniach, czasem wspólnie z innymi ptakami brodzącymi i kormoranami. W zniesieniu zazwyczaj 2-3 jaja, inkubacja trwa 25-29 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 58,
+                ImagePath = "_warzechaczerwonolica.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 59,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 59,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 59,
+                Name = "Czapla nadobna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Egretta garzetta",
+                Occurance = "Południowa Europa, południowa Azja, wschodnia i zachodnia Afryka, wchodnia Australia.",
+                LivingEnvritonment = "Tereny położone nad ujściami rzek, bagna i inne obszary podmokłe.",
+                Food = "Ryby, żaby, owady wodne, szarańczaki, ważki, drobne zwierzęta lądowe. W wodzie wypłaszają zwierzęta wodne z ich kryjówek poruszając szybko długimi palcami nóg.",
+                Breeding = "Gniazduje kolonijnie, często z innymi gatunkami ptaków brodzących, a także z kormoranami. Wyprowadza 1 lęg w roku. W zniesieniu znajduje się najczęściej 3-5 jaj, wysiadywanych 21-22 dni. Młode przebywają w gnieździe około 30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 59,
+                ImagePath = "_czaplanadobna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 60,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 60,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 60,
+                Name = "Pelikan różowy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "elecanus onocrotalus",
+                Occurance = "Południowo-wschodnia Europa, Azja Mniejsza i środkowa, Indie, wyspowo w południowej i wschodniej Afryce.",
+                LivingEnvritonment = "Brzegi śródlądowych zbiorników wodnych, delty rzek zarośniętych trzciną i krzewami, bagna z płytkimi jeziorkami, laguny, wolno płynące rzeki.",
+                Food = "Ryby łowione najczęściej zespołowo.",
+                Breeding = "Gnieździ się w koloniach. Wyprowadza 1 lęg w roku. W zniesieniu 1-3 jaj. Okres inkubacji trwa 29-36 dni. Pisklęta wykluwają się nagie, ich skóra ma ciemnoszare zabarwienie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 60,
+                ImagePath = "_pelikanrozowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 61,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 61,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 61,
+                Name = "Kondor wielki",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Vultur gryphus",
+                Occurance = "Andy od Wenezueli do Ziemi Ognistej.",
+                LivingEnvritonment = "Wysokie partie gór do wysokości 5000 m n.p.m.",
+                Food = "Głównie padlina ssaków lądowych i morskich, ptasie jaja. Zdobyczy wypatruje szybując wysoko w powietrzu.",
+                Breeding = "Gnieździ się we wnękach półek skalnych na wysokich urwiskach. W zniesieniu 1 jajo, wysiadywane przez oboje rodziców około 60 dni. Młode osiąga zdolność do lotu po około 6 miesiącach, a dojrzałość płciową dopiero po 6 latach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 61,
+                ImagePath = "_kondorwielki.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 62,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 62,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 62,
+                Name = "Sęp kasztanowaty",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Aegypius monachus",
+                Occurance = "Południowa Palearktyka. Zamieszkuje Półwysep Iberyjski, Bałkany, pasma górskie Azji aż po Pacyfik. Zimuje w Sudanie, Pakistanie, Indiach, Korei, na Środkowym Wschodzie.",
+                LivingEnvritonment = "Wyżej położone zadrzewione obszary, lasy górskie, łąki, stepy.",
+                Food = "Głównie padlina, rzadziej poluje na żywe zwierzęta.",
+                Breeding = "Gniazdo zakłada najczęściej wysoko na drzewach, rzadziej na skałach. W zniesieniu zwykle 1 jajo, okres inkubacji trwa 54-56 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 62,
+                ImagePath = "_sepkasztanowaty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 63,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 63,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 63,
+                Name = "Orzeł przedni",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Aquila chrysaetos chrysaetos",
+                Occurance = "Europa i Azja aż do zachodniej Syberii.",
+                LivingEnvritonment = "Lasy w sąsiedztwie rozległych łąk, doliny rzeczne ze starodrzewami, góry.",
+                Food = "Ptaki i ssaki średniej wielkości: gryzonie, króliki, zające, świstaki, kuropatwy, w mniejszym stopniu gady i padlina.",
+                Breeding = "Gnieździ się na półkach skalnych lub w koronach wysokich drzew. Samica składa od 1 do 3 jaj, które wysiaduje przez 41-45 dni. Młode przebywają w gnieździe około 3 miesiące.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 63,
+                ImagePath = "_orzelprzedni.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 64,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 64,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 64,
+                Name = "Orzeł cesarski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Aquila heliaca",
+                Occurance = "Europa południowo-wschodnia, Półwysep Pirenejski, południowo-zachodnia i środkowa Azja.",
+                LivingEnvritonment = "Stepy i inne otwarte tereny nizinne porośnięte niewielkimi lasami.",
+                Food = "Susły, chomiki, króliki i ptaki średniej wielkości.",
+                Breeding = "Łączy się w pary na całe życie. W zniesieniu zwykle 2-3 jaja, wysiadywane przez samicę przez 43 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 64,
+                ImagePath = "_orzelcesarski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 65,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 65,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 65,
+                Name = "Żuraw koroniasty wschodni",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Balearica regulorum gibbericeps",
+                Occurance = "Wschodnia i południowa Afryka.",
+                LivingEnvritonment = "Podmokłe tereny w pobliżu jezior i rzek.",
+                Food = "Małe kręgowce, owady, pokarm roślinny.",
+                Breeding = "Gniazdo buduje najczęściej na ziemi, bardzo rzadko na drzewie. Samica składa 1-4 jaja. Ich wysiadywaniem i opieką nad potomstwem zajmują się oboje rodzice. Inkubacja trwa 28-31 dni. Młode osiągają dojrzałość płciową w trzecim roku życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 65,
+                ImagePath = "_zurawkoroniasty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 66,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 66,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 66,
+                Name = "Żuraw mandżurski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Grus japonensis",
+                Occurance = "Japońska wyspa Hokkaido, północno-wschodnie Chiny, południowo-wschodnia Rosja. Zimuje w Korei i we wschodnich Chinach.",
+                LivingEnvritonment = "Bagna, pola ryżowe, podmokłe łąki.",
+                Food = "Ryby, gryzonie, płazy, owady, trawy i inne rośliny.",
+                Breeding = "W okresie godowym żurawie wykonują bardzo efektowne tańce. Samica składa 2 jaja, inkubacja trwa 29-34 dni. Młode osiągają dojrzałość płciową w wieku 3-4 lat.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 66,
+                ImagePath = "_zurawmandzurski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 67,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 67,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 67,
+                Name = "Gołąbek diamentowy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Geopelia cuneata",
+                Occurance = "Rozległe obszary Australii, z wyjątkiem wybrzeża na południu, wschodzie i zachodzie.",
+                LivingEnvritonment = "Tereny porośnięte krzewami, chętnie w pobliżu rzek lub zbiorników wodnych, łąki.",
+                Food = "Nasiona, młode pędy roślin, larwy owadów. Żeruje najczęściej na ziemi.",
+                Breeding = "Niedbale wykonane gniazdo budują oboje rodzice, na zmianę wysiadują jaja i wspólnie opiekują się młodymi. W zniesieniu znajdują się 2 jaja, okres inkubacji wynosi 13 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 67,
+                ImagePath = "_golabekdiamentowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 68,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 68,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 68,
+                Name = "Koroniec plamoczuby",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Goura victoria",
+                Occurance = "Nowa Gwinea",
+                LivingEnvritonment = "Tereny podmokłe, bagna, lasy.",
+                Food = "Głównie jagody i nasiona.",
+                Breeding = "W zniesieniu 1 jajo, okres inkubacji wynosi 30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 68,
+                ImagePath = "_koroniecplamoczuby.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 69,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 69,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 69,
+                Name = "Lorysa górska",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Trichoglossus haematodus",
+                Occurance = "Wschodnie, północne i południowe wybrzeża Australii, Tasmania, Nowa Gwinea, Nowa Kaledonia, okoliczne wyspy Pacyfiku.",
+                LivingEnvritonment = "Obrzeża lasów, lasy różnego typu, zadrzewione tereny podmokłe, sawanna, plantacje palm kokosowych, tereny położone w pobliżu siedzib ludzkich.",
+                Food = "Owoce, nasiona, nektar.",
+                Breeding = "Gnieździ się w dziuplach drzew. Na małych atolach wolnych od drapieżników zakłada gniazda na ziemi. W zniesieniu 1-3 jaj, okres inkubacji wynosi około 25 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 69,
+                ImagePath = "_lorysagorska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 70,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 70,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 70,
+                Name = "Aleksandretta różana",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Psittacula alexandri",
+                Occurance = "Północne Indie, Nepal, Birma, Tajlandia, południowe Chiny.",
+                LivingEnvritonment = "Lasy do wysokości około 2000 m n.p.m, plantacje ryżu.",
+                Food = "Nasiona, orzechy, owoce.",
+                Breeding = "Gniazduje w dziuplach. Samica składa 3-4 jaja, wysiaduje je około 28 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 70,
+                ImagePath = "_aleksandrettarozana.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 71,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 71,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 71,
+                Name = "Aleksandretta obrożna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Psittacula krameri",
+                Occurance = "Od Afryki przez Afganistan, Pakistan, Indie, Sri Lankę i Birmę aż po Nepal. Żyje dziko również w zachodniej Europie.",
+                LivingEnvritonment = "Tereny rolnicze, skraje lasów, parki i ogrody.",
+                Food = "Owoce, nasiona, orzechy, kwiaty, nektar. Czasem wyrządzają szkody w uprawach cytrusów i innych owoców.",
+                Breeding = "Gniazduje w dziuplach drzew, we wnękach skalnych, a nawet w szczelinach ścian budynków. W zniesieniu 3-4 jaja, inkubacja trwa 24 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 71,
+                ImagePath = "_aleksandrettaobrozna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 72,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 72,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 72,
+                Name = "Żako kongijskie",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Psittacus erithacus",
+                Occurance = "Środkowo-zachodnia Afryka.",
+                LivingEnvritonment = "Wilgotne lasy nizinne, galeriowe, mangrowe, sawanna z rzadka porośnięta drzewami, obszary uprawne.",
+                Food = "Owoce, nasiona, ziarno zbóż, ryżu i kukurydzy.",
+                Breeding = "Gniazduje w dziupli wysokiego drzewa. W zniesieniu 2-4 jaja. Inkubacja trwa 21-30 dni. Młode opuszczają gniazdo po około 10 tygodniach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 72,
+                ImagePath = "_zakokongijskie.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 73,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 73,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 73,
+                Name = "Ararauna zwyczajna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Ara ararauna",
+                Occurance = "Ameryka Południowa od Panamy po północny Paragwaj i Brazylię.",
+                LivingEnvritonment = "Lasy galeriowe, sawanny porośnięte pojedynczymi drzewami.",
+                Food = "Owoce, nasiona drzew i krzewów, orzechy, młode pędy. W poszukiwaniu pokarmu zalatują czasem w pobliże siedzib ludzkich i sieją spustoszenie wśród roślin uprawnych.",
+                Breeding = "Gniazduje w dziuplach wysokich drzew. Samica składa 1-3 jaj, wysiaduje je około 26 dni. Młode opuszczają gniazdo po 95 dniach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 73,
+                ImagePath = "_araraunazwyczajna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 74,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 74,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 74,
+                Name = "Ara żółtoskrzydła",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Ara macao",
+                Occurance = "Ameryka Południowa od Panamy przez Brazylię, Ekwador, Peru i Boliwię.",
+                LivingEnvritonment = "Wilgotne lasy równikowe, często w pobliżu brzegów rzek.",
+                Food = "Owoce, nasiona, liście, młode pędy, kwiaty. Czasem przebywają w pobliżu siedzib ludzkich",
+                Breeding = "W zależności od regionu papugi te gniazdują w różnych porach roku. Gniazdo zakładają w dziuplach umieszczonych na wysokości 7-40 m. W zniesieniu 1-4 jaj, inkubacja trwa 24-28 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 74,
+                ImagePath = "_arazoltoskrzydla.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 75,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 75,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 75,
+                Name = "Ara zielona",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Ara militaris",
+                Occurance = "Meksyk, Kolumbia, Ekwador, Peru, Boliwia, Argentyna.",
+                LivingEnvritonment = "Lasy deszczowe i górskie do wysokości 2600 m n.p.m.",
+                Food = "Nasiona palm, orzechy, owoce. Ptaki te mogą wyrządzać szkody na plantacjach kukurydzy i w sadach.",
+                Breeding = "Gniazduje w dziuplach i szczelinach klifów i skarp. W zniesieniu 2-3 jaja.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 75,
+                ImagePath = "_arazielona.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 76,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 76,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 76,
+                Name = "Mnicha",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Myiopsitta monachus",
+                Occurance = "Argentyna, Paragwaj, Urugwaj, Boliwia, Brazylia. Introdukowana w wielu rejonach świata (m.in. w Wielkiej Brytanii i Hiszpanii).",
+                LivingEnvritonment = "Lasy, tereny rolnicze. Przystosowała się do życia w miastach.",
+                Food = "Nasiona, owoce, młode pędy drzew, owady i ich larwy.",
+                Breeding = "Gnieździ się w koloniach, buduje duże gniazda z patyków, których waga może dochodzić do 200 kg. Bywają one zasiedlane przez kilka par zajmujących odrębne komory lęgowe. W zniesieniu do 11 jaj, okres inkubacji wynosi około 24 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 76,
+                ImagePath = "_mnicha.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 77,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 77,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 77,
+                Name = "Konura nandaj",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Nandayus nenday",
+                Occurance = "Boliwia, Brazylia, Paragwaj, Argentyna.",
+                LivingEnvritonment = "Lasy galeriowe, sawanny, pastwiska, zarośla.",
+                Food = "Nasiona, owoce, kwiaty, pączki drzew i krzewów.",
+                Breeding = "Gniazduje w dziuplach drzew. W zniesieniu zwykle 4 jaja, okres inkubacji wynosi 21-23 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 77,
+                ImagePath = "_konuranandaj.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 78,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 78,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 78,
+                Name = "Amazonka niebieskoczelna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Amazona aestiva",
+                Occurance = "schodnia Brazylia, Paragwaj i północna Argentyna.",
+                LivingEnvritonment = "Lasy deszczowe, suche stepy rzadko porośnięte drzewami.",
+                Food = "Owoce, owady, młode liście, pędy drzew.",
+                Breeding = "W okresie lęgowym tworzy stada, które mogą liczyć nawet setki osobników. Samica składa 2-4 jaj, z których po około 30 dniach wykluwają się pisklęta.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 78,
+                ImagePath = "_amazonkaniebieskoczelna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 79,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 79,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 79,
+                Name = "Puchacz",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Bubo bubo",
+                Occurance = "Europa i Azja z wyjątkiem obszarów położonych na północy tych kontynentów.",
+                LivingEnvritonment = "Duże kompleksy leśne, często w pobliżu terenów otwartych lub dużych śródleśnych jezior, również olsy, łęgi.",
+                Food = "Małe i średniej wielkości ssaki i ptaki. Poluje m. in. na jeże, wiewórki, gryzonie, gołębie, kuropatwy, wrony, kaczki, łyski.",
+                Breeding = "Gnieździ się w opuszczonych gniazdach ptaków drapieżnych, pod wykrotami na ziemi lub na półce skalnej. W zniesieniu 2-4 jaja, wysiadywane przez samicę 34-36 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 79,
+                ImagePath = "_puchacz.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 80,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 80,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 80,
+                Name = "Sowa śnieżna",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Nyctea scandiaca",
+                Occurance = "Północne rejony Eurazji i Ameryki Północnej.",
+                LivingEnvritonment = "Tundra, wrzosowiska, tereny przybrzeżne.",
+                Food = "Gryzonie, głównie lemingi, ptaki, sporadycznie ryby, płazy, skorupiaki, chrząszcze.",
+                Breeding = "Gnieździ się na wyżej położonych, pagórkowatych torfowiskach i w zagłębieniach terenu. Samica składa od 3 do 10 jaj. Po 31-33 dniach wykluwają się szarobiałe pisklęta. Samiec aktywnie uczestniczy w odchowie młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 80,
+                ImagePath = "_sowasniezna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 81,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 81,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 81,
+                Name = "Puszczyk",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Strix aluco",
+                Occurance = "Niemal cała Europa, północna Afryka, Azja (północno-zachodnie Indie, południowe Chiny, Korea, Tajwan).",
+                LivingEnvritonment = "Lasy liściaste i mieszane, parki, zadrzewienia w pobliżu siedzib ludzkich. Spotykany nawet w centrum dużych miast.",
+                Food = "Gryzonie, ptaki do wielkości bażanta, żaby, owady, padlina.",
+                Breeding = "Gniazduje w obszernych dziuplach, opuszczonych gniazdach innych ptaków, szczelinach skalnych, zabudowaniach. Chętnie zajmuje odpowiednie skrzynki lęgowe. W zniesieniu 2-4 jaja, inkubacja trwa 28-30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 81,
+                ImagePath = "_puszczyk.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 82,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 82,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 82,
+                Name = "Puszczyk mszarny",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Strix nebulosa",
+                Occurance = "Północne rejony Europy, Azji i Ameryki Północnej.",
+                LivingEnvritonment = "Tajga, borealne regiony górskie, torfowiska, lasotundra z gęstymi zaroślami.",
+                Food = "Głównie gryzonie. Poluje również na ptaki, żaby, duże owady, wiewiórki, zające.",
+                Breeding = "Gniazduje w opuszczonych gniazdach ptaków drapieżnych, czasem odbierając je prawowitym właścicielom. Gnieździ się również w złomach grubych pni drzew. W zniesieniu zwykle 3-4 jaja, samica wysiaduje je 28-30 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 82,
+                ImagePath = "_puszczykmszarny.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 83,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 83,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 83,
+                Name = "Puszczyk uralski",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Strix uralensis",
+                Occurance = "Eurazja: od Skandynawii i krajów nadbałtyckich aż po Morze Japońskie oraz wyspowe obszary Karpat, Alp i Gór Dynarskich.",
+                LivingEnvritonment = "Puszcze, duże kompleksy leśne, zarówno iglaste, jak i mieszane.",
+                Food = "Gryzonie leśne, młode zające, drobne i średniej wielkości ptaki. Dietę uzupełnia płazami, jaszczurkami, owadami.",
+                Breeding = "Gnieździ się w dużych dziuplach lub opuszczonych gniazdach ptaków drapieżnych. W zniesieniu zwykle 2-4 jaja, wysiadywane przez samicę 28-34 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 83,
+                ImagePath = "_puszczykuralski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 84,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 84,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 84,
+                Name = "Kukabura chichotliwa",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dacelo novaeguineae",
+                Occurance = "Nowa Gwinea, Tasmania, wschodnia i południowa Australia.",
+                LivingEnvritonment = "Brzegi lasów, luźne zadrzewienia.",
+                Food = "Jaszczurki, węże, owady, kraby, ptasie pisklęta, inne drobne kręgowce.",
+                Breeding = "Jest gatunkiem monogamicznym, ptaki łączą się w trwałe pary. Gniazduje w dziuplach, termitierach, budkach lęgowych. Składa najczęściej 2-3 jaja. Inkubacja trwa 24-29 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 84,
+                ImagePath = "_kukabura.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 85,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 85,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 85,
+                Name = "Gwarek",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Gracula religiosa",
+                Occurance = "Południowa Azja od Indii i Cejlonu po Malezję i Indonezję.",
+                LivingEnvritonment = "Lasy, tereny uprawne z wysokimi drzewami, brzegi lasów na nizinach i na terenach wyżej położonych (do wysokości około 2000 m n.p.m.).",
+                Food = "Owoce, nektar, owady, czasem drobne kręgowce (np. jaszczurki).",
+                Breeding = "Gnieździ się w dziuplach. W zniesieniu 2-3 jaja, okres inkubacji trwa 13-17 dni, wysiaduje samiec i samica.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 85,
+                ImagePath = "_gwarek.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 86,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 86,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 86,
+                Name = "Błyszczak purpurowy",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Lamprotornis purpureus",
+                Occurance = "Afryka: Senegal, Gwinea, Uganda, Kenia.",
+                LivingEnvritonment = "Sawanna.",
+                Food = "Jagody, nasiona, owady i inne bezkręgowce. Nie gardzi również resztkami mięsa, pozostawionymi przez drapieżniki.",
+                Breeding = "Gniazduje w dziuplach. Samica składa 2-4 jaja. Wysiadywanie trwa około 2 tygodnie. Pisklęta przebywają w gnieździe 4 tygodnie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 86,
+                ImagePath = "_blyszczakpurpurowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 87,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 87,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 87,
+                Name = "Wikłacz ognisty",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Euplectes orix",
+                Occurance = "Środkowa i południowa Afryka",
+                LivingEnvritonment = "Suche sawanny, lasy galeriowe, uprawy w pobliżu osad ludzkich i zakrzewienia wzdłuż strumieni.",
+                Food = "Głównie nasiona traw i innych roślin, nektar, jagody, owady. Powodują duże straty w uprawach.",
+                Breeding = "Samiec łączy się z 2-3 samicami. Charakterystyczne gniazdo wikłaczy ma kształt spłaszczonej kuli. W zniesieniu 2-4 jaja. Wysiaduje tylko samica przez 12-15 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 87,
+                ImagePath = "_wiklaczogniasty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 88,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 88,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 88,
+                Name = "Bażant srebrzysty",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Lophura nycthemera",
+                Occurance = "Zamieszkuje Tajlandię, Wietnam, Birmę, Laos, południowe Chiny i wyspę Hajnan.",
+                LivingEnvritonment = "Lasy liściaste i bambusowe, głównie na wysokości 1500-2000 m n.p.m, pola uprawne.",
+                Food = "Różne części roślin, owoce, nasiona. Dietę uzupełnia owadami.",
+                Breeding = "W zniesieniu 6-8 jaj. Wysiaduje samica przez około 25 dni. Pisklęta są wodzone przez matkę, czasami samiec jej w tym pomaga.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 88,
+                ImagePath = "_bazantsrebrzysty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 89,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 89,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 89,
+                Name = "Paw",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Pavo cristatus",
+                Occurance = "Sri Lanka, Pakistan, Indie",
+                LivingEnvritonment = "Lasy liściaste, nadrzeczne zarośla, tereny uprawne",
+                Food = "Wszystkożerny, zjada nasiona, owoce oraz zwierzęta – zarówno bezkręgowce jak i drobne kręgowce, w tym węże, inne małe gady i ssaki.",
+                Breeding = "W zniesieniu 3-6 jaj. Inkubacja trwa około 30 dni, wysiaduje tylko samica. Gniazdo umieszczone jest na ziemi, pod osłoną roślinności, wyścielone mchem i korzonkami.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 89,
+                ImagePath = "_paw.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 90,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 90,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 90,
+                Name = "Tragopan Temmincka",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Tragopan temminckii",
+                Occurance = "Indie, Wietnam, Tybet, północne Chiny.",
+                LivingEnvritonment = "Lasy mieszane, zarośla bambusowe i rododendrodowe do wysokości 2500 m n.p.m.",
+                Food = "Liście, kwiaty, źdźbła traw, pędy bambusa, nasiona różnych roślin, owady.",
+                Breeding = "Gniazdo znajduje się na drzewie na wysokości 0,5 – 8 m nad ziemią. W zniesieniu 3-8 jaj, wysiaduje tylko samica przez 26-28 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 90,
+                ImagePath = "_tragopantemmincka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 91,
-            //    Name = "",
-            //    Group = AnimalGroup.Birds,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 91,
-            //    ImagePath = ".jpg",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 91,
+                Name = "Bernikla kanadyjska",
+                Group = AnimalGroup.Birds,
+                ConservationStatus = ConservationStatus.Normal,
+                LatinSpecie = "Branta canadensis",
+                Occurance = "Ameryka Północna (od Alaski aż po Wielkie Jeziora). W Europie hodowana jako ptak ozdobny. Uciekinierzy z niewoli dali początek populacjom, które występują obecnie w Wielkiej Brytanii, Skandynawii oraz Europie Zachodniej.",
+                LivingEnvritonment = "Zamieszkuje tereny położone w pobliżu morskich brzegów, dużych rzek albo jezior, bagna, łąki, pastwiska, a nawet parki miejskie.",
+                Food = "Przeważnie pokarm roślinny: trawy, korzonki, liście, owoce, zielone części roślin wodnych, ziarno, wodorosty.",
+                Breeding = "Gniazdo znajduje się na ziemi w pobliżu wody. W zniesieniu zwykle 4-7 jaj, inkubacja trwa około 30 dni. Pisklęta są zagniazdownikami, co oznacza, że bardzo szybko po wykluciu z jaja są zdolne do samodzielnego życia, sprawnie chodzą, biegają i pływają.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 91,
+                ImagePath = "_berniklakanadyjska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
 
             #endregion
 
@@ -1915,7 +1915,6 @@ namespace CracowZoo.Data.Seed
                 Weight = "",
                 Longevity = ""
             });
-
             #endregion
         }
     }

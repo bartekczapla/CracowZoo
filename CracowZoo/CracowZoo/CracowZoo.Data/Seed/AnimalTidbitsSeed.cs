@@ -451,12 +451,384 @@ namespace CracowZoo.Data.Seed
                 Description = "Ze względu na to, że głowa i szyja tego ptaka pozbawione są piór perlica ta została nazwana sępią.",
                 AnimalId = 35
             });
-            //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-            //{
-            //    Id = 308,
-            //    Description = "",
-            //    AnimalId =
-            //});
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 314,
+                Description = "Poza okresem lęgowym ptaki te łączą się w niewielkie stada.",
+                AnimalId = 36
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 315,
+                Description = "Uszak siwy jest najpospolitszym gatunkiem spośród wszystkich gatunków uszaków utrzymywanych przez w hodowców.",
+                AnimalId = 36
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 316,
+                Description = "Olśniak himalajski to narodowy ptak i symbol Nepalu.",
+                AnimalId = 37
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 317,
+                Description = "Jego łacińska nazwa upamiętnia Lady Mary Impey, małżonkę prezesa brytyjskiego sądu najwyższego Bengalu, sir Elijaha Impey.",
+                AnimalId = 37
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 318,
+                Description = "Jest to słabo poznany gatunek.",
+                AnimalId = 38
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 319,
+                Description = "Zawdzięcza swoją nazwę francuskiemu zoologowi Alfonsowi Milne-Edwardsowi.",
+                AnimalId = 38
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 320,
+                Description = "Ptak sporadycznie obserwowany na terenie Polski.",
+                AnimalId = 39
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 321,
+                Description = "Jest to gatunek sporadycznie obserwowany na terenie naszego kraju.",
+                AnimalId = 40
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 322,
+                Description = "Pod koniec XVIII wieku liczebność tego gatunku wynosiła ponad 25 tysięcy sztuk, jednak na skutek masowych polowań zmniejszyła się, osiągając w roku 1952 zaledwie 30 osobników. Dzięki hodowli w ośrodkach zamkniętych gatunek został uratowany przed zagładą.",
+                AnimalId = 41
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 323,
+                Description = "W Europie odnotowano przypadki pomyślnego gniazdowania łabędzi czarnych zbiegłych z niewoli. Pod względem wymagań środowiskowych jest to gatunek zbliżony do łabędzia niemego.",
+                AnimalId = 42
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 324,
+                Description = "Gatunek o szerokim zasięgu występowania.",
+                AnimalId = 43
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 325,
+                Description = "Samiec w upierzeniu godowym różni się od samicy obecnością czarnej obroży na szyi. Samica jest ponadto nieco mniejsza.",
+                AnimalId = 44
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 326,
+                Description = "Ptaki obu płci wyglądają podobnie, u samca pojawia się w okresie letnim czerwona, guzowata narośl u nasady dzioba.",
+                AnimalId = 45
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 327,
+                Description = "Hodowana jako ptak ozdobny. Z powodu oryginalnego upierzenia stała się jednym z ulubionych ptaków, utrzymywanych w parkach w wielu krajach Europy.",
+                AnimalId = 46
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 328,
+                Description = "Kaczka ta nazywana jest w Ameryce Północnej kaczką leśną. Jej nazwa pochodzi od stanu Karolina w USA, gdzie żyje najliczniejsza populacja. Z piór karolinki wytwarzano przynęty na pstrągi, dlatego też na przełomie XIX i XX wieku była gatunkiem zagrożonym.",
+                AnimalId = 47
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 329,
+                Description = "Żyje w parach lub małych stadach. U gatunku tego występuje wyraźny dymorfizm płciowy. Samce posiadają nad dziobem charakterystyczny, okrągły wyrostek, który znacznie powiększa się przed okresem lęgowym.",
+                AnimalId = 48
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 330,
+                Description = "W Polsce jest nielicznym ptakiem lęgowym.",
+                AnimalId = 49
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 331,
+                Description = "W Polsce jest nielicznym ptakiem lęgowym. Gnieździ się na Mazurach, w pozostałych rejonach kraju bardzo rzadka.",
+                AnimalId = 50
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 332,
+                Description = "Gatunek ten tworzy niezbyt liczne kolonie.",
+                AnimalId = 51
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 333,
+                Description = "Dziób flaminga jest mocno zakrzywiony. Po zanurzeniu w wodzie płaska szczęka górna znajduje się u dołu, a znacznie masywniejsza żuchwa u góry. Pompującymi ruchami gardła ptak wciąga wodę końcem dzioba i wyciska ją u jego nasady. Grzebyki rogowych blaszek na brzegach dzioba działają jak filtry, odcedzając pokarm.",
+                AnimalId = 52
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 334,
+                Description = "Już w sierpniu i wrześniu bociany gromadzą się w duże stada, liczące nawet około 50 osobników. Zgromadzenia te nazywane „sejmikami bocianimi” poprzedzają wędrówkę z letnich lęgowisk na zimowiska w Afryce.",
+                AnimalId = 53
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 335,
+                Description = "W naszym kraju jest nielicznym ptakiem lęgowym. Unika sąsiedztwa człowieka, jest dużo bardziej płochliwy od bociana białego",
+                AnimalId = 54
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 336,
+                Description = "Potężny krewniak naszego bociana, osiągający 150 cm wzrostu i do 9 kg masy ciała. Rozpiętość skrzydeł u tego gatunku dochodzi do 3 metrów.",
+                AnimalId = 55
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 337,
+                Description = "Dziób ibisa – cienki, długi i łukowato zagięty w dół jest narzędziem służącym do sondowania miękkich mułów lub wody w poszukiwaniu pożywienia.",
+                AnimalId = 56
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 338,
+                Description = "Gatunek rzadko eksponowany w ogrodach zoologicznych. W Polsce można go zobaczyć tylko w naszym Zoo.",
+                AnimalId = 57
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 339,
+                Description = "Gatunek łatwy do oznaczenia. Od innych warzęch o białym upierzeniu różni się różowymi nogami i różową skórą u nasady dzioba.",
+                AnimalId = 58
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 340,
+                Description = "Na początku XX wieku panowała moda na kapelusze z ozdobnymi piórami czapli nadobnych. Spowodowało to zniszczenie wielu kolonii i śmierć ptaków, od których pozyskiwano pióra.",
+                AnimalId = 59
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 341,
+                Description = "Dziób pelikana ma bardzo charakterystyczną budowę. Jego dolna część ma twarde brzegi, między którymi rozciąga się płat wiotkiej skóry. Kiedy ptak otwiera dziób pod wodą, skóra rozciąga się niczym wielka kieszeń, w którą pelikan łowi ryby. Może ona pomieścić około 10 litrów wody.",
+                AnimalId = 60
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 342,
+                Description = "Największy ptak drapieżny świata o rozpiętości skrzydeł do 3, 2 m i wadze do 15 kg.",
+                AnimalId = 61
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 343,
+                Description = "Regularne przychówki od tego gatunku są wielkim sukcesem hodowlanym naszego Zoo.",
+                AnimalId = 61
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 344,
+                Description = "Przypuszcza się, że ptak ten mógł w XIX wieku gnieździć się w Tatrach.",
+                AnimalId = 62
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 345,
+                Description = "W Polsce gnieździ się zaledwie około 30 par orłów przednich. Jest to gatunek objęty ścisłą ochroną. Wokół orlich gniazd obowiązuje strefa ochronna.",
+                AnimalId = 63
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 346,
+                Description = "Orły cesarskie żyjące w Europie są ptakami wędrownymi, zimują w Afryce i Azji. Do Polski zalatują wyjątkowo.",
+                AnimalId = 64
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 347,
+                Description = "Podobizna tego ptaka stanowi element godła państwowego Ugandy.",
+                AnimalId = 65
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 348,
+                Description = "Jest to drugi pod względem wielkości przedstawiciel rodziny żurawiowatych.",
+                AnimalId = 66
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 349,
+                Description = "Gatunek chętnie hodowany w domach jako ptak ozdobny. W naturze doskonale przystosowany do gorącego i suchego klimatu wnętrza kontynentu australijskiego.",
+                AnimalId = 67
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 350,
+                Description = "Największy z żyjących gołębi. Jest ptakiem naziemnym, w razie niebezpieczeństwa chroni się na drzewach.",
+                AnimalId = 68
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 351,
+                Description = "Wyróżniono 20 podgatunków lorysy górskiej, różniących się ubarwieniem.",
+                AnimalId = 69
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 352,
+                Description = "Żyje w stadach. Może wyrządzać znaczne szkody na plantacjach ryżu.",
+                AnimalId = 70
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 353,
+                Description = "Zdarzają się barwne mutacje upierzenia – osobniki pozbawione żółtego barwnika są niebieskie, a ptaki nie mające barwnika niebieskiego – żółte.",
+                AnimalId = 71
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 354,
+                Description = "W niewoli szybko się oswaja. Doskonale potrafi naśladować ludzką mowę.",
+                AnimalId = 72
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 355,
+                Description = "Żyją w małych stadach. Oswojone ararauny trzymali w swoich wioskach Inkowie. Obecnie ararauna należy do najbardziej popularnych ar w hodowlach.",
+                AnimalId = 73
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 356,
+                Description = "Ptaki te coraz częściej spotykane są w pobliżu siedzib ludzkich, gdzie wyrządzają szkody na plantacjach kukurydzy, w sadach owocowych i uprawach kawy.",
+                AnimalId = 74
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 357,
+                Description = "Papuga ta jest znana w Europie od początku XVII wieku. Trzymana w domach oswojona ara zielona jest wyjątkowo łagodna, skora do zabawy i pieszczot. Cierpliwie uczona, potrafi naśladować mowę człowieka.",
+                AnimalId = 75
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 358,
+                Description = "Jest gatunkiem dobrze przystosowanym do chłodnego klimatu.",
+                AnimalId = 76
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 359,
+                Description = "Wyhodowano kilka odmian kolorystycznych.",
+                AnimalId = 76
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 360,
+                Description = "W hodowli ptaki te szybko się oswajają. Są bardzo hałaśliwe.",
+                AnimalId = 77
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 361,
+                Description = "Amazonka jest papugą długowieczną. Niektóre osobniki potrafią znakomicie naśladować ludzką mowę.",
+                AnimalId = 78
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 362,
+                Description = "To największa sowa europejska. Jest monogamiczna, pary przebywają razem przez całe życie.",
+                AnimalId = 79
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 363,
+                Description = "W gatunku tego występuje dymorfizm płciowy – samiec jest niemal całkowicie biało ubarwiony, samica jest większa, obficie cętkowana. W Polsce bardzo rzadko obserwowana na północy kraju.",
+                AnimalId = 80
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 364,
+                Description = "Puszczyk jest najpospolitszą sową Palearktyki. Prowadzi najbardziej nocny tryb życia spośród wszystkich sów Europy.",
+                AnimalId = 81
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 365,
+                Description = "W Polsce po roku 1945 gatunek ten pojawiał się nieregularnie na terenie Puszczy Białowieskiej. Po roku 2010 stwierdzono jego lęgi na Polesiu Lubelskim.",
+                AnimalId = 82
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 366,
+                Description = "Nasz ogród uczestniczył w programie reintrodukcji puszczyka uralskiego, realizowanym od roku 2009 w północno-wschodnich Alpach. Celem było przywrócenie tego gatunku na obszary dawnego występowania.",
+                AnimalId = 83
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 367,
+                Description = "Jest największym zimorodkiem. Wydaje bardzo charakterystyczny głos przypominający ludzki śmiech.",
+                AnimalId = 84
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 368,
+                Description = "Ptak ten potrafi znakomicie naśladować różne dźwięki, również mowę ludzką.",
+                AnimalId = 85
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 369,
+                Description = "Błyszczak purpurowy jest lśniącym krewniakiem szpaka.",
+                AnimalId = 86
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 370,
+                Description = "Wikłacze gromadzą się w duże, hałaśliwe stada. Nazwa tego ptaka związana jest ze sposobem, w jaki buduje on swoje kunsztowne gniazdo.",
+                AnimalId = 87
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 371,
+                Description = "Bażant ten jest idealnym ptakiem dla początkującego hodowcy.",
+                AnimalId = 88
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 372,
+                Description = "Jest to narodowy ptak Indii.",
+                AnimalId = 89
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 373,
+                Description = "Pawie były hodowane już w czasach egipskich faraonów i Cesarstwa Rzymskiego.",
+                AnimalId = 89
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 374,
+                Description = "Zwyczaj gniazdowania na drzewach, charakterystyczny dla tragopanów jest niespotykany u innych przedstawicieli rodziny bażantowatych.",
+                AnimalId = 90
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 375,
+                Description = "Ptak obserwowany na terenie Polski.",
+                AnimalId = 91
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 376,
+                Description = "Zalatuje, zimuje i sporadycznie gniazduje w naszym kraju. Bernikla kanadyjska uznawana jest za jeden z najgroźniejszych gatunków obcych w Europie ze względu na rozszerzający się zasięg i zagrożenie dla rodzimych, europejskich gatunków gęsi.",
+                AnimalId = 91
+            });
             #endregion
 
             #region SSAKI 92-170
@@ -473,27 +845,6 @@ namespace CracowZoo.Data.Seed
                 Description = "Słonie prowadzą stadny tryb życia. Przewodnikiem stada jest stara samica.",
                 AnimalId = 95 // Słoń indyjski
             });
-
-            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-            {
-                Id = 402,
-                Description = "Samce są nieco mniejsze i smuklejsze od samic.",
-                AnimalId = 9 
-            });
-
-            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-            {
-                Id = 403,
-                Description = "Samice bywają wobec siebie agresywne.",
-                AnimalId = 9 
-            });
-
-            //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-            //{
-            //    Id = ,
-            //    Description = "",
-            //    AnimalId = 
-            //});
 
             #endregion
         }
