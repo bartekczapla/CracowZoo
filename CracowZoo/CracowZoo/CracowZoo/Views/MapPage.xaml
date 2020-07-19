@@ -2,12 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:CracowZoo.Views.CustomControls"
+             xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="CracowZoo.Views.MapPage"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid>
-            <controls:ZooMap x:Name="ZooMapControl" MapType="None"/>
+            <controls:ZooMap x:Name="ZooMapControl" MapType="None" BackgroundColor="#ece9e1">
+                <controls:ZooMap.Behaviors>
+                    <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
+                    <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}"/>
+                </controls:ZooMap.Behaviors>
+            </controls:ZooMap>
             <Button HeightRequest="38" WidthRequest="38" HorizontalOptions="Start" VerticalOptions="Start"
                     CornerRadius="2" Margin="12" BackgroundColor="White" Opacity="0.8"
                     Text="&#xf0c9;" FontFamily="{StaticResource FontAwesomeSolid}"

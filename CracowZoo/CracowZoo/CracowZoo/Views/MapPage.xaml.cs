@@ -2,6 +2,7 @@
 using CracowZoo.Views.CustomControls;
 using Prism.Events;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -19,10 +20,10 @@ namespace CracowZoo.Views
             InitializeComponent();
             ZooMapControl.MyLocationButtonClicked += ValidateUserLocation;
             ZooMapControl.UiSettings.CompassEnabled = false;
-            ZooMapControl.TileLayers.Add(TileLayer.FromSyncImage(GetTiles));
+            ZooMapControl.TileLayers.Add(TileLayer.FromAsyncImage(GetTiles));
         }
 
-        private byte[] GetTiles(int x, int y, int z)
+        private Task<byte[]> GetTiles(int x, int y, int z)
         {
             var tileConverter = DependencyService.Get<ITileConverter>();
             //TODO Poprawnie sformatować string do resources, np. mapTile_x_y_z
