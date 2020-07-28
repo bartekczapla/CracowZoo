@@ -73,6 +73,12 @@ namespace CracowZoo.ViewModels
                 PageName = nameof(TicketsPage),
                 Title = "Bilety"
             });
+            MenuItems.Add(new CustomMenuItem()
+            {
+                Icon = ((char)0xf0d6).ToString(),
+                PageName = nameof(SettingsPage),
+                Title = "Ustawienia"
+            });
             //MenuItems.Add(new CustomMenuItem()
             //{
             //    Icon = ((char)0xf013).ToString(),
