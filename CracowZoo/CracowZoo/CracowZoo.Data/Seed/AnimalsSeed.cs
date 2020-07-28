@@ -2095,191 +2095,186 @@ namespace CracowZoo.Data.Seed
                 Weight = "",
                 Longevity = ""
             });
-
-
-
-
-
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 111,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 111,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 112,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 112,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 113,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 113,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 114,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 114,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 115,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 115,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 116,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 116,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 117,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 117,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 118,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 118,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 119,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 119,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 120,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 120,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 111,
+                Name = "Szympans",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Pan troglodytes",
+                Occurance = "Środkowa Afryka.",
+                LivingEnvritonment = "Dżungla, sucha sawanna, górskie lasy.",
+                Food = "Pokarm roślinny, owady, małe i średniej wielkości ssaki.",
+                Breeding = "Po ciąży trwającej około 230 dni przychodzi na świat najczęściej jedno młode, które przez kilka lat zachowuje bliskie więzy z matką.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 111,
+                ImagePath = "_szympans.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 112,
+                Name = "Wiewiórka trójbarwna",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Callosciurus prevostii",
+                Occurance = "Tajlandia, Indonezja, Malezja.",
+                LivingEnvritonment = "Lasy.",
+                Food = "Owoce, nasiona, orzechy, pączki drzew i krzewów, owady, jaja ptaków.",
+                Breeding = "Ciąża trwa około 40 dni. Młode początkowo przebywają w gnieździe znajdującym się w dziupli lub w rozgałęzieniu konarów drzewa. Jest ono wyścielone miękkimi gałązkami i liśćmi.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 112,
+                ImagePath = "_wiewiorkatrojbarwna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 113,
+                Name = "Jeżozwierz indyjski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Hystrix indica",
+                Occurance = "Azja południowo-zachodnia: Indie, Cejlon, Turkiestan.",
+                LivingEnvritonment = "Suche tereny skaliste, lasy i sawanny.",
+                Food = "Pokarm roślinny, chętnie owoce. Dietę uzupełnia owadami.",
+                Breeding = "Ciąża trwa około 100 dni. Samica rodzi 2–4 młodych, pokrytych miękkimi białymi kolcami.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 113,
+                ImagePath = "_jezozwierz.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 114,
+                Name = "Rudawka nilowa",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Rousettus aegyptiacus",
+                Occurance = "Cypr, Afryka, Bliski i Środkowy Wschód po Pakistan.",
+                LivingEnvritonment = "Na schronienia wybiera głównie drzewa i jaskinie.",
+                Food = "Owoce, kwiaty, liście, nektar.",
+                Breeding = "Po ciąży trwającej około 4 miesięcy rodzi się zwykle jedno młode. Rzadko zdarzają się porody bliźniąt.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 114,
+                ImagePath = "_rudawkanilowa.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 115,
+                Name = "Karakal",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Caracal caracal",
+                Occurance = "Afryka, Półwysep Arabski, Azja (Afganistan, Pakistan, Iran, Indie).",
+                LivingEnvritonment = "Sawanny, półpustynie, krzaczaste zarośla.",
+                Food = "Małe ssaki, ptaki, węże, płazy.",
+                Breeding = "Po ciąży trwającej około 70 dni rodzą się 1-3 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 115,
+                ImagePath = "_karakal.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 116,
+                Name = "Chaus",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Felis chaus",
+                Occurance = "Występuje w Egipcie oraz zachodniej, środkowej i południowej Azji aż po Płw. Indochiński.",
+                LivingEnvritonment = "Zamieszkuje gęsto zakrzewione i porośnięte trzcinami brzegi wód.",
+                Food = "Ryby, płazy, małe gady, gryzonie i ptaki. Poluje w dzień i nocą.",
+                Breeding = "Po ciąży trwającej 63-68 dni na świat przychodzi 3-5 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 116,
+                ImagePath = "_chaus.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 117,
+                Name = "Manul",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Otocolobus manul",
+                Occurance = "Azja Środkowa, Iran, Afganistan, Pakistan.",
+                LivingEnvritonment = "Zamieszkuje stepy, skaliste pustynie, równiny i góry do wysokości 4500 m n.p.m.",
+                Food = "Drobne gryzonie (myszoskoczki, karczowniki, chomiki, wiewiórki),       a także zające i ptaki.",
+                Breeding = "Ciąża trwa 66-75 dni. W kwietniu lub maju samica rodzi od 4 do 6 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 117,
+                ImagePath = "_manul.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 118,
+                Name = "Żbik",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Felis silvestris",
+                Occurance = "Południowa i środkowa Europa, Azja Mniejsza, Kaukaz, północna Afryka.",
+                LivingEnvritonment = "Lasy mieszane i liściaste z bogatym podszytem, zakrzaczenia śródpolne, doliny potoków i rzek.",
+                Food = "Drobne gryzonie, ssaki owadożerne, kuraki leśne i inne ptaki, zające, padlina.",
+                Breeding = "Samica po ciąży trwającej 63-68 dni rodzi raz w roku 1-7 kociąt na przełomie maja i czerwca. Matka karmi kocięta przez około 1,5 miesiąca. Młode usamodzielniają się po 5-6 miesiącach, dojrzałość płciową osiągają po 10-12 miesiącach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 118,
+                ImagePath = "_zbik.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 119,
+                Name = "Kot argentyński",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Leopardus geoffroyi",
+                Occurance = "Boliwijskie i argentyńskie Andy, południowa część Paragwaju i Brazylii, zachodnia część Urugwaju i Chile.",
+                LivingEnvritonment = "Zamieszkuje stepy, lasy, tereny górzyste do wysokości 3300 m n.p.m.",
+                Food = "Gryzonie, ryby, żaby, ptaki, zające.",
+                Breeding = "Po ciąży trwającej 62-76 dni samica rodzi 1-3 młode, które osiągają dojrzałość płciową w wieku około 18 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 119,
+                ImagePath = "_kotargentynski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 120,
+                Name = "Kot arabski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Felis margarita",
+                Occurance = "Sahara, Półwysep Arabski, zachodni Egipt, pogranicze Pakistanu i Afganistanu.",
+                LivingEnvritonment = "Głównie pustynie, spotykany również na równinach ubogich w roślinność i skalistych dolinach.",
+                Food = "Myszoskoczki, nornikowate, zające, pająki, jaszczurki, ptaki, owady oraz węże.",
+                Breeding = "Po ciąży trwającej 59-67 dni na świat przychodzi 2-5 kociąt (najczęściej 3). Dojrzałość płciową osiągają w wieku 9-14 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 120,
+                ImagePath = "_kotarabski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
             //modelBuilder.Entity<Animal>().HasData(new Animal
             //{
             //    Id = 121,

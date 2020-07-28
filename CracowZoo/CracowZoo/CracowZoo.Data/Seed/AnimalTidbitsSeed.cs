@@ -1111,12 +1111,150 @@ namespace CracowZoo.Data.Seed
                 Description = "Żyje w grupach rodzinnych, liczących do 6 osobników, złożonych z rodziców i młodych",
                 AnimalId = 110
             });
-            //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-            //{
-            //    Id = 44,
-            //    Description = "",
-            //    AnimalId = 110
-            //});
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 446,
+                Description = "Żyje we wspólnotach składających się z kilkudziesięciu osobników, podzielonych na luźne grupy o różnej wielkości i strukturze zmieniającej się w czasie.",
+                AnimalId = 111
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 447,
+                Description = "Znaczny rozwój mózgu pozwala szympansom prowadzić bogate życie społeczne i umożliwia im posługiwanie się narzędziami.",
+                AnimalId = 111
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 448,
+                Description = "Prowadzi nadrzewny tryb życia.",
+                AnimalId = 112
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 449,
+                Description = "Jest aktywna w ciągu dnia.",
+                AnimalId = 112
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 450,
+                Description = "Jego ciało pokryte jest grubymi, szczeciniastymi włosami, które na plecach i ogonie przekształcone są w kolce.",
+                AnimalId = 113
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 451,
+                Description = "Zagrożony, stroszy je, odwraca się do napastnika tyłem i skutecznie broni się miotając ogonem.",
+                AnimalId = 113
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 452,
+                Description = "Jest aktywny nocą.",
+                AnimalId = 113
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 453,
+                Description = "Posługuje się echolokacją.",
+                AnimalId = 114
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 454,
+                Description = "Żyje w koloniach.",
+                AnimalId = 114
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 455,
+                Description = "Jego zmysły wzroku, słuchu i węchu są doskonale rozwinięte.",
+                AnimalId = 115
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 456,
+                Description = "W dawnych czasach, w Indiach i na Bliskim Wschodzie towarzyszył człowiekowi w polowaniach na zwierzynę płową.",
+                AnimalId = 115
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 457,
+                Description = "Po turecku słowo karakulak oznacza czarne ucho i stąd właśnie wywodzi się nazwa gatunku. Kot ten zwany jest również rysiem stepowym ze względu na obecność charakterystycznych pędzelków na końcach uszu.",
+                AnimalId = 115
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 458,
+                Description = "Chaus zwany kotem bagiennym, błotnym lub trzcinowym został uwieczniony obok kota nubijskiego na ścianach świątyń i papirusach przez starożytnych Egipcjan.",
+                AnimalId = 116
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 459,
+                Description = "Angielska nazwa tego kota, „Pallas cat”, pochodzi od nazwiska niemieckiego przyrodnika Petera Pallasa, który pierwszy opisał ten gatunek.",
+                AnimalId = 117
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 460,
+                Description = "Manul prowadzi nocny tryb życia.",
+                AnimalId = 117
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 461,
+                Description = "W ciągu dnia ukrywa się w norach innych zwierząt, małych jaskiniach i rozpadlinach skalnych.",
+                AnimalId = 117
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 462,
+                Description = "Żbik przypomina burego kota domowego, jest jednak od niego większy i masywniej zbudowany.",
+                AnimalId = 118
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 463,
+                Description = "Jest samotnikiem aktywnym nocą.",
+                AnimalId = 118
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 464,
+                Description = "Doskonale wspina się po drzewach.",
+                AnimalId = 118
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 465,
+                Description = "Prowadzi nocny tryb życia, dzień przesypia w gęstych zaroślach.",
+                AnimalId = 119
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 466,
+                Description = "Doskonale wspina się po drzewach i świetnie pływa.",
+                AnimalId = 119
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 467,
+                Description = "Gatunek samotniczy, prowadzi nocny tryb życia.",
+                AnimalId = 119
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 468,
+                Description = "Żyje do 15 lat.",
+                AnimalId = 119
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 469,
+                Description = "Niektóre plemiona Beduinów uważają kota arabskiego za zwierzę święte.",
+                AnimalId = 120
+            });
             #endregion
         }
     }
