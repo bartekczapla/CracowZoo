@@ -846,6 +846,277 @@ namespace CracowZoo.Data.Seed
                 AnimalId = 95 // Słoń indyjski
             });
 
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 402,
+                Description = "Charakterystyczną cechą tego zwierzęcia jest występowanie fałdów skórnych, znajdujących się po bokach ciała pomiędzy przednimi, a tylnymi kończynami.",
+                AnimalId = 93
+            });
+
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 403,
+                Description = "Dzięki temu powstaje powierzchnia nośna, która pozwala lotopałance przemieszczać się lotem ślizgowym na odległość do około 50 metrów",
+                AnimalId = 93
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 404,
+                Description = "W naszym ZOO regularnie się rozmnaża.",
+                AnimalId = 94
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 405,
+                Description = "Poczucie bezpieczeństwa w torbie matki jest tak mocne, że w razie niebezpieczeństwa nawet już wyrośnięty, prawie dorosły osobnik szuka tam schronienia.",
+                AnimalId = 94
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 406,
+                Description = "Jest zwierzęciem doskonale przystosowanym do kopania podziemnych korytarzy.",
+                AnimalId = 96
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 407,
+                Description = "Aktywny głównie nocą.",
+                AnimalId = 96
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 408,
+                Description = "Jego przednie, dwupalczaste kończyny zakończone są potężnymi pazurami.",
+                AnimalId = 97
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 409,
+                Description = "Długie, wełniste futro leniwców żyjących na wolności porośnięte jest glonami, a pomiędzy włosami bytują ćmy i chrząszcze.",
+                AnimalId = 97
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 410,
+                Description = "Żyje w grupach liczących 2 do 6 osobników.",
+                AnimalId = 98
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 411,
+                Description = "Grupa zajmuje terytorium około 20 ha.",
+                AnimalId = 98
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 412,
+                Description = "Lemur katta jest jedynym lemurem prowadzącym naziemny tryb życia.",
+                AnimalId = 99
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 413,
+                Description = "Jak wszystkie lemury należy do małpiatek – najprymitywniejszej grupy zwierząt naczelnych.",
+                AnimalId = 99
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 414,
+                Description = "Jest aktywny w dzień, co jest cechą rzadko spotykaną u lemurowatych.",
+                AnimalId = 99
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 415,
+                Description = "Żyje w grupach liczących od 5 do 20 osobników.",
+                AnimalId = 99
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 416,
+                Description = "Największy spośród lemurów.",
+                AnimalId = 100
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 417,
+                Description = "Dawniej czczony jako zwierzę święte.",
+                AnimalId = 100
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 418,
+                Description = "Jest aktywny nocą.",
+                AnimalId = 100
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 419,
+                Description = "Żyje w grupach liczących 2 do 5 osobników.",
+                AnimalId = 100
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 420,
+                Description = "Prowadzą nocny tryb życia, dzień przesypiają zwinięte w kłębek.",
+                AnimalId = 101
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 421,
+                Description = "Żyją w luźnych stadach złożonych z 1 samca i kilku samic. Mają doskonale rozwinięty zmysł wzroku i węchu.",
+                AnimalId = 101
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 422,
+                Description = "Doskonale wspina się po drzewach.",
+                AnimalId = 102
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 423,
+                Description = "Żyje w grupach rodzinnych liczących zwykle od 8 do 10 osobników.",
+                AnimalId = 102
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 424,
+                Description = "Prawie całe swoje życie spędzają na drzewach.",
+                AnimalId = 103
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 425,
+                Description = "Prowadzą dzienny tryb życia.",
+                AnimalId = 103
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 426,
+                Description = "Tworzą grupy złożone z 2-8 osobników.",
+                AnimalId = 103
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 427,
+                Description = "Typowa rodzina składa się z rodziców i ich potomstwa.",
+                AnimalId = 103
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 428,
+                Description = "Prowadzi nadrzewny tryb życia.",
+                AnimalId = 104
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 429,
+                Description = "Jest aktywna w ciągu dnia.",
+                AnimalId = 104
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 430,
+                Description = "Żyje w grupach rodzinnych",
+                AnimalId = 104
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 431,
+                Description = "Małpka sajmiri znana jest z filmu o Pipi Lansztrung.",
+                AnimalId = 105
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 432,
+                Description = "Jej inna nazwa – „trupia główka” pochodzi od charakterystycznego rysunku na pysku, przypominającego ludzką czaszkę.",
+                AnimalId = 105
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 433,
+                Description = "Małpy te żyją w stadach liczących od kilku do kilkunastu osobników.",
+                AnimalId = 106
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 434,
+                Description = "Mangaby czarne porozumiewają się między sobą wykorzystując mimikę twarzy.",
+                AnimalId = 106
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 435,
+                Description = "Żyje w grupach rodzinnych, liczących do 20 osobników, którym przewodzi doświadczony samiec.",
+                AnimalId = 107
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 436,
+                Description = "Czasem kilka takich grup łączy się w duże, luźne zgrupowania.",
+                AnimalId = 107
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 437,
+                Description = "Gerezy prowadzą dzienny tryb życia.",
+                AnimalId = 108
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 438,
+                Description = "Posiadają tylko cztery palce u każdej ręki.",
+                AnimalId = 108
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 439,
+                Description = "Kciuk jest nieobecny, lub zastąpiony przez niewielki paliczkowy guzek, co może być formą przystosowania do sprawniejszego poruszania się po drzewach.",
+                AnimalId = 108
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 440,
+                Description = "Małpy te występują w dwóch odmianach barwnych – czarnej i pomarańczowej.",
+                AnimalId = 109
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 441,
+                Description = "Żyją w grupach złożonych z jednego samca i kilku samic z młodymi.",
+                AnimalId = 109
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 442,
+                Description = "Młode samce tworzą grupy kawalerskie lub wędrują samotnie.",
+                AnimalId = 109
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 443,
+                Description = "Doskonale wspina się i skacze.",
+                AnimalId = 110
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 444,
+                Description = "Porusza się na zasadzie brachiacji – ruchami wahadłowymi przenosi ciężar ciała z jednej ręki na drugą.",
+                AnimalId = 110
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 445,
+                Description = "Żyje w grupach rodzinnych, liczących do 6 osobników, złożonych z rodziców i młodych",
+                AnimalId = 110
+            });
+            //modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            //{
+            //    Id = 44,
+            //    Description = "",
+            //    AnimalId = 110
+            //});
             #endregion
         }
     }

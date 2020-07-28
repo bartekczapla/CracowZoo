@@ -1750,7 +1750,7 @@ namespace CracowZoo.Data.Seed
                 Id = 92,
                 Name = "Kuskus ziemny",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Normal,
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Phalanger gymnotis",
                 Occurance = "Nowa Gwinea i wyspa Aru.",
                 LivingEnvritonment = "Lasy równikowe.",
@@ -1769,7 +1769,7 @@ namespace CracowZoo.Data.Seed
                 Id = 93,
                 Name = "Lotopałanka mała",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Normal,
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Petaurus breviceps",
                 Occurance = "Australia, Nowa Gwinea.",
                 LivingEnvritonment = "Lasy deszczowe, plantacje orzechów kokosowych, zarośla.",
@@ -1788,7 +1788,7 @@ namespace CracowZoo.Data.Seed
                 Id = 94,
                 Name = "Walabia Benetta",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Normal,
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Macropus rufogriseus",
                 Occurance = "Wschodnia i południowo-wschodnia Australia oraz Tasmania.",
                 LivingEnvritonment = "Zamieszkuje otwarte tereny przybrzeżne.",
@@ -1826,7 +1826,7 @@ namespace CracowZoo.Data.Seed
                 Id = 96,
                 Name = "Pancernik włochaty",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Normal,
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Chaetophractus villosus",
                 Occurance = "Argentyna, Boliwia, Chile i Urugwaj.",
                 LivingEnvritonment = "Zamieszkuje łąki, lasy, sawanny, tereny rolnicze, pampy - typowe dla Ameryki Południowej środowisko o charakterze stepowym.",
@@ -1845,7 +1845,7 @@ namespace CracowZoo.Data.Seed
                 Id = 97,
                 Name = "Leniwiec dwupalczasty",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Normal,
+                ConservationStatus = ConservationStatus.LeastConcern,
                 LatinSpecie = "Choloepus didactylus",
                 Occurance = "Wenezuela, Gujana i północna Brazylia.",
                 LivingEnvritonment = "Wilgotne lasy nizinne.",
@@ -1864,7 +1864,7 @@ namespace CracowZoo.Data.Seed
                 Id = 98,
                 Name = "Lemur czerwonobrzuchy",
                 Group = AnimalGroup.Mammals,
-                ConservationStatus = ConservationStatus.Vulnerable,
+                ConservationStatus = ConservationStatus.Endangered,
                 LatinSpecie = "Eulemur rubriventer",
                 Occurance = "Madagaskar.",
                 LivingEnvritonment = "Lasy deszczowe.",
@@ -1915,30 +1915,1362 @@ namespace CracowZoo.Data.Seed
                 Weight = "",
                 Longevity = ""
             });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 101,
+                Name = "Lori mały",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Nycticebus pygmaeus",
+                Occurance = "Wietnam, Laos, Chiny i Kambodża.",
+                LivingEnvritonment = "Lasy deszczowe.",
+                Food = "Owady, mięczaki, jaja, jaszczurki, ptaki, małe ssaki, owoce i inne części roślin.",
+                Breeding = "Po trwającej ok. 190 dni ciąży samica rodzi 1–2 młode, które karmi mlekiem przez około 9 miesięcy. Młode po narodzinach są w pełni rozwinięte i pokryte futrem.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 101,
+                ImagePath = "_lorimaly.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 102,
+                Name = "Marmozeta białoczelna",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Callithrix geoffroyi",
+                Occurance = "Południowo-wschodnia Brazylia.",
+                LivingEnvritonment = "Wilgotne lasy nizinne.",
+                Food = "Owoce, owady, żywica drzew, rzadziej kwiaty, nektar, ślimaki, pająki oraz drobne kręgowce.",
+                Breeding = "Po ciąży trwającej około 140 dni rodzą się 1-3 młode. Młodymi opiekują się zarówno matka jak i ojciec.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 102,
+                ImagePath = "_marmozetabialoczelna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 103,
+                Name = "Lwiatka złota",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Leontopithecus rosalia",
+                Occurance = "Południowo-wschodnia Brazylia.",
+                LivingEnvritonment = "Nizinny las deszczowy.",
+                Food = "Owoce, nasiona, kwiaty, nektar, żywica, ślimaki, jaszczurki, pająki, owady.",
+                Breeding = "Po ciąży trwającej 125-132 dni rodzi się 1-3 młodych, którymi opiekuje się ojciec i matka.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 103,
+                ImagePath = "_lwiatkazlota.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 104,
+                Name = "Tamaryna białoczuba",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.CriticallyEndangered,
+                LatinSpecie = "Saguinus oedipus",
+                Occurance = "Północno-zachodnia Kolumbia.",
+                LivingEnvritonment = "Lasy deszczowe.",
+                Food = "Owoce, owady, pająki, małe kręgowce, ptasie jaja.",
+                Breeding = "Ciąża trwa 6 miesięcy. Samica rodzi 1-2 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 104,
+                ImagePath = "_tamarynabialoczuba.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 105,
+                Name = "Sajmiri wiewiórcza",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Saimiri sciureus",
+                Occurance = "Północna i środkowa część Ameryki Południowej.",
+                LivingEnvritonment = "Wilgotne lasy dorzecza Amazonki.",
+                Food = "Owoce, owady, nektar, pająki, ptasie jaja, młode ptaki, nietoperze.",
+                Breeding = "Po ciąży trwającej 160-170 dni rodzi się 1 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 105,
+                ImagePath = "_sajmiriwiewiorcza.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 106,
+                Name = "Mangaba czarna",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Lophocebus aterrimus",
+                Occurance = "Afryka Centralna, na południe od rzeki Kongo.",
+                LivingEnvritonment = "Lasy.",
+                Food = "Głównie owoce i nasiona. Dietę uzupełnia młodymi liśćmi, nektarem, kwiatami, owadami, małymi gadami.",
+                Breeding = "Ciąża trwa około 170 dni. Samica rodzi zazwyczaj jedno młode, które pozostaje pod jej opieką około 1,5 roku.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 106,
+                ImagePath = "_mangabaczarna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 107,
+                Name = "Mandryl",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Mandrillus sphinx",
+                Occurance = "Afryka od południowego Kamerunu po Kongo.",
+                LivingEnvritonment = "Lasy równikowe.",
+                Food = "Owoce, nasiona, bulwy, orzechy oraz owady i małe kręgowce.",
+                Breeding = "Po ciąży trwającej około 250 dni na świat przychodzi jedno młode, którym opiekuje się matka, nosząc je na brzuchu, a potem na grzbiecie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 107,
+                ImagePath = "_mandryl.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 108,
+                Name = "Gereza abisyńska",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Colobus guereza",
+                Occurance = "Środkowa i wschodnia Afryka: Kamerun, Nigeria, Etiopia, Kenia, Tanzania i Czad.",
+                LivingEnvritonment = "Lasy deszczowe, górskie i nizinne centralnej i wschodniej Afryki do wysokości 3300 m n.p.m.",
+                Food = "Liście (najchętniej młode), owoce, pączki liści i kwiatów.",
+                Breeding = "Po ciąży trwającej 160-170 dni rodzi się jedno młode. W przeciwieństwie do osobników dorosłych, skóra noworodka jest różowa, a jego futerko białe. W trzecim tygodniu życia uszy i skóra na twarzy malucha zaczynają stopniowo zmieniać kolor na szary. Z czasem młode coraz bardziej upodabnia się do dorosłych, czarno-białych małp.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 108,
+                ImagePath = "_gerezaabisynska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 109,
+                Name = "Lutung jawajski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Trachypithecus auratus auratus",
+                Occurance = "Jawa, Bali i Indonezja.",
+                LivingEnvritonment = "Lasy deszczowe.",
+                Food = "Głównie młode liście z niską zawartością włókna, owoce, kwiaty i owady.",
+                Breeding = "Ciąża u tego gatunku trwa 6 miesięcy. Młode po urodzeniu ma zawsze intensywnie pomarańczowy kolor sierści. Opiekują się nim wszystkie samice w grupie.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 109,
+                ImagePath = "_lutung.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 110,
+                Name = "Gibbon białoręki",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Hylobates lar",
+                Occurance = "Półwysep Indochiński i Sumatra.",
+                LivingEnvritonment = "Wilgotne lasy nizinne, a także lasy górskie do wysokości około 2000 m n.p.m.",
+                Food = "Owoce, liście, pąki, kwiaty, ptasie jaja, młode ptaki, pająki, owady.",
+                Breeding = "Po ciąży trwającej około 6 miesięcy rodzi się jedno młode, którym początkowo opiekuje się wyłącznie matka, a następnie również ojciec.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 110,
+                ImagePath = "_gibbonbialoreki.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+
+
+
+
+
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 111,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 111,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 112,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 112,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 113,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 113,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 114,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 114,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 115,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 115,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 116,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 116,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 117,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 117,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 118,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 118,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 119,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 119,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 120,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 120,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 121,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 121,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 122,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 122,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 123,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 123,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 124,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 124,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 125,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 125,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 126,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 126,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 127,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 127,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 128,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 128,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 129,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 129,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 130,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 130,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 131,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 131,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 132,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 132,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 133,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 133,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 134,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 134,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 135,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 135,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 136,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 136,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 137,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 137,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 138,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 138,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 139,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 139,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 140,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 140,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 141,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 141,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 142,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 142,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 143,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 143,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 144,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 144,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 145,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 145,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 146,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 146,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 147,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 147,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 148,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 148,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 149,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 149,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 150,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 150,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 151,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 151,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 152,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 152,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 153,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 153,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 154,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 154,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 155,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 155,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 156,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 156,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 157,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 157,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 158,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 158,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 159,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 159,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 160,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 160,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 161,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 161,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 162,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 162,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 163,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 163,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 164,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 164,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 165,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 165,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 166,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 166,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 167,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 167,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 168,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 168,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 169,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 169,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 170,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 170,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 171,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 171,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 172,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 172,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 173,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 173,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 174,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 174,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
+            //modelBuilder.Entity<Animal>().HasData(new Animal
+            //{
+            //    Id = 175,
+            //    Name = "",
+            //    Group = AnimalGroup.Mammals,
+            //    ConservationStatus = ConservationStatus.LeastConcern,
+            //    LatinSpecie = "",
+            //    Occurance = "",
+            //    LivingEnvritonment = "",
+            //    Food = "",
+            //    Breeding = "",
+            //    AnimalDanger = AnimalDanger.None,
+            //    MapItemId = 175,
+            //    ImagePath = "",
+            //    Length = "",
+            //    Weight = "",
+            //    Longevity = ""
+            //});
             #endregion
         }
     }
 }
-
-
-//modelBuilder.Entity<Animal>().HasData(new Animal
-//            {
-//                Id = ,
-//                Name = "",
-//                Group = AnimalGroup.Amphibians,
-//                ConservationStatus = ConservationStatus.LeastConcern,
-//                LatinSpecie = "",
-//                Occurance = "",
-//                LivingEnvritonment = "",
-//                Food = "",
-//                Breeding = "",
-//                AnimalDanger = AnimalDanger.None,
-//                MapItemId = ,
-//                ImagePath = ".jpg",
-//                Length = "",
-//                Weight = "",
-//                SocialLife = "",
-//                Longevity = "",
-//                Incubation = "",
-//                NumberOfCubs = ""
-//            });
