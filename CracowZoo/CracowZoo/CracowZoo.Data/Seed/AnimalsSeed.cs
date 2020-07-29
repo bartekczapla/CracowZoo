@@ -1744,7 +1744,7 @@ namespace CracowZoo.Data.Seed
 
             #endregion
 
-            #region SSAKI 92-170
+            #region SSAKI 92-169
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
                 Id = 92,
@@ -2275,996 +2275,888 @@ namespace CracowZoo.Data.Seed
                 Weight = "",
                 Longevity = ""
             });
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 121,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 121,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 122,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 122,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 123,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 123,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 124,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 124,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 125,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 125,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 126,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 126,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 127,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 127,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 128,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 128,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 129,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 129,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 130,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 130,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 131,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 131,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 132,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 132,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 133,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 133,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 134,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 134,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 135,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 135,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 136,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 136,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 137,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 137,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 138,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 138,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 139,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 139,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 140,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 140,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 141,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 141,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 142,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 142,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 143,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 143,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 144,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 144,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 145,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 145,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 146,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 146,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 147,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 147,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 148,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 148,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 149,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 149,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 150,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 150,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 151,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 151,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 152,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 152,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 153,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 153,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 154,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 154,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 155,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 155,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 156,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 156,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 157,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 157,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 158,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 158,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 159,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 159,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 160,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 160,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 161,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 161,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 162,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 162,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 163,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 163,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 164,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 164,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 165,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 165,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 166,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 166,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 167,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 167,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 168,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 168,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 169,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 169,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 170,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 170,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 171,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 171,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 172,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 172,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 173,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 173,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 174,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 174,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
-            //modelBuilder.Entity<Animal>().HasData(new Animal
-            //{
-            //    Id = 175,
-            //    Name = "",
-            //    Group = AnimalGroup.Mammals,
-            //    ConservationStatus = ConservationStatus.LeastConcern,
-            //    LatinSpecie = "",
-            //    Occurance = "",
-            //    LivingEnvritonment = "",
-            //    Food = "",
-            //    Breeding = "",
-            //    AnimalDanger = AnimalDanger.None,
-            //    MapItemId = 175,
-            //    ImagePath = "",
-            //    Length = "",
-            //    Weight = "",
-            //    Longevity = ""
-            //});
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 121,
+                Name = "Ocelot",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Leopardus pardalis",
+                Occurance = "Ameryka Środkowa i północna część Ameryki Południowej.",
+                LivingEnvritonment = "Głównie lasy deszczowe, rzadziej spotykany na obszarach porośniętych ciernistymi zaroślami.",
+                Food = "Gryzonie, oposy, króliki, ptaki, małe naczelne, ryby, żaby, owady.",
+                Breeding = "Po ciąży trwającej 79-82 dni rodzi się najczęściej 1 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 121,
+                ImagePath = "_ocelot.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 122,
+                Name = "Serwal",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Leptailurus serval",
+                Occurance = "Afryka na południe od Sahary.",
+                LivingEnvritonment = "Zakrzewione sawanny, stepy.",
+                Food = "Ptaki, gryzonie, zające, płazy, gady, ryby, owady. W czasie polowania siedzi zaczajony w trawie, lokalizuje swoją ofiarę nasłuchując i w pewnym momencie wyskakuje wysoko, spadając na ziemię z wyciągniętymi pazurami dokładnie w miejscu, gdzie znajduje się zdobycz.",
+                Breeding = "Ciąża trwa 68-74 dni. Przed porodem samica przygotowuje gniazdo w gęstej roślinności lub w gnieździe innego zwierzęcia. W miocie 1-4 kociąt (zwykle 2). W 4 tygodniu młode zaczynają jeść mięso.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 122,
+                ImagePath = "_serwal.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 123,
+                Name = "Ryś",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Lynx lynx",
+                Occurance = "Od środkowej Europy i Skandynawii, poprzez Turcję, Irak, Iran, Rosję i Mongolię aż do Mandżurii.",
+                LivingEnvritonment = "Lasy, rzadziej tereny bardziej otwarte, półpustynne, słabiej zadrzewione i obszary górskie.",
+                Food = "Dzikie ssaki kopytne (głównie sarna). W górach kozice. Jego ofiarą padają również łosie, renifery, jelenie, dziki, zające, kuraki, drobne gryzonie.",
+                Breeding = "Ruja przypada na luty i marzec. Po ciąży trwającej 67-74 dni rodzą się najczęściej 2 - 3 młode.Matka karmi je mlekiem 70 - 80 dni.W wieku około 3 miesięcy młode opuszczają gniazdo i podążają za matką.Przebywają z nią do 10 miesiąca życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 123,
+                ImagePath = "_rys.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 124,
+                Name = "Jaguarundi",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Puma yagouaroundi",
+                Occurance = "Od południowego Teksasu do północnej Argentyny i Brazylii.",
+                LivingEnvritonment = "Las deszczowy, cierniste zarośla, pastwiska, tereny podmokłe.",
+                Food = "Gryzonie, ptaki, gady, króliki, owoce.",
+                Breeding = "Po ciąży trwającej 72-75 dni rodzi się 1-4 młodych. Kocięta przychodzą na świat w gnieździe znajdującym się w gęstej roślinności lub w dziupli drzewa. Dojrzałość płciową osiągają po 1,5-2 latach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 124,
+                ImagePath = "_jaguarundi.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 125,
+                Name = "Lew azjatycki",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Panthera leo persica",
+                Occurance = "Rezerwat Gir w prowincji Gujarat na północnym zachodzie Indii.",
+                LivingEnvritonment = "Lasy, obszary porośnięte krzewami.",
+                Food = "Ssaki kopytne, bydło domowe, antylopy, gazele.",
+                Breeding = "Po ciąży trwającej około 110 dni rodzi się 1-4 kociąt. Stają się całkowicie niezależne od matki w wieku około dwóch i pół roku.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 125,
+                ImagePath = "_lewazjatycki.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 126,
+                Name = "Jaguar",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Panthera onca",
+                Occurance = "Ameryka Środkowa, północna i środkowa część Ameryki Południowej.",
+                LivingEnvritonment = "Brzegi rzek, obrzeża lasów, różnego rodzaju tereny podmokłe.",
+                Food = "Duże i średniej wielkości ssaki: kapibary, jelenie, tapiry, pekari, a także kajmany i inne gady oraz ptaki i ryby.",
+                Breeding = "Ciąża trwa około 100 dni. W miocie rodzą się 1-3 ślepe młode, którymi matka opiekuje się przez 2 lata.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 126,
+                ImagePath = "_jaguar.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 127,
+                Name = "Pantera chińska",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Panthera pardus japonensis",
+                Occurance = "Chiny.",
+                LivingEnvritonment = "Nizinne lasy tropikalne, zadrzewione stepy oraz górskie lasy.",
+                Food = "Ssaki różnej wielkości, ptaki, gady.",
+                Breeding = "Po ciąży trwającej około 96 dni rodzi się najczęściej od 1 do 3 kociąt. Dojrzałość płciową osiągają w wieku 2-3 lat.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 127,
+                ImagePath = "_panterachinska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 128,
+                Name = "Tygrys amurski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Panthera tigris altaica",
+                Occurance = "Wschodnie regiony Rosji, pogranicze rosyjsko-chińskie, w dolnym biegu rzeki Amur.",
+                LivingEnvritonment = "Tajga, górskie lasy iglaste i mieszane, często w pobliżu rzek i potoków.",
+                Food = "Jeleniowate, dziki, mniejsze ssaki, ptaki, gady, ryby. Poluje głównie nocą. Ocenia się, że jeden atak na dwadzieścia kończy się sukcesem.",
+                Breeding = "Po 105-dniowej ciąży rodzą się 2-3 młode. Matkę opuszczają w wieku 2 lat. Samiec nie bierze udziału w wychowywaniu młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 128,
+                ImagePath = "_tygrysamurski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 129,
+                Name = "Pantera śnieżna",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Uncia uncia",
+                Occurance = "Góry środkowej Azji do wysokości 6000 m n.p.m.",
+                LivingEnvritonment = "Zamieszkuje tereny położone na znacznych wysokościach, aż do granicy wiecznego śniegu, dochodząc do wysokości nawet 6 000 m n.p.m.",
+                Food = "Owce górskie, koziorożce, jelonki piżmowe, młode jaki, bażanty i świstaki, zwierzęta domowe.",
+                Breeding = "Po ciąży trwającej 94-103 dni samica rodzi od 1 do 5 kociąt. Młode osiągają dojrzałość płciową w wieku 2-3 lat.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 129,
+                ImagePath = "_panterasniezna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 130,
+                Name = "Żeneta północna",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Genetta genetta",
+                Occurance = "Północno-zachodnia Afryka, Półwysep Pirenejski, południowo-zachodnia Francja.",
+                LivingEnvritonment = "Stepy, sawanny, lasy, tereny skaliste pozbawione drzew, czasem w pobliżu ludzkich siedzib.",
+                Food = "Drobne gryzonie, ptaki, owady.",
+                Breeding = "Po ciąży trwającej 70-77 dni samica rodzi 1-5 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 130,
+                ImagePath = "_zenetapolnocna.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 131,
+                Name = "Surykatka",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Suricata suricatta",
+                Occurance = "Południowa Afryka.",
+                LivingEnvritonment = "Suche, otwarte obszary.",
+                Food = "Owady, skorpiony, pająki, drobne kręgowce, małe węże, jaszczurki, jaja gadów i ptaków oraz bulwy roślin.",
+                Breeding = "Ciąża trwa około 70 dni. W miocie rodzi się zwykle 3-7 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 131,
+                ImagePath = "_surykatka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 132,
+                Name = "Wilk grzywiasty",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Chrysocyon brachyurus",
+                Occurance = "Ameryka Południowa: południowa Brazylia, Paragwaj, Boliwia.",
+                LivingEnvritonment = "Trawiaste pampy (formacje roślinne o charakterze stepowym).",
+                Food = "Gryzonie i inne niewielkie ssaki, ptaki, owoce.",
+                Breeding = "Ciąża trwa około 65 dni. W miocie jest zwykle 1-7 szczeniąt.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 132,
+                ImagePath = "_wilkgrzywiasty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 133,
+                Name = "Otocjon",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Otocyon megalotis",
+                Occurance = "Afryka południowa i wschodnia.",
+                LivingEnvritonment = "Sawanna, suche obszary trawiaste.",
+                Food = "Owady – głównie termity i chrząszcze. Zdobycz lokalizowana jest słuchem, a następnie szybko odkopywana. Dietę uzupełnia owocami, jajami, gadami i ptakami.",
+                Breeding = "Po ciąży trwającej około 70 dni rodzi się 1-6 szczeniąt.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 133,
+                ImagePath = "_otocjon.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 134,
+                Name = "Fennek",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Vulpes zerda",
+                Occurance = "Półwysep Arabski i północna Afryka.",
+                LivingEnvritonment = "Obszary pustynne.",
+                Food = "Małe gryzonie, ptaki, jaja, jaszczurki, owady, a także pokarm roślinny.",
+                Breeding = "Ciąża trwa około 50 dni. Samica rodzi w jednym miocie 1-4 młodych. Szczenięta pozostają pod opieką matki przez około 9 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 134,
+                ImagePath = "_fennek.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 135,
+                Name = "Uchatka patagońska",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Otaria flavescens",
+                Occurance = "Wybrzeże Ameryki Południowej od Peru po przylądek Horn.",
+                LivingEnvritonment = "Żyją w środowisku wodnym, ale również sprawnie poruszają się po lądzie.",
+                Food = "Ryby i głowonogi.",
+                Breeding = "Ciąża trwa ok. 11 miesięcy, samica rodzi 1 młode, które osiąga dojrzałość płciową pomiędzy 4 i 5 rokiem życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 135,
+                ImagePath = "_uchatkapatagonska.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 136,
+                Name = "Wydra europejska",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Lutra lutra",
+                Occurance = "Europa, Azja, północna Afryka.",
+                LivingEnvritonment = "Wybrzeża morskie, jeziora, stawy, rzeki, strumienie, bagna i torfowiska oraz kanały melioracyjne.",
+                Food = "Głównie ryby, a także żaby, raki, mięczaki i owady. Sporadycznie polują na drobne ssaki i ptaki.",
+                Breeding = "Dane o przebiegu ciąży są sprzeczne. Według niektórych badaczy ciąża trwa około 60 dni, inni uważają, że u wydry występuje zjawisko zahamowania rozwoju zarodka i związana z tym ciąża przedłużona, trwająca około 13 miesięcy. Wielkość miotu wynosi 2-4 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 136,
+                ImagePath = "_wydra.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 137,
+                Name = "Hirara",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Eira barbara",
+                Occurance = "Zamieszkuje Amerykę Środkową, Meksyk i Amerykę Południową po Paragwaj i Argentynę oraz Wyspy Trynidad.",
+                LivingEnvritonment = "Las tropikalny, plantacje, pola uprawne.",
+                Food = "Małe ssaki i ptaki, jaja ptasie, owady, owoce, miód dzikich pszczół.",
+                Breeding = "Po ciąży trwającej 63-67 dni, rodzą się 1-3 ślepe młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 137,
+                ImagePath = "_hirara.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 138,
+                Name = "Borsuk",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Meles meles",
+                Occurance = "Europa z wyjątkiem północnej Skandynawii, Azja.",
+                LivingEnvritonment = "Tereny leśne w pobliżu łąk i pól, zadrzewienia śródpolne, obrzeża większych lasów.",
+                Food = "Drobne gryzonie, płazy, ślimaki, dżdżownice, kłącza, bulwy, owoce, nasiona, grzyby.",
+                Breeding = "U borsuków występuje zjawisko ciąży przedłużonej, rozwój zapłodnionej komórki jajowej zatrzymuje się na kilka miesięcy. Cały okres ciąży trwa około 10 miesięcy, a nawet dłużej. Młode (najczęściej 3-4) rodzą się w okresie od stycznia do kwietnia. Dojrzałość płciową uzyskują w wieku 14 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 138,
+                ImagePath = "_borsuk.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 139,
+                Name = "Koati południowy",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Nasua nasua",
+                Occurance = "Północna i środkowa część Ameryki Południowej.",
+                LivingEnvritonment = "Lasy deszczowe i zadrzewienia do wysokości 2500 m n.p.m.",
+                Food = "Owady, owoce, skorpiony, pająki, gryzonie, ryby, pokarm roślinny.",
+                Breeding = "Ciąża trwa 77 dni; w jednym miocie rodzi się najczęściej 3-4 młodych.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 139,
+                ImagePath = "_koatipoludniowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 140,
+                Name = "Szop pracz",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Procyon lotor",
+                Occurance = "Ameryka Północna i Środkowa. Introdukowany w Europie w początkach lat 30-tych XX wieku, w Polsce pojawił się w latach 80-tych.",
+                LivingEnvritonment = "Zadrzewione tereny w pobliżu wody, obszary zurbanizowane.",
+                Food = "Ślimaki, żaby, ryby i raki oraz orzechy, nasiona, owoce. Ma charakterystyczny zwyczaj płukania pokarmu w wodzie, stąd wywodzi się jego nazwa.",
+                Breeding = "Po około 65-dniowej ciąży rodzi się   1-7 młodych. Matka karmi je mlekiem przez 2-3 miesiące. Po tym czasie młode szopy zaczynają samodzielnie poszukiwać pożywienia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 140,
+                ImagePath = "_szoppracz.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 141,
+                Name = "Panda mała",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Ailurus fulgens",
+                Occurance = "Północna Birma, zachodni Sichuan i Yunnan.",
+                LivingEnvritonment = "Lasy liściaste i iglaste na wysokości od 2200 do 4800 m n.p.m.",
+                Food = "Liście bambusa, jagody, ptasie jaja.",
+                Breeding = "Pora godowa przypada na wczesną zimę. Młode (od 1 do 4) rodzą się po pięciomiesięcznej ciąży. Gniazda zakłada w dziuplach lub w szczelinach skał.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 141,
+                ImagePath = "_pandamala.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = "14 lat"
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 142,
+                Name = "Osioł domowy",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Equus asinus",
+                Occurance = "Zwierzę użytkowane przez człowieka w wielu regionach świata.",
+                LivingEnvritonment = "Zwierzę udomowione.",
+                Food = "Trawa, gałęzie, kora. Posiada duże płaskie zęby przystosowane do rozrywania i żucia pokarmu.",
+                Breeding = "Ciąża trwa około 12 miesięcy. Samica rodzi zwykle jedno źrebię, które zaraz po urodzeniu może podążać za matką.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 142,
+                ImagePath = "_osioldomowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 143,
+                Name = "Zebra Chapmana",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Equus burchelli chapmanni",
+                Occurance = "Afryka południowa, Zimbabwe, Botswana.",
+                LivingEnvritonment = "Sawanny i stepy.",
+                Food = "Głównie trawy i rośliny zielne.",
+                Breeding = "Po ciąży trwającej 12 miesięcy rodzi się jedno młode. Samice uzyskują dojrzałość płciową między 2 a 3 rokiem życia. Ogiery po osiągnięciu wieku około 5 lat zaczynają utrzymywać harem klaczy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 143,
+                ImagePath = "_zebrachapmana.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 144,
+                Name = "Kuc szetlandzki",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NotEvaluated,
+                LatinSpecie = "Equus caballus",
+                Occurance = "Rasa koni hodowana na całym świecie, pochodząca z Wysp Szetlandzkich.",
+                LivingEnvritonment = "Zwierzę udomowione.",
+                Food = "Kuce szetlandzkie są niewybredne w doborze pokarmu. Żywią się głównie sianem i trawą.",
+                Breeding = "Ciąża trwa 338-342 dni. Zazwyczaj rodzi się 1 źrebak.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 144,
+                ImagePath = "_kucszetlandzki.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 145,
+                Name = "Koń Przewalskiego",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Equus przewalskii",
+                Occurance = "Reintrodukowany w parkach narodowych Mongolii. Program przywrócenia tego gatunku do natury rozpoczął się w roku 1992 w Parku Narodowym Hustain Nuruu.",
+                LivingEnvritonment = "Stepy.",
+                Food = "Trawa i roślinność stepowa.",
+                Breeding = "Po ciąży trwającej 330-350 dni rodzi się 1 młode. Klacze osiągają dojrzałość płciową w wieku 2 lat, ogiery w 3 roku życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 145,
+                ImagePath = "_konprzewalskiego.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 146,
+                Name = "Kułan",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Equus hemionus kulan",
+                Occurance = "Kazachstan i Turkmenistan.",
+                LivingEnvritonment = "Stepy i półpustynie.",
+                Food = "Trawy, roślinność stepowa, zioła, gałęzie krzewów, korzenie.",
+                Breeding = "Ciąża trwa 11 miesięcy. Klacz rodzi 1 źrebię. Laktacja trwa 6-8 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 146,
+                ImagePath = "_kulan.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 147,
+                Name = "Tapir anta",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Tapirus terrestris",
+                Occurance = "Środkowa i północna część Ameryki Południowej.",
+                LivingEnvritonment = "Nizinne tropikalne lasy deszczowe.",
+                Food = "Liście, rośliny wodne i bagienne, trawy, owoce.",
+                Breeding = "Po ciąży trwającej 13-14 miesięcy na świat przychodzi jedno młode (bliźnięta rodzą się bardzo rzadko). Młode są charakterystycznie ubarwione – ich brązowa sierść aż do 9 miesiąca życia pokryta jest białymi pasami i plamkami. Maluchy są dzięki temu niewidoczne w gęstwinie leśnej.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 147,
+                ImagePath = "_tapiranta.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 148,
+                Name = "Świnia zwisłobrzucha",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NotEvaluated,
+                LatinSpecie = "Sus scrofa domestica",
+                Occurance = "Rasa świń pochodząca z Azji.",
+                LivingEnvritonment = "Jedna z wielu ras hodowanej również u nas świni domowej.",
+                Food = "Zboże, jarzyny, otręby, płatki owsiane, zielonka.",
+                Breeding = "Ciąża trwa około 115 dni. Locha w ciągu roku może dać dwa mioty liczące ponad 10 młodych w każdym.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 148,
+                ImagePath = "_swiniazwislobrzucha.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 149,
+                Name = "Hipopotam karłowaty",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Hexaprotodon liberiensis",
+                Occurance = "Afryka zachodnia: Sierra Leone, Liberia, Wybrzeże Kości Słoniowej.",
+                LivingEnvritonment = "Lasy i podmokłe tereny nad brzegami rzek.",
+                Food = "Pędy roślin, kłącza, korzenie i inne części roślin.",
+                Breeding = "Po ciąży trwającej około 6 miesięcy przychodzi na świat jedno młode (rzadziej bliźnięta). Niedługo po urodzeniu młode jest w pełni sprawne i podąża za matką.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 149,
+                ImagePath = "_hipopotamkarlowaty.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 150,
+                Name = "Wielbłąd dwugarbny",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.CriticallyEndangered,
+                LatinSpecie = "Camelus bactrianus",
+                Occurance = "W stanie dzikim – głównie na pustyni Gobi i na półpustyniach Chin. W formie udomowionej – rozprzestrzeniony w wielu krajach.",
+                LivingEnvritonment = "Pustynie i półpustynie, suche stepy.",
+                Food = "Roślinność pustynna, nawet suche pędy, nie zjadane przez inne ssaki. Zwierzę to jest bardzo odporne na brak wody.",
+                Breeding = "Po ciąży trwającej około 13 miesięcy rodzi się zwykle 1 młode, które w chwili narodzin waży średnio około 35 kg.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 150,
+                ImagePath = "_wielbladdwugarbny.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 151,
+                Name = "Gwanako",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Lama guanicoe",
+                Occurance = "Ameryka Południowa - Andy od południowego Peru do Ziemi Ognistej.",
+                LivingEnvritonment = "Obszary trawiaste na wyżynach, na wysokości nawet ponad 4000 m n.p.m, sawanny, zarośla i półpustynie.",
+                Food = "Trawa, liście oraz pączki drzew i krzewów.",
+                Breeding = "Po ciąży trwającej około 11 miesięcy rodzi się zazwyczaj 1 młode, które wkrótce po urodzeniu podąża za matką. Dojrzałość płciową osiąga w drugim roku życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 151,
+                ImagePath = "_gwanako.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 152,
+                Name = "Alpaka",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NotEvaluated,
+                LatinSpecie = "Lama pacos",
+                Occurance = "Zwierzęta udomowione. Hodowane na zboczach Andów w Ekwadorze, Boliwii, Peru i Chile.",
+                LivingEnvritonment = "Górskie zbocza - spotykane na wysokościach od 4000 do 4700 m n.p.m.",
+                Food = "Trawa, liście i zielone części innych roślin.",
+                Breeding = "Po ciąży trwającej około 390 dni, rodzi się zazwyczaj jedno młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 152,
+                ImagePath = "_alpaka.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 153,
+                Name = "Wikunia",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Vicugna vicugna",
+                Occurance = "Andy od środkowego Peru na północy po północne Chile i Argentynę na południu.",
+                LivingEnvritonment = "Stepowe płaskowyża powyżej granicy lasów, na wysokości do 5500 m n.p.m.",
+                Food = "Trawa, liście oraz pączki krzewów.",
+                Breeding = "Po ciąży trwającej 330-350 dni rodzi się jedno młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 153,
+                ImagePath = "_wikunie.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 154,
+                Name = "Renifer",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Rangifer tarandus",
+                Occurance = "Północne rejony Ameryki Północnej i Eurazji.",
+                LivingEnvritonment = "Arktyczna tundra i lasotundra.",
+                Food = "Porosty, mchy, trawy, liście, pączki drzew i krzewów.",
+                Breeding = "Młode rodzą się na przełomie maja i czerwca, po ciąży trwającej 221-237 dni. Laktacja trwa około 6 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 154,
+                ImagePath = "_renifer.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 155,
+                Name = "Jeleń europejski",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Cervus elaphus",
+                Occurance = "Eurazja (część Półwyspu Skandynawskiego, południowa i środkowa Europa, środkowa Azja, północna Afryka).",
+                LivingEnvritonment = "Lasy liściaste i mieszane z bogatym podszytem, obrzeża lasu w sąsiedztwie pól, młodniki w borach sosnowych.",
+                Food = "Trawy, rośliny zielne, krzewinki, młode pędy, liście drzew i krzewów, grzyby, kora drzew i krzewów, porosty, żołędzie, bukiew.",
+                Breeding = "Okres godowy, tzw. rykowisko przypada jesienią. W tym czasie samce konkurują między sobą o samice, a osobniki zwycięskie gromadzą harem złożony z kilku łań. W maju i czerwcu, po ciąży trwającej średnio 235 dni przychodzą na świat  młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 155,
+                ImagePath = "_jeleneuropejski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 156,
+                Name = "Daniel płowy",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Dama dama",
+                Occurance = "Zachodnia i środkowa Europa. Introdukowany na inne kontynenty (Afryka, Ameryka Północna, Ameryka Południowa, Australia). W Polsce najliczniej występuje w zachodniej części kraju.",
+                LivingEnvritonment = "Lasy liściaste i mieszane z polanami, w sąsiedztwie łąk, niższe góry, otwarte tereny trawiaste.",
+                Food = "Trawy, dwuliścienne rośliny zielne, pędy drzew i krzewów, kora drzew.",
+                Breeding = "Okres godowy (bekowisko) przypada na październik i listopad. Podczas rui samce gromadzą wokół siebie łanie i bronią ich przed konkurentami. Ciąża trwa 230-245 dni. Samica rodzi na początku czerwca zwykle jedno, bardzo rzadko dwa młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 156,
+                ImagePath = "_danielplowy.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 157,
+                Name = "Milu",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.ExtinctInWild,
+                LatinSpecie = "Elaphurus davidianus",
+                Occurance = "Reintrodukowany w Chinach, nad Morzem Żółtym.",
+                LivingEnvritonment = "Pierwotny zasięg występowania tych jeleni obejmował prawdopodobnie nizinne i bagniste tereny środkowych i północnych Chin. Obecnie, od roku 1985 zamieszkuje leśne rezerwaty w Chinach (Beijing Milu Park i Dafeng Milu Natural Reserve).",
+                Food = "Trawy, zielone części roślin zielnych, liście drzew i krzewów.",
+                Breeding = "Okres godowy przypada na czerwiec, kończy się w sierpniu. Po ciąży trwającej 283-287 dni, w marcu lub kwietniu rodzi się jedno młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 157,
+                ImagePath = "_milu.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 158,
+                Name = "Barasinga",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Rucervus duvaucelii",
+                Occurance = "Północne Indie.",
+                LivingEnvritonment = "Podmokłe tereny trawiaste, unika zwartych lasów.",
+                Food = "Trawa, liście, kora i młode pędy.",
+                Breeding = "Po ciąży trwającej około 250 dni rodzi się 1 młode, które pozostaje w ukryciu przez 10-15 dni. Matka karmi je do 6 miesiąca życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 158,
+                ImagePath = "_barasinga.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 159,
+                Name = "Mundżak chiński",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Muntiacus reevesi",
+                Occurance = "Południowo-wschodnie Chiny, Tajwan. Introdukowany w Anglii na początku XX wieku.",
+                LivingEnvritonment = "Lasy i zarośla. Spotykany na wysokości do 3 500 m n.p.m.",
+                Food = "Rośliny zielne, liście krzewów, gałązki, owoce.",
+                Breeding = "Rozmnaża się w ciągu całego roku. Po ciąży trwającej około 210 dni rodzi się jedno młode, które pozostaje pod opieką matki do 4 miesiąca życia.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 159,
+                ImagePath = "_mundzakchinski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 160,
+                Name = "Żyrafa Rothschilda",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Endangered,
+                LatinSpecie = "Giraffa camelopardalis rothschildi",
+                Occurance = "Afryka: południowy Sudan, północna Uganda, zachodnia Kenia.",
+                LivingEnvritonment = "Sawanny, zarośla akacjowe.",
+                Food = "Głównie liście roślin z rodzaju Acacia.",
+                Breeding = "Po ciąży trwającej około 450 dni rodzi się jedno młode o wadze około 100 kg i wzroście do 2 metrów. Laktacja trwa około 12 miesięcy. Dojrzałość płciową żyrafy osiągają w wieku 4-5 lat.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 160,
+                ImagePath = "_zyrafarothschilda.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 161,
+                Name = "Antylopa eland",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Taurotragus oryx",
+                Occurance = "Afryka równikowa i południowa.",
+                LivingEnvritonment = "Zasiedla różne środowiska. Preferuje tereny otwarte. Unika gęstych zarośli i terenów podmokłych. Spotykany do wysokości 4600 m n.p.m.",
+                Food = "Głównie gałęzie, pędy i liście krzewów.",
+                Breeding = "Po ciąży trwającej 8-9 miesięcy rodzi się młode o wadze do 30 kg. Młoda antylopa szybko przybiera na wadze, osiągając po roku masę do 450 kg.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 161,
+                ImagePath = "_eland.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 162,
+                Name = "Sitatunga",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Tragelaphus spekei gratus",
+                Occurance = "Afryka Środkowa.",
+                LivingEnvritonment = "Podmokłe tereny i wilgotne lasy równikowe.",
+                Food = "Trawy, roślinność bagienna.",
+                Breeding = "Po około 8 – miesięcznej ciąży samica rodzi młode, które może z nią pozostać nawet do narodzin kolejnego potomka.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 162,
+                ImagePath = "_sitatunga.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 163,
+                Name = "Arui",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Ammotragus lervia",
+                Occurance = "Północna Afryka: Maroko, Algieria, Tunezja, Libia, Sudan, Egipt.",
+                LivingEnvritonment = "Góry do wysokości 4000 m n.p.m., tereny pustynne.",
+                Food = "Dieta zróżnicowana: trawa, gałązki, pędy drzew i krzewów, porosty. Jest odporny na brak wody i bardzo wytrzymały.",
+                Breeding = "Ruja przypada na listopad. Po ciąży trwającej 150-165 dni rodzi się 1-2 młode.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 163,
+                ImagePath = "_arui.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 164,
+                Name = "Takin miszmi",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.Vulnerable,
+                LatinSpecie = "Budorcas taxicolor",
+                Occurance = "Wschodnia część Himalajów i Wyżyny Tybetańskiej do wysokości 3500 m n.p.m.",
+                LivingEnvritonment = "Skaliste obszary, skąpo porośnięte trawami i krzewami, lasy.",
+                Food = "Trawy i inne rośliny,  pędy i kora drzew, krzewów.",
+                Breeding = "Okres godowy przypada na sierpień i wrzesień. W marcu lub kwietniu samica rodzi zwykle jedno młode po ciąży trwającej około 210 dni.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 164,
+                ImagePath = "_takin.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 165,
+                Name = "Markur turkmeński",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NearThreatened,
+                LatinSpecie = "Capra falconeri heptneri",
+                Occurance = "Góry Azji (południowa Rosja, Afganistan, północne Indie oraz Kaszmir).",
+                LivingEnvritonment = "Tereny górskie do wysokości 3600 m n.p.m.",
+                Food = "Liście drzew i krzewów, trawa, żołędzie.",
+                Breeding = "Po ciąży trwającej około 170 dni rodzą się 1-2 młode, które osiągają  dojrzałość płciową po 3 latach.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 165,
+                ImagePath = "_markurturkmenski.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 166,
+                Name = "Koza karłowata",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.NotEvaluated,
+                LatinSpecie = "Capra hircus hircus",
+                Occurance = "Zwierzę udomowione około 10 tysięcy lat temu na terenie Azji Mniejszej, Mezopotamii i Egiptu.",
+                LivingEnvritonment = "Hodowana przez człowieka.",
+                Food = "Zielone części roślin, gałązki, trawa.",
+                Breeding = "Po ciąży trwającej około 140 dni samica rodzi od 2 do 4 koźląt.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 166,
+                ImagePath = "_kozakarlowata.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 167,
+                Name = "Antylopa addaks",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.CriticallyEndangered,
+                LatinSpecie = "Addax nasomaculatus",
+                Occurance = "Środkowy i wschodni Niger, gdzie żyje populacja licząca zaledwie około 500 osobników.",
+                LivingEnvritonment = "Obszary pustynne.",
+                Food = "Rośliny pustynne, gałązki, pędy drzew i krzewów. Odporny na brak wody.",
+                Breeding = "Po ciąży trwającej około 270 dni samica rodzi 1 młode, które karmi przez ponad 6 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 167,
+                ImagePath = "_addaks.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 168,
+                Name = "Kob śniady",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Kobus ellipsiprymnus",
+                Occurance = "Południowo-wschodnia Afryka.",
+                LivingEnvritonment = "Sawanny i zarośla w pobliżu wody.",
+                Food = "Trawa i liście.",
+                Breeding = "Ciąża trwa około 8 miesięcy. Po tym czasie rodzi się jedno młode, które początkowo przebywa w ukryciu, a od 4 tygodnia życia podąża za matką. Okres rozrodu trwa przez cały rok.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 168,
+                ImagePath = "_kobsniady.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
+            modelBuilder.Entity<Animal>().HasData(new Animal
+            {
+                Id = 169,
+                Name = "Kob liczi",
+                Group = AnimalGroup.Mammals,
+                ConservationStatus = ConservationStatus.LeastConcern,
+                LatinSpecie = "Kobus leche",
+                Occurance = "Afryka: wschodnia Angola, wschodnia Namibia i północna Botswana.",
+                LivingEnvritonment = "Tereny bagniste, położone blisko rzek i jezior.",
+                Food = "Trawa oraz rośliny bagienne i wodne.",
+                Breeding = "Okres godowy przypada na porę deszczową (grudzień-marzec). Po ciąży trwającej około 8 miesięcy rodzi się jedno młode o wadze około 6 kg. Laktacja trwa do 7 miesięcy.",
+                AnimalDanger = AnimalDanger.None,
+                MapItemId = 169,
+                ImagePath = "_kobliczi.jpg",
+                Length = "",
+                Weight = "",
+                Longevity = ""
+            });
             #endregion
         }
     }

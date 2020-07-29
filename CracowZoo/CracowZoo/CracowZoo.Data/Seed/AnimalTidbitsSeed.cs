@@ -831,7 +831,7 @@ namespace CracowZoo.Data.Seed
             });
             #endregion
 
-            #region SSAKI 92-170
+            #region SSAKI 92-169
 
             modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
             {
@@ -1255,13 +1255,608 @@ namespace CracowZoo.Data.Seed
                 Description = "Niektóre plemiona Beduinów uważają kota arabskiego za zwierzę święte.",
                 AnimalId = 120
             });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 470,
+                Description = "Prowadzi nocny tryb życia, dzień przesypia w gęstych zaroślach.",
+                AnimalId = 121
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 471,
+                Description = "Doskonale wspina się po drzewach, dobrze pływa.",
+                AnimalId = 121
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 472,
+                Description = "Ma niezwykle czuły słuch.",
+                AnimalId = 122
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 473,
+                Description = "Prowadzi samotniczy tryb życia.",
+                AnimalId = 122
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 474,
+                Description = "Dobrze wspina się po drzewach i doskonale skacze. Długość skoków dochodzi do 5 m. Za wzlatującymi ptakami potrafi skoczyć do wysokości 2 m.",
+                AnimalId = 123
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 475,
+                Description = "Ryś jest aktywny głównie o zmroku i nocą, a w ciągu dnia śpi i odpoczywa.",
+                AnimalId = 123
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 476,
+                Description = "Z uwagi na podobieństwo do niektórych przedstawicieli rodziny łasicowatych nazywany jest „kotem łasicowatym”.",
+                AnimalId = 124
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 477,
+                Description = "Lwy azjatyckie są nieco mniejsze od swoich afrykańskich kuzynów.",
+                AnimalId = 125
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 478,
+                Description = "Jest świetnym pływakiem. Od lamparta odróżnia go krępa budowa ciała, krótszy ogon i obecność plamek wewnątrz rozetek na tułowiu.",
+                AnimalId = 126
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 479,
+                Description = "Znakomicie pływa i wspina się na drzewa.",
+                AnimalId = 127
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 480,
+                Description = "Tygrys amurski jest największym ze współcześnie żyjących kotów: osiąga masę do 320 kg, długość ciała do 2,5 m.",
+                AnimalId = 128
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 481,
+                Description = "Posiada najjaśniejsze i najdłuższe futro spośród tygrysów.",
+                AnimalId = 128
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 482,
+                Description = "Prowadzi samotniczy tryb życia.",
+                AnimalId = 128
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 483,
+                Description = "Jeden osobnik zajmuje terytorium do 1000 km2.",
+                AnimalId = 128
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 484,
+                Description = "Ubarwienie futra doskonale maskuje ją wśród skał i śniegu, zwiększając szansę na skuteczne polowanie.",
+                AnimalId = 129
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 485,
+                Description = "Jest przedstawicielem rodziny łasz. Prowadzi nocny tryb życia.",
+                AnimalId = 130
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 486,
+                Description = "Znakomicie wspina się na drzewa, dobrze pływa.",
+                AnimalId = 130
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 487,
+                Description = "Jest to przedstawiciel rodziny mangustowatych.",
+                AnimalId = 131
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 488,
+                Description = "Drapieżniki te żyją w grupach rodzinnych, w których panuje hierarchia.",
+                AnimalId = 131
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 489,
+                Description = "Nad bezpieczeństwem grupy czuwa osobnik, który wypatruje niebezpieczeństwa i na widok zagrożenia daje pobratymcom głośny sygnał do ucieczki.",
+                AnimalId = 131
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 490,
+                Description = "Cała kolonia znika wówczas pod ziemią w bezpiecznym systemie jam i korytarzy.",
+                AnimalId = 131
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 491,
+                Description = "Z uwagi na podobieństwo do lisa, Indianie nazwali go „dużym lisem”.",
+                AnimalId = 132
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 492,
+                Description = "Nazwa wilk grzywiasty pochodzi od charakterystycznej grzywy, którą zwierzę stroszy w chwili zaniepokojenia.",
+                AnimalId = 132
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 493,
+                Description = "Posiadają od 46 do 50 drobnych zębów (najwięcej spośród wszystkich ssaków).",
+                AnimalId = 133
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 494,
+                Description = "Żyją w parach lub grupach rodzinnych.",
+                AnimalId = 133
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 495,
+                Description = "Najmniejszy gatunek spośród psowatych. Wyjątkowo długie uszy służą do regulacji temperatury ciała w niekorzystnych warunkach panujących na pustyni oraz znakomicie wspomagają lokalizację zdobyczy. Posiada owłosione podeszwy, umożliwiające poruszanie się po rozgrzanym piasku.",
+                AnimalId = 134
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 496,
+                Description = "Uchatki są najsprawniej poruszającymi się na lądzie płetwonogimi. Posiadają niewielkie małżowiny uszne, od obecności których pochodzi nazwa zwierzęcia.",
+                AnimalId = 135
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 497,
+                Description = "Inna nazwa – lew morski uzasadniona jest charakterystycznym, grzmiącym rykiem wydawanym przez samce i grzywą, porastającą ich grzbiet i kark.Pod wodą uchatki przebywają zwykle około 5 minut, nurkują na głębokość do 100 metrów.",
+                AnimalId = 135
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 498,
+                Description = "Drapieżniki te mają dobrze rozwinięty zmysł wzroku, słuchu i węchu.",
+                AnimalId = 136
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 499,
+                Description = "Są samotnikami, za wyjątkiem samic wychowujących młode",
+                AnimalId = 136
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 500,
+                Description = "Przedstawiciel rodziny łasicowatych.",
+                AnimalId = 137
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 501,
+                Description = "Prowadzi nocny tryb życia.",
+                AnimalId = 137
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 502,
+                Description = "Znakomicie porusza się wśród gałęzi drzew.",
+                AnimalId = 137
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 503,
+                Description = "Borsuki żyją w grupach rodzinnych, których członkowie są blisko spokrewnieni.",
+                AnimalId = 138
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 504,
+                Description = "Każda grupa zamieszkuje terytorium, w obrębie którego znajdują się nory i wydeptane ścieżki, uczęszczane przez te zwierzęta.",
+                AnimalId = 138
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 505,
+                Description = "Jest to przedstawiciel rodziny szopowatych. Cechą charakterystyczną tego gatunku jest prążkowany ogon.",
+                AnimalId = 139
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 506,
+                Description = "Grupy liczące zwykle 5-50 osobników złożone są z samic i ich młodych. Samce dołączają do grupy w okresie godowym.",
+                AnimalId = 139
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 507,
+                Description = "Aktywny w dzień.",
+                AnimalId = 139
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 508,
+                Description = "Aktywny nocą, dzień spędza w kryjówkach.",
+                AnimalId = 140
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 509,
+                Description = "Dobrze wspina się na drzewa, bardzo dobrze pływa.",
+                AnimalId = 140
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 510,
+                Description = "Poza okresem godowym żyje samotnie.",
+                AnimalId = 140
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 511,
+                Description = "Jedyny przedstawiciel rodziny pandowatych.",
+                AnimalId = 141
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 512,
+                Description = "Żyje w małych grupach rodzinnych.",
+                AnimalId = 141
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 513,
+                Description = "Naturalnym wrogiem tego zwierzęcia jest pantera śnieżna.",
+                AnimalId = 141
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 514,
+                Description = "Osioł został udomowiony już w starożytnym Egipcie.",
+                AnimalId = 142
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 515,
+                Description = "Jest bardzo wytrzymały i mało wymagający. Ceniony jako zwierzę juczne, pociągowe i wierzchowe.",
+                AnimalId = 142
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 516,
+                Description = "Pochodzi od dzikiego osła, żyjącego w północnej Afryce.",
+                AnimalId = 142
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 517,
+                Description = "W niebezpieczeństwie zebra ratuje się ucieczką rozwijając prędkość do 65 km/h.",
+                AnimalId = 143
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 518,
+                Description = "Naturalnymi wrogami zebr są lwy, lamparty, gepardy i hieny.",
+                AnimalId = 143
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 519,
+                Description = "Zwierzę to zostało nazwane zebrą Chapmana na cześć przyrodnika Jamesa Chapmana.",
+                AnimalId = 143
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 520,
+                Description = "W Anglii wykorzystywano je do pracy w kopalniach węgla.",
+                AnimalId = 144
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 521,
+                Description = "Obecnie służą dzieciom do jazdy wierzchem, ciągną małe bryczki, są także użytkowane jako zwierzęta juczne.",
+                AnimalId = 144
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 522,
+                Description = "Konie Przewalskiego to dzicy przodkowie konia domowego. Po raz ostatni obserwowano je na wolności na pograniczu Mongolii i Chin w roku 1968. Zanim wyginęły w naturze, odłowiono wiele osobników i umieszczono w ogrodach zoologicznych na świecie. Dzięki programowi reintrodukcji prowadzonemu w Mongolii, konie te powróciły na wolność.",
+                AnimalId = 145
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 523,
+                Description = "Jest to przedstawiciel rodziny koniowatych, blisko spokrewniony z kiangiem i onagerem. Posiada cechy typowe dla koni i osłów.",
+                AnimalId = 146
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 524,
+                Description = "Górna warga wraz z nosem tworzą krótką, silnie umięśnioną trąbę.",
+                AnimalId = 147
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 525,
+                Description = "Są świetnie przystosowane do pokonywania gęstych zarośli – mają gładką skórę, szczeciniastą sierść, klinowatą głowę i mocno umięśnione nogi.",
+                AnimalId = 147
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 526,
+                Description = "Tapir uważany jest przez wielu przyrodników za „żywą skamielinę”, ponieważ prawie nie różni się od swoich przodków występujących licznie na ziemi w środkowym trzeciorzędzie.",
+                AnimalId = 147
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 527,
+                Description = "Świnkę tą nazwano zwisłobrzuchą ze względu na fakt, że brzuch zwierzęcia niemal dotyka ziemi. Inaczej świnia ta nazywana jest wietnamską",
+                AnimalId = 148
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 528,
+                Description = "Hipopotam karłowaty pomimo niewielkich rozmiarów posiada groźną broń – duże kły, którymi może zadawać bardzo głębokie rany.",
+                AnimalId = 149
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 529,
+                Description = "Prowadzi nocny tryb życia przebywając w ciągu dnia w ukryciu w pobliżu wody. Żyje samotnie, z wyjątkiem okresu rui i opieki nad młodym.",
+                AnimalId = 149
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 530,
+                Description = "Jest wykorzystywany jako zwierzę juczne i wierzchowe, rzadziej użytkowany jako siła pociągowa, dostarcza także mleka, mięsa, wełny i skóry.",
+                AnimalId = 150
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 531,
+                Description = "Wielbłąd dwugarbny porusza się inochodem – to znaczy, że nogi jednej strony ciała poruszają się jednocześnie.",
+                AnimalId = 150
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 532,
+                Description = "Żyje w stadach, liczących do około 30 osobników, prowadzonych przez samca.",
+                AnimalId = 151
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 533,
+                Description = "Alpaki hodowane są dla wełny oraz dla mięsa, które jest uważane przez andyjskich mieszkańców za przysmak.Z wełny tego zwierzęcia produkuje się koce, poncza i dobrej jakości odzież.",
+                AnimalId = 152
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 534,
+                Description = "Tworzy haremowe grupy rodzinne złożone z 6-19 osobników (samca i samic z młodymi).",
+                AnimalId = 153
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 535,
+                Description = "Wikunie są aktywne w ciągu dnia.",
+                AnimalId = 153
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 536,
+                Description = "Mają niezwykle duże serce, którego masa jest o około 50% większa niż u innych ssaków tej samej wielkości, co jest przystosowaniem do przebywania na dużych wysokościach. Ich wełna o doskonałej jakości była powodem intensywnych polowań na te zwierzęta.",
+                AnimalId = 153
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 537,
+                Description = "Charakterystyczną cechą reniferów jest obecność poroża u osobników obu płci.",
+                AnimalId = 154
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 538,
+                Description = "Jest ono półkoliście zakrzywione, zakończone rozgałęzieniami, nieco mniejsze u samic. Renifery odbywają dalekie wędrówki, nawet na odległość do 2000 km.",
+                AnimalId = 154
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 539,
+                Description = "Jelenie są aktywne wczesnym rankiem i wieczorem.",
+                AnimalId = 155
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 540,
+                Description = "Są zwierzętami stadnymi. Ich naturalnym wrogiem jest wilk, niedźwiedź i ryś.",
+                AnimalId = 155
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 541,
+                Description = "W Polsce daniel był od średniowiecza hodowany w parkach i menażeriach jako zwierzę ozdobne.",
+                AnimalId = 156
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 542,
+                Description = "Jeleń ten został odkryty przez francuskiego misjonarza ojca Armanda Davida. Według chińskich opisów łączy w sobie cechy jelenia, krowy i osła.",
+                AnimalId = 157
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 543,
+                Description = "Opisano go jako nowy gatunek w roku 1866 we Francji. W następnych latach sprowadzono te zwierzęta do Europy.",
+                AnimalId = 157
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 544,
+                Description = "Aktywny rano i wieczorem, dzień spędza w ukryciu.",
+                AnimalId = 158
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 545,
+                Description = "Naturalnym wrogiem osobników dorosłych jest tygrys bengalski, młodych również szakal.",
+                AnimalId = 158
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 546,
+                Description = "Jest jednym z najmniejszych przedstawicieli rodziny jeleniowatych.",
+                AnimalId = 159
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 547,
+                Description = "Żyje do 13 lat. W sytuacji zagrożenia podnosi ogon i wydaje donośny odgłos przypominający szczekanie.",
+                AnimalId = 159
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 548,
+                Description = "Szyja żyrafy zawiera tylko 7 kręgów szyjnych, tak jak u większości ssaków.",
+                AnimalId = 160
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 549,
+                Description = "Naukowcy wyróżnili 9 podgatunków żyraf, zamieszkujących różne rejony Afryki i różniących są głównie układem, kolorem i wielkością plam na skórze. Porusza się inochodem.",
+                AnimalId = 160
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 550,
+                Description = "Samce żyrafy Rothschilda osiągają najwyższy wzrost spośród wszystkich podgatunków żyraf.",
+                AnimalId = 160
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 551,
+                Description = "Samiec osiąga wagę około 1000 kg.",
+                AnimalId = 161
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 552,
+                Description = "Jest to jedna z największych antylop. Podejmowano próby udomowienia tego gatunku.",
+                AnimalId = 161
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 553,
+                Description = "Charakterystyczną cechą gatunku jest wyraźnie zaznaczony dymorfizm płciowy. Samce są większe od samic, tylko one posiadają rogi, różnią się także ubarwieniem.",
+                AnimalId = 162
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 554,
+                Description = "Antylopy te prowadzą osiadły tryb życia.",
+                AnimalId = 162
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 555,
+                Description = "Są doskonałymi pływakami.",
+                AnimalId = 162
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 556,
+                Description = "Żyje w stadach.",
+                AnimalId = 163
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 557,
+                Description = "Bardzo zwinnie porusza się po skalistym terenie.",
+                AnimalId = 163
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 558,
+                Description = "Przy dużej dostępności pokarmu aktywny jedynie wieczorem i o świcie. W okresach niedostatku pożywienia żeruje również w ciągu dnia.",
+                AnimalId = 164
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 559,
+                Description = "Jest spokrewniony z wołem piżmowym.",
+                AnimalId = 164
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 560,
+                Description = "Jest gatunkiem doskonale przystosowanym do wspinania się po skałach.",
+                AnimalId = 165
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 561,
+                Description = "Jego naturalnym wrogiem jest pantera śnieżna.",
+                AnimalId = 165
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 562,
+                Description = "Koza karłowata jest hodowana dla mleka, mięsa, jako zwierzę juczne.",
+                AnimalId = 166
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 563,
+                Description = "Jest to jedna z najmniejszych ras kóz.",
+                AnimalId = 166
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 564,
+                Description = "Żyje w stadach liczących 5-20 osobników.",
+                AnimalId = 167
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 565,
+                Description = "Jest aktywna rano, nocą i wieczorem, chroni się w ten sposób przed wysoką temperaturą dnia.",
+                AnimalId = 167
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 566,
+                Description = "Żyje w stadach złożonych z kilkunastu osobników.",
+                AnimalId = 168
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 567,
+                Description = "W razie zagrożenia ratuje się ucieczką do wody.",
+                AnimalId = 168
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 568,
+                Description = "Zagrożona na lądzie ucieka do wody, dlatego też często nazywana jest kobem wodnym.",
+                AnimalId = 169
+            });
+            modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
+            {
+                Id = 569,
+                Description = "Świetnie pływa.",
+                AnimalId = 169
+            });
             #endregion
         }
     }
 }
 
-//modelBuilder.Entity<AnimalTidbit>().HasData(new AnimalTidbit
-//            {
-//                Description = "",
-//                AnimalId = 
-//            });

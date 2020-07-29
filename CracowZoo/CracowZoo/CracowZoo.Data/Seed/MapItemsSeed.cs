@@ -745,7 +745,7 @@ namespace CracowZoo.Data.Seed
 
             #endregion
 
-            #region SSAKI 92-170
+            #region SSAKI 92-169
 
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
@@ -818,6 +818,491 @@ namespace CracowZoo.Data.Seed
                 Y = 0,
                 Marked = false
             });
+
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 101,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 102,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 103,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 104,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 105,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 106,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 107,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 108,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 109,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 110,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 111,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 112,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 113,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 114,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 115,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 116,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 117,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 118,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 119,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 120,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 121,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 122,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 123,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 124,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 125,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 126,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 127,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 128,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 129,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 130,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 131,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 132,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 133,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 134,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 135,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 136,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 137,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 138,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 139,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 140,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 141,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 142,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 143,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 144,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 145,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 146,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 147,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 148,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 149,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 150,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 151,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 152,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 153,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 154,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 155,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 156,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 157,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 158,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 159,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 160,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 161,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 162,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 163,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 164,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 165,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 166,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 167,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 168,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+            modelBuilder.Entity<MapItem>().HasData(new MapItem
+            {
+                Id = 169,
+                X = 0,
+                Y = 0,
+                Marked = false
+            });
+
             #endregion
         }
     }
