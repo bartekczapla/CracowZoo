@@ -13,8 +13,8 @@ namespace CracowZoo.Models
     {
         [Key]
         public int Id { get; set; }
-        public double X { get; set; }
-        public double Y { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         public bool Marked { get; set; }
         [MaxLength(50)]
         public string Name { get; set; }
