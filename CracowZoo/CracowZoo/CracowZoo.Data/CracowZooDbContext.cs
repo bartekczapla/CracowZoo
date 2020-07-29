@@ -23,6 +23,7 @@ namespace CracowZoo.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(_connectionString);
+            base.OnConfiguring(optionsBuilder);     
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

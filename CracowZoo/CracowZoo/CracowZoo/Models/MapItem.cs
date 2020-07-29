@@ -1,4 +1,5 @@
-﻿using CracowZoo.Interfaces;
+﻿using CracowZoo.Enums;
+using CracowZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,5 +16,10 @@ namespace CracowZoo.Models
         public double X { get; set; }
         public double Y { get; set; }
         public bool Marked { get; set; }
+        [MaxLength(50)]
+        public string Name { get; set; }
+        [MaxLength(200)]
+        public string Description { get; set; }
+        public MapItemType MapItemType { get; set; }
     }
 }
