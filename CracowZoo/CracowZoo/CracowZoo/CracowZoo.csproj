@@ -41,6 +41,9 @@
     <EmbeddedResource Update="Views\MenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\TicketsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -48,6 +51,10 @@
 
   <ItemGroup>
     <Folder Include="MapTiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CracowZoo.Core\CracowZoo.PlatformCore.csproj" />
   </ItemGroup>
 
 </Project>

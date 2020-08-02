@@ -48,6 +48,7 @@ namespace CracowZoo
             containerRegistry.RegisterForNavigation<InformationPage, InformationPageViewModel>();
             containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
             containerRegistry.RegisterForNavigation<TicketsPage, TicketsPageViewModel>();
+            containerRegistry.RegisterForNavigation<SettingsPage, SettingsPageViewModel>();
         }
     }
 }

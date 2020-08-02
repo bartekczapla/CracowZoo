@@ -16,6 +16,6 @@ namespace CracowZoo.Models
         public string Name { get; set; }
         public virtual MapItem MapItem { get; set; }
         [ForeignKey("MapItem")]
-        public int MapItemId { get; set; }
+        public int? MapItemId { get; set; }
     }
 }
