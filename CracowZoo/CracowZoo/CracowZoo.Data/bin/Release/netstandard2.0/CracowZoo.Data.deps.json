@@ -557,6 +557,7 @@
       },
       "CracowZoo/1.0.0": {
         "dependencies": {
+          "CracowZoo.PlatformCore": "1.0.0",
           "Prism.Unity.Forms": "7.2.0.1422",
           "System.ComponentModel.Annotations": "4.7.0",
           "Xam.Plugin.Media": "5.0.1",

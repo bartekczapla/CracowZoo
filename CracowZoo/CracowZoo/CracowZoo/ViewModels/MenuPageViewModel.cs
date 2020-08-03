@@ -75,7 +75,7 @@ namespace CracowZoo.ViewModels
             });
             MenuItems.Add(new CustomMenuItem()
             {
-                Icon = ((char)0xf0d6).ToString(),
+                Icon = ((char)0xf013).ToString(),
                 PageName = nameof(SettingsPage),
                 Title = "Ustawienia"
             });
