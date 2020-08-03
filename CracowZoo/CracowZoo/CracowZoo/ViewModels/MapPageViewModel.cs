@@ -67,10 +67,24 @@ namespace CracowZoo.ViewModels
                 {
                     Label = mapItem.Name,
                     Position = new Position(mapItem.Latitude, mapItem.Longitude),
-                    Icon = BitmapDescriptorFactory.FromBundle("mammalsPin.png"),
+                    Icon = BitmapDescriptorFactory.FromBundle(GetMapItemIcon(mapItem.MapItemType)),
                     Tag = mapItem
                 };
                 Pins.Add(pin) ;
+            }
+        }
+
+        private string GetMapItemIcon(MapItemType type)
+        {
+            switch(type) {
+                case MapItemType.Place:
+                    return "amphibiansPin.png";
+                case MapItemType.ManyAnimals:
+                    return "reptilesPin.png";
+                case MapItemType.SingleAnimal:
+                    return "mammalsPin.png";
+                default:
+                    return "mammalsPin.png";
             }
         }
 
