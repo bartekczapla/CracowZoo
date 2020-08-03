@@ -1,4 +1,5 @@
 ﻿using CracowZoo.Enums;
+using CracowZoo.Helpers;
 using CracowZoo.Interfaces;
 using CracowZoo.Models;
 using CracowZoo.Models.Aditionals;
@@ -22,6 +23,7 @@ namespace CracowZoo.ViewModels
     {
         private readonly IRepository _repository;
         public int AnimalGroup { get; set; }
+        public int? MapItemId { get; set; }
         private bool _isNavigating;
         public ObservableCollection<Animal> Animals { get; } = new ObservableCollection<Animal>();
 
@@ -52,43 +54,51 @@ namespace CracowZoo.ViewModels
             _repository = repository;
             Title = "Zwierzęta";
             AnimalGroup = -1;
+            MapItemId = null;
         }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
             _isNavigating = false;
+            PageLoading = true;
 
-            if(parameters.ContainsKey("animalGroup"))
+            IEnumerable<Animal> animals = new List<Animal>();
+            if (parameters.ContainsKey("animalGroup"))
             {
                 AnimalGroup = parameters.GetValue<int>("animalGroup");
-                GetAnimals();
+                animals = await GetAnimalsByAnimalGroup();
+            } else if (parameters.ContainsKey("mapItemId"))
+            {
+                MapItemId = parameters.GetValue<int>("mapItemId");
+                animals = await GetAnimalsByMapItemId();
             }
+            Animals.AddCollection(animals);
+
+            PageLoading = false;
             SelectedAnimal = null;         
             base.OnNavigatedTo(parameters);
         }
 
-        private async void GetAnimals()
+        private async Task<IEnumerable<Animal>> GetAnimalsByAnimalGroup()
         {
-            PageLoading = true;
-
-            IEnumerable<Animal> animals = new List<Animal>();
-
             if (AnimalGroup > 0)
             {
-                animals = await _repository.GetManyAsync<Animal>((Animal entity) => 
+                return await _repository.GetManyAsync<Animal>((Animal entity) => 
                         entity.Group == (AnimalGroup)AnimalGroup, new OrderElementDescription("Name", true), 
                         new string[] { "MapItem", "AnimalTidbits" });
                 
-            }
-            else if(AnimalGroup == -1)
+            } else
             {
-                animals = await _repository.GetManyAsync<Animal>(null, new OrderElementDescription("Name", true),
+                return await _repository.GetManyAsync<Animal>(null, new OrderElementDescription("Name", true),
                         new string[] { "MapItem", "AnimalTidbits" });
             }
+        }
 
-            animals.ForEach((Animal animal) => Animals.Add(animal));
-
-            PageLoading = false;
+        private async Task<IEnumerable<Animal>> GetAnimalsByMapItemId()
+        {
+            return await _repository.GetManyAsync<Animal>((Animal entity) =>
+                    entity.MapItemId == MapItemId, new OrderElementDescription("Name", true),
+                    new string[] { "MapItem", "AnimalTidbits" });
         }
 
         async void NavigateToAnimalDetails()

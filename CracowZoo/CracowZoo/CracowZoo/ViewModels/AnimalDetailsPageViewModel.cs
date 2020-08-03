@@ -1,10 +1,13 @@
-﻿using CracowZoo.Models;
+﻿using CracowZoo.Interfaces;
+using CracowZoo.Models;
+using CracowZoo.Models.Aditionals;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +15,8 @@ namespace CracowZoo.ViewModels
 {
     public class AnimalDetailsPageViewModel : ViewModelBase
     {
+        private readonly IRepository _repository;
+
         private Animal _selectedAnimal;
         public Animal SelectedAnimal 
         { 
@@ -33,17 +38,36 @@ namespace CracowZoo.ViewModels
             set => SetProperty(ref _pageLoading, value);
         }
 
-        public AnimalDetailsPageViewModel(INavigationService navigationService)
+        public AnimalDetailsPageViewModel(INavigationService navigationService, IRepository repository)
         : base(navigationService)
         {
+            _repository = repository;
         }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
-            SelectedAnimal = parameters.GetValue<Animal>("selectedAnimal");
-            AnimalTidbits = SelectedAnimal.AnimalTidbits;
+            PageLoading = true;
+            if (parameters.ContainsKey("selectedAnimal"))
+            {
+                SelectedAnimal = parameters.GetValue<Animal>("selectedAnimal");
+                AnimalTidbits = SelectedAnimal.AnimalTidbits;
+            }
+            else if (parameters.ContainsKey("mapItemId"))
+            {
+                var mapItemId = parameters.GetValue<int>("mapItemId");
+                SelectedAnimal = await GetAnimalDetails(mapItemId);
+                AnimalTidbits = SelectedAnimal.AnimalTidbits;
+            }
+
             PageLoading = false;
             base.OnNavigatedTo(parameters);
+        }
+
+        private async Task<Animal> GetAnimalDetails(int mapItemId)
+        {
+            return await _repository.GetAsync<Animal>((Animal entity) =>
+                        entity.MapItemId == mapItemId, 
+                        new string[] { "MapItem", "AnimalTidbits" });
         }
     }
 }

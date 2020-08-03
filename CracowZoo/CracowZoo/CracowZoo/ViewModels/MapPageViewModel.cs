@@ -1,4 +1,5 @@
-﻿using CracowZoo.Interfaces;
+﻿using CracowZoo.Enums;
+using CracowZoo.Interfaces;
 using CracowZoo.Models;
 using CracowZoo.Views;
 using Prism.Commands;
@@ -38,33 +39,16 @@ namespace CracowZoo.ViewModels
             });
 
             Debug.Write($"{args.Point.Latitude}  {args.Point.Longitude}");
-
-            //Pins.Add(new Pin
-            //{
-            //    Label = $"Pin{Pins.Count}",
-            //    Position = new Position(args.Point.Latitude+0.001, args.Point.Longitude+0.001),
-            //    Icon = BitmapDescriptorFactory.FromBundle("reptilesPin.png")
-            //});
-
-            //Pins.Add(new Pin
-            //{
-            //    Label = $"Pin{Pins.Count}",
-            //    Position = new Position(args.Point.Latitude + 0.001, args.Point.Longitude - 0.001),
-            //    Icon = BitmapDescriptorFactory.FromBundle("fishPin.png")
-            //});
-
-            //Pins.Add(new Pin
-            //{
-            //    Label = $"Pin{Pins.Count}",
-            //    Position = new Position(args.Point.Latitude - 0.001, args.Point.Longitude + 0.001),
-            //    Icon = BitmapDescriptorFactory.FromBundle("amphibiansPin.png")
-            //});
         });
 
         public Command<PinClickedEventArgs> PinClickedCommand =>
         new Command<PinClickedEventArgs>(args =>
         {
             var selectedPin = args.Pin;
+            if(selectedPin.Tag is MapItem)
+            {
+                NavigateToAnimals(selectedPin.Tag as MapItem);
+            }
         });
 
         public override void Initialize(INavigationParameters parameters)
@@ -87,6 +71,22 @@ namespace CracowZoo.ViewModels
                     Tag = mapItem
                 };
                 Pins.Add(pin) ;
+            }
+        }
+
+        private async void NavigateToAnimals(MapItem clickedMapItem)
+        {
+            if (clickedMapItem.MapItemType == MapItemType.ManyAnimals)
+            {
+                var parameters = new NavigationParameters();
+                parameters.Add("mapItemId", clickedMapItem.Id);
+                await NavigationService.NavigateAsync(nameof(AnimalsPage), parameters);
+            } 
+            else if (clickedMapItem.MapItemType == MapItemType.SingleAnimal)
+            {
+                var parameters = new NavigationParameters();
+                parameters.Add("mapItemId", clickedMapItem.Id);
+                await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
             }
         }
     }

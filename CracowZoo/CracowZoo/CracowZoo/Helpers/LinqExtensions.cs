@@ -1,6 +1,7 @@
 ﻿using CracowZoo.Models.Aditionals;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -21,6 +22,14 @@ namespace CracowZoo.Helpers
             var resultExp = Expression.Call(typeof(Queryable), methodName, typeArguments, source.Expression, Expression.Quote(orderByExp));
 
             return source.Provider.CreateQuery<T>(resultExp);
+        }
+
+        public static void AddCollection<T>(this ObservableCollection<T> collection, IEnumerable<T> newCollection)
+        {
+            foreach(var item in newCollection)
+            {
+                collection.Add(item);
+            }
         }
     }
 }
