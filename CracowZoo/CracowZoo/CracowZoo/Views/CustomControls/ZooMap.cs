@@ -16,7 +16,7 @@ namespace CracowZoo.Views.CustomControls
         private readonly double _minZoom = 16;
         private readonly double _leftRestriction = 19.846560023725;
         private readonly double _rightRestriction = 19.856195859611;
-        private readonly double _topRestriction = 50.0554976430348;
+        private readonly double _topRestriction = 50.0654976430348;
         private readonly double _bottomRestriction = 50.0506828412358;
 
         public double CenterLatitude => CameraPosition.Target.Latitude;
