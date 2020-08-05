@@ -12,7 +12,7 @@
                 <controls:ZooMap.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
                     <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}"/>
-                    <bindings:PinClickedToCommandBehavior Command="{Binding PinClickedCommand}" />
+                    <bindings:InfoWindowClickedToCommandBehavior Command="{Binding PinInfoClickedCommand}"/>
                 </controls:ZooMap.Behaviors>
             </controls:ZooMap>
             <Button HeightRequest="38" WidthRequest="38" HorizontalOptions="Start" VerticalOptions="Start"

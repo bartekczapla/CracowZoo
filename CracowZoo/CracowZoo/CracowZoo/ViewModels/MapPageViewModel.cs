@@ -41,8 +41,8 @@ namespace CracowZoo.ViewModels
             Debug.Write($"{args.Point.Latitude}  {args.Point.Longitude}");
         });
 
-        public Command<PinClickedEventArgs> PinClickedCommand =>
-        new Command<PinClickedEventArgs>(args =>
+        public Command<InfoWindowClickedEventArgs> PinInfoClickedCommand =>
+        new Command<InfoWindowClickedEventArgs>(args =>
         {
             var selectedPin = args.Pin;
             if(selectedPin.Tag is MapItem)
