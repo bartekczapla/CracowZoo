@@ -28,6 +28,7 @@ namespace CracowZoo
         {
             InitializeComponent();
             AskForPermissions();
+            SetInitialAppPreferences();
             await NavigationService.NavigateAsync($"{nameof(MenuPage)}/{nameof(NavigationPage)}/{nameof(MapPage)}");
         }
 
@@ -35,6 +36,12 @@ namespace CracowZoo
         {
             await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
             await Permissions.RequestAsync<Permissions.Camera>();
+        }
+
+        private void SetInitialAppPreferences()
+        {
+            if (!Preferences.ContainsKey("showNotifications"))
+                Preferences.Set("showNotifications", false);
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

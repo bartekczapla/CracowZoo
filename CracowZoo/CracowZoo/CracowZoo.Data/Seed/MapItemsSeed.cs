@@ -1609,7 +1609,7 @@ namespace CracowZoo.Data.Seed
                 Marked = false,
                 Name = "Mini Zoo",
                 Description = "",
-                MapItemType = MapItemType.Place
+                MapItemType = MapItemType.MiniZoo
             });
             #endregion
 
@@ -1630,7 +1630,7 @@ namespace CracowZoo.Data.Seed
                 Longitude = 19.849124,
                 Marked = false,
                 Name = "Plac zabaw",
-                MapItemType = MapItemType.Place
+                MapItemType = MapItemType.Playground
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
@@ -1648,7 +1648,7 @@ namespace CracowZoo.Data.Seed
                 Longitude = 19.848635,
                 Marked = false,
                 Name = "WC",
-                MapItemType = MapItemType.Place
+                MapItemType = MapItemType.Restroom
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
@@ -1657,7 +1657,7 @@ namespace CracowZoo.Data.Seed
                 Longitude = 19.850207,
                 Marked = false,
                 Name = "WC",
-                MapItemType = MapItemType.Place
+                MapItemType = MapItemType.Restroom
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
@@ -1666,7 +1666,7 @@ namespace CracowZoo.Data.Seed
                 Longitude = 19.851067,
                 Marked = false,
                 Name = "WC",
-                MapItemType = MapItemType.Place
+                MapItemType = MapItemType.Restroom
             });
             #endregion
         }

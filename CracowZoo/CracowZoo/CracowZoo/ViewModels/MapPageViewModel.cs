@@ -83,6 +83,12 @@ namespace CracowZoo.ViewModels
                     return "reptilesPin.png";
                 case MapItemType.SingleAnimal:
                     return "mammalsPin.png";
+                case MapItemType.Restroom:
+                    return "restroomPin.png";
+                case MapItemType.Playground:
+                    return "playgroundPin.png";
+                case MapItemType.MiniZoo:
+                    return "miniZooPin.png";
                 default:
                     return "mammalsPin.png";
             }

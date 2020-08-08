@@ -8,6 +8,14 @@ namespace CracowZoo.Enums
     {
         SingleAnimal,
         ManyAnimals,
-        Place
+        Place,
+        Mammal,
+        Bird,
+        Reptile,
+        Amphibian,
+        Restroom,
+        Entrance,
+        Playground,
+        MiniZoo
     }
 }

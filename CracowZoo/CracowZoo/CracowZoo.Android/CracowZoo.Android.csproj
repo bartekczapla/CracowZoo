@@ -91,6 +91,7 @@
     <Compile Include="CustomRenderers\ExtendedLabelRenderer.cs" />
     <Compile Include="DependencyServices\AndroidNotificationManager.cs" />
     <Compile Include="DependencyServices\AndroidTileConverter.cs" />
+    <Compile Include="DependencyServices\AppVersionService.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -385,6 +386,9 @@
     <AndroidAsset Include="Assets\amphibiansPin.png" />
     <AndroidAsset Include="Assets\fishPin.png" />
     <AndroidResource Include="Resources\drawable\tile_17_72764_44420.png" />
+    <AndroidAsset Include="Assets\restroomPin.png" />
+    <AndroidAsset Include="Assets\playgroundPin.png" />
+    <AndroidAsset Include="Assets\miniZooPin.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

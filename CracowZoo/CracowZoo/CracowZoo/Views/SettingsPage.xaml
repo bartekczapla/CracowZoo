@@ -14,34 +14,18 @@
                    VerticalTextAlignment="Center" Opacity="0.7"/>
             <Label Text="Powiadomienia o wydarzeniach" Margin="10,15,0,15" FontSize="Medium"
                    HorizontalOptions="StartAndExpand"/>
-            <Switch HorizontalOptions="End" Margin="0,15,10,15"/>
+            <Switch HorizontalOptions="End" Margin="0,15,10,15" IsToggled="{Binding ShowNotifications}"/>
         </StackLayout>
 
-        <Label BackgroundColor="LightGray" Text="Uprawnienia aplikacji"
+        <Label BackgroundColor="LightGray" Text="Informacje o aplikacji"
                Padding="10" FontAttributes="Bold"/>
 
         <StackLayout Orientation="Horizontal">
-            <Label Text="&#xf124;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,15,0,15"
+            <Label Text="&#xf05a;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,15,0,15"
                    VerticalTextAlignment="Center" Opacity="0.7"/>
-            <Label Text="Lokalizacja" Margin="10,15,0,15" FontSize="Medium"
+            <Label Text="Wersja aplikacji" Margin="10,15,0,15" FontSize="Medium"
                    HorizontalOptions="StartAndExpand"/>
-            <Switch HorizontalOptions="End" Margin="0,15,10,15"/>
+            <Label Text="{Binding AppVersion}" HorizontalOptions="End" Margin="0,15,10,15"/>
         </StackLayout>
-
-        <StackLayout Orientation="Horizontal">
-            <Label Text="&#xf030;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,0,0,15"
-                   VerticalTextAlignment="Center" Opacity="0.7"/>
-            <Label Text="Używanie aparatu" Margin="10,0,0,15" FontSize="Medium"
-                   HorizontalOptions="StartAndExpand"/>
-            <Switch HorizontalOptions="End" Margin="0,0,10,15"/>
-        </StackLayout>
-        <!--<Button 
-            Command="{Binding ExecuteDeleteDb}" 
-            Text="Delete database" 
-            VerticalOptions="Start" 
-            HorizontalOptions="Center"
-            BackgroundColor="Red"
-            Padding="20,20,20,20"
-            Margin="10,20,10,20"></Button>-->
     </StackLayout>
 </ContentPage>
