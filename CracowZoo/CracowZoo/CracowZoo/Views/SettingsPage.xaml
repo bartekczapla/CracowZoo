@@ -17,9 +17,27 @@
             <Switch HorizontalOptions="End" Margin="0,15,10,15" IsToggled="{Binding ShowNotifications}"/>
         </StackLayout>
 
-        <Label BackgroundColor="LightGray" Text="Informacje o aplikacji"
+        <Label BackgroundColor="LightGray" Text="Ustawienia mapy"
                Padding="10" FontAttributes="Bold"/>
 
+        <StackLayout Orientation="Horizontal">
+            <Label Text="&#xf3c5;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,15,0,15"
+                   VerticalTextAlignment="Center" Opacity="0.7"/>
+            <Label Text="Pokazuj lokalizację" Margin="10,15,0,15" FontSize="Medium"
+                   HorizontalOptions="StartAndExpand"/>
+            <Picker HorizontalOptions="End" Margin="0,0,10,0" FontSize="Small" TextColor="Gray" 
+                    SelectedItem="{Binding LocationsToShow}" VerticalOptions="Center">
+                <Picker.Items>
+                    <x:String>Wszystko</x:String>
+                    <x:String>Zwierzęta</x:String>
+                    <x:String>Miejsca</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+        
+        <Label BackgroundColor="LightGray" Text="Informacje o aplikacji"
+               Padding="10" FontAttributes="Bold"/>
+   
         <StackLayout Orientation="Horizontal">
             <Label Text="&#xf05a;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,15,0,15"
                    VerticalTextAlignment="Center" Opacity="0.7"/>

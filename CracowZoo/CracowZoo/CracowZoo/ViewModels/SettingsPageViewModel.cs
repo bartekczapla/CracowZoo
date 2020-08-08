@@ -25,6 +25,12 @@ namespace CracowZoo.ViewModels
             set => Preferences.Set("showNotifications", value);
         }
 
+        public string LocationsToShow
+        {
+            get => Preferences.Get("showLocations", "Wszystko");
+            set => Preferences.Set("showLocations", value);
+        }
+
         public string AppVersion => DependencyService.Get<IAppVersion>().GetVersion();
 
         public SettingsPageViewModel(INavigationService navigationService, IPlatformSettingsProvider platformSettingsProvider) : base(navigationService)

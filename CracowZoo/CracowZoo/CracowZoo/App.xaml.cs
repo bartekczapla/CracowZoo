@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using CracowZoo.Interfaces;
+using static CracowZoo.Models.AppSettings;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -40,8 +41,13 @@ namespace CracowZoo
 
         private void SetInitialAppPreferences()
         {
+            Preferences.Clear();
+
             if (!Preferences.ContainsKey("showNotifications"))
                 Preferences.Set("showNotifications", false);
+
+            if (!Preferences.ContainsKey("showLocations"))
+                Preferences.Set("showLocations", "Wszystko");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

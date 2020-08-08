@@ -61,7 +61,9 @@ namespace CracowZoo.ViewModels
         {
             var mapItems = await _repository.GetManyAsync<MapItem>((MapItem mapItem) => mapItem.Longitude > 0 && mapItem.Latitude > 0);
             
-            foreach(var mapItem in mapItems)
+            string locationsToShowSetting = Xamarin.Essentials.Preferences.Get("showLocations", "Wszystko");
+
+            foreach (var mapItem in mapItems)
             {
                 var pin = new Pin
                 {
@@ -70,7 +72,30 @@ namespace CracowZoo.ViewModels
                     Icon = BitmapDescriptorFactory.FromBundle(GetMapItemIcon(mapItem.MapItemType)),
                     Tag = mapItem
                 };
-                Pins.Add(pin) ;
+
+                if (locationsToShowSetting == "Zwierzęta")
+                {
+                    if (mapItem.MapItemType == MapItemType.SingleAnimal
+                        || mapItem.MapItemType == MapItemType.ManyAnimals)
+                    {
+                        Pins.Add(pin);
+                    }
+                }
+                else if (locationsToShowSetting == "Miejsca")
+                {
+                    if (mapItem.MapItemType == MapItemType.Entrance
+                        || mapItem.MapItemType == MapItemType.MiniZoo
+                        || mapItem.MapItemType == MapItemType.Place
+                        || mapItem.MapItemType == MapItemType.Restroom
+                        || mapItem.MapItemType == MapItemType.Playground)
+                    {
+                        Pins.Add(pin);
+                    }
+                }
+                else
+                {
+                    Pins.Add(pin);
+                }
             }
         }
 
