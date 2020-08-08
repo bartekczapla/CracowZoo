@@ -41,8 +41,6 @@ namespace CracowZoo
 
         private void SetInitialAppPreferences()
         {
-            Preferences.Clear();
-
             if (!Preferences.ContainsKey("showNotifications"))
                 Preferences.Set("showNotifications", false);
 
