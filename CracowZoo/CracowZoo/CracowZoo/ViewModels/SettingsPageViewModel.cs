@@ -18,6 +18,8 @@ namespace CracowZoo.ViewModels
     {
         private readonly IPlatformSettingsProvider _platformSettingsProvider;
 
+        public ICommand SendFeedbackTapped { get; }
+
         //This preference was initially set in App.xaml.cs
         public bool ShowNotifications
         {
@@ -36,6 +38,13 @@ namespace CracowZoo.ViewModels
         public SettingsPageViewModel(INavigationService navigationService, IPlatformSettingsProvider platformSettingsProvider) : base(navigationService)
         {
             _platformSettingsProvider = platformSettingsProvider;
+
+            SendFeedbackTapped = new DelegateCommand(SendFeedback);
+        }
+
+        private async void SendFeedback()
+        {
+            //TODO Add sending feedback
         }
     }
 }

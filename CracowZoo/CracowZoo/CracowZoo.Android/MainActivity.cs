@@ -65,23 +65,6 @@ namespace CracowZoo.Droid
             }
             else
                 base.OnBackPressed();
-
-            //if (currentPage is MapPage || currentPage is AnimalGroupsPage)
-            //{
-            //    long currentTime = DateTime.UtcNow.Ticks / TimeSpan.TicksPerMillisecond;
-
-            //    if (currentTime - lastPress > 2500)
-            //    {
-            //        Toast.MakeText(this, "Naciśnij ponownie, aby zakończyć", ToastLength.Short).Show();
-            //        lastPress = currentTime;
-            //    }
-            //    else
-            //    {
-            //        base.OnBackPressed();
-            //    }
-            //}
-            //else
-            //    base.OnBackPressed();
         }
     }
 

@@ -34,10 +34,10 @@
                 </Picker.Items>
             </Picker>
         </StackLayout>
-        
+
         <Label BackgroundColor="LightGray" Text="Informacje o aplikacji"
                Padding="10" FontAttributes="Bold"/>
-   
+
         <StackLayout Orientation="Horizontal">
             <Label Text="&#xf05a;" FontSize="Medium" FontFamily="{StaticResource FontAwesomeSolid}" Margin="20,15,0,15"
                    VerticalTextAlignment="Center" Opacity="0.7"/>
@@ -45,5 +45,16 @@
                    HorizontalOptions="StartAndExpand"/>
             <Label Text="{Binding AppVersion}" HorizontalOptions="End" Margin="0,15,10,15"/>
         </StackLayout>
+
+        <Frame BorderColor="LightGray" HasShadow="False" Padding="10">
+            <StackLayout Margin="10,0,10,0">
+                <Label Text="Podziel się opinią" FontAttributes="Bold" FontSize="Medium"/>
+                <Label Text="Pomóż nam rozwijać aplikację przesyłając swoją opinię"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SendFeedbackTapped}"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Frame>
+
     </StackLayout>
 </ContentPage>
