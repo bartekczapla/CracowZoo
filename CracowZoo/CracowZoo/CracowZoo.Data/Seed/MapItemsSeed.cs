@@ -1599,7 +1599,7 @@ namespace CracowZoo.Data.Seed
                 Marked = false,
                 Name = "Egzotarium",
                 Description = "Eksponujemy w nim małą cząstkę ekosystemu rafy koralowej Indopacyfiku, na który składają się: żywe koralowce, wieloszczety, strzykwa, krewetki, rozgwiazda, jeżowiec, ryby morskie.",
-                MapItemType = MapItemType.ManyAnimals
+                MapItemType = MapItemType.Exotarium
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {

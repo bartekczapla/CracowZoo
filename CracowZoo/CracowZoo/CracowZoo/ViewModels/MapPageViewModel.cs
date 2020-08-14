@@ -87,7 +87,8 @@ namespace CracowZoo.ViewModels
                         || mapItem.MapItemType == MapItemType.MiniZoo
                         || mapItem.MapItemType == MapItemType.Place
                         || mapItem.MapItemType == MapItemType.Restroom
-                        || mapItem.MapItemType == MapItemType.Playground)
+                        || mapItem.MapItemType == MapItemType.Playground
+                        || mapItem.MapItemType == MapItemType.Exotarium)
                     {
                         Pins.Add(pin);
                     }
@@ -114,6 +115,8 @@ namespace CracowZoo.ViewModels
                     return "playgroundPin.png";
                 case MapItemType.MiniZoo:
                     return "miniZooPin.png";
+                case MapItemType.Exotarium:
+                    return "egzotariumPin.png";
                 default:
                     return "mammalsPin.png";
             }

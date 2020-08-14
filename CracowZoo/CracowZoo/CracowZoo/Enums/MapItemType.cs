@@ -16,6 +16,7 @@ namespace CracowZoo.Enums
         Restroom,
         Entrance,
         Playground,
-        MiniZoo
+        MiniZoo,
+        Exotarium
     }
 }
