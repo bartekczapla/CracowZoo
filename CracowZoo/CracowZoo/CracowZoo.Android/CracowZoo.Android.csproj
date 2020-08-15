@@ -390,6 +390,8 @@
     <AndroidAsset Include="Assets\playgroundPin.png" />
     <AndroidAsset Include="Assets\miniZooPin.png" />
     <AndroidAsset Include="Assets\egzotariumPin.png" />
+    <AndroidAsset Include="Assets\nightAnimalsPin.png" />
+    <AndroidResource Include="Resources\drawable\patternBackground.jpg" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -17,6 +17,7 @@ namespace CracowZoo.Enums
         Entrance,
         Playground,
         MiniZoo,
-        Exotarium
+        Exotarium,
+        NightAnimals
     }
 }

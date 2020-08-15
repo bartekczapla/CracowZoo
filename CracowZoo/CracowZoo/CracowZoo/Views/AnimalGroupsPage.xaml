@@ -6,7 +6,7 @@
              x:Class="CracowZoo.Views.AnimalGroupsPage"
              Title="Mieszkańcy Zoo"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="WhiteSmoke">
+             BackgroundImageSource="patternBackground.jpg">
     <Grid RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

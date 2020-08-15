@@ -1569,7 +1569,7 @@ namespace CracowZoo.Data.Seed
                 Marked = false,
                 Name = "Nocny pawilon",
                 Description = "Pawilon ten zamieszkują fenki, pancerniki włochate, kuskusy ziemne, nietoperze rudawki, lori małe, galago, lotopałanki małe",
-                MapItemType = MapItemType.ManyAnimals
+                MapItemType = MapItemType.NightAnimals
             });
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {

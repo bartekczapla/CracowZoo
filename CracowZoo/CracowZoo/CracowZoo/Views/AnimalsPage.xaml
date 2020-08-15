@@ -10,7 +10,7 @@
              x:DataType="viewmodels:AnimalsPageViewModel"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.HasBackButton="False"
-             BackgroundColor="WhiteSmoke">
+             BackgroundImageSource="patternBackground.jpg">
     <ContentPage.Content>
         <Grid>
             <ListView ItemsSource="{Binding Animals}"

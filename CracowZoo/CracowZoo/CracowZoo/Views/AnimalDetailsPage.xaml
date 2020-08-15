@@ -8,7 +8,7 @@
              x:Class="CracowZoo.Views.AnimalDetailsPage"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.HasBackButton="False"
-             BackgroundColor="WhiteSmoke">
+             BackgroundImageSource="patternBackground.jpg">
     <RelativeLayout>
         
         <StackLayout
