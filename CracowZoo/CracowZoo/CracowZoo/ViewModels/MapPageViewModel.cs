@@ -126,14 +126,18 @@ namespace CracowZoo.ViewModels
         {
             if (clickedMapItem.MapItemType == MapItemType.ManyAnimals)
             {
-                var parameters = new NavigationParameters();
-                parameters.Add("mapItemId", clickedMapItem.Id);
+                var parameters = new NavigationParameters
+                {
+                    { "mapItemId", clickedMapItem.Id }
+                };
                 await NavigationService.NavigateAsync(nameof(AnimalsPage), parameters);
             } 
             else if (clickedMapItem.MapItemType == MapItemType.SingleAnimal)
             {
-                var parameters = new NavigationParameters();
-                parameters.Add("mapItemId", clickedMapItem.Id);
+                var parameters = new NavigationParameters
+                {
+                    { "mapItemId", clickedMapItem.Id }
+                };
                 await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
             }
         }
