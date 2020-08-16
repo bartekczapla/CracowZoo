@@ -18,7 +18,7 @@ using Xamarin.Forms;
 
 namespace CracowZoo.Droid
 {
-    [Activity(Label = "Kraków Zoo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", 
+    [Activity(Label = "Zoo Kraków", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", 
         LaunchMode = LaunchMode.SingleTop ,ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
