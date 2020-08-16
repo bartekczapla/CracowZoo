@@ -73,6 +73,8 @@ namespace CracowZoo.ViewModels
 
         private async void GetMapItems()
         {
+            Pins.Clear();
+
             var mapItems = await _repository.GetManyAsync<MapItem>((MapItem mapItem) => mapItem.Longitude > 0 && mapItem.Latitude > 0);
             
             string locationsToShowSetting = Xamarin.Essentials.Preferences.Get("showLocations", "Wszystko");
@@ -161,8 +163,6 @@ namespace CracowZoo.ViewModels
 
         public async override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
-
             if (parameters.ContainsKey("goToAnimal"))
             {
                 string mapPinName = parameters.GetValue<string>("goToAnimal");
@@ -172,10 +172,12 @@ namespace CracowZoo.ViewModels
                 if (pin != null)
                 {
                     SelectedPin = pin;
-
+                    await Task.Delay(1000);
                     await MoveCameraRequest.MoveCamera(CameraUpdateFactory.NewPositionZoom(pin.Position, 18.0));
                 }
             }
+
+            base.OnNavigatedTo(parameters);
         }
     }
 }

@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace CracowZoo.ViewModels
 {
-    public class MenuPageViewModel: BindableBase
+    public class MenuPageViewModel: ViewModelBase
     {
         private readonly INavigationService _navigationService;
         private readonly IEventAggregator _eventAggregator;
@@ -37,6 +37,7 @@ namespace CracowZoo.ViewModels
         public DelegateCommand NavigateCommand { get; private set; }
 
         public MenuPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
+            : base(navigationService)
         {
             _navigationService = navigationService;
             _eventAggregator = eventAggregator;

@@ -58,7 +58,8 @@ namespace CracowZoo.ViewModels
                 {
                     { "goToAnimal", SelectedAnimal.MapItem.Name }
                 };
-            await NavigationService.NavigateAsync(nameof(MapPage), parameters);
+            
+            await NavigationService.NavigateAsync(new Uri("/MenuPage/NavigationPage/MapPage"), parameters);
         }
 
         public override async void OnNavigatedTo(INavigationParameters parameters)

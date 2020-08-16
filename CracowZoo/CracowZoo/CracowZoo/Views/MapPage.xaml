@@ -8,8 +8,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid>
-            <controls:ZooMap x:Name="ZooMapControl" MapType="None" BackgroundColor="#ece9e1" SelectedPin="{Binding SelectedPin}"
-                             >
+            <controls:ZooMap x:Name="ZooMapControl" MapType="None" BackgroundColor="#ece9e1" SelectedPin="{Binding SelectedPin}">
                 <controls:ZooMap.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
                     <!--<bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}"/>-->
