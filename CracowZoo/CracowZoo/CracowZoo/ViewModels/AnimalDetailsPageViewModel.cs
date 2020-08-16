@@ -1,6 +1,7 @@
 ﻿using CracowZoo.Interfaces;
 using CracowZoo.Models;
 using CracowZoo.Models.Aditionals;
+using CracowZoo.Views;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -16,6 +17,8 @@ namespace CracowZoo.ViewModels
     public class AnimalDetailsPageViewModel : ViewModelBase
     {
         private readonly IRepository _repository;
+
+        public ICommand GoToAnimalButtonClicked { get; }
 
         private Animal _selectedAnimal;
         public Animal SelectedAnimal 
@@ -42,6 +45,20 @@ namespace CracowZoo.ViewModels
         : base(navigationService)
         {
             _repository = repository;
+
+            GoToAnimalButtonClicked = new DelegateCommand(GoToAnimal, () => true);
+        }
+
+        private async void GoToAnimal()
+        {
+            if (SelectedAnimal.MapItem == null)
+                return;
+
+            var parameters = new NavigationParameters
+                {
+                    { "goToAnimal", SelectedAnimal.MapItem.Name }
+                };
+            await NavigationService.NavigateAsync(nameof(MapPage), parameters);
         }
 
         public override async void OnNavigatedTo(INavigationParameters parameters)

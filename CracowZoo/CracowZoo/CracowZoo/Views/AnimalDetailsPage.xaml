@@ -10,7 +10,7 @@
              NavigationPage.HasBackButton="False"
              BackgroundImageSource="patternBackground.jpg">
     <RelativeLayout>
-        
+
         <StackLayout
             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
@@ -31,29 +31,33 @@
          >
             <ScrollView>
                 <StackLayout>
-                <StackLayout 
+                    <StackLayout 
                 Padding="20,180,20,100">
-                    <Frame 
+
+                        <Frame 
                     BackgroundColor="White"
                     HasShadow="True"
                     CornerRadius="5">
-                        <StackLayout>
-                            <Label 
+                            <StackLayout>
+
+                                <Label 
                         Text="{Binding SelectedAnimal.Name}"
                         FontSize="Title"      
                         HorizontalTextAlignment="Center"
                         Style="{StaticResource labelStyle}"
                         FontAttributes="Bold"/>
-                            <Label 
+                                <Label 
                         Text="{Binding SelectedAnimal.LatinSpecie}"
                         FontSize="Subtitle"
                         FontAttributes="Italic"
                         HorizontalTextAlignment="Center"   />
-                        <BoxView 
+                                <BoxView 
                         Margin="0,10,0,0"
                         HeightRequest="1" 
                         Color="Green"/>
-                                <ffimageloading:CachedImage
+                                <Grid>
+
+                                    <ffimageloading:CachedImage
                         Source="map.jpg"
                         Aspect="AspectFit"
                         HeightRequest="200" 
@@ -61,6 +65,15 @@
                         IsOpaque="True"
                         BackgroundColor="White"
                         />
+                                    <Frame  HorizontalOptions="End" VerticalOptions="Start" Margin="2" Padding="0" HasShadow="False"
+                                        BorderColor="LightGray" BackgroundColor="#7DFFFFFF">
+                                        <Button Text="&#xf5eb;"
+                                        FontSize="Large" WidthRequest="50" Margin="0"
+                                        TextColor="#296cd1" BackgroundColor="Transparent"
+                                        FontFamily="{StaticResource FontAwesomeSolid}"
+                                        Command="{Binding GoToAnimalButtonClicked}"/>
+                                    </Frame>
+                                </Grid>
                                 <Label 
                         Text="Występowanie"
                         FontSize="Medium"
@@ -90,17 +103,17 @@
                         Style="{StaticResource labelStyle}"
                         Margin="0,15,0,0"/>
                                 <Grid Margin="0,15,0,0">
-                            <Grid.RowDefinitions>
+                                    <Grid.RowDefinitions>
                                         <RowDefinition Height="70"/>
                                         <RowDefinition Height="100"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="20" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="22" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                                     <!--1 row--> 
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="22" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--1 row-->
                                     <Label 
                                         Grid.Row="0" Grid.Column="0"  
                                         Text="&#xf062;" 
@@ -134,7 +147,7 @@
                                         FontSize="Body"/>
                                     </StackLayout>
 
-                                     <!--2 row--> 
+                                    <!--2 row-->
                                     <Label 
                                         Grid.Row="1" Grid.Column="0"  
                                         Text="&#xf073;" 
@@ -190,10 +203,10 @@
                         Style="{StaticResource labelStyle}"
                         JustifyText="True"
                         FontSize="Body"/>
-                        </StackLayout>
-                    </Frame>
-                    
-                    <!--Tidbits section-->
+                            </StackLayout>
+                        </Frame>
+
+                        <!--Tidbits section-->
                         <Frame CornerRadius="5" Margin="0,20,0,0">
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal"  Margin="0,10,0,0" HorizontalOptions="Center">
@@ -202,7 +215,7 @@
                                     <Label Text="Czy wiesz, że..." FontSize="Title" VerticalTextAlignment="Center" TextColor="Black"
                                             FontAttributes="Bold" Margin="10,0,0,0"/>
                                 </StackLayout>
-                               
+
                                 <BoxView Margin="0,10,0,0" HeightRequest="1" Color="Green"/>
                                 <StackLayout BindableLayout.ItemsSource="{Binding AnimalTidbits}" Margin="0,20,0,0"
                                              Spacing="10">
@@ -227,7 +240,7 @@
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
-                </StackLayout>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </Grid>

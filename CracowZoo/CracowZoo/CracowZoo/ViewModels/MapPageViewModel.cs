@@ -8,9 +8,12 @@ using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin.Forms.GoogleMaps.Bindings;
 
 namespace CracowZoo.ViewModels
 {
@@ -21,6 +24,13 @@ namespace CracowZoo.ViewModels
 
         public ObservableCollection<Pin> Pins { get; set; }
 
+        private Pin _selectedPin;
+        public Pin SelectedPin
+        {
+            get => _selectedPin;
+            set => SetProperty(ref _selectedPin, value);
+        }
+
         public MapPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator, IRepository repository)
             : base(navigationService)
         {
@@ -28,18 +38,18 @@ namespace CracowZoo.ViewModels
             _repository = repository;
         }
 
-        public Command<MapClickedEventArgs> MapClickedCommand =>
-        new Command<MapClickedEventArgs>(args =>
-        {
-            Pins.Add(new Pin
-            {
-                Label = $"Pin{Pins.Count}",
-                Position = args.Point,
-                Icon = BitmapDescriptorFactory.FromBundle("mammalsPin.png"),
-            });
+        //public Command<MapClickedEventArgs> MapClickedCommand =>
+        //new Command<MapClickedEventArgs>(args =>
+        //{
+        //    Pins.Add(new Pin
+        //    {
+        //        Label = $"Pin{Pins.Count}",
+        //        Position = args.Point,
+        //        Icon = BitmapDescriptorFactory.FromBundle("mammalsPin.png")
+        //    });
 
-            Debug.Write($"{args.Point.Latitude}  {args.Point.Longitude}");
-        });
+        //    Debug.Write($"{args.Point.Latitude}  {args.Point.Longitude}");
+        //});
 
         public Command<InfoWindowClickedEventArgs> PinInfoClickedCommand =>
         new Command<InfoWindowClickedEventArgs>(args =>
@@ -51,9 +61,13 @@ namespace CracowZoo.ViewModels
             }
         });
 
+        public MoveToRegionRequest MoveToRegionRequest { get; } = new MoveToRegionRequest();
+        public MoveCameraRequest MoveCameraRequest { get; } = new MoveCameraRequest();
+
         public override void Initialize(INavigationParameters parameters)
         {
             base.Initialize(parameters);
+
             GetMapItems();
         }
 
@@ -142,6 +156,25 @@ namespace CracowZoo.ViewModels
                     { "mapItemId", clickedMapItem.Id }
                 };
                 await NavigationService.NavigateAsync(nameof(AnimalDetailsPage), parameters);
+            }
+        }
+
+        public async override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+
+            if (parameters.ContainsKey("goToAnimal"))
+            {
+                string mapPinName = parameters.GetValue<string>("goToAnimal");
+
+                var pin = Pins.FirstOrDefault(p => p.Label == mapPinName);
+
+                if (pin != null)
+                {
+                    SelectedPin = pin;
+
+                    await MoveCameraRequest.MoveCamera(CameraUpdateFactory.NewPositionZoom(pin.Position, 18.0));
+                }
             }
         }
     }

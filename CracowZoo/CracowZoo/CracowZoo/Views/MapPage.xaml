@@ -8,11 +8,13 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid>
-            <controls:ZooMap x:Name="ZooMapControl" MapType="None" BackgroundColor="#ece9e1">
+            <controls:ZooMap x:Name="ZooMapControl" MapType="None" BackgroundColor="#ece9e1" SelectedPin="{Binding SelectedPin}"
+                             >
                 <controls:ZooMap.Behaviors>
                     <bindings:BindingPinsBehavior Value="{Binding Pins}"/>
-                    <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}"/>
+                    <!--<bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}"/>-->
                     <bindings:InfoWindowClickedToCommandBehavior Command="{Binding PinInfoClickedCommand}"/>
+                    <bindings:MoveCameraBehavior Request="{Binding MoveCameraRequest}"/>
                 </controls:ZooMap.Behaviors>
             </controls:ZooMap>
             <Button HeightRequest="38" WidthRequest="38" HorizontalOptions="Start" VerticalOptions="Start"
