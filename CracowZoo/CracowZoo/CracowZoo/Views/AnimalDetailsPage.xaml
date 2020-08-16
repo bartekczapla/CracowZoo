@@ -244,7 +244,7 @@
                 </StackLayout>
             </ScrollView>
         </Grid>
-        <ImageButton Source="backButton.png" BackgroundColor="Transparent" WidthRequest="20" Margin="10"
+        <ImageButton Source="backButton.png" BackgroundColor="#01FFFFFF" WidthRequest="40" Padding="10"
                      Command="{prism:GoBack}"/>
     </RelativeLayout>
 </ContentPage>
