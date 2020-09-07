@@ -28,10 +28,11 @@ namespace CracowZoo.Droid.DependencyServices
                 int resourceId = (int)typeof(Resource.Drawable).GetField(resource).GetValue(null);
                 var tile = BitmapFactory.DecodeResource(Android.App.Application.Context.Resources, resourceId);
 
-                using var ms = new MemoryStream();
-
-                await tile.CompressAsync(Bitmap.CompressFormat.Jpeg, 70, ms);
-                return ms.ToArray();
+                using (var ms = new MemoryStream())
+                {
+                    await tile.CompressAsync(Bitmap.CompressFormat.Jpeg, 100, ms);
+                    return ms.ToArray();
+                }  
             }
             catch
             {
