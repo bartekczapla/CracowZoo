@@ -261,8 +261,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 31, // Struś afrykański
-                Latitude = 50.054177,
-                Longitude = 19.849818,
+                Latitude = 50.0542237028669,
+                Longitude = 19.8498956859112,
                 Marked = false,
                 Name = "Strusie afrykańskie",
                 MapItemType = MapItemType.SingleAnimal
@@ -423,8 +423,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 51,
-                Latitude = 50.054090,
-                Longitude = 19.850671,
+                Latitude = 50.0541009998484,
+                Longitude = 19.8507026955485,
                 Marked = false,
                 Name = "Pingwiny Humboldta",
                 MapItemType = MapItemType.SingleAnimal
@@ -433,8 +433,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 52,
-                Latitude = 50.0548658435461,
-                Longitude = 19.8533714935183,
+                Latitude = 50.0549383878965,
+                Longitude = 19.8534184321761,
                 Marked = false,
                 Name = "Flamingi",
                 MapItemType = MapItemType.SingleAnimal
@@ -547,8 +547,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 66,
-                Latitude = 50.053248,
-                Longitude = 19.851993,
+                Latitude = 50.0533387272253,
+                Longitude = 19.8518889024854,
                 Marked = false,
                 Name = "Żurawie mandżurskie",
                 MapItemType = MapItemType.SingleAnimal
@@ -785,8 +785,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 95, // Słoń indyjski
-                Latitude = 50.0547071927596,
-                Longitude = 19.8540695384145,
+                Latitude = 50.0547489543472,
+                Longitude = 19.8540038242936,
                 Marked = false,
                 Name = "Słonie",
                 MapItemType = MapItemType.SingleAnimal
@@ -947,8 +947,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 117,
-                Latitude = 50.052602,
-                Longitude = 19.849261,
+                Latitude = 50.0526123934995,
+                Longitude = 19.8493652790785,
                 Marked = false,
                 Name = "Manule",
                 MapItemType = MapItemType.SingleAnimal
@@ -1075,8 +1075,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 135,
-                Latitude = 50.054496,
-                Longitude = 19.852181,
+                Latitude = 50.0545627490499,
+                Longitude = 19.8521712049842,
                 Marked = false,
                 Name = "Uchatki patagońskie",
                 MapItemType = MapItemType.SingleAnimal
@@ -1084,8 +1084,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 136,
-                Latitude = 50.054713,
-                Longitude = 19.851267,
+                Latitude = 50.0547173102609,
+                Longitude = 19.8512585833669,
                 Marked = false,
                 Name = "Wydry",
                 MapItemType = MapItemType.SingleAnimal
@@ -1121,8 +1121,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 141,
-                Latitude = 50.054546,
-                Longitude = 19.852349,
+                Latitude = 50.0546650006032,
+                Longitude = 19.8526003584266,
                 Marked = false,
                 Name = "Pandy małe",
                 MapItemType = MapItemType.SingleAnimal
@@ -1130,8 +1130,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 142,
-                Latitude = 50.051668,
-                Longitude = 19.848249,
+                Latitude = 50.0517792704429,
+                Longitude = 19.8482806608081,
                 Marked = false,
                 Name = "Osły",
                 MapItemType = MapItemType.SingleAnimal
@@ -1139,8 +1139,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 143,
-                Latitude = 50.054098,
-                Longitude = 19.849496,
+                Latitude = 50.0542269318895,
+                Longitude = 19.8494913429022,
                 Marked = false,
                 Name = "Zebry Chapmana",
                 MapItemType = MapItemType.SingleAnimal
@@ -1155,8 +1155,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 145,
-                Latitude = 50.053706,
-                Longitude = 19.852493,
+                Latitude = 50.0536769185788,
+                Longitude = 19.8526201397181,
                 Marked = false,
                 Name = "Konie przewalskiego",
                 MapItemType = MapItemType.SingleAnimal
@@ -1164,8 +1164,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 146,
-                Latitude = 50.053058,
-                Longitude = 19.847907,
+                Latitude = 50.0530715737454,
+                Longitude = 19.8477133736014,
                 Marked = false,
                 Name = "Kułany",
                 MapItemType = MapItemType.SingleAnimal
@@ -1187,8 +1187,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 149,
-                Latitude = 50.054105,
-                Longitude = 19.853446,
+                Latitude = 50.054118006075,
+                Longitude = 19.8534928634763,
                 Marked = false,
                 Name = "Hipopotamy karłowate",
                 MapItemType = MapItemType.SingleAnimal
@@ -1217,8 +1217,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 153,
-                Latitude = 50.053858,
-                Longitude = 19.852928,
+                Latitude = 50.0539169447323,
+                Longitude = 19.8530814796686,
                 Marked = false,
                 Name = "Wikunie",
                 MapItemType = MapItemType.SingleAnimal
@@ -1226,8 +1226,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 154,
-                Latitude = 50.054219,
-                Longitude = 19.851398,
+                Latitude = 50.0542241334033,
+                Longitude = 19.8514711484313,
                 Marked = false,
                 Name = "Renifery",
                 MapItemType = MapItemType.SingleAnimal
@@ -1235,8 +1235,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 155,
-                Latitude = 50.052755,
-                Longitude = 19.847317,
+                Latitude = 50.0528763204225,
+                Longitude = 19.8470267280936,
                 Marked = false,
                 Name = "Jelenie europejskie",
                 MapItemType = MapItemType.SingleAnimal
@@ -1244,15 +1244,17 @@ namespace CracowZoo.Data.Seed
             //modelBuilder.Entity<MapItem>().HasData(new MapItem
             //{
             //    Id = 156,
-            //    Latitude = 0,
-            //    Longitude = 0,
-            //    Marked = false
+            //    Latitude = 50.0539145767672,
+            //    Longitude = 19.8516783490777,
+            //    Marked = false,
+            //    Name = "Renifery",
+            //    MapItemType = MapItemType.SingleAnimal
             //});
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 157,
-                Latitude = 50.051341,
-                Longitude = 19.848885,
+                Latitude = 50.0514610868128,
+                Longitude = 19.8487953096628,
                 Marked = false,
                 Name = "Jelenie Milu",
                 MapItemType = MapItemType.SingleAnimal
@@ -1267,8 +1269,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 159,
-                Latitude = 0,
-                Longitude = 0,
+                Latitude = 50.0516836864077,
+                Longitude = 19.8494675382972,
                 Marked = false,
                 Name = "Mundżaki chińskie",
                 MapItemType = MapItemType.SingleAnimal
@@ -1276,8 +1278,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 160,
-                Latitude = 50.053342,
-                Longitude = 19.848522,
+                Latitude = 50.0533103112933,
+                Longitude = 19.8488472774625,
                 Marked = false,
                 Name = "Żyrafy",
                 MapItemType = MapItemType.SingleAnimal
@@ -1285,8 +1287,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 161,
-                Latitude = 50.053590,
-                Longitude = 19.850399,
+                Latitude = 50.0536370934955,
+                Longitude = 19.8504509031773,
                 Marked = false,
                 Name = "Antylopy Eland",
                 MapItemType = MapItemType.SingleAnimal
@@ -1301,8 +1303,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 163,
-                Latitude = 50.054170,
-                Longitude = 19.852547,
+                Latitude = 50.0542587915672,
+                Longitude = 19.8525450378656,
                 Marked = false,
                 Name = "Owce grzywiaste Arui",
                 MapItemType = MapItemType.SingleAnimal
@@ -1310,8 +1312,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 164,
-                Latitude = 50.054146,
-                Longitude = 19.851084,
+                Latitude = 50.0541416856209,
+                Longitude = 19.8510953038931,
                 Marked = false,
                 Name = "Takiny",
                 MapItemType = MapItemType.SingleAnimal
@@ -1333,8 +1335,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 167,
-                Latitude = 50.053795,
-                Longitude = 19.851289,
+                Latitude = 50.0538476278857,
+                Longitude = 19.851288087666,
                 Marked = false,
                 Name = "Antylopy addaks",
                 MapItemType = MapItemType.SingleAnimal
@@ -1342,8 +1344,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 168,
-                Latitude = 0,
-                Longitude = 0,
+                Latitude = 50.0538885291427,
+                Longitude = 19.8502329736948,
                 Marked = false,
                 Name = "Kob śniady",
                 MapItemType = MapItemType.SingleAnimal
@@ -1351,8 +1353,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 169,
-                Latitude = 50.054040,
-                Longitude = 19.852005,
+                Latitude = 50.054075167594,
+                Longitude = 19.8519428819418,
                 Marked = false,
                 Name = "Antylopy kob liczi",
                 MapItemType = MapItemType.SingleAnimal
@@ -1364,8 +1366,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 300,
-                Latitude = 50.055125,
-                Longitude = 19.853648,
+                Latitude = 50.0552096209947,
+                Longitude = 19.8536413908005,
                 Marked = false,
                 Name = "Bażanty, Papugi",
                 Description = "Woliery przy kasie ZOO zamieszkują bażanty (tragopany, bażnty srebrzyste, olśniaki himalajskie, uszaki brunatne i siwe), papugi (nierozłączki, aleksandretty różane, mnichy), toko czarnoskrzydłe, kukabury, turaki, gołębie.",
@@ -1374,8 +1376,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 301,
-                Latitude = 50.055074,
-                Longitude = 19.853429,
+                Latitude = 50.0551441807685,
+                Longitude = 19.8533818870783,
                 Marked = false,
                 Name = "Pazurzatki",
                 Description = "",
@@ -1384,8 +1386,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 302,
-                Latitude = 50.055060,
-                Longitude = 19.853102,
+                Latitude = 50.0551415975999,
+                Longitude = 19.8530556634068,
                 Marked = false,
                 Name = "Surykatki",
                 Description = "",
@@ -1394,8 +1396,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 303,
-                Latitude = 50.055216,
-                Longitude = 19.852651,
+                Latitude = 50.0553041216902,
+                Longitude = 19.8526680842042,
                 Marked = false,
                 Name = "Ptaki w wolierach",
                 Description = "Woliery przy dużym stawie zamieszkują papugi, bażanty, kaczki oraz sowy uszate.",
@@ -1404,8 +1406,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 304,
-                Latitude = 50.054942,
-                Longitude = 19.852348,
+                Latitude = 50.0549345131269,
+                Longitude = 19.8523069918156,
                 Marked = false,
                 Name = "Ptaki wodne – duży staw",
                 Description = "Duży Staw zamieszkują gęsi, kaczki, pelikany różowe, marabuty, żurawie koroniaste, ptaki brodzące: bocian biały i czarny, ibisy purpurowe, australijskie i warząchy.",
@@ -1414,8 +1416,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 305,
-                Latitude = 50.054782,
-                Longitude = 19.851594,
+                Latitude = 50.0547954517422,
+                Longitude = 19.8515985533595,
                 Marked = false,
                 Name = "Ptaki wodne – mały staw",
                 Description = "Mały Staw zamieszkują kazarki, ohary, hełmiatki, bernikle białolice, łabędzie czarne i żurawie koroniaste.",
@@ -1424,8 +1426,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 306,
-                Latitude = 50.054663,
-                Longitude = 19.850631,
+                Latitude = 50.0547071927596,
+                Longitude = 19.8504914715886,
                 Marked = false,
                 Name = "Koty",
                 Description = "Kotowate średniej wielkości",
@@ -1434,8 +1436,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 307,
-                Latitude = 50.054556,
-                Longitude = 19.850100,
+                Latitude = 50.0545982680352,
+                Longitude = 19.8501035571098,
                 Marked = false,
                 Name = "Jeżozwierze, Psowate",
                 Description = "",
@@ -1444,8 +1446,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 308,
-                Latitude = 50.054010,
-                Longitude = 19.849225,
+                Latitude = 50.0539963791322,
+                Longitude = 19.8493133112788,
                 Marked = false,
                 Name = "Tapiry i nandu",
                 Description = "",
@@ -1454,8 +1456,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 309,
-                Latitude = 50.053622,
-                Longitude = 19.849617,
+                Latitude = 50.0534857578774,
+                Longitude = 19.8498219251633,
                 Marked = false,
                 Name = "Wielbłądy i Gwanko",
                 Description = "",
@@ -1464,8 +1466,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 310,
-                Latitude = 50.054357,
-                Longitude = 19.850354,
+                Latitude = 50.054367286527,
+                Longitude = 19.850333891809,
                 Marked = false,
                 Name = "Małe drapieżniki i gryzonie",
                 Description = "",
@@ -1474,8 +1476,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 311,
-                Latitude = 50.054422,
-                Longitude = 19.850534,
+                Latitude = 50.0544762117757,
+                Longitude = 19.8506185412407,
                 Marked = false,
                 Name = "Sowy i ptaki drapieżne",
                 Description = "",
@@ -1494,8 +1496,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 313,
-                Latitude = 50.053767,
-                Longitude = 19.850909,
+                Latitude = 50.0537236322831,
+                Longitude = 19.851005114615,
                 Marked = false,
                 Name = "Kangury i strusie emu",
                 Description = "",
@@ -1504,8 +1506,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 314,
-                Latitude = 50.053223,
-                Longitude = 19.850758,
+                Latitude = 50.0533789831002,
+                Longitude = 19.8509407415986,
                 Marked = false,
                 Name = "Orły, Sępy i Kondory",
                 Description = "",
@@ -1514,8 +1516,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 315,
-                Latitude = 50.053168,
-                Longitude = 19.850101,
+                Latitude = 50.0531977237609,
+                Longitude = 19.850172623992,
                 Marked = false,
                 Name = "Lemury, Małpy Sajmrir",
                 Description = "",
@@ -1524,8 +1526,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 316,
-                Latitude = 50.052736,
-                Longitude = 19.848747,
+                Latitude = 50.0527320864764,
+                Longitude = 19.8483550921082,
                 Marked = false,
                 Name = "Antylopy Nilgau, Markury",
                 Description = "",
@@ -1534,8 +1536,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 317,
-                Latitude = 50.052402,
-                Longitude = 19.848304,
+                Latitude = 50.0523723608205,
+                Longitude = 19.8478716239333,
                 Marked = false,
                 Name = "Daniele, Jelenie Barasinga",
                 Description = "",
@@ -1544,8 +1546,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 318,
-                Latitude = 50.052483,
-                Longitude = 19.850536,
+                Latitude = 50.052568692572,
+                Longitude = 19.8502872884274,
                 Marked = false,
                 Name = "Wielkie koty",
                 Description = "",
@@ -1554,8 +1556,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 319,
-                Latitude = 0,
-                Longitude = 0,
+                Latitude = 50.0531802866625,
+                Longitude = 19.8520763218403,
                 Marked = false,
                 Name = "Sowy",
                 Description = "",
@@ -1564,8 +1566,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 320,
-                Latitude = 50.053429,
-                Longitude = 19.851845,
+                Latitude = 50.0534588489338,
+                Longitude = 19.851948581636,
                 Marked = false,
                 Name = "Nocny pawilon",
                 Description = "Pawilon ten zamieszkują fenki, pancerniki włochate, kuskusy ziemne, nietoperze rudawki, lori małe, galago, lotopałanki małe",
@@ -1574,8 +1576,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 321,
-                Latitude = 50.053525,
-                Longitude = 19.851765,
+                Latitude = 50.0534678903405,
+                Longitude = 19.8516981303692,
                 Marked = false,
                 Name = "Średnie drapieżniki",
                 Description = "",
@@ -1584,8 +1586,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 322,
-                Latitude = 50.054577,
-                Longitude = 19.853434,
+                Latitude = 50.0545422987132,
+                Longitude = 19.8535666242242,
                 Marked = false,
                 Name = "Małpy",
                 Description = "",
@@ -1594,8 +1596,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 323,
-                Latitude = 50.054596,
-                Longitude = 19.853576,
+                Latitude = 50.0547358231303,
+                Longitude = 19.8535542190075,
                 Marked = false,
                 Name = "Egzotarium",
                 Description = "Eksponujemy w nim małą cząstkę ekosystemu rafy koralowej Indopacyfiku, na który składają się: żywe koralowce, wieloszczety, strzykwa, krewetki, rozgwiazda, jeżowiec, ryby morskie.",
@@ -1617,8 +1619,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 400,
-                Latitude = 50.0551575271377,
-                Longitude = 19.8539763316512,
+                Latitude = 50.0551560202897,
+                Longitude = 19.8540618270636,
                 Marked = false,
                 Name = "Wejście",
                 MapItemType = MapItemType.Place
@@ -1635,8 +1637,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<MapItem>().HasData(new MapItem
             {
                 Id = 402,
-                Latitude = 50.052802,
-                Longitude = 19.852030,
+                Latitude = 50.0527264893295,
+                Longitude = 19.8516287282109,
                 Marked = false,
                 Name = "Ul pszczeli",
                 MapItemType = MapItemType.Place

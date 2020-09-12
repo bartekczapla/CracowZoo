@@ -24,6 +24,20 @@ namespace CracowZoo.ViewModels
 
         public ObservableCollection<Pin> Pins { get; set; }
 
+        private string _pos1;
+        public string Pos1
+        {
+            get => _pos1;
+            set => SetProperty(ref _pos1, value);
+        }
+
+        private string _pos2;
+        public string Pos2
+        {
+            get => _pos2;
+            set => SetProperty(ref _pos2, value);
+        }
+
         private Pin _selectedPin;
         public Pin SelectedPin
         {
@@ -38,18 +52,29 @@ namespace CracowZoo.ViewModels
             _repository = repository;
         }
 
-        //public Command<MapClickedEventArgs> MapClickedCommand =>
-        //new Command<MapClickedEventArgs>(args =>
-        //{
-        //    Pins.Add(new Pin
-        //    {
-        //        Label = $"Pin{Pins.Count}",
-        //        Position = args.Point,
-        //        Icon = BitmapDescriptorFactory.FromBundle("mammalsPin.png")
-        //    });
+        public Command<MapClickedEventArgs> MapClickedCommand =>
+        new Command<MapClickedEventArgs>(args =>
+        {
+            var pin = Pins.FirstOrDefault(p => p.Label == "TestPin");
 
-        //    Debug.Write($"{args.Point.Latitude}  {args.Point.Longitude}");
-        //});
+            if (pin == null)
+            {
+                Pins.Add(new Pin
+                {
+                    Label = $"TestPin",
+                    Position = args.Point,
+                    Icon = BitmapDescriptorFactory.FromBundle("mammalsPin.png"),
+                    IsDraggable = true
+                });
+            }
+            else
+            {
+                Pos1 = $"Lat: {pin.Position.Latitude}";
+                Pos2 = $"Long: {pin.Position.Longitude}";
+                Debug.WriteLine($"Lat: {pin.Position.Latitude}");
+                Debug.WriteLine($"Long: {pin.Position.Longitude}");
+            }
+        });
 
         public Command<InfoWindowClickedEventArgs> PinInfoClickedCommand =>
         new Command<InfoWindowClickedEventArgs>(args =>
