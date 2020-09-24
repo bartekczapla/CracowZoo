@@ -23,9 +23,9 @@ namespace CracowZoo.Data.Seed
                 AnimalDanger = AnimalDanger.High,
                 //MapItemId = ,
                 ImagePath = "_piraniaczerwona.jpg",
-                Length = "",
-                Weight = "",
-                Longevity = ""
+                Length = "33cm",
+                Weight = "3,8kg",
+                Longevity = "10 lat"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -41,9 +41,9 @@ namespace CracowZoo.Data.Seed
                 AnimalDanger = AnimalDanger.None,
                 //MapItemId = ,
                 ImagePath = "_antiaspomaranczowy.jpg",
-                Length = "",
+                Length = "6cm",
                 Weight = "",
-                Longevity = ""
+                Longevity = "3-5 lat"
             });
             modelBuilder.Entity<Animal>().HasData(new Animal
             {
@@ -59,7 +59,7 @@ namespace CracowZoo.Data.Seed
                 AnimalDanger = AnimalDanger.None,
                // MapItemId = ,
                 ImagePath = "_pyszczak.jpg",
-                Length = "",
+                Length = "10cm",
                 Weight = "",
                 Longevity = ""
             });

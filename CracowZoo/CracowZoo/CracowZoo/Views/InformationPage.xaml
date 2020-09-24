@@ -41,7 +41,7 @@
             HeightRequest="1" 
             Color="Green"/>
                 <local:ExtendedLabel 
-            Text="Obecnie kasa zoo jest czynna od 9.00 do 18.00. Zwiedzanie do 19.00. "
+            Text="Obecnie kasa zoo jest czynna od 9.00 do 17.30. Zwiedzanie do 18.30."
             Style="{StaticResource labelStyle}"
             JustifyText="True"
             FontAttributes="Bold"
@@ -168,12 +168,106 @@
                     <Label Text="• PARKING I (PRZY BRAMIE ZOO)"
                            Style="{StaticResource labelStyle}"
                            FontAttributes="Bold"
-                           FontSize="Body" />
+                           FontSize="Large" />
+                    <local:ExtendedLabel Text="Naprzeciw naszego Ogrodu Zoologicznego, przy głównej bramie, znajduje się niestrzeżony parking mieszczący 35 samochodów. Dostępny jest od poniedziałku do piątku – w dni wolne i świąteczne obowiązuje zakaz wjazdu na teren Lasu Wolskiego."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         Margin="0,10,0,0"
+                                         FontSize="Body" />
+                    <local:ExtendedLabel Text="Osoby niepełnosprawne, podróżujące oznakowanymi samochodami, mają możliwość wjazdu na parking bezpośrednio przy ZOO przez cały tydzień."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         FontAttributes="Bold"
+                                         Margin="0,10,0,0"
+                                         FontSize="Body" />
+                    <local:ExtendedLabel Text="CENNIK OPŁAT:"
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         FontAttributes="Bold"
+                                         Margin="0,20,0,0"
+                                         FontSize="Body" />
+                    <StackLayout Grid.Row="1"
+                                 Orientation="Horizontal"
+                                 Spacing="0">
+                        <Label Text="samochód osobowy"
+                               FontSize="Body"
+                               HorizontalOptions="StartAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                        <Label Text="15 zł"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1"
+                                 Orientation="Horizontal"
+                                 Spacing="0">
+                        <Label Text="bus"
+                               FontSize="Body"
+                               HorizontalOptions="StartAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                        <Label Text="30 zł"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1"
+                                 Orientation="Horizontal"
+                                 Spacing="0">
+                        <Label Text="autobus"
+                               FontSize="Body"
+                               HorizontalOptions="StartAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                        <Label Text="50 zł"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1"
+                                 Orientation="Horizontal"
+                                 Spacing="0">
+                        <Label Text="samochód dla osób niepełnosprawnych"
+                               FontSize="Body"
+                               HorizontalOptions="StartAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                        <Label Text="bezpłatnie"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Style="{StaticResource labelStyle}" />
+                    </StackLayout>
+                    <local:ExtendedLabel Text="Opłaty za postój samochodów na parkingu przy ZOO na terenie Lasu Wolskiego będą pobierane od poniedziałku do piątku, od godz. 8.00 do 19.00. Parking leśny zostanie zamknięty szlabanem o godz. 19.00"
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         Margin="0,15,0,0"
+                                         FontSize="Body" />
+                
+                
                     <Label Text="• PARKING II (1KM OD ZOO)"
                            Style="{StaticResource labelStyle}"
                            FontAttributes="Bold"
-                           FontSize="Body"
-                           Margin="0,10,0,0"/>
+                           FontSize="Large"
+                           Margin="0,35,0,0"/>
+                    <local:ExtendedLabel Text="Oprócz tego na ulicy Kukułczej znajduje się nowo wybudowany parking na 480 samochodów, z którego można oglądać piękną panoramę Krakowa. Znajduje się on w odległości około 1 km od naszego ZOO, do którego można dotrzeć ścieżką przez las lub autobusem MPK. Dostępny jest codziennie, również w niedziele i święta."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         Margin="0,10,0,0"
+                                         FontSize="Body" />
+                    <local:ExtendedLabel Text="Opłata za parkowanie w dni powszednie (od poniedziałku do piątku) wynosi  3,00 zł za każdą rozpoczętą godzinę."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         FontAttributes="Bold"
+                                         Margin="0,10,0,0"
+                                         FontSize="Body" />
+                    <local:ExtendedLabel Text="Opłata za parkowanie w weekendy i w dni świąteczne wynosi 15 zł za 5 godzin, po przekroczeniu tego czasu, doliczana jest opłata w wysokości 3,00 zł za każdą kolejna godzinę – płatne gotówką."
+                                         Style="{StaticResource labelStyle}"
+                                         JustifyText="True"
+                                         Margin="0,10,0,0"
+                                         FontAttributes="Bold"
+                                         FontSize="Body" />
+                    <local:ExtendedLabel Text="Ogród Zoologiczny nie jest administratorem parkingu przy ul. Kukułczej. Zarządza nim Firma FINEZJA A.K. ZAJĄC s.j. z Krakowa."
+                                         JustifyText="True"
+                                         FontAttributes="Italic"
+                                         Margin="0,10,0,0"
+                                         FontSize="Body" />
                 </StackLayout>
         </Frame>
         <Frame
