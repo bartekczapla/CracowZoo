@@ -405,6 +405,9 @@
     <AndroidResource Include="Resources\drawable\tile_18_145529_88844.jpg" />
     <AndroidResource Include="Resources\drawable\tile_18_145530_88841.jpg" />
     <AndroidResource Include="Resources\drawable\tile_18_145530_88842.jpg" />
+    <AndroidResource Include="Resources\drawable\chips.jpg" />
+    <AndroidResource Include="Resources\drawable\kielbasa.jpg" />
+    <AndroidResource Include="Resources\drawable\karkowka.jpg" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

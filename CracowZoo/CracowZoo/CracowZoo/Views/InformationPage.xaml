@@ -282,7 +282,7 @@
                         <Label HorizontalTextAlignment="Center"
                                VerticalTextAlignment="Center"
                                Margin="0,0,8,0"
-                               Text="&#xf1ae;"
+                               Text="&#xf2e7;"
                                FontSize="Medium"
                                TextColor="Green"
                                FontFamily="{StaticResource FontAwesomeSolid}" />
@@ -299,6 +299,28 @@
                                          Style="{StaticResource labelStyle}"
                                          JustifyText="True"
                                          FontSize="Body" />
+                    <ScrollView Orientation="Horizontal" Margin="0,10,0,0">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame CornerRadius="10" Padding="0" Margin="5">
+                                <Grid>
+                                    <ffimageloading:CachedImage Source="kielbasa" Aspect="AspectFill"/>
+                                    <Label Text="Kiełbasa z grilla" TextColor="White" VerticalOptions="End" Margin="20" FontSize="Medium"/>
+                                </Grid>
+                            </Frame>
+                            <Frame CornerRadius="10" Padding="0" Margin="5">
+                                <Grid>
+                                    <ffimageloading:CachedImage Source="karkowka" Aspect="AspectFill"/>
+                                    <Label Text="Grillowana karkówka" TextColor="White" VerticalOptions="End" Margin="20" FontSize="Medium"/>
+                                </Grid>
+                            </Frame>
+                            <Frame CornerRadius="10" Padding="0" Margin="5">
+                                <Grid>
+                                    <ffimageloading:CachedImage Source="chips" Aspect="AspectFill"/>
+                                    <Label Text="Frytki" TextColor="White" VerticalOptions="End" Margin="20" FontSize="Medium"/>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
                 </StackLayout>
             </Frame>
     </StackLayout>
