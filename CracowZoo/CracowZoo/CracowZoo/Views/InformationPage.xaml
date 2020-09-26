@@ -299,12 +299,13 @@
                                          Style="{StaticResource labelStyle}"
                                          JustifyText="True"
                                          FontSize="Body" />
-                    <ScrollView Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label Text="Polecane przekąski" FontSize="Medium" Margin="0,10,0,0" FontAttributes="Bold" TextColor="#464646"/>
+                    <ScrollView Orientation="Horizontal" Margin="0,10,0,0" HorizontalScrollBarVisibility="Never">
                         <StackLayout Orientation="Horizontal">
                             <Frame CornerRadius="10" Padding="0" Margin="5">
                                 <Grid>
                                     <ffimageloading:CachedImage Source="kielbasa" Aspect="AspectFill"/>
-                                    <Label Text="Kiełbasa z grilla" TextColor="White" VerticalOptions="End" Margin="20" FontSize="Medium"/>
+                                    <Label Text="Kiełbaski z grilla" TextColor="White" VerticalOptions="End" Margin="20" FontSize="Medium"/>
                                 </Grid>
                             </Frame>
                             <Frame CornerRadius="10" Padding="0" Margin="5">

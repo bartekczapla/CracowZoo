@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="AndroidSettingsProvider.cs" />
     <Compile Include="CustomRenderers\ExtendedLabelRenderer.cs" />
+    <Compile Include="CustomRenderers\ScrollViewNoBarRenderer.cs" />
     <Compile Include="DependencyServices\AndroidNotificationManager.cs" />
     <Compile Include="DependencyServices\AndroidTileConverter.cs" />
     <Compile Include="DependencyServices\AppVersionService.cs" />
