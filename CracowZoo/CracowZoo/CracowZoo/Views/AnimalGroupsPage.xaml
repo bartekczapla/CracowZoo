@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:cc="clr-namespace:CracowZoo.Views.CustomControls"
              x:Class="CracowZoo.Views.AnimalGroupsPage"
              Title="Zwierzęta"
              BackgroundImageSource="patternBackground.jpg">
@@ -16,17 +17,14 @@
 
         <Frame Grid.Row="0" BackgroundColor="#31a24c" Padding="0" CornerRadius="15" HasShadow="False">
             <StackLayout Orientation="Horizontal" Margin="20,5,0,15">
-                <Frame Padding="0" CornerRadius="25" HorizontalOptions="FillAndExpand">
-
-                    <Entry x:Name="SearchEntry" BackgroundColor="White" HorizontalOptions="FillAndExpand" Margin="20,0,20,0"
+                <cc:EntryNoUnderline x:Name="SearchEntry" HorizontalOptions="FillAndExpand"
                                 ClearButtonVisibility="WhileEditing" Placeholder="Wyszukaj zwierzę" TextChanged="SearchEntry_TextChanged"
                                 Text="{Binding EntryText}" Unfocused="SearchEntry_Unfocused" Focused="SearchEntry_Focused" FontSize="Small">
-                        <Entry.Behaviors>
-                            <b:EventToCommandBehavior EventName="TextChanged" 
+                    <Entry.Behaviors>
+                        <b:EventToCommandBehavior EventName="TextChanged" 
                                                       Command="{Binding EntryChanged}" />
-                        </Entry.Behaviors>
-                    </Entry>
-                </Frame>
+                    </Entry.Behaviors>
+                </cc:EntryNoUnderline>
                 <Label Text="&#xf002;" FontSize="Medium" VerticalOptions="Center" Margin="5,0,15,0" TextColor="White"
                        FontFamily="{StaticResource FontAwesomeSolid}" HorizontalTextAlignment="Center"/>
             </StackLayout>
