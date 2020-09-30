@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CracowZoo.ViewModels
 {
@@ -32,19 +33,33 @@ namespace CracowZoo.ViewModels
         {
             base.Initialize(parameters);
 
-            DayOfWeek dayToSelect = DateTime.Today.DayOfWeek;
+            var zooEventDates = (await GetZooEvents(GetDayOfWeekFromTabPageTitle(_dayName)))
+                                 .OrderBy((ZooEventDate entity) => entity.Time);
 
-            if (_dayName == "Dzisiaj")
-                dayToSelect = DateTime.Today.DayOfWeek;
-            else if(_dayName == "Jutro")
-                dayToSelect = DateTime.Today.AddDays(1).DayOfWeek;
-            else if (_dayName == "Pojutrze")
-                dayToSelect = DateTime.Today.AddDays(2).DayOfWeek;
+            CurrenDayEvents = new ObservableCollection<ZooEventDate>(zooEventDates);
+        }
 
-            CurrenDayEvents = new ObservableCollection<ZooEventDate>((await _repository.GetManyAsync<ZooEventDate>(
-                     (ZooEventDate entity) => entity.Day == dayToSelect,
+        private async Task<IEnumerable<ZooEventDate>> GetZooEvents(DayOfWeek dayOfWeek)
+        {
+            return await _repository.GetManyAsync<ZooEventDate>(
+                     (ZooEventDate entity) => entity.Day == dayOfWeek,
                     null,
-                    new string[] { "ZooEvent" })).OrderBy(eventDate => eventDate.Time));
+                    new string[] { "ZooEvent" });
+        }
+
+        private DayOfWeek GetDayOfWeekFromTabPageTitle(string _dayName)
+        {
+            switch(_dayName)
+            {
+                case "Jutro":
+                    return DateTime.Today.AddDays(1).DayOfWeek;
+                case "Pojutrze":
+                    return DateTime.Today.AddDays(2).DayOfWeek;
+                case "Dzisiaj":
+                default:
+                    return DateTime.Today.DayOfWeek;
+
+            }
         }
     }
 }

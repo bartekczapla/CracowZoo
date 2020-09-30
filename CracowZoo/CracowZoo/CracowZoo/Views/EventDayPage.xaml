@@ -18,15 +18,70 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <BoxView Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#e4e4e4"/>
-                        <BoxView Grid.Column="1" Grid.RowSpan="2" BackgroundColor="WhiteSmoke"/>
+                        <BoxView Grid.Column="0"
+                                 Grid.RowSpan="2"
+                                 BackgroundColor="#ebebeb"/>
+                        <BoxView Grid.Column="1"
+                                 Grid.RowSpan="2"
+                                 BackgroundColor="WhiteSmoke">
+                        </BoxView>
 
-                        <Label Text="{Binding Time, StringFormat='{0:hh}:{0:mm}'}" HorizontalOptions="Center" Margin="0,10,0,0" 
-                               FontSize="Medium" TextColor="#969696"/>
+                        <Label Text="{Binding Time, StringFormat='{0:hh}:{0:mm}'}"
+                               HorizontalOptions="Center"
+                               Margin="0,10,0,0"
+                               FontSize="Medium"
+                               TextColor="#969696">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsTodayPast}"
+                                                     Value="True"
+                                                     TargetType="Label">
+                                            <Setter Property="TextColor"
+                                                    Value="#ff4c4c" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
 
-                        <Label Grid.Column="1" FontAttributes="Bold" Text="{Binding ZooEvent.Name}" Margin="10,10,01,0" FontSize="Medium"/>
+                        <Label Grid.Column="1"
+                               FontAttributes="Bold"
+                               Text="{Binding ZooEvent.Name}"
+                               Margin="10,10,01,0"
+                               FontSize="Medium">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsTodayPast}"
+                                                     Value="True"
+                                                     TargetType="Label">
+                                            <Setter Property="TextColor"
+                                                    Value="#cccccc" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
 
-                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding ZooEvent.Conditions}" Margin="10,0,10,10" TextColor="#767676"/>
+                        <Label Grid.Column="1"
+                               Grid.Row="1"
+                               Text="{Binding ZooEvent.Conditions}"
+                               Margin="10,0,10,10"
+                               TextColor="#767676">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsTodayPast}"
+                                                     Value="True"
+                                                     TargetType="Label">
+                                            <Setter Property="TextColor"
+                                                    Value="#cccccc" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
                     </Grid>
                 </ViewCell>
             </DataTemplate>

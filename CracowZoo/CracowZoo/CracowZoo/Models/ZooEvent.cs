@@ -18,5 +18,8 @@ namespace CracowZoo.Models
         [MaxLength(100)]
         public string Conditions { get; set; }
         public ICollection<ZooEventDate> Dates { get; set; }
+        public virtual MapItem MapItem { get; set; }
+        [ForeignKey("MapItem")]
+        public int? MapItemId { get; set; }
     }
 }

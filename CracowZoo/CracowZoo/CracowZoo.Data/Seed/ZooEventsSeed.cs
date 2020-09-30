@@ -15,7 +15,8 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 1,
                 Name = "Karmienie słoni",
-                Conditions = "(przy sprzyjających warunkach atmosferycznych)"
+                Conditions = "(przy sprzyjających warunkach atmosferycznych)",
+                MapItemId = 95
             });
 
             modelBuilder.Entity<ZooEventDate>().HasData(new ZooEventDate
@@ -74,7 +75,8 @@ namespace CracowZoo.Data.Seed
             modelBuilder.Entity<ZooEvent>().HasData(new ZooEvent
             {
                 Id = 2,
-                Name = "Karmienie uchatek"
+                Name = "Karmienie uchatek",
+                MapItemId = 135
             });
             modelBuilder.Entity<ZooEventDate>().HasData(new ZooEventDate
             {
@@ -116,7 +118,7 @@ namespace CracowZoo.Data.Seed
                 Id = 13,
                 ZooEventId = 2,
                 Day = DayOfWeek.Sunday,
-                Time = new TimeSpan(14, 0, 0)
+                Time = new TimeSpan(9, 30, 0)
             });
             modelBuilder.Entity<ZooEventDate>().HasData(new ZooEventDate
             {
@@ -167,7 +169,8 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 3,
                 Name = "Karmienie pingwinów",
-                Conditions = "(przy sprzyjających warunkach atmosferycznych)"
+                Conditions = "(przy sprzyjających warunkach atmosferycznych)",
+                MapItemId = 51
             });
             modelBuilder.Entity<ZooEventDate>().HasData(new ZooEventDate
             {
@@ -201,7 +204,7 @@ namespace CracowZoo.Data.Seed
             {
                 Id = 24,
                 ZooEventId = 3,
-                Day = DayOfWeek.Thursday,
+                Day = DayOfWeek.Friday,
                 Time = new TimeSpan(10, 0, 0)
             });
             modelBuilder.Entity<ZooEventDate>().HasData(new ZooEventDate

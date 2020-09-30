@@ -20,5 +20,7 @@ namespace CracowZoo.Models
         public virtual ZooEvent ZooEvent { get; set; }
         [ForeignKey("ZooEvent")]
         public int ZooEventId { get; set; }
+        [NotMapped]
+        public bool IsTodayPast => Day == DateTime.Today.DayOfWeek && Time < DateTime.Now.TimeOfDay;
     }
 }
