@@ -7,6 +7,7 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using CracowZoo.Interfaces;
 using static CracowZoo.Models.AppSettings;
+using System.Diagnostics.Tracing;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CracowZoo
@@ -57,9 +58,11 @@ namespace CracowZoo
             containerRegistry.RegisterForNavigation<AnimalsPage, AnimalsPageViewModel>();
             containerRegistry.RegisterForNavigation<AnimalDetailsPage, AnimalDetailsPageViewModel>();
             containerRegistry.RegisterForNavigation<InformationPage, InformationPageViewModel>();
-            containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
+            //containerRegistry.RegisterForNavigation<EventsPage, EventsPageViewModel>();
             containerRegistry.RegisterForNavigation<TicketsPage, TicketsPageViewModel>();
             containerRegistry.RegisterForNavigation<SettingsPage, SettingsPageViewModel>();
+            containerRegistry.RegisterForNavigation<ZooEventsPage, ZooEventsPageViewModel>();
+            //containerRegistry.RegisterForNavigation<EventDayPage, EventDayViewModel>();
         }
     }
 }

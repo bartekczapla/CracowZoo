@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CracowZoo.Views.ZooEventsPage"
+             xmlns:local="clr-namespace:CracowZoo.Views"
+             Title="Wydarzenia">
+    <TabbedPage.Behaviors>
+        
+    </TabbedPage.Behaviors>
+    <!--Pages can be added as references or inline-->
+    <local:EventDayPage Title="Dzisiaj" BindingContext="{Binding TodayVm}"/>
+    <local:EventDayPage Title="Jutro" BindingContext="{Binding TomorrowVm}"/>
+    <local:EventDayPage Title="Pojutrze" BindingContext="{Binding AfterTomorrowVm}"/>
+</TabbedPage>

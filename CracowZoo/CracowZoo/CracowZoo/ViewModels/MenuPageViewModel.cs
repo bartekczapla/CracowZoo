@@ -59,7 +59,7 @@ namespace CracowZoo.ViewModels
             MenuItems.Add(new CustomMenuItem()
             {
                 Icon = ((char)0xf017).ToString(),
-                PageName = nameof(EventsPage),
+                PageName = nameof(ZooEventsPage),
                 Title = "Wydarzenia / pokazy"
             });
             MenuItems.Add(new CustomMenuItem()
@@ -80,12 +80,6 @@ namespace CracowZoo.ViewModels
                 PageName = nameof(SettingsPage),
                 Title = "Ustawienia"
             });
-            //MenuItems.Add(new CustomMenuItem()
-            //{
-            //    Icon = ((char)0xf013).ToString(),
-            //    PageName = nameof(AnimalGroupsPage),
-            //    Title = "Ustawienia"
-            //});
 
             NavigateCommand = new DelegateCommand(Navigate);
 
@@ -97,7 +91,7 @@ namespace CracowZoo.ViewModels
             _eventAggregator.GetEvent<MyEvent>().Publish();
 
             await Task.Delay(250);
-            await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);      
+            await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);  
         }
     }
 }

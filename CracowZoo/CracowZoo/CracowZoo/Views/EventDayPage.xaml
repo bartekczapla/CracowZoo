@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CracowZoo.Views.EventDayPage"
+             BackgroundColor="WhiteSmoke">
+    <ListView ItemsSource="{Binding CurrenDayEvents}"
+                  HasUnevenRows="True" CachingStrategy="RecycleElement"
+                  RowHeight="100">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid HeightRequest="100" ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <BoxView Grid.Column="0" Grid.RowSpan="2" BackgroundColor="#e4e4e4"/>
+                        <BoxView Grid.Column="1" Grid.RowSpan="2" BackgroundColor="WhiteSmoke"/>
+
+                        <Label Text="{Binding Time, StringFormat='{0:hh}:{0:mm}'}" HorizontalOptions="Center" Margin="0,10,0,0" 
+                               FontSize="Medium" TextColor="#969696"/>
+
+                        <Label Grid.Column="1" FontAttributes="Bold" Text="{Binding ZooEvent.Name}" Margin="10,10,01,0" FontSize="Medium"/>
+
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding ZooEvent.Conditions}" Margin="10,0,10,10" TextColor="#767676"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
