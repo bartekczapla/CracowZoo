@@ -17,11 +17,11 @@
                    CornerRadius="5"
                    Margin="0,10,0,0">
                 <StackLayout Margin="20,20,20,30" Padding="0">
-                    <Label FontSize="Medium" FontAttributes="Bold" Text="Gdzie kupić?"/>
+                    <Label FontSize="Medium" FontAttributes="Bold" Text="Gdzie kupić?" TextColor="#333333"/>
                     <cc:ExtendedLabel Text="Bilety do ZOO można zakupić w kasie kina, która czynna jest codziennie – również w niedziele i święta od godziny 9.00 do 18.00."
                                       JustifyText="True" Margin="0,10,0,0"/>
 
-                    <Label FontSize="Medium" FontAttributes="Bold" Text="Osoby zwolnione z opłat" Margin="0,20,0,0"/>
+                    <Label FontSize="Medium" FontAttributes="Bold" Text="Osoby zwolnione z opłat" Margin="0,20,0,0" TextColor="#333333"/>
                     <cc:ExtendedLabel Text="• wychowankowie Domów Dziecka" JustifyText="True" Margin="10,10,0,0"/>
                     <cc:ExtendedLabel Text="• dzieci do lat 3" JustifyText="True" Margin="10,0,0,0"/>
                     <cc:ExtendedLabel Text="• osoby niepełnosprawne" JustifyText="True" Margin="10,0,0,0"/>
@@ -33,17 +33,27 @@
                    CornerRadius="5"
                    Margin="0,10,0,0">
                 <StackLayout Padding="0">
-                    <Label FontSize="Medium" FontAttributes="Bold" Text="Bilety" Margin="20,20,20,0"/>
-                    <Frame CornerRadius="5" Padding="0" HasShadow="True" Margin="20">
-                        <StackLayout Margin="20,20,20,30" Padding="0">
-                            <Label FontSize="Medium" FontAttributes="Bold" Text="Gdzie kupić?"/>
-                            <cc:ExtendedLabel Text="Bilety do ZOO można zakupić w kasie kina, która czynna jest codziennie – również w niedziele i święta od godziny 9.00 do 18.00."
-                                      JustifyText="True" Margin="0,10,0,0"/>
+                    <Label FontSize="Medium" FontAttributes="Bold" Text="Bilety" Margin="20,20,20,0" TextColor="#333333"/>
+                    <Frame CornerRadius="5" Padding="0" HasShadow="True" Margin="20,20,20,5" BackgroundColor="#f6f0eb"
+                           BorderColor="#e4dad1">
+                        <StackLayout>
+                            <Label Grid.Row="0" FontAttributes="Bold" Text="Normalny" Margin="15,10,20,0" TextColor="#333333"/>
+                            <BoxView Grid.Row="0" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
 
-                            <Label FontSize="Medium" FontAttributes="Bold" Text="Osoby zwolnione z opłat" Margin="0,20,0,0"/>
-                            <cc:ExtendedLabel Text="• wychowankowie Domów Dziecka" JustifyText="True" Margin="10,10,0,0"/>
-                            <cc:ExtendedLabel Text="• dzieci do lat 3" JustifyText="True" Margin="10,0,0,0"/>
-                            <cc:ExtendedLabel Text="• osoby niepełnosprawne" JustifyText="True" Margin="10,0,0,0"/>
+                            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,40,20,0" VerticalOptions="End"/>
+                            <Label Grid.Row="2" Text="22 zł / 18 zł *" Margin="0,10,15,10" HorizontalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="5" Padding="0" HasShadow="True" Margin="20,5,20,20" BackgroundColor="#f6f0eb">
+                        <StackLayout>
+                            <Label Grid.Row="0" FontAttributes="Bold" Text="Ulgowy" Margin="15,10,20,0" TextColor="#333333"/>
+                            <BoxView Grid.Row="0" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
+
+                            <cc:ExtendedLabel Grid.Row="2" Text="Przysługuje dzieciom od 3 roku życia, uczniom szkół podstawowych, dziennych szkół ponadpodstawowych, studentom do ukończenia 26 roku życia, emerytom i rencistom."
+                                              Margin="20,10,20,0" JustifyText="True"/>
+                            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
+                            
+                            <Label Grid.Row="2" Text="15 zł / 10 zł *" Margin="0,10,15,10" HorizontalOptions="End"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
