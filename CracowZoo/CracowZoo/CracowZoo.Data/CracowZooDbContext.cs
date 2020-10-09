@@ -12,6 +12,7 @@ namespace CracowZoo.Data
         public DbSet<ZooPlace> ZooPlaces { get; set; }
         public DbSet<ZooEvent> ZooEvents { get; set; }
         public DbSet<ZooEventDate> ZooEventDates { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
 
         private readonly string _connectionString;
 
@@ -34,6 +35,7 @@ namespace CracowZoo.Data
             modelBuilder.SeedAnimals();   
             modelBuilder.SeedAnimalTidbits();
             modelBuilder.SeedZooEvents();
+            modelBuilder.SeedTickets();
         }
     }
 }

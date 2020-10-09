@@ -25,6 +25,10 @@
                     <cc:ExtendedLabel Text="• wychowankowie Domów Dziecka" JustifyText="True" Margin="10,10,0,0"/>
                     <cc:ExtendedLabel Text="• dzieci do lat 3" JustifyText="True" Margin="10,0,0,0"/>
                     <cc:ExtendedLabel Text="• osoby niepełnosprawne" JustifyText="True" Margin="10,0,0,0"/>
+
+                    <Button CornerRadius="25" BackgroundColor="#8fbd4a" Text="Więcej informacji" TextColor="White"
+                                        Command="{Binding OpenInfoWebPageButton}" FontSize="Caption" 
+                                        HeightRequest="40" Margin="10,20,10,0"/>
                 </StackLayout>
             </Frame>
 
@@ -34,30 +38,69 @@
                    Margin="0,10,0,0">
                 <StackLayout Padding="0">
                     <Label FontSize="Medium" FontAttributes="Bold" Text="Bilety" Margin="20,20,20,0" TextColor="#333333"/>
-                    <Frame CornerRadius="5" Padding="0" HasShadow="True" Margin="20,20,20,5" BackgroundColor="#f6f0eb"
-                           BorderColor="#e4dad1">
-                        <StackLayout>
-                            <Label Grid.Row="0" FontAttributes="Bold" Text="Normalny" Margin="15,10,20,0" TextColor="#333333"/>
-                            <BoxView Grid.Row="0" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
 
-                            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,40,20,0" VerticalOptions="End"/>
-                            <Label Grid.Row="2" Text="22 zł / 18 zł *" Margin="0,10,15,10" HorizontalOptions="End"/>
-                        </StackLayout>
-                    </Frame>
-                    <Frame CornerRadius="5" Padding="0" HasShadow="True" Margin="20,5,20,20" BackgroundColor="#f6f0eb">
-                        <StackLayout>
-                            <Label Grid.Row="0" FontAttributes="Bold" Text="Ulgowy" Margin="15,10,20,0" TextColor="#333333"/>
-                            <BoxView Grid.Row="0" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
+                    <Label Text="* obowiązuje w okresie 1 listopada – 31 marca" Margin="25,20,20,0" TextColor="#333333"/>
+                    
+                    <ListView ItemsSource="{Binding Tickets}" CachingStrategy="RecycleElement" SeparatorVisibility="None" HasUnevenRows="True"
+                              Margin="0,0,0,20">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame CornerRadius="0" Padding="0" Margin="10,10,10,5" BackgroundColor="#f9f5ec"
+                                        BorderColor="#e4dad1" HasShadow="False">
+                                        <StackLayout>
+                                            <Grid  Margin="15,15,15,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                
+                                                <Label FontAttributes="Bold" Text="{Binding Type}" TextColor="#333333" VerticalOptions="Center"/>
+                                                <ffimageloading:CachedImage Grid.Column="1" IsOpaque="True"              
+                                                             Source="barcode.png" Margin="0"/>
+                                            </Grid>
+                                            
+                                            <BoxView  HeightRequest="1" BackgroundColor="#eae6d3" Margin="20,10,20,0" VerticalOptions="End"/>
 
-                            <cc:ExtendedLabel Grid.Row="2" Text="Przysługuje dzieciom od 3 roku życia, uczniom szkół podstawowych, dziennych szkół ponadpodstawowych, studentom do ukończenia 26 roku życia, emerytom i rencistom."
-                                              Margin="20,10,20,0" JustifyText="True"/>
-                            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="#e4dad1" Margin="20,10,20,0" VerticalOptions="End"/>
-                            
-                            <Label Grid.Row="2" Text="15 zł / 10 zł *" Margin="0,10,15,10" HorizontalOptions="End"/>
-                        </StackLayout>
-                    </Frame>
+                                            <cc:ExtendedLabel Text="{Binding AdditionalInfo}" Margin="20,10,20,0" JustifyText="True"/>
+                                            <BoxView HeightRequest="1" BackgroundColor="#eae6d3" Margin="20,10,20,0" VerticalOptions="End"/>
+
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                                <Label Text="{Binding SummerPrice, StringFormat='{0} zł'}" TextColor="#e67373" FontAttributes="Bold">
+                                                    <Label.Style>
+                                                        <Style TargetType="{x:Type Label}">
+                                                            <Setter Property="Margin" Value="0,10,0,10"/>
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding WinterPrice}" Value="0" TargetType="Label">
+                                                                    <Setter Property="Margin" Value="0,10,15,10"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                                <Label Text="{Binding WinterPrice, StringFormat='/ {0} zł *'}" Margin="0,10,15,10" TextColor="#e67373" FontAttributes="Bold">
+                                                    <Label.Style>
+                                                        <Style TargetType="{x:Type Label}">
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding WinterPrice}" Value="0" TargetType="Label">
+                                                                    <Setter Property="IsVisible" Value="False"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </StackLayout>
+                                            
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </StackLayout>
             </Frame>
+
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

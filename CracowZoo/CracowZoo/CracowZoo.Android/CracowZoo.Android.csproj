@@ -410,6 +410,7 @@
     <AndroidResource Include="Resources\drawable\chips.jpg" />
     <AndroidResource Include="Resources\drawable\kielbasa.jpg" />
     <AndroidResource Include="Resources\drawable\karkowka.jpg" />
+    <AndroidResource Include="Resources\drawable\barcode.png" />
     <Content Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
